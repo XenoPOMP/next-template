@@ -7,7 +7,6 @@
   "useTabs": false,
   "arrowParens": "avoid",
   "importOrder": [
-    "^@xenopomp/(.*)$",
     "<THIRD_PARTY_MODULES>",
     "^@/(.*)$",
     "^../(.*)$",
