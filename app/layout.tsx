@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google';
 import { AppConstants } from '@/app/app.constants';
 import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
-import { IMeta } from '@/src/components/seo/Meta/meta.interface';
 
 import './globals.css';
 
@@ -22,7 +21,7 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-} & IMeta) {
+}) {
   return (
     <html lang='en'>
       <body className={inter.className}>
