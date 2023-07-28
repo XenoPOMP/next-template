@@ -1,13 +1,13 @@
+import { Metadata } from 'next';
 import { FC } from 'react';
 
-import Meta from '@/src/components/seo/Meta/Meta';
+export const metadata: Metadata = {
+  title: 'Car page',
+  robots: 'noindex, nofollow',
+};
 
 const CarPage: FC<{}> = () => {
-  return (
-    <main>
-      <Meta title={'Car page'} />
-    </main>
-  );
+  return <main>Car page</main>;
 };
 
 export default CarPage;
