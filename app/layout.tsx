@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import { AppConstants } from '@/app/app.constants';
+import Providers from '@/app/providers';
 import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
 
@@ -25,11 +26,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Header />
+        <Providers>
+          <Header />
 
-        {children}
+          {children}
 
-        <Footer />
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
