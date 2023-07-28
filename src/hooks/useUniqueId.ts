@@ -5,6 +5,8 @@ import { isUndefined } from '@/src/utils/type-checks';
 /**
  * Use this hook to generate UUID.
  *
+ * **Works in server side!!!**
+ *
  * @example
  * const id = useUniqueId(generatedId => {
  *   // Dont add callback if you want to
