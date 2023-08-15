@@ -1,0 +1,8 @@
+%scrollable {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
