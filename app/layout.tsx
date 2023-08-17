@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { AppConstants } from '@/app/app.constants';
 import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
+import Providers from '@/src/components/layout/Providers/Providers';
 import ReduxProvider from '@/src/redux/ReduxProvider';
 
 import './globals.scss';
@@ -26,13 +27,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <ReduxProvider>
+        <Providers>
           <Header />
 
           {children}
 
           <Footer />
-        </ReduxProvider>
+        </Providers>
       </body>
     </html>
   );
