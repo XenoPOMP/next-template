@@ -6,7 +6,7 @@ import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
 import ReduxProvider from '@/src/redux/ReduxProvider';
 
-import './globals.css';
+import './globals.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
