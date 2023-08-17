@@ -28,7 +28,7 @@ type UseBooleanType = [
  */
 const useBoolean = (initialValue?: boolean): UseBooleanType => {
   // prettier-ignore
-  const [localValue, setLocalValue] = useState<boolean>(initialValue ? initialValue : false);
+  const [localValue, setLocalValue] = useState<boolean>(initialValue ?? false);
 
   return [
     localValue,
