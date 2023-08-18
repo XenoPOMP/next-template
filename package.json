@@ -1,6 +1,6 @@
 {
   "name": "next-template",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "private": true,
   "author": "XenoPOMP",
   "scripts": {
@@ -15,11 +15,13 @@
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-query": "^3.39.3",
     "react-redux": "^8.1.1",
     "redux-deep-persist": "^1.0.7",
     "redux-persist": "^6.0.0",
@@ -29,7 +31,7 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
-    "@xenopomp/advanced-types": "^1.1.3",
+    "@xenopomp/advanced-types": "^1.1.5",
     "prettier": "2.8.1"
   }
 }
