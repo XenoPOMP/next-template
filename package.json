@@ -1,6 +1,6 @@
 {
   "name": "next-template",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": true,
   "author": "XenoPOMP",
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
-    "@xenopomp/advanced-types": "^1.1.5",
+    "@xenopomp/advanced-types": "^1.1.6",
     "prettier": "2.8.1"
   }
 }
