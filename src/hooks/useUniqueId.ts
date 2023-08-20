@@ -1,4 +1,4 @@
-import { randomUUID } from 'crypto';
+import { useId } from 'react';
 
 import { isUndefined } from '@/src/utils/type-checks';
 
@@ -24,7 +24,7 @@ export const useUniqueId = (
   transformer?: (generatedId: string) => string
 ): string => {
   /** Generate UUID. */
-  const id = randomUUID();
+  const id = useId();
 
   /**
    * If transformer callback is defined, call it
