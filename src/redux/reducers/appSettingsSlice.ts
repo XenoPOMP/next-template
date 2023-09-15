@@ -1,5 +1,3 @@
-'use client';
-
 import { createSlice } from '@reduxjs/toolkit';
 
 import type { ReduxAction } from '@/src/redux/types';
