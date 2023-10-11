@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
-import defaultStorage from '@/src/zustand/default-storage';
+import defaultStorage from '@/src/zustand/storages/default-storage';
 
 const useAppStore = create<{
   mode: 'light' | 'dark';
