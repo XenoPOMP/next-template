@@ -1,6 +1,6 @@
 {
   "name": "next-template",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "private": true,
   "author": "XenoPOMP",
   "scripts": {
@@ -13,6 +13,7 @@
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
+    "@xenopomp/advanced-utils": "^1.2.0",
     "autoprefixer": "10.4.15",
     "axios": "1.5.0",
     "classnames": "^2.3.2",
