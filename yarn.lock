@@ -296,10 +296,10 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
 
-"@xenopomp/advanced-types@^1.1.6":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.1.7.tgz#194f3845c759cd6abd97d7efef730ecfe1ccdefb"
-  integrity sha512-idtTXiD90RCQ6y2wjcDy0qWQkt+Zz2GL4P6rGAy++f7fsl8PqWLAiKdCnljTkg80urnFeDRZNGGVd8QbwurA/g==
+"@xenopomp/advanced-types@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.2.3.tgz#6906fae3627a4683b7275c62b0f723a373608758"
+  integrity sha512-yd6//mvbksKKBo5/EKoRoRajDSSvshaYI2HLoTrKGtmKPg0RXzs4QclZiaPOA++0tb+4xPQn15GcZVd8feAQyw==
   dependencies:
     react "^18.2.0"
     redux "^4.2.1"
