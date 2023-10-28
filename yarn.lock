@@ -296,18 +296,18 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
 
-"@xenopomp/advanced-types@^1.1.6":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.1.7.tgz#194f3845c759cd6abd97d7efef730ecfe1ccdefb"
-  integrity sha512-idtTXiD90RCQ6y2wjcDy0qWQkt+Zz2GL4P6rGAy++f7fsl8PqWLAiKdCnljTkg80urnFeDRZNGGVd8QbwurA/g==
+"@xenopomp/advanced-types@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.2.3.tgz#6906fae3627a4683b7275c62b0f723a373608758"
+  integrity sha512-yd6//mvbksKKBo5/EKoRoRajDSSvshaYI2HLoTrKGtmKPg0RXzs4QclZiaPOA++0tb+4xPQn15GcZVd8feAQyw==
   dependencies:
     react "^18.2.0"
     redux "^4.2.1"
 
-"@xenopomp/advanced-utils@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-utils/-/advanced-utils-1.2.0.tgz#0164b2801e7a450e2503aa1e5b1a2ec10bc7deec"
-  integrity sha512-M5OI8UKfIYuvTFhQeF9Sf5+lLSqvQHa7poHm2KzVXoouvUdi0SGpE3oaSaG9WbqmEMI++edbb8RSF4YOJf2LbQ==
+"@xenopomp/advanced-utils@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-utils/-/advanced-utils-1.2.1.tgz#4dc657d90e8d8a1e82367ebcd64189b0bb4a0f91"
+  integrity sha512-j7zO12ci9MIYXmV0EDrF333Ps3Q2xbjjPpn2a9DBhJ4mrbJi34cwvdGO/XxPqy8iBuPNV5bmFVFeO7pMskTTfA==
   dependencies:
     transliteration "^2.3.5"
 

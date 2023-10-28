@@ -1,3 +1,6 @@
+import { ComponentProps } from 'react';
+
+import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
 import { UiContainerProps } from '@/src/components/ui/UiContainer/UiContainer.props';
 
 export interface UiGridProps
@@ -6,4 +9,5 @@ export interface UiGridProps
       rows: number;
       gap: number | string;
     }>,
-    UiContainerProps {}
+    UiContainerProps,
+    ComponentProps<typeof UiContainer> {}
