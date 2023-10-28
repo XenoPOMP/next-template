@@ -1,7 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 14 Template
 
 ## Minimal Node version
 Since __`Next`__ is updated to **v14**, Node engine\`s version requirement is `v18.7+`.
+
+If you don\`t want to use `Next 14` and `Node.js 18.7+`, use `next-13` [branch instead](https://github.com/XenoPOMP/next-template/tree/next-13).
 
 ## Getting Started
 
