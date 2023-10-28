@@ -19,14 +19,13 @@ const UiContainer: FC<UiContainerNestedProps> = ({
   id,
   style,
   margin,
+  maxWidth,
 }) => {
-  const maxWidth = AppConstants.maxContainerWidth;
-
   return (
     <section
       style={
         {
-          '--max-container-width': maxWidth,
+          '--max-container-width': maxWidth ?? AppConstants.maxContainerWidth,
           '--margin': margin,
           ...style,
         } as CSSProperties
