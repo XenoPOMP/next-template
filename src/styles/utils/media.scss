@@ -1,0 +1,38 @@
+@import "../config";
+
+@function get-breakpoint-value($breakpoint-name) {
+  $breakpoint: map-get($grid-breakpoints, $breakpoint-name);
+
+  @if $breakpoint {
+    @return $breakpoint;
+  } @else {
+    @error "Unknown breakpoint: #{$breakpoint-name}";
+  }
+}
+
+/*
+  Media query for min-width generator.
+*/
+@mixin start-at($breakpoint-name) {
+  @media (min-width: get-breakpoint-value($breakpoint-name)) {
+    @content;
+  }
+}
+
+/*
+  Media query for max-width generator.
+*/
+@mixin end-at($breakpoint-name) {
+  @media (max-width: get-breakpoint-value($breakpoint-name)) {
+    @content;
+  }
+}
+
+/*
+  Media query for max-width generator. Uses fixed pixel value as argument.
+ */
+@mixin end-at-fixed($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}
