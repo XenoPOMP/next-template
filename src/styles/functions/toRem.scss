@@ -1,0 +1,15 @@
+/*
+  Convert pixels to rems with Pixel perfect
+ */
+//@function toRem($value) {
+//  $remValue: (($value + px) / 1rem) + rem;
+//  @return $remValue;
+//}
+
+/*
+  Calculate local em value
+ */
+@function toLocalEm($value, $target) {
+  $remValue: ($value / $target) + em;
+  @return $remValue;
+}
