@@ -1,0 +1,26 @@
+/**
+  Fills svg with one color.
+ */
+@mixin svgMonofill($color) {
+  & *[fill] {
+    fill: $color;
+  }
+
+  & *[stroke] {
+    stroke: $color;
+  }
+}
+
+/**
+  Inserts fill or path according to their usage in
+  path, g, etc.
+ */
+@mixin pathMonofill($color) {
+  [fill] {
+    fill: $color;
+  }
+
+  [stroke] {
+    stroke: $color;
+  }
+}
