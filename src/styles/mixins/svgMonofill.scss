@@ -1,5 +1,9 @@
 /**
   Fills svg with one color.
+
+  svg element has to contain children
+  with properties `fill` or `stroke`
+  set.
  */
 @mixin svgMonofill($color) {
   & *[fill] {
@@ -14,6 +18,9 @@
 /**
   Inserts fill or path according to their usage in
   path, g, etc.
+
+  Element has to contain properties
+  `fill` or `stroke`.
  */
 @mixin pathMonofill($color) {
   [fill] {
