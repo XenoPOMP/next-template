@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    /* Next default options. */
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -21,7 +22,13 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+
+    /* Make compiler more strict. */
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
