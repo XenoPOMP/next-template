@@ -34,6 +34,7 @@
     "@xenopomp/advanced-types": "latest",
     "jsdom": "^23.2.0",
     "prettier": "2.8.1",
+    "vite-tsconfig-paths": "^4.2.3",
     "vitest": "^1.2.0"
   }
 }
