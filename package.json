@@ -27,8 +27,12 @@
     "zustand": "^4.4.4"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.1.2",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "@xenopomp/advanced-types": "latest",
-    "prettier": "2.8.1"
+    "jsdom": "^23.2.0",
+    "prettier": "2.8.1",
+    "vitest": "^1.2.0"
   }
 }
