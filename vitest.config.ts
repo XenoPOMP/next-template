@@ -10,5 +10,6 @@ export default defineConfig({
       provider: 'istanbul',
       reporter: ['text', 'json', 'json-summary', 'html'],
     },
+    exclude: ['node_modules', 'app/test'],
   },
 });
