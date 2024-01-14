@@ -10,6 +10,14 @@ export default defineConfig({
       provider: 'istanbul',
       reporter: ['text', 'json', 'json-summary', 'html'],
     },
-    exclude: ['node_modules', 'app/test'],
+    exclude: [
+      'node_modules',
+      'app/test',
+
+      // Ignore configs
+      'next.config.js',
+      'postcss.config.js',
+      'tailwind.config.js',
+    ],
   },
 });
