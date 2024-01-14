@@ -11,6 +11,5 @@ export default defineConfig({
       reporter: ['text', 'json', 'json-summary', 'html'],
     },
     exclude: ['node_modules', 'app/test'],
-    setupFiles: ['@vitest/web-worker'],
   },
 });
