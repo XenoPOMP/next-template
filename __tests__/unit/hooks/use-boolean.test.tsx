@@ -6,6 +6,8 @@ import { describe, expect, test } from 'vitest';
 
 import useBoolean from '@/src/hooks/useBoolean';
 
+import { clickAll } from '../utilities/clickAll';
+
 const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
   initialValue,
 }) => {
@@ -38,15 +40,6 @@ const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
 };
 
 describe('useBoolean hook', () => {
-  /** Click buttons in array. */
-  const clickAll = <B extends HTMLElement = HTMLButtonElement>(
-    buttons: Array<B>
-  ) => {
-    for (let button of buttons) {
-      fireEvent.click(button);
-    }
-  };
-
   /** Expect local state to be certain value. */
   const expectStateToBe = (state: boolean) => {
     expect(() =>
