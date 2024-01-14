@@ -1,0 +1,32 @@
+name: 'Testing'
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Required to checkout the code
+      contents: read
+      # Required to put a comment into the pull-request
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 'Install Node 18.7.x'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.7.x'
+
+      - name: 'Install dependencies'
+        run: npm i yarn -g && yarn
+        
+      - name: 'Run coverage'
+        run: yarn coverage
+
+      - name: 'Report coverage'
+        if: always() # Also generate the report if tests are failing
+        uses: davelosert/vitest-coverage-report-action@v2
