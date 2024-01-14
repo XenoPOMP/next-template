@@ -259,13 +259,6 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@babel/runtime@^7.9.2":
-  version "7.22.15"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.15.tgz#38f46494ccf6cf020bd4eed7124b425e83e523b8"
-  integrity sha512-T0O+aa+4w0u06iNmapipJXMV4HoUir03hpx3/YqXXhu9xim3w+dVphjFWl1OH8NbZHw5Lbm9k45drDkgq2VNNA==
-  dependencies:
-    regenerator-runtime "^0.14.0"
-
 "@babel/template@^7.22.15", "@babel/template@^7.22.5":
   version "7.22.15"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.22.15.tgz#09576efc3830f0430f4548ef971dde1350ef2f38"
@@ -837,14 +830,10 @@
     loupe "^2.3.7"
     pretty-format "^29.7.0"
 
-"@xenopomp/advanced-types@latest":
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.3.8.tgz#1fa8a0ac239fb6490fa47315bf352587ce262a6e"
-  integrity sha512-/BQwwhvXgxcaYTXrDcsM8syr5w837fxtBaRPLjVvVsN19I2RMpU0AziBM4x51ezlp6mogGUtFX8a1+mhvUGuQw==
-  dependencies:
-    next "14.0.0"
-    react "^18.2.0"
-    redux "^4.2.1"
+"@xenopomp/advanced-types@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.6.2.tgz#161eee29c3b835409b2dbb646067b03f46d968ae"
+  integrity sha512-xp8BbmivUaD3gquNGQlRt/K8gImGuiTmTCMOOWjedFp8hREg4QOK3WHkkL+nwdYHASPZzSfRx1zSgvxviYD9oQ==
 
 "@xenopomp/advanced-utils@^1.2.1":
   version "1.2.1"
@@ -2113,7 +2102,7 @@ nanoid@^3.3.7:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
 
-next@14.0.0, next@^14.0.0:
+next@^14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/next/-/next-14.0.0.tgz#8ec0d7a1d85a2361240479a51608d4b8c6b0c613"
   integrity sha512-J0jHKBJpB9zd4+c153sair0sz44mbaCHxggs8ryVXSFBuBqJ8XdE9/ozoV85xGh2VnSjahwntBZZgsihL9QznA==
@@ -2450,13 +2439,6 @@ readdirp@~3.6.0:
   integrity sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==
   dependencies:
     picomatch "^2.2.1"
-
-redux@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
-  integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==
-  dependencies:
-    "@babel/runtime" "^7.9.2"
 
 regenerator-runtime@^0.14.0:
   version "0.14.0"
