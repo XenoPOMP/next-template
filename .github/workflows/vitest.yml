@@ -13,17 +13,20 @@ jobs:
       # Required to put a comment into the pull-request
       pull-requests: write
 
+    env:
+      NODE_VERSION: 18.17.x
+
     steps:
       - uses: actions/checkout@v2
 
-      - name: 'Install Node 18.7.x'
+      - name: 'Install Node $NODE_VERSION'
         uses: actions/setup-node@v2
         with:
-          node-version: '18.7.x'
+          node-version: '$NODE_VERSION'
 
       - name: 'Install dependencies'
         run: npm i yarn -g && yarn
-        
+
       - name: 'Run coverage'
         run: yarn coverage
 
