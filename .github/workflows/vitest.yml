@@ -3,6 +3,9 @@ on:
   push:
   pull_request:
 
+env:
+  NODE_VERSION: 18.17.x
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,9 +15,6 @@ jobs:
       contents: read
       # Required to put a comment into the pull-request
       pull-requests: write
-
-    env:
-      NODE_VERSION: 18.17.x
 
     steps:
       - uses: actions/checkout@v2
