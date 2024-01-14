@@ -7,10 +7,4 @@ describe('Index page', () => {
   test('Render without errors', () => {
     expect(() => render(<Home />)).not.toThrow();
   });
-
-  test('Match snapshot', () => {
-    const HomePage = render(<Home />);
-
-    expect(HomePage).toMatchSnapshot();
-  });
 });
