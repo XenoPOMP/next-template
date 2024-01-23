@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "unit:test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@types/node": "20.8.9",
@@ -27,8 +29,14 @@
     "zustand": "^4.4.4"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.1.2",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
-    "@xenopomp/advanced-types": "latest",
-    "prettier": "2.8.1"
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-istanbul": "^1.2.0",
+    "@xenopomp/advanced-types": "^1.6.2",
+    "jsdom": "^23.2.0",
+    "prettier": "2.8.1",
+    "vite-tsconfig-paths": "^4.2.3",
+    "vitest": "^1.2.0"
   }
 }
