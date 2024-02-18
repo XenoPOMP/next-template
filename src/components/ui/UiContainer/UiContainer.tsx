@@ -18,8 +18,8 @@ const UiContainer: FC<UiContainerNestedProps> = ({
   className,
   id,
   style,
-  margin,
-  maxWidth,
+  margin = '2rem',
+  maxWidth = '1680px',
   as = 'section',
 }) => {
   const Component = as;
@@ -28,7 +28,7 @@ const UiContainer: FC<UiContainerNestedProps> = ({
     <Component
       style={
         {
-          '--max-container-width': maxWidth ?? AppConstants.maxContainerWidth,
+          '--max-container-width': maxWidth,
           '--margin': margin,
           ...style,
         } as CSSProperties
