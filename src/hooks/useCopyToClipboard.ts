@@ -32,6 +32,8 @@ const useCopyToClipboard = (): {
 
       return () => clearTimeout(timer);
     }
+
+    return;
   }, [isCopied]);
 
   return {

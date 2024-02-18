@@ -1,18 +1,21 @@
 'use client';
 
 import { render, screen } from '@testing-library/react';
-import { DeepPartial } from '@xenopomp/advanced-types';
-import { ComponentProps, FC } from 'react';
-import { describe, expect, test, vi } from 'vitest';
+import { ComponentProps, FC, useEffect } from 'react';
+import { beforeEach, describe, expect, test, vi } from 'vitest';
 
-import { Stub } from '@/__tests__/assets/types';
+import { DeepPartial } from '@/__tests__/assets/types/DeepPartial';
+import { Stub } from '@/__tests__/assets/types/Stub';
+import { booleanishString } from '@/__tests__/assets/utilities/booleanishString';
+import { clickAll } from '@/__tests__/assets/utilities/clickAll';
 import useCopyToClipboard from '@/src/hooks/useCopyToClipboard';
-
-import { booleanishString } from '../../assets/utilities';
-import { clickAll } from '../../assets/utilities';
 
 const UseCopyToClipboardTestComponent: FC<{}> = () => {
   const { copy, isCopied } = useCopyToClipboard();
+
+  useEffect(() => {
+    console.debug(`Is copied: ${isCopied}`);
+  }, [isCopied]);
 
   return (
     <>
@@ -29,15 +32,27 @@ const UseCopyToClipboardTestComponent: FC<{}> = () => {
   );
 };
 
-const navigatorStub: DeepPartial<Stub<typeof navigator>> = {
-  clipboard: {
-    writeText: async (text: string) => vi.fn(),
-  },
+/**
+ * Stubs navigator object. It is a more advanced way to mock objects.
+ *
+ * @param stub
+ */
+const stubNavigator = (stub?: DeepPartial<Stub<typeof navigator>>) => {
+  const navigatorStub: DeepPartial<Stub<typeof navigator>> = stub ?? {
+    clipboard: {
+      writeText: async (text: string) => vi.fn(),
+    },
+  };
+
+  vi.stubGlobal('navigator', navigatorStub);
 };
 
-vi.stubGlobal('navigator', navigatorStub);
-
 describe('useCopyToClipboard hook', () => {
+  /** Reset mocks. */
+  beforeEach(() => {
+    stubNavigator();
+  });
+
   const renderComponent = (
     props: ComponentProps<typeof UseCopyToClipboardTestComponent>
   ) => {
@@ -52,6 +67,25 @@ describe('useCopyToClipboard hook', () => {
     renderComponent({});
 
     const buttons = screen.getAllByText<HTMLButtonElement>(`Copy`);
+
+    clickAll(buttons);
+  });
+
+  test('Promise rejection', () => {
+    stubNavigator({
+      clipboard: {
+        writeText: async (text: string) =>
+          new Promise((res, rej) => {
+            rej();
+          }),
+      },
+    });
+
+    renderComponent({});
+
+    const buttons = screen.getAllByText<HTMLButtonElement>(`Copy`);
+
+    setTimeout(() => {}, 500);
 
     clickAll(buttons);
   });
