@@ -13,7 +13,7 @@ type CustomMetadata = Omit<Metadata, 'robots'> & {
  *
  * @param props
  */
-export const generateMetadata = (props: CustomMetadata): Metadata => {
+export const generateStaticMetadata = (props: CustomMetadata): Metadata => {
   const getRobotsContent = (): string | null => {
     const output: ReturnType<typeof getRobotsContent>[] = [];
 
