@@ -1,6 +1,6 @@
 import react from '@vitejs/plugin-react';
 import tsconfigPathsPlugin from 'vite-tsconfig-paths';
-import { defineConfig } from 'vitest/config';
+import { configDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [react(), tsconfigPathsPlugin()],
@@ -11,6 +11,9 @@ export default defineConfig({
       reporter: ['text', 'json', 'json-summary', 'html'],
     },
     exclude: [
+      // Default exclusions
+      ...configDefaults.exclude,
+
       'node_modules',
       'app/test',
 
