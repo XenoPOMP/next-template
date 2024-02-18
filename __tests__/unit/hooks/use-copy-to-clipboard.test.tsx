@@ -5,10 +5,11 @@ import { DeepPartial } from '@xenopomp/advanced-types';
 import { ComponentProps, FC } from 'react';
 import { describe, expect, test, vi } from 'vitest';
 
-import { Stub } from '@/__tests__/unit/types/Stub';
-import { booleanishString } from '@/__tests__/unit/utilities/booleanishString';
-import { clickAll } from '@/__tests__/unit/utilities/clickAll';
+import { Stub } from '@/__tests__/assets/types';
 import useCopyToClipboard from '@/src/hooks/useCopyToClipboard';
+
+import { booleanishString } from '../../assets/utilities';
+import { clickAll } from '../../assets/utilities';
 
 const UseCopyToClipboardTestComponent: FC<{}> = () => {
   const { copy, isCopied } = useCopyToClipboard();

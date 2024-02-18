@@ -4,9 +4,8 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { FC } from 'react';
 import { describe, expect, test } from 'vitest';
 
+import { clickAll } from '@/__tests__/assets/utilities/clickAll';
 import useBoolean from '@/src/hooks/useBoolean';
-
-import { clickAll } from '../utilities/clickAll';
 
 const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
   initialValue,
