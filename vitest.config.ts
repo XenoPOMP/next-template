@@ -17,7 +17,7 @@ export default defineConfig({
       // Ignore configs
       'next.config.js',
       'postcss.config.js',
-      'tailwind.config.js',
+      'tailwind.config.ts',
     ],
   },
 });

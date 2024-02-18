@@ -1,5 +1,8 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import { Config } from 'tailwindcss';
+
+import { CustomClassesPlugin } from './src/styles/themes/plugins';
+
+const tailwindConfig: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx,scss}',
     './src/**/*.{js,ts,jsx,tsx,mdx,scss}',
@@ -14,5 +17,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [CustomClassesPlugin()],
 };
+
+export default tailwindConfig;

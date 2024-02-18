@@ -835,10 +835,10 @@
   resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.6.2.tgz#161eee29c3b835409b2dbb646067b03f46d968ae"
   integrity sha512-xp8BbmivUaD3gquNGQlRt/K8gImGuiTmTCMOOWjedFp8hREg4QOK3WHkkL+nwdYHASPZzSfRx1zSgvxviYD9oQ==
 
-"@xenopomp/advanced-utils@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-utils/-/advanced-utils-1.2.1.tgz#4dc657d90e8d8a1e82367ebcd64189b0bb4a0f91"
-  integrity sha512-j7zO12ci9MIYXmV0EDrF333Ps3Q2xbjjPpn2a9DBhJ4mrbJi34cwvdGO/XxPqy8iBuPNV5bmFVFeO7pMskTTfA==
+"@xenopomp/advanced-utils@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-utils/-/advanced-utils-1.2.2.tgz#b4f0597af7295021c15514ac30aa14dcc225fbb7"
+  integrity sha512-GslNrKO/iOlLfsw2+Kco0ZlvI6sA5nHGYmCLazDh/piBH8KiqYwj0HN2M2ff8o51YFWYAWcdp45WuxsorFQElw==
   dependencies:
     transliteration "^2.3.5"
 
