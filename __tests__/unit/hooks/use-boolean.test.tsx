@@ -14,6 +14,8 @@ const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
     initialValue ?? false
   );
 
+  const supportState = useBoolean();
+
   return (
     <>
       <h1>This is an component for testing useBoolean hook</h1>
