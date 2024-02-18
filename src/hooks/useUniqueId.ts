@@ -1,6 +1,5 @@
+import { isUndefined } from '@xenopomp/advanced-utils';
 import { useId } from 'react';
-
-import { isUndefined } from '@/src/utils/type-checks';
 
 /**
  * Use this hook to generate UUID.
