@@ -1,22 +1,50 @@
-# Next.js 14 Template
+<br/>
+<p align="center">
+  <a href="https://github.com/XenoPOMP/next-template">
+    <img src="https://camo.githubusercontent.com/352a21b492a283c4599f32d0fe5af3410fac9ab8dcf4cb320ff84ef4a145aa48/68747470733a2f2f7777772e64727570616c2e6f72672f66696c65732f70726f6a6563742d696d616765732f6e6578746a732d64727570616c2e6a7067" alt="Logo" width="80" height="80">
+  </a>
 
-## Minimal Node version
+<h3 align="center">Next 14 Template</h3>
+
+<p align="center">
+Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
+<br/>
+<br/>
+<a href="https://github.com/XenoPOMP/next-template/issues">Report Bug</a>
+.
+<a href="https://github.com/XenoPOMP/next-template/issues">Request Feature</a>
+</p>
+</p>
+
+![Contributors](https://img.shields.io/github/contributors/XenoPOMP/next-template?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/XenoPOMP/next-template?style=social) ![Issues](https://img.shields.io/github/issues/XenoPOMP/next-template)
+
+## Getting Started
+
+This template provides a solid foundation for building your next web application with Next.js 14.
+
+### Prerequisites
+
+#### Minimal Node version
 Since __`Next`__ has been updated to **v14**, Node engine\`s version requirement is `v18.7+`.
 
 If you don\`t want to use `Next 14` and `Node.js 18.7+`, use `next-13` [branch instead](https://github.com/XenoPOMP/next-template/tree/next-13).
 
-## Getting Started
+## Contributing
 
-First, run the development server:
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/XenoPOMP/next-template/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* Please make sure you check your spelling and grammar.
+* Create individual PR for each suggestion.
+* Please also read through the [Code Of Conduct](https://github.com/XenoPOMP/next-template/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Creating A Pull Request
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Authors
+
+* **XenoPOMP** - *Main developer* - [XenoPOMP](https://github.com/XenoPOMP) - *Owns this repo*
