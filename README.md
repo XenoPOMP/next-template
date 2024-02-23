@@ -11,8 +11,6 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 <br/>
 <br/>
 <a href="https://github.com/XenoPOMP/next-template/issues">Report Bug</a>
-.
-<a href="https://github.com/XenoPOMP/next-template/issues">Request Feature</a>
 </p>
 </p>
 
