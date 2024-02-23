@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import { AppConstants } from '@/app/app.constants';
+import CoreLayout from '@/src/components/layout/CoreLayout/CoreLayout';
 import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
 import Providers from '@/src/components/layout/Providers/Providers';
@@ -27,11 +28,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={mainFont.className}>
         <Providers>
-          <Header />
-
-          {children}
-
-          <Footer />
+          <CoreLayout>{children}</CoreLayout>
         </Providers>
       </body>
     </html>
