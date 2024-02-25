@@ -1,10 +1,10 @@
 import { CustomError } from 'ts-custom-error';
 
-export type EnvKey = 'CANONICAL_URL';
+export type EnvKey = 'CANONICAL_URL' | 'IS_PRODUCTION';
 
-type GetFunc<Result extends string | undefined = string | undefined> = (
-  key: EnvKey
-) => Result;
+type GetFunc<
+  Result extends string | undefined | boolean | number = string | undefined
+> = (key: EnvKey) => Result;
 
 export class VariableExistenceError extends CustomError {
   constructor(message: string) {
@@ -21,6 +21,9 @@ interface IUseEnvHook {
    * defined.
    */
   getOrThrow: GetFunc<string>;
+
+  /** Get .env key value and convert it to boolean, even if it is not defined. */
+  getBoolean: GetFunc<boolean>;
 }
 
 /**
@@ -43,8 +46,19 @@ export const useEnv = (): IUseEnvHook => {
     return value;
   };
 
+  const getBoolean: IUseEnvHook['getBoolean'] = key => {
+    const value = get(key);
+
+    if (typeof value === 'undefined') {
+      return false;
+    }
+
+    return value === 'true';
+  };
+
   return {
     get,
     getOrThrow,
+    getBoolean,
   };
 };
