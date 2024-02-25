@@ -31,7 +31,7 @@ export async function generateMetadata(
     alternates: {
       canonical: env.getOrThrow('CANONICAL_URL'),
       languages: {
-        ru: env.getOrThrow('CANONICAL_URL'),
+        // ru: env.getOrThrow('CANONICAL_URL'),
       },
     },
   });
