@@ -32,6 +32,9 @@ export async function generateMetadata(
       canonical: env.getOrThrow('CANONICAL_URL'),
       languages: {
         // ru: env.getOrThrow('CANONICAL_URL'),
+
+        // Should be changed to another one, if i18n has been implemented
+        'x-default': env.getOrThrow('CANONICAL_URL'),
       },
     },
   });
