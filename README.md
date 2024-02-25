@@ -27,6 +27,10 @@ Since __`Next`__ has been updated to **v14**, Node engine\`s version requirement
 
 If you don\`t want to use `Next 14` and `Node.js 18.7+`, use `next-13` [branch instead](https://github.com/XenoPOMP/next-template/tree/next-13).
 
+#### Minimal `.env` setup
+These keys are required:
+- CANONICAL_URL
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.

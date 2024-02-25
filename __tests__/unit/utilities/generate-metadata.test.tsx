@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { describe, expect, test } from 'vitest';
 
 import { expectToDeepEqual } from '@/__tests__/assets/utilities/expectToDeepEqual';
-import { generateStaticMetadata } from '@/src/utils/generateStaticMetadata';
+import { generateStaticMetadata } from '@/src/utils/seo';
 
 describe('generateStaticMetadata func', () => {
   test('No robots config defined', () => {
