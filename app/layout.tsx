@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google';
 import CoreLayout from '@/src/components/layout/CoreLayout/CoreLayout';
 import Providers from '@/src/components/layout/Providers/Providers';
 import { useEnv } from '@/src/hooks/use-env';
-import { generateStaticMetadata } from '@/src/utils/generateStaticMetadata';
+import { generateStaticMetadata } from '@/src/utils/seo';
 
 import { AppConstants } from './app.constants';
 import './globals.scss';
