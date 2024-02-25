@@ -30,6 +30,9 @@ export async function generateMetadata(
     },
     alternates: {
       canonical: env.getOrThrow('CANONICAL_URL'),
+      languages: {
+        ru: env.getOrThrow('CANONICAL_URL'),
+      },
     },
   });
 }
@@ -40,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='ru'>
       <body className={mainFont.className}>
         <Providers>
           <CoreLayout>{children}</CoreLayout>
