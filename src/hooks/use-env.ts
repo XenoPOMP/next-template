@@ -12,10 +12,21 @@ export class VariableExistenceError extends CustomError {
   }
 }
 
+interface IUseEnvHook {
+  /** Get .env key, even if it is not defined. */
+  get: GetFunc;
+
+  /**
+   * Get .env key and throw, if it is not
+   * defined.
+   */
+  getOrThrow: GetFunc<string>;
+}
+
 /**
  * This hook allows you to use .env file.
  */
-export const useEnv = () => {
+export const useEnv = (): IUseEnvHook => {
   const get: GetFunc = key => {
     return process.env[key];
   };
