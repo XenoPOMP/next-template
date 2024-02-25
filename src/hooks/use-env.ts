@@ -12,6 +12,9 @@ export class VariableExistenceError extends CustomError {
   }
 }
 
+/**
+ * This hook allows you to use .env file.
+ */
 export const useEnv = () => {
   const get: GetFunc = key => {
     return process.env[key];
