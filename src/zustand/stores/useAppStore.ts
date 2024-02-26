@@ -4,7 +4,6 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import defaultStorage from '@/src/zustand/storages/default-storage';
 import { HydrationObserver } from '@/src/zustand/types/hydration-observer';
 
-
 const useAppStore = create<
   HydrationObserver<{
     mode: 'light' | 'dark';
@@ -12,6 +11,7 @@ const useAppStore = create<
   }>
 >()(
   persist(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     (set, get) => ({
       mode: 'light',
       toggleTheme: () =>

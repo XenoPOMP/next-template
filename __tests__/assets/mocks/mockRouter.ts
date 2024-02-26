@@ -8,15 +8,13 @@ import { vi } from 'vitest';
 export const mockRouter = () => {
   vi.mock('next/navigation', () => {
     return {
-      useRouter: (...args: any[]): Partial<ReturnType<typeof useRouter>> => {
+      useRouter: (): Partial<ReturnType<typeof useRouter>> => {
         return {
-          push(href: string, options?: NavigateOptions) {},
+          push() {},
         };
       },
 
-      usePathname: (
-        ...args: any[]
-      ): Partial<ReturnType<typeof usePathname>> => {
+      usePathname: (): Partial<ReturnType<typeof usePathname>> => {
         return '/';
       },
     };
