@@ -4,7 +4,7 @@ import { fireEvent } from '@testing-library/react';
 export const clickAll = <B extends HTMLElement = HTMLButtonElement>(
   buttons: Array<B>
 ) => {
-  for (let button of buttons) {
+  for (const button of buttons) {
     fireEvent.click(button);
   }
 };

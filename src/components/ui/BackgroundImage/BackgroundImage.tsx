@@ -1,9 +1,7 @@
 import { type VariableFC } from '@xenopomp/advanced-types';
 import cn from 'classnames';
 import Image from 'next/image';
-import { FC } from 'react';
 
-import styles from './BackgroundImage.module.scss';
 import { BackgroundImageProps } from './BackgroundImage.props';
 
 /**
