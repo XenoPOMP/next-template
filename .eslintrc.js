@@ -7,6 +7,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'next/core-web-vitals',
+
     // 'plugin:prettier/recommended',
   ],
   overrides: [
@@ -26,4 +28,6 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'react'],
+
+  ignorePatterns: ['/.next', '/node_modules', '/coverage', '/.github'],
 };
