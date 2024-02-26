@@ -28,6 +28,4 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'react'],
-
-  ignorePatterns: ['/.next', '/node_modules', '/coverage', '/.github'],
 };
