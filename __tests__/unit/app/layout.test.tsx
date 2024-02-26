@@ -14,6 +14,6 @@ describe('Root layout test', () => {
   });
 
   test('It renders', () => {
-    expectToRender(<RootLayout children={<></>} />);
+    expectToRender(<RootLayout>Hello world!</RootLayout>);
   });
 });
