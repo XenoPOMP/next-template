@@ -16,6 +16,7 @@ export async function generateMetadata(
   slug: { params: NextParams<never>; searchParams: NextParams<never> },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const env = useEnv();
 
   return generateStaticMetadata({
