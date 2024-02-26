@@ -3,5 +3,7 @@
 **/coverage/*
 **/.github/*
 
+**/__tests__/unit/*
+
 # Ignore declaration files
 **/*.d.ts
