@@ -1,0 +1,7 @@
+.next
+node_modules
+coverage
+.github
+
+# Ignore declaration files
+**/*.d.ts
