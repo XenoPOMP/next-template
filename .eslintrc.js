@@ -9,8 +9,6 @@ module.exports = {
     'plugin:react/recommended',
     'next/core-web-vitals',
     'plugin:prettier/recommended',
-
-    // Test
   ],
   overrides: [
     {
