@@ -29,8 +29,8 @@ const useAppStore = create<
       onRehydrateStorage: () => state => {
         state?.setHasHydrated(true);
       },
-    }
-  )
+    },
+  ),
 );
 
 export default useAppStore;

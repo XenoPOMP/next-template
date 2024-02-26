@@ -20,7 +20,7 @@ import { useId } from 'react';
  * @return {string}
  */
 export const useUniqueId = (
-  transformer?: (generatedId: string) => string
+  transformer?: (generatedId: string) => string,
 ): string => {
   /** Generate UUID. */
   const id = useId();

@@ -1,4 +1,3 @@
-import { NavigateOptions } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { usePathname, useRouter } from 'next/navigation';
 import { vi } from 'vitest';
 

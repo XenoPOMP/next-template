@@ -54,7 +54,7 @@ describe('useCopyToClipboard hook', () => {
   });
 
   const renderComponent = (
-    props: ComponentProps<typeof UseCopyToClipboardTestComponent>
+    props: ComponentProps<typeof UseCopyToClipboardTestComponent>,
   ) => {
     return render(<UseCopyToClipboardTestComponent {...props} />);
   };

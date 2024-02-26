@@ -10,4 +10,4 @@ jobs:
           npm i eslint -g
           yarn --frozen-lockfile
       - name: Run ESLint
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+        run: eslint .

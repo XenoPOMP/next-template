@@ -9,7 +9,7 @@ import { expect } from 'vitest';
  */
 export const expectToDeepEqual = <Type>(
   expected: Type,
-  real: NoInfer<Type>
+  real: NoInfer<Type>,
 ) => {
   expect(expected).to.deep.equal(real);
 };

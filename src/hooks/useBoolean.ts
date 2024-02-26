@@ -5,7 +5,7 @@ import { useState } from 'react';
 type UseBooleanType = [
   value: boolean,
   toggleValue: () => void,
-  changeValue: (newValue: boolean) => void
+  changeValue: (newValue: boolean) => void,
 ];
 
 /**

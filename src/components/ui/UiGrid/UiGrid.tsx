@@ -6,7 +6,6 @@ import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
 
 import type { UiGridProps } from './UiGrid.props';
 
-
 interface UiGridNestedProps
   extends PropsWith<'children' | 'className' | 'id' | 'style', UiGridProps> {}
 

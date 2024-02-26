@@ -3,7 +3,7 @@ import { CustomError } from 'ts-custom-error';
 export type EnvKey = 'CANONICAL_URL' | 'IS_PRODUCTION';
 
 type GetFunc<
-  Result extends string | undefined | boolean | number = string | undefined
+  Result extends string | undefined | boolean | number = string | undefined,
 > = (key: EnvKey) => Result;
 
 export class VariableExistenceError extends CustomError {
@@ -39,7 +39,7 @@ export const useEnv = (): IUseEnvHook => {
 
     if (typeof value === 'undefined') {
       throw new VariableExistenceError(
-        `Variable ${key} is not defined in .env config.`
+        `Variable ${key} is not defined in .env config.`,
       );
     }
 

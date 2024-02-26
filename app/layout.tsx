@@ -15,7 +15,7 @@ const mainFont = Inter({ subsets: ['latin'] });
 export async function generateMetadata(
   /* eslint-disable @typescript-eslint/no-unused-vars */
   slug: { params: NextParams<never>; searchParams: NextParams<never> },
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
   /* eslint-disable @typescript-eslint/no-unused-vars */
 ): Promise<Metadata> {
   // eslint-disable-next-line react-hooks/rules-of-hooks

@@ -11,7 +11,7 @@ const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
   initialValue,
 }) => {
   const [localValue, toggleLocalValue, setLocalValue] = useBoolean(
-    initialValue ?? false
+    initialValue ?? false,
   );
 
   const supportState = useBoolean();
@@ -44,7 +44,7 @@ describe('useBoolean hook', () => {
   /** Expect local state to be certain value. */
   const expectStateToBe = (state: boolean) => {
     expect(() =>
-      screen.getAllByText(`Enabled: ${state ? 'true' : 'false'}`)
+      screen.getAllByText(`Enabled: ${state ? 'true' : 'false'}`),
     ).not.toThrow();
   };
 
