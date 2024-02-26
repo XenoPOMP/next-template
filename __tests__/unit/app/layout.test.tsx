@@ -1,4 +1,4 @@
-import { afterAll, beforeAll, describe, expect, test } from 'vitest';
+import { afterAll, beforeAll, describe, test } from 'vitest';
 
 import { clearMocks, mockFonts } from '@/__tests__/assets/mocks';
 import { expectToRender } from '@/__tests__/assets/utilities';
@@ -14,6 +14,6 @@ describe('Root layout test', () => {
   });
 
   test('It renders', () => {
-    expectToRender(<RootLayout children={<></>} />);
+    expectToRender(<RootLayout>Hello world!</RootLayout>);
   });
 });

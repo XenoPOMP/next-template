@@ -7,7 +7,7 @@ import { vi } from 'vitest';
 export const mockFonts = () => {
   vi.mock('next/font/google', () => {
     return {
-      Inter: (...args: any[]): NextFont => ({
+      Inter: (): NextFont => ({
         className: 'className',
         style: {
           fontFamily: 'fontFamily',

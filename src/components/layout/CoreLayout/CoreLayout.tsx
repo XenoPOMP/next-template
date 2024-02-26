@@ -1,11 +1,9 @@
 import { PropsWith } from '@xenopomp/advanced-types';
-import cn from 'classnames';
 import { FC } from 'react';
 
 import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
 
-import styles from './CoreLayout.module.scss';
 import type { CoreLayoutProps } from './CoreLayout.props';
 
 /**

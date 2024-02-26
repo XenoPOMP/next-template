@@ -1,10 +1,4 @@
-import {
-  render,
-  screen,
-  waitForElementToBeRemoved,
-} from '@testing-library/react';
-import { ReplaceReturnType } from '@xenopomp/advanced-types';
-import { Suspense } from 'react';
+import { render } from '@testing-library/react';
 import { expect } from 'vitest';
 
 type RenderArguments = Parameters<typeof render>;

@@ -3,7 +3,6 @@ import { createJSONStorage } from 'zustand/middleware';
 
 import defaultStorage from '@/src/zustand/storages/default-storage';
 
-
 describe('Default storage', () => {
   afterAll(() => {
     vi.stubGlobal('window', window);

@@ -1,3 +1,4 @@
+import { NoInfer } from '@xenopomp/advanced-types';
 import { expect } from 'vitest';
 
 /**
@@ -6,12 +7,9 @@ import { expect } from 'vitest';
  * @param expected
  * @param real
  */
-export const expectToDeepEqual = <
-  Type extends any,
-  RealType extends any = Type
->(
+export const expectToDeepEqual = <Type>(
   expected: Type,
-  real: RealType
+  real: NoInfer<Type>
 ) => {
   expect(expected).to.deep.equal(real);
 };

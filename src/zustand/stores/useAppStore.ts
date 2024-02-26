@@ -11,6 +11,7 @@ const useAppStore = create<
   }>
 >()(
   persist(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     (set, get) => ({
       mode: 'light',
       toggleTheme: () =>
