@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
 import catImage from '@/__tests__/assets/images/cat.jpeg';
 import { expectToRender } from '@/__tests__/assets/utilities';

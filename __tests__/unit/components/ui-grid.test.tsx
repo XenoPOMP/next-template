@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
 import { expectToRender } from '@/__tests__/assets/utilities';
 import UiGrid from '@/src/components/ui/UiGrid/UiGrid';

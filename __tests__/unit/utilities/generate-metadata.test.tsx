@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
 import { expectToDeepEqual } from '@/__tests__/assets/utilities/expectToDeepEqual';
 import { generateStaticMetadata } from '@/src/utils/seo';
