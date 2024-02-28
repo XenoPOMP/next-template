@@ -7,9 +7,32 @@
       }
     ],
     "property-no-vendor-prefix": null,
-    "selector-class-pattern": "^([a-z]+[A-Z]+\\w+)+$",
-    "scss/at-function-pattern": "^([a-z]+[A-Z]+\\w+)+$",
-    "scss/at-mixin-pattern": "^([a-z]+[A-Z]+\\w+)+$",
+
+    "selector-class-pattern": [
+      "^([a-z]+[A-Z]+\\w+)+$",
+      {
+        "severity": "error"
+      }
+    ],
+    "scss/at-function-pattern": [
+      "^([a-z]+[A-Z]+\\w+)+$",
+      {
+        "severity": "error"
+      }
+    ],
+    "scss/at-mixin-pattern": [
+      "^([a-z]+[A-Z]+\\w+)+$",
+      {
+        "severity": "error"
+      }
+    ],
+    "scss/dollar-variable-pattern": [
+      "^([a-z]+[A-Z]+\\w+)+$",
+      {
+        "severity": "error"
+      }
+    ],
+
     "scss/no-global-function-names": null,
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": null
