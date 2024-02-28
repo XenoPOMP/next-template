@@ -7,3 +7,6 @@
 
 # Ignore declaration files
 **/*.d.ts
+
+# ESLint config
+.eslintrc.js
