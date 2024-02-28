@@ -2,5 +2,8 @@
   "rules": {
     "block-no-empty": true
   },
-  "extends": "stylelint-config-standard-scss"
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss"
+  ]
 }
