@@ -1,3 +1,14 @@
+/**
+ * Rule for pattern names (like, class selector names etc.)
+ * @type {[string,{severity: string}]}
+ */
+const CAMEL_CASE = [
+  '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
+  {
+    severity: 'error',
+  },
+];
+
 module.exports = {
   rules: {
     'block-no-empty': [
@@ -8,30 +19,10 @@ module.exports = {
     ],
     'property-no-vendor-prefix': null,
 
-    'selector-class-pattern': [
-      '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
-      {
-        severity: 'error',
-      },
-    ],
-    'scss/at-function-pattern': [
-      '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
-      {
-        severity: 'error',
-      },
-    ],
-    'scss/at-mixin-pattern': [
-      '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
-      {
-        severity: 'error',
-      },
-    ],
-    'scss/dollar-variable-pattern': [
-      '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
-      {
-        severity: 'error',
-      },
-    ],
+    'selector-class-pattern': CAMEL_CASE,
+    'scss/at-function-pattern': CAMEL_CASE,
+    'scss/at-mixin-pattern': CAMEL_CASE,
+    'scss/dollar-variable-pattern': CAMEL_CASE,
 
     'scss/no-global-function-names': null,
     'at-rule-no-unknown': null,
