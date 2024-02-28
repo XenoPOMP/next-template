@@ -9,15 +9,18 @@
     width: $size;
     height: 0;
   }
+
   &::-webkit-scrollbar-thumb {
     background: $foreground-color;
     border-radius: $size;
     border: $padding solid $background-color;
     background-clip: padding-box;
   }
+
   &::-webkit-scrollbar-track {
     background: $background-color;
   }
+
   // по стандартам (Firefox)
   scrollbar-color: $foreground-color $background-color;
 }
