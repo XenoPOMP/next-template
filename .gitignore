@@ -10,9 +10,6 @@ lerna-debug.log*
 # IDE
 .idea
 
-!.idea/inspectionProfiles
-!.idea/stylesheetLinters
-
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
