@@ -25,7 +25,11 @@ This template provides a solid foundation for building your next web application
 #### Minimal Node version
 Since __`Next`__ has been updated to **v14**, Node engine\`s version requirement is `v18.7+`.
 
-If you don\`t want to use `Next 14` and `Node.js 18.7+`, use `next-13` [branch instead](https://github.com/XenoPOMP/next-template/tree/next-13).
+#### Linting
+This project contains some pre-installed linters. Decide to handle them or disable them:
+
+- [ESLint](https://eslint.org)
+- [Stylelint](https://stylelint.io)
 
 #### Minimal `.env` setup
 These keys are required:
