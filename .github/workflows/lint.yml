@@ -9,5 +9,5 @@ jobs:
         run: |
           npm i eslint -g
           yarn --frozen-lockfile
-      - name: Run ESLint
+      - name: Run linters
         run: yarn lint:ci
