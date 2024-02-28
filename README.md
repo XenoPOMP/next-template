@@ -14,13 +14,15 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/XenoPOMP/next-template?color=dark-green)
+<p align='center'>
+<img src='https://img.shields.io/github/contributors/XenoPOMP/next-template?color=dark-green' alt='Contributors'>
 <a href="https://github.com/XenoPOMP/next-template">
 <img src="https://img.shields.io/github/stars/XenoPOMP/next-template?style=social" alt="Stargazers" />
 </a>
 <a href="https://github.com/XenoPOMP/next-template/issues">
 <img src="https://img.shields.io/github/issues/XenoPOMP/next-template" alt="Issues" />
 </a>
+</p>
 
 ## Getting Started
 
