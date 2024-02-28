@@ -10,7 +10,9 @@
     "lint": "next lint",
     "unit:test": "vitest",
     "coverage": "vitest run --coverage",
-    "lint:code": "eslint ."
+    "lint:code": "eslint .",
+    "lint:css": "stylelint **/*.{css,scss}",
+    "lint:ci": "concurrently \"yarn lint:code\" \"yarn lint:css\""
   },
   "dependencies": {
     "@types/node": "20.8.9",
@@ -34,6 +36,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-istanbul": "^1.2.0",
     "@xenopomp/advanced-types": "^1.7.2",
+    "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.1.0",
     "eslint-config-prettier": "^9.1.0",
