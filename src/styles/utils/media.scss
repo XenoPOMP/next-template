@@ -1,6 +1,6 @@
 @import "../config";
 
-@function get-breakpoint-value($breakpoint-name) {
+@function getBreakpointValue($breakpoint-name) {
   $breakpoint: map-get($grid-breakpoints, $breakpoint-name);
 
   @if $breakpoint {
@@ -14,7 +14,7 @@
   Media query for min-width generator.
 */
 @mixin start-at($breakpoint-name) {
-  @media (min-width: get-breakpoint-value($breakpoint-name)) {
+  @media (min-width: getBreakpointValue($breakpoint-name)) {
     @content;
   }
 }
@@ -23,7 +23,7 @@
   Media query for max-width generator.
 */
 @mixin end-at($breakpoint-name) {
-  @media (max-width: get-breakpoint-value($breakpoint-name)) {
+  @media (max-width: getBreakpointValue($breakpoint-name)) {
     @content;
   }
 }

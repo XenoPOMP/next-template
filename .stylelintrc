@@ -9,25 +9,25 @@
     "property-no-vendor-prefix": null,
 
     "selector-class-pattern": [
-      "^([a-z]+[A-Z]+\\w+)+$",
+      "^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$",
       {
         "severity": "error"
       }
     ],
     "scss/at-function-pattern": [
-      "^([a-z]+[A-Z]+\\w+)+$",
+      "^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$",
       {
         "severity": "error"
       }
     ],
     "scss/at-mixin-pattern": [
-      "^([a-z]+[A-Z]+\\w+)+$",
+      "^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$",
       {
         "severity": "error"
       }
     ],
     "scss/dollar-variable-pattern": [
-      "^([a-z]+[A-Z]+\\w+)+$",
+      "^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$",
       {
         "severity": "error"
       }
