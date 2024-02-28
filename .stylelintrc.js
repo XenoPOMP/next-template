@@ -38,4 +38,5 @@ module.exports = {
     'stylelint-config-tailwindcss',
     'stylelint-config-tailwindcss/scss',
   ],
+  ignoreFiles: ['coverage'],
 };
