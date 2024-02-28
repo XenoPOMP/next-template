@@ -4,6 +4,8 @@
   },
   "extends": [
     "stylelint-config-standard",
-    "stylelint-config-standard-scss"
+    "stylelint-config-standard-scss",
+    "stylelint-config-tailwindcss",
+    "stylelint-config-tailwindcss/scss"
   ]
 }
