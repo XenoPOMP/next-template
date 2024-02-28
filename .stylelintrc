@@ -1,8 +1,15 @@
 {
   "rules": {
-    "block-no-empty": null,
+    "block-no-empty": [
+      true,
+      {
+        "severity": "error"
+      }
+    ],
+    "property-no-vendor-prefix": null,
     "selector-class-pattern": "^([a-z]+[A-Z]+\\w+)+$",
     "scss/at-function-pattern": "^([a-z]+[A-Z]+\\w+)+$",
+    "scss/at-mixin-pattern": "^([a-z]+[A-Z]+\\w+)+$",
     "scss/no-global-function-names": null,
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": null
