@@ -8,5 +8,8 @@
 # Ignore declaration files
 **/*.d.ts
 
-# ESLint config
+# Ignore configs
 .eslintrc.js
+.prettierrc
+*.config.ts
+*.config.js

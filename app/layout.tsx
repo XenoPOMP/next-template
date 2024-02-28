@@ -1,5 +1,4 @@
-import { NextParams } from '@xenopomp/advanced-types';
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import CoreLayout from '@/src/components/layout/CoreLayout/CoreLayout';

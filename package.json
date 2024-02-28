@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "unit:test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "lint:code": "eslint ."
   },
   "dependencies": {
     "@types/node": "20.8.9",
