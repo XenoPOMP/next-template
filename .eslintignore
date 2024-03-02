@@ -11,5 +11,6 @@
 # Ignore configs
 .eslintrc.js
 .prettierrc
+.stylelintrc.js
 *.config.ts
 *.config.js
