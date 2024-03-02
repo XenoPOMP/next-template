@@ -9,15 +9,26 @@ const CAMEL_CASE = [
   },
 ];
 
+/**
+ * Create rule with error severity.
+ * @type {[boolean,{severity: string}]}
+ */
+const WITH_ERROR = [
+  true,
+  {
+    severity: 'error',
+  },
+];
+
 module.exports = {
   rules: {
-    'block-no-empty': [
-      true,
-      {
-        severity: 'error',
-      },
-    ],
+    'block-no-empty': WITH_ERROR,
     'property-no-vendor-prefix': null,
+
+    'declaration-block-no-duplicate-properties': WITH_ERROR,
+    'no-duplicate-selectors': WITH_ERROR,
+    'comment-no-empty': WITH_ERROR,
+    'declaration-no-important': WITH_ERROR,
 
     'selector-class-pattern': CAMEL_CASE,
     'scss/at-function-pattern': CAMEL_CASE,
