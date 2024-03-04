@@ -1,4 +1,4 @@
-import { usePathname, useRouter } from 'next/navigation';
+import type { usePathname, useRouter } from 'next/navigation';
 import { vi } from 'vitest';
 
 /**

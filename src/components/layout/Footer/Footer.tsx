@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { FC } from 'react';
+import { type FC } from 'react';
 
 import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
 
