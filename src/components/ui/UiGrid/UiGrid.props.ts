@@ -1,7 +1,7 @@
-import { ComponentProps } from 'react';
+import { type ComponentProps } from 'react';
 
-import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
-import { UiContainerProps } from '@/src/components/ui/UiContainer/UiContainer.props';
+import type UiContainer from '@/src/components/ui/UiContainer/UiContainer';
+import { type UiContainerProps } from '@/src/components/ui/UiContainer/UiContainer.props';
 
 export interface UiGridProps
   extends Partial<{

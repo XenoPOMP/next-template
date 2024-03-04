@@ -1,5 +1,5 @@
-import { FunctionalChildren } from '@xenopomp/advanced-types';
-import { ReactNode } from 'react';
+import { type FunctionalChildren } from '@xenopomp/advanced-types';
+import { type ReactNode } from 'react';
 
 /**
  * Handle functional children with function interface.

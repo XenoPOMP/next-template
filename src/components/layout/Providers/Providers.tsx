@@ -1,5 +1,5 @@
-import { PropsWith } from '@xenopomp/advanced-types';
-import { FC } from 'react';
+import { type PropsWith } from '@xenopomp/advanced-types';
+import { type FC } from 'react';
 
 import type { ProvidersProps } from './Providers.props';
 

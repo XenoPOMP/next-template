@@ -1,6 +1,6 @@
-import { PropsWith } from '@xenopomp/advanced-types';
+import { type PropsWith } from '@xenopomp/advanced-types';
 import cn from 'classnames';
-import { CSSProperties, FC } from 'react';
+import type { CSSProperties, FC } from 'react';
 
 import styles from './UiContainer.module.scss';
 import type { UiContainerProps } from './UiContainer.props';
