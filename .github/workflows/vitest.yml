@@ -5,6 +5,13 @@ on:
 
 jobs:
   test:
+    strategy:
+      matrix:
+        NODE_VERSION:
+          - '18.17.0'
+          - '20'
+          - '21'
+
     runs-on: ubuntu-latest
 
     permissions:
@@ -12,12 +19,6 @@ jobs:
       contents: read
       # Required to put a comment into the pull-request
       pull-requests: write
-
-    matrix:
-      NODE_VERSION:
-        - '18.17.0'
-        - '20'
-        - '21'
 
     steps:
       - uses: actions/checkout@v2
