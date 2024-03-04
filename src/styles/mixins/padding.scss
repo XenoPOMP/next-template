@@ -1,0 +1,20 @@
+@mixin paddingHorizontal($val) {
+  padding-left: $val;
+  padding-right: $val;
+}
+
+@mixin paddingVertical($val) {
+  padding-top: $val;
+  padding-bottom: $val;
+}
+
+@mixin marginHorizontal($val) {
+  margin-left: $val;
+  margin-right: $val;
+}
+
+@mixin marginVertical($val) {
+  margin-top: $val;
+  margin-bottom: $val;
+}
+

@@ -1,0 +1,7 @@
+@mixin desktopHover {
+  @media (hover: hover){
+    &:hover{
+      @content;
+    }
+  }
+}
