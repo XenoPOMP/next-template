@@ -13,7 +13,7 @@ const useCopyToClipboard = (): {
   isCopied: boolean;
   copy: (text: string) => void;
 } => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line no-unused-vars
   const [isCopied, _, setIsCopied] = useBoolean(false);
 
   const copy = useCallback((text: string) => {
@@ -34,6 +34,7 @@ const useCopyToClipboard = (): {
       return () => clearTimeout(timer);
     }
 
+    // eslint-disable-next-line no-useless-return
     return;
   }, [isCopied]);
 

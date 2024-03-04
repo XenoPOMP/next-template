@@ -2,7 +2,7 @@ import { type VariableFC } from '@xenopomp/advanced-types';
 import cn from 'classnames';
 import Image from 'next/image';
 
-import { BackgroundImageProps } from './BackgroundImage.props';
+import { type BackgroundImageProps } from './BackgroundImage.props';
 
 /**
  * This component represents background image.

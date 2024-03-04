@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { type ReactNode } from 'react';
 
 import CoreLayout from '@/src/components/layout/CoreLayout/CoreLayout';
 import Providers from '@/src/components/layout/Providers/Providers';
@@ -37,11 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='ru'>
       <body className={mainFont.className}>

@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import { type Metadata } from 'next';
 
 type CustomMetadata = Omit<Metadata, 'robots'> & {
   robots?: {
@@ -25,8 +25,13 @@ export const generateStaticMetadata = (props: CustomMetadata): Metadata => {
       return null;
     }
 
-    if (props.robots?.noIndex) output.push('noindex');
-    if (props.robots?.noFollow) output.push('nofollow');
+    if (props.robots?.noIndex) {
+      output.push('noindex');
+    }
+
+    if (props.robots?.noFollow) {
+      output.push('nofollow');
+    }
 
     return output.join(', ');
   };

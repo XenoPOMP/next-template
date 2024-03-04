@@ -12,5 +12,8 @@
 .eslintrc.js
 .prettierrc
 .stylelintrc.js
+tsconfig.json
+package.json
+*.md
 *.config.ts
 *.config.js

@@ -1,0 +1,1 @@
+export { handleFunctionalChildren } from './handleFunctionalChildren';

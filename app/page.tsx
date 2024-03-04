@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { Metadata } from 'next';
+import { type Metadata } from 'next';
 
 import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
 import { generateStaticMetadata } from '@/src/utils/seo';
