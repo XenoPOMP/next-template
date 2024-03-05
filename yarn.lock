@@ -2379,10 +2379,10 @@ eslint-config-prettier@^9.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz#31af3d94578645966c082fcb71a5846d3c94867f"
   integrity sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==
 
-eslint-config-xeno@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xeno/-/eslint-config-xeno-0.2.0.tgz#d0f4546902e6958dfbc14cbd6a0fa2a0639e8f9b"
-  integrity sha512-F+qG6LNJ4H31gP5/XQOolN0Rea12MDoH9ZRrbpTh8xu7GgnOKyTClcNNfyY9h6aZxTWGahio+iPVgmYLgtAFKg==
+eslint-config-xeno@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-xeno/-/eslint-config-xeno-0.2.1.tgz#95a1d77ad30768d0bf5c8284d78aef50bd83143f"
+  integrity sha512-NwEzqBr6iI99efWEMMIjeGucIWYXfiek3fTYstdEItBk+nrddLEIsZVTr7quqQlxu0wPmE1HAb6CzXZtQKYG6g==
   dependencies:
     "@ririd/eslint-config" "0.7.0"
     eslint "^8.57.0"
