@@ -13,7 +13,6 @@ import './globals.scss';
 const mainFont = Inter({ subsets: ['latin'] });
 
 export async function generateMetadata(): Promise<Metadata> {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const env = useEnv();
 
   return generateStaticMetadata({
