@@ -17,7 +17,7 @@
   "dependencies": {
     "@types/node": "20.8.9",
     "@types/react": "18.2.64",
-    "@types/react-dom": "18.2.14",
+    "@types/react-dom": "18.2.21",
     "@xenopomp/advanced-utils": "^1.2.2",
     "autoprefixer": "10.4.16",
     "axios": "1.6.0",
