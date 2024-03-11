@@ -26,7 +26,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5",
-    "zustand": "^4.4.4"
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@testing-library/react": "^14.1.2",
