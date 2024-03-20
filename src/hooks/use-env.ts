@@ -1,6 +1,6 @@
 import { CustomError } from 'ts-custom-error';
 
-export type EnvKey = 'CANONICAL_URL' | 'IS_PRODUCTION';
+export type EnvKey = string;
 
 type GetFunc<
   Result extends string | undefined | boolean | number = string | undefined,
