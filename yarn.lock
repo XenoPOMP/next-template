@@ -1256,10 +1256,10 @@
     loupe "^2.3.7"
     pretty-format "^29.7.0"
 
-"@xenopomp/advanced-types@^1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.7.2.tgz#252a7bc0d7e7680dd14acf1ba60fef8a8f5d6fa8"
-  integrity sha512-bJGwotvkl3Uj710KcE8MC4nSld+ptSCrgUq8IAiRrv2KwSu15o/id7z55+2sioauWOXLKZ9g8JwOLOrwuH3rjw==
+"@xenopomp/advanced-types@^1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.7.4.tgz#e6d56418ff9c7175ddf7d3a536698559b7134f17"
+  integrity sha512-7Q66OW5zMNVS0qRQk18KCR/Jqe/dwGL9t9rG0Of0eHxlx8kOi576B2q5oH+ilkaMTWYNtRL8AAkVCVDr0iFyXQ==
 
 "@xenopomp/advanced-utils@^1.2.2":
   version "1.2.2"
