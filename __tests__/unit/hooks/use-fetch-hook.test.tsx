@@ -22,21 +22,21 @@ const TestComponent: FC<{ url?: string }> = ({
   return <>This is a data</>;
 };
 
-describe('useFetch hook', () => {
-  const renderAndTest = async ({
-    textToFind,
-    ...props
-  }: ComponentProps<typeof TestComponent> & { textToFind: string }) => {
-    const { getByText, ...rest } = render(<TestComponent {...props} />);
+const renderAndTest = async ({
+  textToFind,
+  ...props
+}: ComponentProps<typeof TestComponent> & { textToFind: string }) => {
+  const { getByText, ...rest } = render(<TestComponent {...props} />);
 
-    await waitFor(() => getByText(textToFind));
+  await waitFor(() => getByText(textToFind));
 
-    return {
-      getByText,
-      ...rest,
-    };
+  return {
+    getByText,
+    ...rest,
   };
+};
 
+describe('useFetch hook', () => {
   test('It does not throw', () => {
     expectToRender(<TestComponent />);
   });
