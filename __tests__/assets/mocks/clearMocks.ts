@@ -6,4 +6,6 @@ import { vi } from 'vitest';
 export const clearMocks = () => {
   vi.clearAllMocks();
   vi.resetAllMocks();
+  vi.unstubAllEnvs();
+  vi.unstubAllGlobals();
 };

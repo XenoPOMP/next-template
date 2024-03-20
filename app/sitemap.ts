@@ -9,7 +9,7 @@ export default function sitemap(): Sitemap {
   return [
     {
       url: `${CANONICAL}`,
-      lastModified: new Date(2024, 2, 25),
+      // lastModified: new Date(2024, Months.February, 25),
       changeFrequency: 'always',
       priority: 1,
     },
