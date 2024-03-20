@@ -4,13 +4,19 @@ import { afterAll, beforeAll, describe, expect, test } from 'vitest';
 
 import { clearMocks } from '@/__tests__/assets/mocks';
 import { mockEnv } from '@/__tests__/assets/mocks/mockEnv';
-import { expectToRender } from '@/__tests__/assets/utilities';
+import { booleanishString, expectToRender } from '@/__tests__/assets/utilities';
 import { VariableExistenceError, useEnv } from '@/src/hooks/use-env';
 
 const TestComponent: FC<{}> = () => {
-  const { get } = useEnv();
+  const { get, getBoolean } = useEnv();
 
-  return <>{get('CANONICAL_URL')}</>;
+  return (
+    <>
+      <p>{get('CANONICAL_URL')}</p>
+
+      <p>Is prod: {booleanishString(getBoolean('IS_PRODUCTION'))}</p>
+    </>
+  );
 };
 
 describe('useEnv hook', () => {

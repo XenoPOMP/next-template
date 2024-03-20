@@ -5,4 +5,5 @@ import { vi } from 'vitest';
  */
 export const mockEnv = () => {
   vi.stubEnv('CANONICAL_URL', 'http://localhost:400');
+  vi.stubEnv('IS_PRODUCTION', 'false');
 };
