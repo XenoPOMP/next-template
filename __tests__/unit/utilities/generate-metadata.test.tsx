@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { describe, test } from 'vitest';
 
-import { expectToDeepEqual } from '@/__tests__/assets/utilities/expectToDeepEqual';
+import { expectToDeepEqual } from '@/__tests__/assets/utilities';
 import { generateStaticMetadata } from '@/src/utils/seo';
 
 describe('generateStaticMetadata func', () => {
