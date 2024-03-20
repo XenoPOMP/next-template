@@ -1,5 +1,6 @@
 import { render, waitFor } from '@testing-library/react';
-import { FC } from 'react';
+import { waitForDebugger } from 'node:inspector';
+import { ComponentProps, FC } from 'react';
 import { describe, expect, test } from 'vitest';
 
 import { expectToRender } from '@/__tests__/assets/utilities';
@@ -22,19 +23,29 @@ const TestComponent: FC<{ url?: string }> = ({
 };
 
 describe('useFetch hook', () => {
+  const renderAndTest = async ({
+    textToFind,
+    ...props
+  }: ComponentProps<typeof TestComponent> & { textToFind: string }) => {
+    const { getByText, ...rest } = render(<TestComponent {...props} />);
+
+    await waitFor(() => getByText(textToFind));
+
+    return {
+      getByText,
+      ...rest,
+    };
+  };
+
   test('It does not throw', () => {
     expectToRender(<TestComponent />);
   });
 
   test('Wait for fetching', async () => {
-    const { getByText } = render(<TestComponent />);
-
-    await waitFor(() => getByText('This is a data'));
+    await renderAndTest({ url: '/', textToFind: 'Loading...' });
   });
 
   test('Provide incorrect url', async () => {
-    const { getByText } = render(<TestComponent url={''} />);
-
-    await waitFor(() => getByText('Error...'));
+    await renderAndTest({ url: '', textToFind: 'Error...' });
   });
 });
