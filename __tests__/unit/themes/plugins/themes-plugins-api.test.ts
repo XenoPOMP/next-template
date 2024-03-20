@@ -1,7 +1,7 @@
 import { CSSRuleObject } from 'tailwindcss/types/config';
 import { describe, test } from 'vitest';
 
-import { expectToDeepEqual } from '@/__tests__/assets/utilities/expectToDeepEqual';
+import { expectToDeepEqual } from '@/__tests__/assets/utilities';
 import { cssPropertiesToTw } from '@/src/styles/themes/plugins/api';
 
 describe('Theme plugins API', () => {
