@@ -35,7 +35,7 @@
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-istanbul": "^1.2.0",
-    "@xenopomp/advanced-types": "^1.7.2",
+    "@xenopomp/advanced-types": "^1.7.4",
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-config-xeno": "^0.2.3",
