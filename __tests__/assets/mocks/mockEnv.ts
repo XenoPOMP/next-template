@@ -1,10 +1,8 @@
-import { stubGlobal } from '@/__tests__/assets/utilities';
+import { vi } from 'vitest';
 
 /**
  * Mocks .env file.
  */
 export const mockEnv = () => {
-  stubGlobal<typeof process.env>('process.env', {
-    CANONICAL_URL: 'http://localhost:4000',
-  });
+  vi.stubEnv('CANONICAL_URL', 'http://localhost:400');
 };
