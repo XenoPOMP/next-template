@@ -2,7 +2,7 @@
 
 ## Supported Node.js versions
 
-This project is oriented to modern Node.js versions and does not support deprecated versions.
+This project is focused on modern Nodes.js versions and does not support legacy versions.
 
 | Version        | Supported          |
 | -------------- | ------------------ |
