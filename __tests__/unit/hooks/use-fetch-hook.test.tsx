@@ -1,7 +1,6 @@
 import { render, waitFor } from '@testing-library/react';
-import { waitForDebugger } from 'node:inspector';
 import { ComponentProps, FC } from 'react';
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
 import { expectToRender } from '@/__tests__/assets/utilities';
 import { useFetch } from '@/src/hooks/useFetch';
