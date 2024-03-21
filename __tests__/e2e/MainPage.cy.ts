@@ -1,5 +1,5 @@
-describe('template spec', () => {
-  it('passes', () => {
+describe('Main page', () => {
+  it('opens', () => {
     cy.visit('/');
   });
 });
