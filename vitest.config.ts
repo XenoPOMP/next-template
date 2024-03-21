@@ -14,6 +14,7 @@ export default defineConfig({
       // Default exclusions
       ...configDefaults.exclude,
 
+      'cypress',
       'node_modules',
       'app/test',
 
