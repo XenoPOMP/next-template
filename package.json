@@ -12,7 +12,8 @@
     "coverage": "vitest run --coverage",
     "lint:code": "eslint .",
     "lint:css": "stylelint **/*.{css,scss}",
-    "lint:ci": "concurrently \"yarn lint:code\" \"yarn lint:css\""
+    "lint:ci": "concurrently \"yarn lint:code\" \"yarn lint:css\"",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@types/node": "20.8.9",
@@ -37,6 +38,7 @@
     "@vitest/coverage-istanbul": "^1.2.0",
     "@xenopomp/advanced-types": "^1.7.4",
     "concurrently": "^8.2.2",
+    "cypress": "^13.7.0",
     "eslint": "^8.57.0",
     "eslint-config-xeno": "^0.2.3",
     "jsdom": "^23.2.0",
