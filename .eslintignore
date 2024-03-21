@@ -6,6 +6,8 @@
 **/__tests__/unit/*
 **/__tests__/e2e/*
 
+*.json
+
 # Ignore declaration files
 **/*.d.ts
 
