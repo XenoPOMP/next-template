@@ -4,6 +4,7 @@
 **/.github/*
 
 **/__tests__/unit/*
+cypress
 
 # Ignore declaration files
 **/*.d.ts
