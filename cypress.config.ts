@@ -6,5 +6,6 @@ export default defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'http://localhost:3000/',
+    specPattern: '__tests__/e2e/**/*.cy.{js,jsx,ts,tsx}',
   },
 });
