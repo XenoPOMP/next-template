@@ -12,10 +12,7 @@ jobs:
           - '20'
           - '21'
 
-    runs-on:
-      - ubuntu-latest
-      - windows-latest
-      - macos-latest
+    runs-on: ubuntu-latest
 
     permissions:
       # Required to checkout the code
