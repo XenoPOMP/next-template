@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react';
 import tsconfigPathsPlugin from 'vite-tsconfig-paths';
 import { configDefaults, defineConfig } from 'vitest/config';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react(), tsconfigPathsPlugin()],
   test: {
     environment: 'jsdom',
@@ -24,4 +24,5 @@ export default defineConfig({
       'tailwind.config.ts',
     ],
   },
-});
+  define: mode === 'test' ? {} : { global: 'window' },
+}));
