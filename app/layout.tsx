@@ -5,7 +5,7 @@ import { type ReactNode } from 'react';
 import CoreLayout from '@/src/components/layout/CoreLayout/CoreLayout';
 import Providers from '@/src/components/layout/Providers/Providers';
 import { useEnv } from '@/src/hooks/use-env';
-import { generateStaticMetadata } from '@/src/utils/seo';
+import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
 
 import { AppConstants } from './app.constants';
 import './globals.scss';
@@ -16,6 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const env = useEnv();
 
   return generateStaticMetadata({
+    metadataBase: new URL(env.getOrThrow('CANONICAL_URL')),
     title: {
       template: `%s | ${AppConstants.appName}`,
       default: AppConstants.appName,
@@ -34,6 +35,10 @@ export async function generateMetadata(): Promise<Metadata> {
         'x-default': env.getOrThrow('CANONICAL_URL'),
       },
     },
+    openGraph: generateOpenGraph({
+      title: 'Main page',
+      description: 'This is a main page',
+    }),
   });
 }
 
