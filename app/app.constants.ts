@@ -1,5 +1,3 @@
-import squareOgImage from '@/public/open-graph/og (200x200).png';
-import squareWideImage from '@/public/open-graph/og (1200x627).png';
 import type IAppConstants from '@/src/interfaces/AppConstants.interface';
 
 export const AppConstants: IAppConstants = {
@@ -7,12 +5,12 @@ export const AppConstants: IAppConstants = {
   sharedOpenGraphConfig: {
     images: [
       {
-        url: squareOgImage.src,
+        url: '/open-graph/og (200x200).png',
         width: 200,
         height: 200,
       },
       {
-        url: squareWideImage.src,
+        url: '/open-graph/og (1200x627).png',
         width: 1200,
         height: 627,
       },
