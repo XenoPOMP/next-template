@@ -16,6 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const env = useEnv();
 
   return generateStaticMetadata({
+    metadataBase: new URL(env.getOrThrow('CANONICAL_URL')),
     title: {
       template: `%s | ${AppConstants.appName}`,
       default: AppConstants.appName,
