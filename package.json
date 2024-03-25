@@ -18,8 +18,8 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
-    "@types/node": "20.8.9",
-    "@types/react": "18.2.64",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.69",
     "@types/react-dom": "18.2.22",
     "@xenopomp/advanced-utils": "^1.2.2",
     "autoprefixer": "10.4.16",
