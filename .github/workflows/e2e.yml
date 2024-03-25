@@ -28,10 +28,6 @@ jobs:
         with:
           node-version: '${{ matrix.NODE_VERSION }}'
 
-      - name: 'Create env file'
-        run: |
-          echo "${{ secrets.ENV_FILE }}" > .env
-
       - name: 'Install dependencies'
         run: yarn install --frozen-lockfile
 

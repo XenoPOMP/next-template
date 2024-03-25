@@ -14,9 +14,11 @@ const mainFont = Inter({ subsets: ['latin'] });
 
 export async function generateMetadata(): Promise<Metadata> {
   const env = useEnv();
+  const CANONICAL_URL =
+    env.get('CANONICAL_URL') || AppConstants.defaultCanonical;
 
   return generateStaticMetadata({
-    metadataBase: new URL(env.getOrThrow('CANONICAL_URL')),
+    metadataBase: new URL(CANONICAL_URL),
     title: {
       template: `%s | ${AppConstants.appName}`,
       default: AppConstants.appName,
@@ -27,12 +29,12 @@ export async function generateMetadata(): Promise<Metadata> {
       capable: false,
     },
     alternates: {
-      canonical: env.getOrThrow('CANONICAL_URL'),
+      canonical: CANONICAL_URL,
       languages: {
-        // ru: env.getOrThrow('CANONICAL_URL'),
+        // ru: CANONICAL_URL,
 
         // Should be changed to another one, if i18n has been implemented
-        'x-default': env.getOrThrow('CANONICAL_URL'),
+        'x-default': CANONICAL_URL,
       },
     },
     openGraph: generateOpenGraph({
