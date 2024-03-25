@@ -18,6 +18,7 @@ export type ModifiedOGConfig = Modify<
 
 interface IAppConstants {
   appName: string;
+  defaultCanonical: string;
   sharedOpenGraphConfig: Partial<ModifiedOGConfig>;
 }
 
