@@ -16,7 +16,7 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 
 <p align='center'>
 <img src='https://img.shields.io/github/contributors/XenoPOMP/next-template?color=dark-green' alt='Contributors'>
-<a href="https://github.com/XenoPOMP/next-template">
+<a href="https://github.com/XenoPOMP/next-template/stargazers">
 <img src="https://img.shields.io/github/stars/XenoPOMP/next-template?style=social" alt="Stargazers" />
 </a>
 <a href="https://github.com/XenoPOMP/next-template/issues">
@@ -38,10 +38,6 @@ This project contains some pre-installed linters. Decide to handle them or disab
 
 - [ESLint](https://eslint.org)
 - [Stylelint](https://stylelint.io)
-
-#### Minimal `.env` setup
-These keys are required:
-- CANONICAL_URL
 
 ## Authors
 
