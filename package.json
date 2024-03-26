@@ -18,9 +18,9 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
-    "@types/node": "^20.11.30",
-    "@types/react": "^18.2.69",
-    "@types/react-dom": "18.2.22",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "@xenopomp/advanced-utils": "^1.2.2",
     "autoprefixer": "10.4.16",
     "axios": "1.6.8",
@@ -38,7 +38,7 @@
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-istanbul": "^1.2.0",
-    "@xenopomp/advanced-types": "^1.7.4",
+    "@xenopomp/advanced-types": "^1.x",
     "concurrently": "^8.2.2",
     "cypress": "^13.7.0",
     "eslint": "^8.57.0",
