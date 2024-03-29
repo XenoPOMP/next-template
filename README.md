@@ -24,21 +24,19 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 </a>
 </p>
 
-## Getting Started
-
 This template provides a solid foundation for building your next web application with Next.js 14.
 
-### Prerequisites
 
-#### Minimal Node version
-Since __`Next`__ has been updated to **v14**, Node engine\`s version requirement is `v18.7+`.
+## Installation
 
-#### Linting
-This project contains some pre-installed linters. Decide to handle them or disable them:
+```powershell
+# if you don`t use NVM, skip these commands
+nvm install 20.11.1
+nvm use 20.11.1
 
-- [ESLint](https://eslint.org)
-- [Stylelint](https://stylelint.io)
-
+# Install deps (yarn is highly recommended)
+yarn
+```
 
 ## Features
 
