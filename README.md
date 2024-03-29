@@ -39,6 +39,19 @@ This project contains some pre-installed linters. Decide to handle them or disab
 - [ESLint](https://eslint.org)
 - [Stylelint](https://stylelint.io)
 
+
+## Features
+
+### Testing environment
+
+This project uses `Vitest` for **unit-testing** and `Cypress` for **E2E**.
+
+### Themes
+This project uses [`next-themes`](https://github.com/pacocoursey/next-themes) integrated with TailwindCSS.
+
+Want to use different approach? Please, follow instructions from [docs](https://github.com/pacocoursey/next-themes?#readme).
+
+
 ## Authors
 
 * **XenoPOMP** - *Main developer* - [XenoPOMP](https://github.com/XenoPOMP) - *Owns this repo*
