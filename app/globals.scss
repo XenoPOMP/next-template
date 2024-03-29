@@ -5,3 +5,7 @@
 :root {
   font-size: 20px;
 }
+
+body {
+  @apply bg-primary-bg text-primary-font;
+}
