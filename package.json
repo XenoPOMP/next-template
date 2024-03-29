@@ -26,6 +26,7 @@
     "axios": "1.6.8",
     "classnames": "^2.5.1",
     "next": "14.1.0",
+    "next-themes": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5",
@@ -54,8 +55,10 @@
     "stylelint-config-tailwindcss": "^0.0.7",
     "stylelint-scss": "^6.2.1",
     "tailwindcss": "^3.3.0",
+    "tailwindcss-themer": "^4.0.0",
     "ts-custom-error": "^3.3.1",
     "vite-tsconfig-paths": "^4.2.3",
-    "vitest": "^1.4.0"
+    "vitest": "^1.4.0",
+    "vitest-matchmedia-mock": "^1.0.4"
   }
 }
