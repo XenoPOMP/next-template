@@ -1,6 +1,8 @@
-import { Config } from 'tailwindcss';
+import { type Config } from 'tailwindcss';
+import tailwindThemer from 'tailwindcss-themer';
 
 import { CustomClassesPlugin } from './src/styles/themes/plugins';
+import { darkTheme, lightTheme } from './src/themes';
 
 const tailwindConfig: Config = {
   darkMode: 'class',
@@ -18,7 +20,21 @@ const tailwindConfig: Config = {
       },
     },
   },
-  plugins: [CustomClassesPlugin()],
+  plugins: [
+    CustomClassesPlugin(),
+    tailwindThemer({
+      themes: [
+        {
+          name: 'light',
+          extend: lightTheme,
+        },
+        {
+          name: 'dark',
+          extend: darkTheme,
+        },
+      ],
+    }),
+  ],
 };
 
 export default tailwindConfig;
