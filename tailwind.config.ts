@@ -3,6 +3,7 @@ import { Config } from 'tailwindcss';
 import { CustomClassesPlugin } from './src/styles/themes/plugins';
 
 const tailwindConfig: Config = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx,scss}',
     './src/**/*.{js,ts,jsx,tsx,mdx,scss}',
