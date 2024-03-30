@@ -13,6 +13,7 @@ jobs:
       matrix:
         NODE_VERSION:
           - '18.17.0'
+          - '19'
           - '20'
           - '21'
 

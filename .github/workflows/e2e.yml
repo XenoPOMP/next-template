@@ -8,7 +8,10 @@ jobs:
     strategy:
       matrix:
         NODE_VERSION:
+          - '18.17.0'
+          - '19'
           - '20'
+          - '21'
 
     runs-on: ubuntu-latest
 
