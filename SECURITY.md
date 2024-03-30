@@ -8,7 +8,7 @@ This project is focused on modern Node.js versions and does not support legacy v
 |---------|--------------------|
 | < 18.17 | :x:                |
 | 18.17.0 | :white_check_mark: |
-| 19      | :white_check_mark: |
+| 19      | :x:                |
 | 20      | :white_check_mark: |
 | 21      | :white_check_mark: |
 
