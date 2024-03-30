@@ -22,6 +22,9 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 <a href="https://github.com/XenoPOMP/next-template/issues">
 <img src="https://img.shields.io/github/issues/XenoPOMP/next-template" alt="Issues" />
 </a>
+<a href="https://github.com/XenoPOMP/next-template?tab=MIT-1-ov-file#readme">
+<img src="https://img.shields.io/github/license/XenoPOMP/next-template" />
+</a>
 </p>
 
 This template provides a solid foundation for building your next web application with Next.js 14.
