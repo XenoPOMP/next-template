@@ -21,7 +21,7 @@ type ReturnedStore<TStore> = ReturnType<typeof createBoundStore<TStore>>;
  *   {isLoading ? <>Loading...</> : <>Hydrated!</>}
  * </>
  */
-export const useHydratedStore = <TBound, TSelect>(
+export const useHydratedStore = <TBound, TSelect = unknown>(
   boundStore: ReturnedStore<TBound>,
   selector: ReplaceReturnType<Parameters<ReturnedStore<TBound>>[0], TSelect>,
 ) => {
