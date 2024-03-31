@@ -23,11 +23,10 @@ const tailwindConfig: Config = {
   plugins: [
     CustomClassesPlugin(),
     tailwindThemer({
+      defaultTheme: {
+        extend: lightTheme,
+      },
       themes: [
-        {
-          name: 'light',
-          extend: lightTheme,
-        },
         {
           name: 'dark',
           extend: darkTheme,

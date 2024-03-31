@@ -1,8 +1,14 @@
 'use client';
 
-import { render, screen } from '@testing-library/react';
+import {
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from '@testing-library/react';
 import { ComponentProps, FC, useEffect } from 'react';
-import { beforeEach, describe, expect, test, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 
 import { DeepPartial } from '@/__tests__/assets/types/DeepPartial';
 import { Stub } from '@/__tests__/assets/types/Stub';
@@ -14,17 +20,20 @@ const UseCopyToClipboardTestComponent: FC<{}> = () => {
   const { copy, isCopied } = useCopyToClipboard();
 
   useEffect(() => {
-    console.debug(`Is copied: ${isCopied}`);
+    console.debug(`[MOUNT] Is copied: ${isCopied}`);
   }, [isCopied]);
 
   return (
     <>
-      <div>Is text copied: {booleanishString(isCopied)}</div>
+      <div data-testid={'output'} data-is-copied={isCopied}>
+        Is text copied: {booleanishString(isCopied)}
+      </div>
 
       <button
         onClick={() => {
           copy('amogus');
         }}
+        data-testid={'payload-button'}
       >
         Copy
       </button>
@@ -52,6 +61,8 @@ describe('useCopyToClipboard hook', () => {
   beforeEach(() => {
     stubNavigator();
   });
+
+  afterEach(() => cleanup());
 
   const renderComponent = (
     props: ComponentProps<typeof UseCopyToClipboardTestComponent>,
@@ -88,5 +99,28 @@ describe('useCopyToClipboard hook', () => {
     setTimeout(() => {}, 500);
 
     clickAll(buttons);
+  });
+
+  test('Timeout works', async () => {
+    const expectOutputToBe = <TValue = unknown,>(value: TValue) => {
+      console.debug(
+        `[ ATTR] Assert [${isCopiedAttribute}](${output.getAttribute(isCopiedAttribute)}) to be ${value}`,
+      );
+      expect(output.getAttribute(isCopiedAttribute)).toBe(value);
+    };
+
+    renderComponent({});
+
+    const isCopiedAttribute = 'data-is-copied';
+
+    const output = screen.getByTestId('output');
+    const button = screen.getByTestId('payload-button');
+
+    // Button is not clicked. Is copied should be `false`
+    expectOutputToBe('false');
+
+    // Clicking to button. Is copied should be `true`
+    fireEvent.click(button);
+    await waitFor(() => expectOutputToBe('true'));
   });
 });

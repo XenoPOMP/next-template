@@ -1,4 +1,4 @@
-import { afterAll, afterEach, beforeAll, describe, test } from 'vitest';
+import { afterAll, afterEach, beforeAll, describe, test, vi } from 'vitest';
 import MatchMediaMock from 'vitest-matchmedia-mock';
 
 import { clearMocks, mockFonts } from '@/__tests__/assets/mocks';
@@ -32,7 +32,13 @@ describe('Root layout test', () => {
 
   test('Metadata generates', async () => {
     const metadata = await generateMetadata();
+    testObject(metadata);
+  });
 
+  test('Canonical url equals to constant value by default', async () => {
+    vi.unstubAllEnvs();
+
+    const metadata = await generateMetadata();
     testObject(metadata);
   });
 });

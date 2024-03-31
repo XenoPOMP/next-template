@@ -1,4 +1,4 @@
-import { afterAll, beforeAll, describe, test } from 'vitest';
+import { afterAll, beforeAll, describe, test, vi } from 'vitest';
 
 import { clearMocks } from '@/__tests__/assets/mocks';
 import { mockEnv } from '@/__tests__/assets/mocks/mockEnv';
@@ -15,6 +15,11 @@ describe('Next.js sitemap generation', () => {
   });
 
   test('It works', () => {
+    testObject(sitemap());
+  });
+
+  test('Canonical url equals to constant value by default', async () => {
+    vi.unstubAllEnvs();
     testObject(sitemap());
   });
 });
