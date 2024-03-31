@@ -23,10 +23,16 @@ const TestComponent: FC<{ testGetOrThrow?: boolean }> = ({
         {booleanishString(getBoolean('THIS_KEY_IS_NOT_REAL_FOR_SURE'))}
       </p>
 
+      <p>
+        Get key that is required and exists: {getOrThrow('THIS_KEY_IS_REAL')}
+      </p>
+
       {testGetOrThrow && (
-        <p>
-          Get key that does not exists: {getOrThrow('THIS_KEY_IS_NOT_REAL')}
-        </p>
+        <>
+          <p>
+            Get key that does not exists: {getOrThrow('THIS_KEY_IS_NOT_REAL')}
+          </p>
+        </>
       )}
     </>
   );
@@ -34,7 +40,7 @@ const TestComponent: FC<{ testGetOrThrow?: boolean }> = ({
 
 describe('useEnv hook', () => {
   beforeAll(() => {
-    mockEnv();
+    mockEnv({ THIS_KEY_IS_REAL: 'realKey' });
   });
 
   afterAll(() => {
