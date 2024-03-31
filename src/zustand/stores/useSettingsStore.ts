@@ -16,6 +16,7 @@ const useSettingsStore = create<SettingsStore>()(
     }),
     {
       name: createStorageKey('persist', 'settings'),
+      skipHydration: true,
     },
   ),
 );
