@@ -1,1 +1,1 @@
-yarn lint:code
+yarn lint-staged
