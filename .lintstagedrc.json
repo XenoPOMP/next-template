@@ -1,4 +1,4 @@
 {
   "**/*.{js,ts,jsx,tsx}": "eslint",
-  "**/*.scss": "stylelint **/*.{css,scss}"
+  "**/*.scss": "stylelint"
 }
