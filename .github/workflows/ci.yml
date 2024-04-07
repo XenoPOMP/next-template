@@ -1,10 +1,18 @@
-name: 'Testing'
+name: 'CI'
 on:
   push:
+    branches:
+      - main
+      - staging
+
   pull_request:
+    branches:
+      - main
+      - staging
 
 jobs:
-  test:
+  # Install Node.js and dependencies
+  ci:
     strategy:
       matrix:
         NODE_VERSION:
@@ -13,13 +21,6 @@ jobs:
           - '21'
 
     runs-on: ubuntu-latest
-
-    permissions:
-      # Required to checkout the code
-      contents: read
-      # Required to put a comment into the pull-request
-      pull-requests: write
-
     steps:
       - uses: actions/checkout@v4
 
@@ -31,9 +32,15 @@ jobs:
       - name: 'Install dependencies'
         run: yarn install --frozen-lockfile
 
+      # Start to run our inline jobs
+      # Vitest
       - name: 'Run coverage'
         run: yarn coverage
 
       - name: 'Report coverage'
         if: always() # Also generate the report if tests are failing
         uses: davelosert/vitest-coverage-report-action@v2
+
+      # E2E testing
+      - name: 'Run Cypress in headless mode'
+        run: yarn e2e:ci

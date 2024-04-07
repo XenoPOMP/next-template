@@ -28,10 +28,7 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 </p>
 
 <p align='center'>
-<img alt="Vitest status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/vitest.yml?logo=vitest&logoColor=%23fff&label=Vitest">
-<img alt="Cypress status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/e2e.yml?logo=cypress&logoColor=%23fff&label=Cypress%20E2E">
-<img alt="Next.js build status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/next-build.yml?logo=next.js&logoColor=%23fff&label=Next.js%20build">
-<img alt="Linting status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/lint.yml?logo=eslint&logoColor=%23fff&label=Linting">
+<img alt="CI status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI">
 </p>
 
 This template provides a solid foundation for building your next web application with Next.js 14.
