@@ -1,7 +1,14 @@
 name: 'CI'
 on:
   push:
+    branches:
+      - main
+      - staging
+
   pull_request:
+    branches:
+      - main
+      - staging
 
 jobs:
   # Install Node.js and dependencies
