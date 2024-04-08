@@ -50,7 +50,7 @@
     "@vitest/coverage-istanbul": "^1.2.0",
     "@xenopomp/advanced-types": "^1.x",
     "concurrently": "^8.2.2",
-    "cypress": "^13.7.0",
+    "cypress": "^13.7.2",
     "eslint": "^8.57.0",
     "eslint-config-xeno": "^0.2.3",
     "husky": "^9.0.11",
