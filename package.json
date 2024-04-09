@@ -47,7 +47,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react": "^4.2.1",
-    "@vitest/coverage-istanbul": "^1.x",
+    "@vitest/coverage-istanbul": "^1.4.0",
     "@xenopomp/advanced-types": "^1.x",
     "concurrently": "^8.2.2",
     "cypress": "^13.7.0",
