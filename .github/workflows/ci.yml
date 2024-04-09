@@ -40,9 +40,6 @@ jobs:
       - name: 'Report coverage'
         if: always() # Also generate the report if tests are failing
         uses: davelosert/vitest-coverage-report-action@v2
-        permissions:
-          contents: read
-          pull-requests: write
 
       # E2E testing
       - name: 'Run Cypress in headless mode'
