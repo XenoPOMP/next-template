@@ -58,7 +58,7 @@
     "lint-staged": "^15.2.2",
     "postcss": "^8",
     "prettier": "^3.0.0",
-    "sass": "^1.74.1",
+    "sass": "^1.75.0",
     "start-server-and-test": "^2.0.3",
     "stylelint": "^16.3.1",
     "stylelint-config-standard": "^36.0.0",
