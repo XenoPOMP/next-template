@@ -24,7 +24,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.29.0",
+    "@tanstack/react-query": "^5.29.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
