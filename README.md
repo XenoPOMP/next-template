@@ -45,6 +45,11 @@ nvm use 20.11.1
 yarn
 ```
 
+## Run dev server
+```powershell
+yarn dev
+```
+
 ## Features
 
 ### Testing environment
