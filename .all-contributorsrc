@@ -22,11 +22,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/27347476?v=4",
       "profile": "https://github.com/features/security",
       "contributions": [
-        "tool"
+        "code"
       ]
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 10,
   "skipCi": true,
   "repoType": "github",
   "repoHost": "https://github.com",
