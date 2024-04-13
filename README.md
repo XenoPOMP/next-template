@@ -62,7 +62,6 @@ This project uses [`next-themes`](https://github.com/pacocoursey/next-themes) in
 Want to use different approach? Please, follow instructions from [docs](https://github.com/pacocoursey/next-themes?#readme).
 
 
-
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
