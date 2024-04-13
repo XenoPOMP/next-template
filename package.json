@@ -1,10 +1,10 @@
 {
   "name": "next-template",
-  "version": "3.7.2",
+  "version": "3.7.3",
   "private": true,
   "author": "XenoPOMP",
   "engines": {
-    "node": "^18.17.0 || ^20 || >=21",
+    "node": "^18.18.0 || ^20 || >=21",
     "yarn": ">=1.17.3"
   },
   "scripts": {
@@ -44,8 +44,8 @@
     "@tanstack/react-query-devtools": "^5.29.0",
     "@testing-library/react": "^15.0.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-istanbul": "^1.5.0",
     "@xenopomp/advanced-types": "^1.x",
