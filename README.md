@@ -1,4 +1,7 @@
 <br/>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <p align="center">
   <a href="https://github.com/XenoPOMP/next-template">
     <img src="https://camo.githubusercontent.com/352a21b492a283c4599f32d0fe5af3410fac9ab8dcf4cb320ff84ef4a145aa48/68747470733a2f2f7777772e64727570616c2e6f72672f66696c65732f70726f6a6563742d696d616765732f6e6578746a732d64727570616c2e6a7067" alt="Logo" width="80" height="80">
@@ -65,6 +68,20 @@ Want to use different approach? Please, follow instructions from [docs](https://
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/XenoPOMP"><img src="https://avatars.githubusercontent.com/u/101574433?v=4?s=100" width="100px;" alt="XenoPOMP"/><br /><sub><b>XenoPOMP</b></sub></a><br /><a href="https://github.com/XenoPOMP/next-template/commits?author=XenoPOMP" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
