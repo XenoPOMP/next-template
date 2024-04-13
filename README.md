@@ -64,7 +64,7 @@ Want to use different approach? Please, follow instructions from [docs](https://
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/XenoPOMP"><img src="https://avatars.githubusercontent.com/u/101574433?v=4?s=100" width="100px;" alt="XenoPOMP"/><br /><sub><b>XenoPOMP</b></sub></a><br /><a href="https://github.com/XenoPOMP/next-template/commits?author=XenoPOMP" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt="Dependabot"/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#tool-dependabot" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt="Dependabot"/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#tool-dependabot" title="Tools">🔧</a> <a href="https://github.com/XenoPOMP/next-template/commits?author=dependabot" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
