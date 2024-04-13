@@ -62,7 +62,7 @@ This project uses [`next-themes`](https://github.com/pacocoursey/next-themes) in
 Want to use different approach? Please, follow instructions from [docs](https://github.com/pacocoursey/next-themes?#readme).
 
 
-## Authors
+## Contributors
 
 * [**XenoPOMP**](https://github.com/XenoPOMP) - *Main developer. Owns this repo*
 * [**dependabot**](https://github.com/apps/dependabot) - *A bot developed by GitHub. Deals with automatic dependency updates*
