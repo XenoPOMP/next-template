@@ -64,4 +64,5 @@ Want to use different approach? Please, follow instructions from [docs](https://
 
 ## Authors
 
-* **XenoPOMP** - *Main developer* - [XenoPOMP](https://github.com/XenoPOMP) - *Owns this repo*
+* [**XenoPOMP**](https://github.com/XenoPOMP) - *Main developer. Owns this repo*
+* [**dependabot**](https://github.com/apps/dependabot) - *A bot developed by GitHub. Deals with automatic dependency updates*
