@@ -64,5 +64,11 @@ Want to use different approach? Please, follow instructions from [docs](https://
 
 ## Contributors
 
-* [**XenoPOMP**](https://github.com/XenoPOMP) - *Main developer. Owns this repo*
-* [**dependabot**](https://github.com/apps/dependabot) - *A bot developed by GitHub. Deals with automatic dependency updates*
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
