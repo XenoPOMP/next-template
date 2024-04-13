@@ -1,4 +1,6 @@
 {
+  "projectName": "next-template",
+  "projectOwner": "XenoPOMP",
   "files": ["README.md"],
   "imageSize": 100,
   "contributorsPerLine": 7,
@@ -12,6 +14,6 @@
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     }
   },
-  "skipCi": "true",
+  "skipCi": true,
   "contributors": []
 }
