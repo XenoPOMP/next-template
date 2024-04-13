@@ -1,7 +1,3 @@
-<br/>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <p align="center">
   <a href="https://github.com/XenoPOMP/next-template">
     <img src="https://camo.githubusercontent.com/352a21b492a283c4599f32d0fe5af3410fac9ab8dcf4cb320ff84ef4a145aa48/68747470733a2f2f7777772e64727570616c2e6f72672f66696c65732f70726f6a6563742d696d616765732f6e6578746a732d64727570616c2e6a7067" alt="Logo" width="80" height="80">
@@ -17,22 +13,16 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 </p>
 </p>
 
-<p align='center'>
-<img src='https://img.shields.io/github/contributors/XenoPOMP/next-template?color=dark-green' alt='Contributors'>
-<a href="https://github.com/XenoPOMP/next-template/stargazers">
-<img src="https://img.shields.io/github/stars/XenoPOMP/next-template?style=social" alt="Stargazers" />
-</a>
-<a href="https://github.com/XenoPOMP/next-template/issues">
-<img src="https://img.shields.io/github/issues/XenoPOMP/next-template" alt="Issues" />
-</a>
-<a href="https://github.com/XenoPOMP/next-template?tab=MIT-1-ov-file#readme">
-<img src="https://img.shields.io/github/license/XenoPOMP/next-template" />
-</a>
-</p>
 
-<p align='center'>
-<img alt="CI status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI">
-</p>
+[![Stars](https://img.shields.io/github/stars/XenoPOMP/next-template?style=social)](https://github.com/XenoPOMP/next-template/stargazers)
+[![Issues](https://img.shields.io/github/issues/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template/issues)
+[![License](https://img.shields.io/github/license/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template?tab=MIT-1-ov-file#readme)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square)]()
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 
 This template provides a solid foundation for building your next web application with Next.js 14.
 
