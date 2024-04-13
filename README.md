@@ -20,7 +20,7 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 [![CI Status](https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square)]()
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -64,6 +64,7 @@ Want to use different approach? Please, follow instructions from [docs](https://
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/XenoPOMP"><img src="https://avatars.githubusercontent.com/u/101574433?v=4?s=100" width="100px;" alt="XenoPOMP"/><br /><sub><b>XenoPOMP</b></sub></a><br /><a href="https://github.com/XenoPOMP/next-template/commits?author=XenoPOMP" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt="Dependabot"/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#tool-dependabot" title="Tools">🔧</a></td>
     </tr>
   </tbody>
 </table>
