@@ -5,7 +5,7 @@
 
 <h2 align="center">
 Next 14 Template
-<img alt="CI Status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square" />
+
 </h2>
 
 <p align="center">
@@ -14,13 +14,15 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 </p>
 
 
-<div style="display: flex; justify-content: center; gap: 5px">
+<p align="center">
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<img alt="CI Status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square" />
 
-</div>
+<a href="#contributors">
+<img alt="All Contributors" src="https://img.shields.io/github/all-contributors/XenoPOMP/next-template?color=ee8449&style=flat-square">
+</a>
+
+</p>
 
 <br />
 
