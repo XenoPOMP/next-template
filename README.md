@@ -1,7 +1,9 @@
 <p align="center">
 <a href="https://github.com/XenoPOMP/next-template">
-<img src="https://camo.githubusercontent.com/352a21b492a283c4599f32d0fe5af3410fac9ab8dcf4cb320ff84ef4a145aa48/68747470733a2f2f7777772e64727570616c2e6f72672f66696c65732f70726f6a6563742d696d616765732f6e6578746a732d64727570616c2e6a7067" alt="Logo" width="80" height="80">
+<img src="https://github.com/XenoPOMP/next-template/assets/101574433/4f668b51-381f-4f1f-8803-f0b6370fd1b5" alt="Repo logo" width="80" height="80" />
 </a>
+
+
 
 <h2 align="center">
 Next 14 Template
