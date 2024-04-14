@@ -56,7 +56,7 @@ You will see your site at address: http://localhost:3000/
 ## Features
 
 - 🖼️ SEO optimization + Open Graph images
-- 🧪 Unit test with Vitest and E2E with Cypress
+- 🧪 Unit testing with Vitest and E2E with Cypress
 - 🌓 Multiple themes support with [`next-themes`](https://github.com/pacocoursey/next-themes) integrated with TailwindCSS
 - 🐻 Zustand as state manager
 - 🐶 Husky hooks
