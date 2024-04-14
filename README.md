@@ -3,7 +3,10 @@
 <img src="https://camo.githubusercontent.com/352a21b492a283c4599f32d0fe5af3410fac9ab8dcf4cb320ff84ef4a145aa48/68747470733a2f2f7777772e64727570616c2e6f72672f66696c65732f70726f6a6563742d696d616765732f6e6578746a732d64727570616c2e6a7067" alt="Logo" width="80" height="80">
 </a>
 
-<h2 align="center">Next 14 Template</h2>
+<h2 align="center">
+Next 14 Template
+<img alt="CI Status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square" />
+</h2>
 
 <p align="center">
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
@@ -12,14 +15,6 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 
 
 <div style="display: flex; justify-content: center; gap: 5px">
-
-[![Stars](https://img.shields.io/github/stars/XenoPOMP/next-template?style=social)](https://github.com/XenoPOMP/next-template/stargazers)
-
-[![Issues](https://img.shields.io/github/issues/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template/issues)
-
-[![License](https://img.shields.io/github/license/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template?tab=MIT-1-ov-file#readme)
-
-[![CI Status](https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square)]()
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
