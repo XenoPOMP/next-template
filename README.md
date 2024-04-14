@@ -49,17 +49,16 @@ yarn
 yarn dev
 ```
 
+You will see your site at address: http://localhost:3000/
+
 ## Features
 
-### Testing environment
-
-This project uses `Vitest` for **unit-testing** and `Cypress` for **E2E**.
-
-### Themes
-This project uses [`next-themes`](https://github.com/pacocoursey/next-themes) integrated with TailwindCSS.
-
-Want to use different approach? Please, follow instructions from [docs](https://github.com/pacocoursey/next-themes?#readme).
-
+- 🖼️ SEO optimization + Open Graph images
+- 🧪 Unit test with Vitest and E2E with Cypress
+- 🌓 Multiple themes support with [`next-themes`](https://github.com/pacocoursey/next-themes) integrated with TailwindCSS
+- 🐻 Zustand as state manager
+- 🐶 Husky hooks
+- 🌿 `.github` folder with ready-to-use **actions** and **dependabot**
 
 ## Contributors
 
