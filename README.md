@@ -29,7 +29,7 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 <br />
 
 ## How to clone this template
-You can clone this repo as regular git repo, or use GitHub template button.
+You can clone this repo as regular git repo, or [just use this template](https://github.com/XenoPOMP/next-template/generate).
 But you can also use Next.js CLI:
 ```shell
 yarn create next-app -e https://github.com/XenoPOMP/next-template .
