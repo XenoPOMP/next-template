@@ -1,11 +1,15 @@
+<p align="center">
 <a href="https://github.com/XenoPOMP/next-template">
 <img src="https://camo.githubusercontent.com/352a21b492a283c4599f32d0fe5af3410fac9ab8dcf4cb320ff84ef4a145aa48/68747470733a2f2f7777772e64727570616c2e6f72672f66696c65732f70726f6a6563742d696d616765732f6e6578746a732d64727570616c2e6a7067" alt="Logo" width="80" height="80">
 </a>
 
-## Next 14 Template
+<h2 align="center">Next 14 Template</h2>
 
+<p align="center">
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
-<br/>
+</p>
+</p>
+
 
 [![Stars](https://img.shields.io/github/stars/XenoPOMP/next-template?style=social)](https://github.com/XenoPOMP/next-template/stargazers)
 [![Issues](https://img.shields.io/github/issues/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template/issues)
@@ -14,8 +18,7 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-
-This template provides a solid foundation for building your next web application with Next.js 14.
+<br />
 
 ## How to clone this template
 You can clone this repo as regular git repo, or use GitHub template button.
