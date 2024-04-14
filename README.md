@@ -1,30 +1,32 @@
 <p align="center">
-  <a href="https://github.com/XenoPOMP/next-template">
-    <img src="https://camo.githubusercontent.com/352a21b492a283c4599f32d0fe5af3410fac9ab8dcf4cb320ff84ef4a145aa48/68747470733a2f2f7777772e64727570616c2e6f72672f66696c65732f70726f6a6563742d696d616765732f6e6578746a732d64727570616c2e6a7067" alt="Logo" width="80" height="80">
-  </a>
+<a href="https://github.com/XenoPOMP/next-template">
+<img src="https://github.com/XenoPOMP/next-template/assets/101574433/4f668b51-381f-4f1f-8803-f0b6370fd1b5" alt="Repo logo" width="80" height="80" />
+</a>
 
-<h3 align="center">Next 14 Template</h3>
+
+
+<h2 align="center">
+Next 14 Template
+
+</h2>
 
 <p align="center">
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
-<br/>
-<br/>
-<a href="https://github.com/XenoPOMP/next-template/issues">Report Bug</a>
 </p>
 </p>
 
 
-[![Stars](https://img.shields.io/github/stars/XenoPOMP/next-template?style=social)](https://github.com/XenoPOMP/next-template/stargazers)
-[![Issues](https://img.shields.io/github/issues/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template/issues)
-[![License](https://img.shields.io/github/license/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template?tab=MIT-1-ov-file#readme)
-[![CI Status](https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square)]()
+<p align="center">
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<img alt="CI Status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square" />
 
+<a href="#contributors">
+<img alt="All Contributors" src="https://img.shields.io/github/all-contributors/XenoPOMP/next-template?color=ee8449&style=flat-square">
+</a>
 
-This template provides a solid foundation for building your next web application with Next.js 14.
+</p>
+
+<br />
 
 ## How to clone this template
 You can clone this repo as regular git repo, or use GitHub template button.
