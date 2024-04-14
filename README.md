@@ -11,12 +11,14 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 </p>
 
 
+<div align="center">
 [![Stars](https://img.shields.io/github/stars/XenoPOMP/next-template?style=social)](https://github.com/XenoPOMP/next-template/stargazers)
 [![Issues](https://img.shields.io/github/issues/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template/issues)
 [![License](https://img.shields.io/github/license/XenoPOMP/next-template?style=flat-square)](https://github.com/XenoPOMP/next-template?tab=MIT-1-ov-file#readme)
 [![CI Status](https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square)]()<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+</div>
 
 <br />
 
