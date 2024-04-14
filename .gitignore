@@ -138,3 +138,5 @@ app/test
 # Vitest
 **/*.snap
 **/__snapshots__/*
+
+*storybook.log
