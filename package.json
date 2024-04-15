@@ -52,7 +52,7 @@
     "@storybook/nextjs": "^8.0.8",
     "@storybook/react": "^8.0.8",
     "@storybook/test": "^8.0.8",
-    "@tanstack/react-query-devtools": "^5.29.0",
+    "@tanstack/react-query-devtools": "^5.29.2",
     "@testing-library/react": "^15.0.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
