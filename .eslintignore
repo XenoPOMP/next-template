@@ -4,7 +4,9 @@
 **/.github/*
 
 
+# E2E testing
 cypress
+**/__tests__/e2e/*
 
 *.json
 
