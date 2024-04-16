@@ -1313,10 +1313,10 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.1.tgz#371ba8be66d556812dc7fb169ebc3c08378f69d4"
   integrity sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==
 
-"@chromatic-com/storybook@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@chromatic-com/storybook/-/storybook-1.3.2.tgz#75bb7954c1bdf578237791a285e18f9ed24eb587"
-  integrity sha512-XcEWNjpRNHCedKZeaXL1cArTIVAap4hZQS0Khn1u1R/b2WRhBqTFDl582sJDUixBN+qkhdStS23S1+Fj/BC1nQ==
+"@chromatic-com/storybook@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@chromatic-com/storybook/-/storybook-1.3.3.tgz#102d173d7e67cbc7f974648eaa459aa3d3d53f91"
+  integrity sha512-1y9r691T5vVGDZ0HY3YrCXUnvtrT2YrhDuvDZSvYSNUVpM/Imz6i1dnNMKb3eoI1qRsH55mI4zCt+Iq94NLedQ==
   dependencies:
     chromatic "^11.3.0"
     filesize "^10.0.12"
