@@ -5,7 +5,7 @@ import {
   screen,
   waitFor,
 } from '@testing-library/react';
-import { FC } from 'react';
+import { type FC } from 'react';
 import { afterEach, describe, expect, test } from 'vitest';
 
 import { expectToRender } from '@/__tests__/assets/utilities';

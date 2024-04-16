@@ -1,4 +1,4 @@
-import { CSSRuleObject } from 'tailwindcss/types/config';
+import type { CSSRuleObject } from 'tailwindcss/types/config';
 import { describe, test } from 'vitest';
 
 import { expectToDeepEqual } from '@/__tests__/assets/utilities';

@@ -1,11 +1,12 @@
 **/.next/*
 **/node_modules/*
-**/coverage/*
+
 **/.github/*
 
-**/__tests__/unit/*
-**/__tests__/e2e/*
+
+# E2E testing
 cypress
+**/__tests__/e2e/*
 
 *.json
 

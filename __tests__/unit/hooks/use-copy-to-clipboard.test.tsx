@@ -7,14 +7,16 @@ import {
   screen,
   waitFor,
 } from '@testing-library/react';
-import { ComponentProps, FC, useEffect } from 'react';
+import { type ComponentProps, type FC, useEffect } from 'react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 
-import { DeepPartial } from '@/__tests__/assets/types/DeepPartial';
-import { Stub } from '@/__tests__/assets/types/Stub';
+import type { DeepPartial } from '@/__tests__/assets/types/DeepPartial';
+import type { Stub } from '@/__tests__/assets/types/Stub';
 import { booleanishString } from '@/__tests__/assets/utilities/booleanishString';
 import { clickAll } from '@/__tests__/assets/utilities/clickAll';
 import useCopyToClipboard from '@/src/hooks/useCopyToClipboard';
+
+/* eslint-disable no-console */
 
 const UseCopyToClipboardTestComponent: FC<{}> = () => {
   const { copy, isCopied } = useCopyToClipboard();
@@ -25,7 +27,10 @@ const UseCopyToClipboardTestComponent: FC<{}> = () => {
 
   return (
     <>
-      <div data-testid={'output'} data-is-copied={isCopied}>
+      <div
+        data-testid={'output'}
+        data-is-copied={isCopied}
+      >
         Is text copied: {booleanishString(isCopied)}
       </div>
 
@@ -49,7 +54,7 @@ const UseCopyToClipboardTestComponent: FC<{}> = () => {
 const stubNavigator = (stub?: DeepPartial<Stub<typeof navigator>>) => {
   const navigatorStub: DeepPartial<Stub<typeof navigator>> = stub ?? {
     clipboard: {
-      writeText: async (text: string) => vi.fn(),
+      writeText: async (_text: string) => vi.fn(),
     },
   };
 
@@ -85,9 +90,9 @@ describe('useCopyToClipboard hook', () => {
   test('Promise rejection', () => {
     stubNavigator({
       clipboard: {
-        writeText: async (text: string) =>
-          new Promise((res, rej) => {
-            rej();
+        writeText: async (_text: string) =>
+          new Promise((_resolve, reject) => {
+            reject();
           }),
       },
     });
@@ -102,19 +107,19 @@ describe('useCopyToClipboard hook', () => {
   });
 
   test('Timeout works', async () => {
+    renderComponent({});
+
+    const output = screen.getByTestId('output');
+    const button = screen.getByTestId('payload-button');
+
+    const isCopiedAttribute = 'data-is-copied';
+
     const expectOutputToBe = <TValue = unknown,>(value: TValue) => {
       console.debug(
         `[ ATTR] Assert [${isCopiedAttribute}](${output.getAttribute(isCopiedAttribute)}) to be ${value}`,
       );
       expect(output.getAttribute(isCopiedAttribute)).toBe(value);
     };
-
-    renderComponent({});
-
-    const isCopiedAttribute = 'data-is-copied';
-
-    const output = screen.getByTestId('output');
-    const button = screen.getByTestId('payload-button');
 
     // Button is not clicked. Is copied should be `false`
     expectOutputToBe('false');
@@ -124,3 +129,5 @@ describe('useCopyToClipboard hook', () => {
     await waitFor(() => expectOutputToBe('true'));
   });
 });
+
+/* eslint-enable no-console */

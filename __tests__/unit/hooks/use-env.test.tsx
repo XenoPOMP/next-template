@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { FC } from 'react';
+import { type FC } from 'react';
 import { afterAll, beforeAll, describe, expect, test } from 'vitest';
 
 import { clearMocks } from '@/__tests__/assets/mocks';

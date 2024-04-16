@@ -7,7 +7,7 @@ import { expectToRender, testObject } from '@/__tests__/assets/utilities';
 import RootLayout, { generateMetadata } from '@/app/layout';
 
 describe('Root layout test', () => {
-  let matchMediaMock = new MatchMediaMock();
+  const matchMediaMock = new MatchMediaMock();
 
   beforeAll(() => {
     mockFonts();
