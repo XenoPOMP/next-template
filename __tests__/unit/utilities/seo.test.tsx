@@ -1,7 +1,7 @@
 import { afterEach, describe, test, vi } from 'vitest';
 
 import { stubGlobal, testObject } from '@/__tests__/assets/utilities';
-import { AppConstants } from '@/app/app.constants';
+import type { AppConstants } from '@/app/app.constants';
 import { generateOpenGraph } from '@/src/utils/seo';
 import { Months } from '@/src/utils/seo/sitemap-utils';
 

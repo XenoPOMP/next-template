@@ -1,7 +1,7 @@
 'use client';
 
 import { render } from '@testing-library/react';
-import { FC } from 'react';
+import { type FC } from 'react';
 import { describe, expect, test } from 'vitest';
 
 import { useUniqueId } from '@/src/hooks/useUniqueId';

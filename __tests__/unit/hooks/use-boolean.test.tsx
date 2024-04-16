@@ -1,8 +1,8 @@
 'use client';
 
-import { render, screen } from '@testing-library/react';
-import { FC } from 'react';
-import { describe, expect, test } from 'vitest';
+import { cleanup, render, screen } from '@testing-library/react';
+import { type FC } from 'react';
+import { afterEach, describe, expect, test } from 'vitest';
 
 import { clickAll } from '@/__tests__/assets/utilities/clickAll';
 import useBoolean from '@/src/hooks/useBoolean';
@@ -14,7 +14,7 @@ const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
     initialValue ?? false,
   );
 
-  const supportState = useBoolean();
+  const [supportState] = useBoolean();
 
   return (
     <>
@@ -22,11 +22,19 @@ const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
 
       <div id={'value-preview'}>Enabled: {localValue ? 'true' : 'false'}</div>
 
-      <button id={'value-toggler'} onClick={() => toggleLocalValue()}>
+      <div>Support state: {supportState ? 'true' : 'false'}</div>
+
+      <button
+        id={'value-toggler'}
+        onClick={() => toggleLocalValue()}
+      >
         Toggle value
       </button>
 
-      <button id={'value-changer-to-true'} onClick={() => setLocalValue(true)}>
+      <button
+        id={'value-changer-to-true'}
+        onClick={() => setLocalValue(true)}
+      >
         Change to true
       </button>
 
@@ -41,6 +49,10 @@ const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
 };
 
 describe('useBoolean hook', () => {
+  afterEach(() => {
+    cleanup();
+  });
+
   /** Expect local state to be certain value. */
   const expectStateToBe = (state: boolean) => {
     expect(() =>

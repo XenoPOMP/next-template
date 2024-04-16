@@ -7,7 +7,12 @@ import BackgroundImage from '@/src/components/ui/BackgroundImage/BackgroundImage
 describe('BackgroundImage component', () => {
   test('It renders', () => {
     expectToRender(
-      <BackgroundImage src={catImage} alt={'Sus'} width={1920} height={1080} />,
+      <BackgroundImage
+        src={catImage}
+        alt={'Sus'}
+        width={1920}
+        height={1080}
+      />,
     );
   });
 });
