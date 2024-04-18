@@ -1,3 +1,3 @@
-export { mockFonts } from './mock-fonts';
+export { mockFonts } from './mockFonts';
 export { clearMocks } from './clearMocks';
 export { mockRouter } from './mockRouter';
