@@ -1,0 +1,4 @@
+@mixin maskImage($images...) {
+  mask-image: linear-gradient($images);
+  -webkit-mask-image: linear-gradient($images);
+}

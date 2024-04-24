@@ -1,0 +1,24 @@
+// Define map of variables that will be cascaded down on certain breakpoint
+@mixin cascadeDown($at, $values) {
+  // Assign initial values
+  @each $name, $value in $values {
+    @include assignVariable($name, $value);
+  }
+
+  // Cascade values down on certain breakpoint
+  @include endAtFixed($at) {
+    // Loop over all presented values
+    @each $name, $value in $values {
+      $listLength: length($values);
+      $nextIndex: index($values, $name $value) + 1;
+
+      // Overflow safe
+      @if $nextIndex > $listLength {
+        @include assignVariable($name, nth(nth($values, $listLength), 2));
+      }
+      @else {
+        @include assignVariable($name, nth(nth($values, index($values, $name $value) + 1), 2));
+      }
+    }
+  }
+}
