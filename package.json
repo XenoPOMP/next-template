@@ -54,7 +54,7 @@
     "@storybook/react": "^8.0.8",
     "@storybook/test": "^8.0.8",
     "@tanstack/react-query-devtools": "^5.31.0",
-    "@testing-library/react": "^15.0.2",
+    "@testing-library/react": "^15.0.4",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
     "@typescript-eslint/parser": "^7.7.1",
