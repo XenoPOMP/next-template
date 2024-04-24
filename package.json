@@ -51,7 +51,7 @@
     "@storybook/addon-themes": "8.0.9",
     "@storybook/blocks": "^8.0.9",
     "@storybook/nextjs": "^8.0.8",
-    "@storybook/react": "^8.0.8",
+    "@storybook/react": "^8.0.9",
     "@storybook/test": "^8.0.8",
     "@tanstack/react-query-devtools": "^5.31.0",
     "@testing-library/react": "^15.0.4",
