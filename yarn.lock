@@ -2194,10 +2194,12 @@
     "@storybook/global" "^5.0.0"
     tiny-invariant "^1.3.1"
 
-"@storybook/addon-onboarding@^8.0.9":
-  version "8.0.9"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-onboarding/-/addon-onboarding-8.0.9.tgz#d3af0d4ec909c5bc60b0cb060d86fde1c7f1e21d"
-  integrity sha512-gRPn8ooxTmdamfJgdkQR48pza67S83l2DDlZ3C1kuus19UO+eIFUEVZJbud9qQojq7jc8ztaYXiNObWdxKu29A==
+"@storybook/addon-onboarding@^8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-onboarding/-/addon-onboarding-8.1.2.tgz#bf1703ecd9db56d673f1e73cc49c3785e47c7aed"
+  integrity sha512-z5jokyfCA4tJMv/kl7MeimxezHibcX+ICH2tausV3rRmtkDxVqp8LmbCktH5hPST7VX+qBVsQyqGDmpEXqWkog==
+  dependencies:
+    react-confetti "^6.1.0"
 
 "@storybook/addon-outline@8.0.9":
   version "8.0.9"
