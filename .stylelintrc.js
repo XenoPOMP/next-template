@@ -1,45 +1,68 @@
 /**
- * Rule for pattern names (like, class selector names etc.)
- * @type {[string,{severity: string}]}
+ * Allows you to choose severity.
+ *
+ * @template Value extends any
+ * @param value {Value}
+ * @param severity {string}
+ * @return {[Value,{severity: string}]}
  */
-const CAMEL_CASE = [
-  '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
+const withSeverity = (value, severity) => [
+  value,
   {
-    severity: 'error',
+    severity,
   },
 ];
 
+/** Rule for pattern names (like, class selector names etc.) */
+const CAMEL_CASE = withSeverity(
+  '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
+  'error',
+);
+
 /**
- * Create rule with error severity.
- * @type {[boolean,{severity: string}]}
+ * Wraps rule with error severity.
+ *
+ * @template Value extends any
+ * @param value {Value}
+ * @return {[Value,{severity: string}]}
  */
-const WITH_ERROR = [
-  true,
-  {
-    severity: 'error',
-  },
-];
+const withError = value => withSeverity(value, 'error');
+
+/**
+ * Wraps rule with warning severity.
+ *
+ * @template Value extends any
+ * @param value {Value}
+ * @return {[Value,{severity: string}]}
+ */
+const withWarning = value => withSeverity(value, 'warning');
 
 module.exports = {
   rules: {
-    'block-no-empty': WITH_ERROR,
-    'property-no-vendor-prefix': null,
+    // Errors
+    'block-no-empty': withError(true),
+    'declaration-block-no-duplicate-properties': withError(true),
+    'scss/comment-no-empty': withError(true),
 
-    'declaration-block-no-duplicate-properties': WITH_ERROR,
-    'no-duplicate-selectors': WITH_ERROR,
-    'comment-no-empty': WITH_ERROR,
-    'declaration-no-important': WITH_ERROR,
+    // Warnings
+    'no-duplicate-selectors': withWarning(true),
+    'declaration-no-important': withWarning(true),
 
+    // Case
     'selector-class-pattern': CAMEL_CASE,
     'scss/at-function-pattern': CAMEL_CASE,
     'scss/at-mixin-pattern': CAMEL_CASE,
     'scss/dollar-variable-pattern': CAMEL_CASE,
     'scss/percent-placeholder-pattern': CAMEL_CASE,
 
+    // Disabled
+    'property-no-vendor-prefix': null,
     'scss/no-global-function-names': null,
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': null,
     'no-empty-source': null,
+    'scss/at-if-closing-brace-space-after': null,
+    'scss/at-if-closing-brace-newline-after': null,
   },
   defaultSeverity: 'warning',
   plugins: ['stylelint-scss'],
