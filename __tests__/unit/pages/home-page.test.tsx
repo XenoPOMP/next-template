@@ -1,10 +1,10 @@
-import { render } from '@testing-library/react';
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
+import { expectToRender } from '@/__tests__/assets/utilities';
 import Home from '@/app/page';
 
 describe('Index page', () => {
   test('Render without errors', () => {
-    expect(() => render(<Home />)).not.toThrow();
+    expectToRender(<Home />);
   });
 });
