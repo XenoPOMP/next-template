@@ -1,16 +1,12 @@
-import { afterAll, beforeAll, describe, test, vi } from 'vitest';
+import { describe, test, vi } from 'vitest';
 
-import { clearMocks, mockEnv } from '@/__tests__/assets/mocks';
-import { testObject } from '@/__tests__/assets/utilities';
+import { mockEnv } from '@/__tests__/assets/mocks';
+import { injectMocks, testObject } from '@/__tests__/assets/utilities';
 import sitemap from '@/app/sitemap';
 
 describe('Next.js sitemap generation', () => {
-  beforeAll(() => {
+  injectMocks(() => {
     mockEnv();
-  });
-
-  afterAll(() => {
-    clearMocks();
   });
 
   test('It works', () => {
