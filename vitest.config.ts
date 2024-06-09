@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => ({
       reporter: ['text', 'json', 'json-summary', 'html'],
       exclude: testingExclusion,
     },
+    setupFiles: ['./__tests__/setup.vitest.ts'],
   },
   define: mode === 'test' ? {} : { global: 'window' },
 }));
