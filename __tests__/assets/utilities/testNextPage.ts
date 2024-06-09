@@ -25,10 +25,12 @@ export const testNextPage = (
   page: ReactNode,
   options?: ITestNextPageOptions,
 ) => {
-  injectMocks({
-    mockingFn: () => {
-      mockRouter();
-    },
+  injectMocks(() => {
+    mockRouter();
+
+    return () => {
+      console.log('This is printed from injectMocks func (afterAll event).');
+    };
   });
 
   test('It renders', () => {
