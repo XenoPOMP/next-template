@@ -1,8 +1,7 @@
 import { afterAll, afterEach, beforeAll, describe, test, vi } from 'vitest';
 import MatchMediaMock from 'vitest-matchmedia-mock';
 
-import { clearMocks, mockFonts } from '@/__tests__/assets/mocks';
-import { mockEnv } from '@/__tests__/assets/mocks/mockEnv';
+import { clearMocks, mockEnv, mockFonts } from '@/__tests__/assets/mocks';
 import { expectToRender, testObject } from '@/__tests__/assets/utilities';
 import RootLayout, { generateMetadata } from '@/app/layout';
 

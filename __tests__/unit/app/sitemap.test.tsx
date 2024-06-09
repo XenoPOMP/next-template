@@ -1,7 +1,6 @@
 import { afterAll, beforeAll, describe, test, vi } from 'vitest';
 
-import { clearMocks } from '@/__tests__/assets/mocks';
-import { mockEnv } from '@/__tests__/assets/mocks/mockEnv';
+import { clearMocks, mockEnv } from '@/__tests__/assets/mocks';
 import { testObject } from '@/__tests__/assets/utilities';
 import sitemap from '@/app/sitemap';
 
