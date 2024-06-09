@@ -10841,6 +10841,11 @@ storybook@^8.0.9:
   dependencies:
     "@storybook/cli" "8.0.9"
 
+str.scss@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/str.scss/-/str.scss-1.2.0.tgz#a1d22b1b0805c0deeebab3fc95197d37b6fefd4c"
+  integrity sha512-L1A0X7w+vYQOinlOP3U7N2kbbaZylhgk03o8rhcJfAjYWaSLu45UwTD7JZGHPtA7toRDsVusfRawDsSg9FKfBQ==
+
 stream-browserify@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-3.0.0.tgz#22b0a2850cdf6503e73085da1fc7b7d0c2122f2f"
