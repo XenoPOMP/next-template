@@ -27,10 +27,6 @@ export const testNextPage = (
 ) => {
   injectMocks(() => {
     mockRouter();
-
-    return () => {
-      console.log('This is printed from injectMocks func (afterAll event).');
-    };
   });
 
   test('It renders', () => {

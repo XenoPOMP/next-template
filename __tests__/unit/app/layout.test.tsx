@@ -1,28 +1,29 @@
-import { afterAll, afterEach, beforeAll, describe, test, vi } from 'vitest';
+import { afterEach, describe, test, vi } from 'vitest';
 import MatchMediaMock from 'vitest-matchmedia-mock';
 
-import { clearMocks, mockEnv, mockFonts } from '@/__tests__/assets/mocks';
-import { expectToRender, testObject } from '@/__tests__/assets/utilities';
+import { mockEnv, mockFonts } from '@/__tests__/assets/mocks';
+import {
+  expectToRender,
+  injectMocks,
+  testObject,
+} from '@/__tests__/assets/utilities';
 import RootLayout, { generateMetadata } from '@/app/layout';
 
 describe('Root layout test', () => {
   const matchMediaMock = new MatchMediaMock();
 
-  beforeAll(() => {
-    mockFonts();
+  injectMocks(() => {
     mockEnv();
+    mockFonts();
 
     // Mock window.matchMedia.
     matchMediaMock.useMediaQuery('(prefers-color-scheme: dark)');
+
+    return () => matchMediaMock.destroy();
   });
 
   afterEach(() => {
     matchMediaMock.clear();
-  });
-
-  afterAll(() => {
-    clearMocks();
-    matchMediaMock.destroy();
   });
 
   test('It renders', () => {
