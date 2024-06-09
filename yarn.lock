@@ -1923,6 +1923,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@pacote/react-use-outside@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@pacote/react-use-outside/-/react-use-outside-2.0.2.tgz#837199ca6e2b43990d423d58860d17144be63a2e"
+  integrity sha512-nDUmhDcMwj0CYQ5O7ZRmdI55lpJ+RR6Tbeqhy1OcHvrZw2aephU5sjO7vUo1ZvtoSKqkKdkv7K20N8P7YlLNjg==
+
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
