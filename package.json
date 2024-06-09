@@ -67,7 +67,7 @@
     "@vitest/coverage-istanbul": "^1.5.3",
     "@xenopomp/advanced-types": "^1.x",
     "concurrently": "^8.2.2",
-    "cypress": "^13.8.1",
+    "cypress": "^13.11.0",
     "eslint": "^8.57.0",
     "eslint-config-xeno": "^0.2.3",
     "eslint-plugin-storybook": "^0.8.0",
