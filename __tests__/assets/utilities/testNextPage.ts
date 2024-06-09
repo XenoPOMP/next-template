@@ -25,10 +25,8 @@ export const testNextPage = (
   page: ReactNode,
   options?: ITestNextPageOptions,
 ) => {
-  injectMocks({
-    mockingFn: () => {
-      mockRouter();
-    },
+  injectMocks(() => {
+    mockRouter();
   });
 
   test('It renders', () => {
