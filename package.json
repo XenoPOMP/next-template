@@ -64,7 +64,7 @@
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
     "@vitejs/plugin-react": "^4.3.0",
-    "@vitest/coverage-istanbul": "^1.5.3",
+    "@vitest/coverage-istanbul": "^1.6.0",
     "@xenopomp/advanced-types": "^1.x",
     "concurrently": "^8.2.2",
     "cypress": "^13.11.0",
@@ -89,7 +89,7 @@
     "tailwindcss-themer": "^4.0.0",
     "ts-custom-error": "^3.3.1",
     "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^1.5.3",
+    "vitest": "^1.6.0",
     "vitest-matchmedia-mock": "^1.0.5"
   }
 }
