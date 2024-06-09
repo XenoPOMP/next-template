@@ -1,4 +1,4 @@
-<img src="https://github.com/XenoPOMP/next-template/assets/101574433/4f668b51-381f-4f1f-8803-f0b6370fd1b5" width="120" align="left" />
+<img src="https://github.com/XenoPOMP/next-template/assets/101574433/4f668b51-381f-4f1f-8803-f0b6370fd1b5" width="160" align="left" />
 
 ### Next.js 14 Template
 
