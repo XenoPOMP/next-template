@@ -11,8 +11,6 @@
 
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
 
-<br/>
-
 ## Features
 
 - 🖼️ SEO optimization + Open Graph images
