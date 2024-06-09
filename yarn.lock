@@ -4633,9 +4633,9 @@
     "@xtuc/long" "4.2.2"
 
 "@xenopomp/advanced-types@^1.x":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.7.4.tgz#e6d56418ff9c7175ddf7d3a536698559b7134f17"
-  integrity sha512-7Q66OW5zMNVS0qRQk18KCR/Jqe/dwGL9t9rG0Of0eHxlx8kOi576B2q5oH+ilkaMTWYNtRL8AAkVCVDr0iFyXQ==
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.7.5.tgz#c98a3cdb95ad6a4a3d76a4da709f12f1fc441ca0"
+  integrity sha512-wMm0hbnk4ACth3iSYq1Q7uNeKVQtjrQUCV+SmTxco/OnLN5CwktK9Vic6nGujKihUJuika4DUC5f/e1F/P+wsA==
 
 "@xenopomp/advanced-utils@^1.2.2":
   version "1.2.2"
