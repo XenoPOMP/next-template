@@ -7,8 +7,9 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# IDE
-.idea
+# IntelliJ Idea
+.idea/*
+!.idea/icon.svg
 
 .vscode/*
 
