@@ -1,9 +1,10 @@
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
+import { assertNotThrowing } from '@/__tests__/assets/assertions';
 import { CustomClassesPlugin } from '@/src/styles/themes/plugins';
 
 describe('CustomClassesPlugin test', () => {
   test('It works', () => {
-    expect(() => CustomClassesPlugin()).not.toThrow();
+    assertNotThrowing(() => CustomClassesPlugin());
   });
 });

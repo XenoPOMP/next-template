@@ -1,10 +1,13 @@
 import { render } from '@testing-library/react';
 import { type FC } from 'react';
-import { afterAll, beforeAll, describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
-import { clearMocks } from '@/__tests__/assets/mocks';
-import { mockEnv } from '@/__tests__/assets/mocks/mockEnv';
-import { booleanishString, expectToRender } from '@/__tests__/assets/utilities';
+import { mockEnv } from '@/__tests__/assets/mocks';
+import {
+  booleanishString,
+  expectToRender,
+  injectMocks,
+} from '@/__tests__/assets/utilities';
 import { VariableExistenceError, useEnv } from '@/src/hooks/use-env';
 
 const TestComponent: FC<{ testGetOrThrow?: boolean }> = ({
@@ -39,12 +42,8 @@ const TestComponent: FC<{ testGetOrThrow?: boolean }> = ({
 };
 
 describe('useEnv hook', () => {
-  beforeAll(() => {
+  injectMocks(() => {
     mockEnv({ THIS_KEY_IS_REAL: 'realKey' });
-  });
-
-  afterAll(() => {
-    clearMocks();
   });
 
   test('Not throwing errors', () => {

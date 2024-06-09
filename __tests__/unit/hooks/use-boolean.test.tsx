@@ -1,51 +1,68 @@
 'use client';
 
-import { cleanup, render, screen } from '@testing-library/react';
-import { type FC } from 'react';
+import {
+  cleanup,
+  fireEvent,
+  render,
+  renderHook,
+  screen,
+} from '@testing-library/react';
+import { capitalize } from '@xenopomp/advanced-utils';
 import { afterEach, describe, expect, test } from 'vitest';
 
-import { clickAll } from '@/__tests__/assets/utilities/clickAll';
-import useBoolean from '@/src/hooks/useBoolean';
+import { TestUseBoolean } from '@/__tests__/assets/components';
+import {
+  booleanishString,
+  expectHookToRender,
+} from '@/__tests__/assets/utilities';
+import { ViLogger } from '@/__tests__/assets/utilities/vi-logger.ts';
+import useBoolean from '@/src/hooks/useBoolean.ts';
 
-const UseBooleanTestComponent: FC<{ initialValue?: boolean }> = ({
-  initialValue,
-}) => {
-  const [localValue, toggleLocalValue, setLocalValue] = useBoolean(
-    initialValue ?? false,
-  );
+/**
+ * Renders useBoolean hook and returns result
+ * of render.
+ * @param args
+ */
+const renderResult = (...args: Parameters<typeof useBoolean>) => {
+  const res = renderHook(() => useBoolean(...args));
+  return res.result.current;
+};
 
-  const [supportState] = useBoolean();
+/**
+ * Renders test artifact and then return functions
+ * to manipulate with it.
+ */
+const renderTestArtifact = () => {
+  render(<TestUseBoolean />);
+  ViLogger.debug('Test component has been rendered.');
 
-  return (
-    <>
-      <h1>This is an component for testing useBoolean hook</h1>
+  // Get elements from DOM
+  const valueHolder = screen.getByTestId<HTMLDivElement>('value-holder');
+  const toggleButton = screen.getByTestId<HTMLButtonElement>('toggle-button');
+  const changeToTrueButton =
+    screen.getByTestId<HTMLButtonElement>('change-to-true');
+  const changeToFalseButton =
+    screen.getByTestId<HTMLButtonElement>('change-to-false');
 
-      <div id={'value-preview'}>Enabled: {localValue ? 'true' : 'false'}</div>
+  // Asserts current value
+  const assertValue = (value: boolean) => {
+    const assertion = booleanishString(value);
 
-      <div>Support state: {supportState ? 'true' : 'false'}</div>
+    ViLogger.debug(`Assert value to be ${capitalize(assertion)}.`);
+    expect(valueHolder.getAttribute('data-value')).toBe(assertion);
+  };
 
-      <button
-        id={'value-toggler'}
-        onClick={() => toggleLocalValue()}
-      >
-        Toggle value
-      </button>
+  // Presses the `Toggle value` button
+  const toggle = () => fireEvent.click(toggleButton);
 
-      <button
-        id={'value-changer-to-true'}
-        onClick={() => setLocalValue(true)}
-      >
-        Change to true
-      </button>
+  const change = (value: boolean) =>
+    fireEvent.click(value ? changeToTrueButton : changeToFalseButton);
 
-      <button
-        id={'value-changer-to-false'}
-        onClick={() => setLocalValue(false)}
-      >
-        Change to false
-      </button>
-    </>
-  );
+  return {
+    assertValue,
+    toggle,
+    change,
+  };
 };
 
 describe('useBoolean hook', () => {
@@ -53,53 +70,42 @@ describe('useBoolean hook', () => {
     cleanup();
   });
 
-  /** Expect local state to be certain value. */
-  const expectStateToBe = (state: boolean) => {
-    expect(() =>
-      screen.getAllByText(`Enabled: ${state ? 'true' : 'false'}`),
-    ).not.toThrow();
-  };
-
   test('Not throwing errors', () => {
-    expect(() => render(<UseBooleanTestComponent />)).not.toThrow();
+    expectHookToRender(() => useBoolean());
   });
 
   test('Not providing default value', () => {
-    render(<UseBooleanTestComponent />);
-
-    expectStateToBe(false);
+    const [value] = renderResult();
+    expect(value).toBe(false);
   });
 
   test('Default value', () => {
-    render(<UseBooleanTestComponent initialValue={false} />);
-
-    expectStateToBe(false);
+    const [value] = renderResult(true);
+    expect(value).toBe(true);
   });
 
   test('Toggle value', () => {
-    render(<UseBooleanTestComponent initialValue={false} />);
+    const { assertValue, toggle } = renderTestArtifact();
 
-    const buttons = screen.getAllByText<HTMLButtonElement>(`Toggle value`);
+    // Initial value
+    assertValue(false);
 
-    clickAll(buttons);
-    expectStateToBe(true);
-
-    clickAll(buttons);
-    expectStateToBe(false);
+    // Toggle should work
+    toggle();
+    assertValue(true);
   });
 
   test('Change value', () => {
-    render(<UseBooleanTestComponent initialValue={true} />);
+    const { assertValue, change } = renderTestArtifact();
 
-    const changeToTrueButtons =
-      screen.getAllByText<HTMLButtonElement>(`Change to true`);
-    const changeToFalseButtons =
-      screen.getAllByText<HTMLButtonElement>(`Change to false`);
+    // Initial value
+    assertValue(false);
 
-    clickAll(changeToTrueButtons);
-    expectStateToBe(true);
+    // You can change value manually
+    change(true);
+    assertValue(true);
 
-    clickAll(changeToFalseButtons);
-    expectStateToBe(false);
+    change(false);
+    assertValue(false);
   });
 });
