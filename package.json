@@ -75,7 +75,7 @@
     "jsdom": "^24.0.0",
     "lint-staged": "^15.2.5",
     "postcss": "^8",
-    "prettier": "^3.0.0",
+    "prettier": "^3.3.1",
     "sass": "^1.77.4",
     "start-server-and-test": "^2.0.3",
     "storybook": "^8.1.6",
