@@ -1,4 +1,4 @@
-import type { Synchronous } from '@xenopomp/advanced-types';
+import type { Synchronous, Undefinable } from '@xenopomp/advanced-types';
 
 // Base type for race callbacks.
 export type RaceFunc<TValue = unknown, TResult = unknown, TReturn = TResult> = (
@@ -11,8 +11,8 @@ export type RaceCallback<
   TResult = unknown,
   TReturn = TResult,
 > = (
-  value?: TValue,
-  abortController?: AbortController,
+  value: Undefinable<TValue>,
+  abortController: AbortController,
 ) => ReturnType<RaceFunc<TValue, TResult, TReturn>>;
 
 export interface IUseRaceOptions<TValue = unknown, TResult = unknown> {
