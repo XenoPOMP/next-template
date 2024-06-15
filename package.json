@@ -45,6 +45,7 @@
     "react-dom": "^18.3.1",
     "sharp": "^0.33.4",
     "typescript": "^5",
+    "use-debounce": "^10.0.1",
     "zustand": "^4.4.4"
   },
   "devDependencies": {
