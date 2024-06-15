@@ -14,6 +14,10 @@ const testingExclusion: string[] = [
   '**/*.stories.{ts,tsx}',
 
   // Testing artifacts
+  '__tests__/**/Test*.tsx',
+  'app/test',
+
+  // Testing artifacts
   './coverage',
   './app/test',
   '__tests__/{e2e,assets}',
@@ -24,6 +28,7 @@ const testingExclusion: string[] = [
 
   // Ignore configs
   '**/{next,postcss,tailwind}.config.{ts,js}',
+  'mdx-components.tsx',
 ];
 
 export default defineConfig(({ mode }) => ({
