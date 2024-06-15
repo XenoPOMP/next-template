@@ -16,6 +16,53 @@ import { type IUseRaceOptions, type RaceCallback } from './index.ts';
  * @param value     This value is being tracked for running race
  * @param callback  This callback takes val and abort controller
  * @param options
+ *
+ * @example
+ * const TestPage: FC<{}> = () => {
+ *   const [query, setQuery] = useState('');
+ *
+ *   const { logs, addLog } = useRaceStore();
+ *
+ *   useRace(
+ *     query,
+ *     async (value, abortController) => {
+ *       // You can run data fetch logic here and use
+ *       // abort controller for stopping races.
+ *
+ *       // Example onabort usage
+ *       abortController.signal.onabort = () => {
+ *         addLog(`🚫 ${value}`);
+ *       };
+ *
+ *       // Emulate heavy data fetching process
+ *       setTimeout(() => {
+ *         addLog(`✅ ${value}`);
+ *       }, 100);
+ *     },
+ *     {
+ *       delay: 444,
+ *
+ *       // Run race only if search query is longer than
+ *       // 3 symbols.
+ *       raceResolveCondition: val => (val?.length ?? 0) > 3,
+ *     },
+ *   );
+ *
+ *   return (
+ *     <UiContainer as={'main'}>
+ *       <div className={cn('sticky top-0 py-[1rem] bg-primary-bg')}>
+ *         <p>Testing page</p>
+ *
+ *         <input
+ *           value={query}
+ *           onChange={ev => setQuery(ev.target.value)}
+ *         />
+ *       </div>
+ *
+ *       {!!logs.length && logs.map((log, _i) => <p key={_i}>{log}</p>)}
+ *     </UiContainer>
+ *   );
+ * };
  */
 export const useRace = <TValue = unknown, TResult = unknown>(
   value?: TValue,
