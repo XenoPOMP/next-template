@@ -7,7 +7,6 @@
 <a href="#contributors">
 <img alt="All Contributors" src="https://img.shields.io/github/all-contributors/XenoPOMP/next-template?color=ee8449&style=flat-square">
 </a>
-<img src="https://raw.githubusercontent.com/XenoPOMP/next-template/master/cloc.svg" />
 </p>
 
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
