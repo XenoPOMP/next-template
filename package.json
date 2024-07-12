@@ -79,7 +79,7 @@
     "prettier": "^3.3.2",
     "sass": "^1.77.4",
     "start-server-and-test": "^2.0.3",
-    "storybook": "^8.1.9",
+    "storybook": "^8.2.2",
     "str.scss": "^1.2.0",
     "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.0",
