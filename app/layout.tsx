@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import { type ReactNode } from 'react';
 
 import { CoreLayout, Providers } from '@/src/components/layout';
-import { useEnv } from '@/src/hooks/use-env';
+import { useEnv } from '@/src/hooks';
 import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
 
 import { AppConstants } from './app.constants';
