@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import { type FC } from 'react';
 
-import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
+import { UiContainer } from '@/src/components/ui';
 
 import styles from './Footer.module.scss';
 import type { FooterProps } from './Footer.props';
