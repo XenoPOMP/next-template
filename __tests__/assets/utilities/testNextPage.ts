@@ -6,7 +6,7 @@ import { mockRouter } from '@/__tests__/assets/mocks';
 import { expectToRender } from '@/__tests__/assets/utilities/expect-to-render.tsx';
 import { injectMocks } from '@/__tests__/assets/utilities/injectMocks.ts';
 import { testObject } from '@/__tests__/assets/utilities/testObject.ts';
-import RQProvider from '@/src/components/providers/RQProvider/RQProvider.tsx';
+import { RQProvider } from '@/src/components/providers';
 
 interface ITestNextPageOptions {
   generateMetadata?: () => Promise<Metadata>;
