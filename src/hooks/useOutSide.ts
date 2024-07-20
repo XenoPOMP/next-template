@@ -1,3 +1,5 @@
+'use client';
+
 import { useOutside } from '@pacote/react-use-outside';
 import { useState } from 'react';
 
