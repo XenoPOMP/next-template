@@ -8,7 +8,7 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
@@ -19,6 +19,16 @@ updates:
       prefix-development: chore(dev-deps)
     ignore:
       - dependency-name: "@storybook/*"
+        update-types:
+          - "version-update:semver-minor"
+          - "version-update:semver-patch"
+
+      - dependency-name: "@typescript-eslint/*"
+        update-types:
+          - "version-update:semver-minor"
+          - "version-update:semver-patch"
+
+      - dependency-name: "stylelint*"
         update-types:
           - "version-update:semver-minor"
           - "version-update:semver-patch"
