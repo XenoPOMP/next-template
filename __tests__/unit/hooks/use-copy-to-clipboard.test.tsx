@@ -14,7 +14,7 @@ import type { DeepPartial } from '@/__tests__/assets/types/DeepPartial';
 import type { Stub } from '@/__tests__/assets/types/Stub';
 import { booleanishString } from '@/__tests__/assets/utilities/booleanishString';
 import { clickAll } from '@/__tests__/assets/utilities/clickAll';
-import useCopyToClipboard from '@/src/hooks/useCopyToClipboard';
+import { useCopyToClipboard } from '@/src/hooks';
 
 /* eslint-disable no-console */
 

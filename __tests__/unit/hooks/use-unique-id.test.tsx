@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import { type FC } from 'react';
 import { describe, expect, test } from 'vitest';
 
-import { useUniqueId } from '@/src/hooks/useUniqueId';
+import { useUniqueId } from '@/src/hooks';
 
 const UseUniqueIdTestComponent: FC<{}> = () => {
   const notTransformedId = useUniqueId();

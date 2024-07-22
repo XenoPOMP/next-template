@@ -2,7 +2,7 @@ import { type PropsWith } from '@xenopomp/advanced-types';
 import cn from 'classnames';
 import type { CSSProperties, FC } from 'react';
 
-import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
+import { UiContainer } from '@/src/components/ui';
 
 import type { UiGridProps } from './UiGrid.props';
 

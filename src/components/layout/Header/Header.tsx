@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 
-import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
+import { UiContainer } from '@/src/components/ui';
 
 import type { HeaderProps } from './Header.props';
 

@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { type ReactNode } from 'react';
 
-import CoreLayout from '@/src/components/layout/CoreLayout/CoreLayout';
-import Providers from '@/src/components/layout/Providers/Providers';
-import { useEnv } from '@/src/hooks/use-env';
+import { CoreLayout, Providers } from '@/src/components/layout';
+import { useEnv } from '@/src/hooks';
 import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
 
 import { AppConstants } from './app.constants';

@@ -1,5 +1,5 @@
 import { AppConstants } from '@/app/app.constants';
-import { useEnv } from '@/src/hooks/use-env';
+import { useEnv } from '@/src/hooks';
 import { type Sitemap } from '@/src/utils/seo/sitemap-utils';
 
 export default function sitemap(): Sitemap {
