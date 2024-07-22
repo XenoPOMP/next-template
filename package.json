@@ -79,7 +79,7 @@
     "postcss": "^8",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "sass": "^1.77.4",
+    "sass": "^1.77.8",
     "start-server-and-test": "^2.0.3",
     "storybook": "^8.2.5",
     "str.scss": "^1.2.0",
