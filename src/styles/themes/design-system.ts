@@ -1,15 +1,19 @@
-import type { CustomThemeConfig } from 'tailwindcss/types/config';
+import type { CustomThemeConfig, KeyValuePair } from 'tailwindcss/types/config';
+
+const padding: KeyValuePair = {
+  1: 'var(--p-level-1)',
+  2: 'var(--p-level-2)',
+  3: 'var(--p-level-3)',
+  4: 'var(--p-level-4)',
+  5: 'var(--p-level-5)',
+};
 
 // This object contains TW values` overrides
 // needed for design system.
 export const DesignSystem: Partial<CustomThemeConfig> = {
-  padding: {
-    1: 'var(--p-level-1)',
-    2: 'var(--p-level-2)',
-    3: 'var(--p-level-3)',
-    4: 'var(--p-level-4)',
-    5: 'var(--p-level-5)',
-  },
+  padding,
+  margin: padding,
+  gap: padding,
 
   fontSize: {
     24: 'var(--p24)',
