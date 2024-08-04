@@ -10,7 +10,7 @@ const padding: KeyValuePair = {
 
 // This object contains TW values` overrides
 // needed for design system.
-export const DesignSystem: Partial<CustomThemeConfig> = {
+export const DesignSystemConfig: Partial<CustomThemeConfig> = {
   padding,
   margin: padding,
   gap: padding,
