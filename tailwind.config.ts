@@ -1,6 +1,8 @@
 import { type Config } from 'tailwindcss';
 import tailwindThemer from 'tailwindcss-themer';
 
+import { DesignSystem } from '@/src/styles/themes/design-system';
+
 import { CustomClassesPlugin } from './src/styles/themes/plugins';
 import { darkTheme, lightTheme } from './src/themes';
 
@@ -13,6 +15,9 @@ const tailwindConfig: Config = {
   ],
   theme: {
     extend: {
+      // Uncomment line below if design system is needed
+      // ...DesignSystem,
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
