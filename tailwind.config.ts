@@ -16,7 +16,7 @@ const tailwindConfig: Config = {
   theme: {
     extend: {
       // Uncomment line below if design system is needed
-      // ...DesignSystem,
+      // ...DesignSystemConfig,
 
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
