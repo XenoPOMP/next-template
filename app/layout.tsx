@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import { type ReactNode } from 'react';
 
 import { CoreLayout, Providers } from '@/src/components/layout';
-import { useEnv } from '@/src/hooks';
+import { env } from '@/src/utils/env';
 import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
 
 import { AppConstants } from './app.constants';
@@ -12,9 +12,7 @@ import './globals.scss';
 const mainFont = Inter({ subsets: ['latin'] });
 
 export async function generateMetadata(): Promise<Metadata> {
-  const env = useEnv();
-  const CANONICAL_URL =
-    env.get('CANONICAL_URL') || AppConstants.defaultCanonical;
+  const CANONICAL_URL = env.CANONICAL_URL;
 
   return generateStaticMetadata({
     metadataBase: new URL(CANONICAL_URL),

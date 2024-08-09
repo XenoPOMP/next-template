@@ -1,10 +1,8 @@
-import { AppConstants } from '@/app/app.constants';
-import { useEnv } from '@/src/hooks';
+import { env } from '@/src/utils/env';
 import { type Sitemap } from '@/src/utils/seo/sitemap-utils';
 
 export default function sitemap(): Sitemap {
-  const env = useEnv();
-  const CANONICAL = env.get('CANONICAL_URL') || AppConstants.defaultCanonical;
+  const CANONICAL = env.CANONICAL_URL;
 
   return [
     {
