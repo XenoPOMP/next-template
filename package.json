@@ -33,7 +33,7 @@
     "@pacote/react-use-outside": "^2.0.2",
     "@tanstack/react-query": "^5.51.21",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^22.1.0",
+    "@types/node": "^22.2.0",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@xenopomp/advanced-utils": "^1.2.2",
