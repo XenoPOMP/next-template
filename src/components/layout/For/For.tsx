@@ -7,7 +7,7 @@ import type { ForProps } from './For.props';
  * @constructor
  */
 function For<ItemType>({ data, children }: ForProps<ItemType>) {
-  return <>{data.map(item => children?.(item))}</>;
+  return <>{data.map((item, index) => children?.(item, index))}</>;
 }
 
 export default For;
