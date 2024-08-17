@@ -1,6 +1,7 @@
 import ogSquareImg from '@/public/open-graph/og (200x200).png';
 import ogWideImg from '@/public/open-graph/og (1200x627).png';
 import type { ModifiedOGConfig } from '@/src/types';
+import { env } from '@/src/utils/env';
 
 export const SHARED_OG_CONFIG: Partial<ModifiedOGConfig> = {
   images: [
@@ -16,5 +17,5 @@ export const SHARED_OG_CONFIG: Partial<ModifiedOGConfig> = {
     },
   ],
   siteName: 'Next Template',
-  url: process.env.CANONICAL_URL,
+  url: env.CANONICAL_URL,
 };
