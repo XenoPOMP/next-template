@@ -1,6 +1,6 @@
 import { type OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
 
-import { AppConstants } from '@/app/app.constants';
+import { APP_NAME, SHARED_OG_CONFIG } from '@/app/constants';
 
 /**
  * Generate OG image for metadata.
@@ -25,15 +25,12 @@ export const generateOpenGraph = (
   },
 ): OpenGraph => {
   return {
-    ...AppConstants.sharedOpenGraphConfig,
+    ...SHARED_OG_CONFIG,
 
-    images: [
-      ...(AppConstants.sharedOpenGraphConfig.images || []),
-      ...(options?.images || []),
-    ],
+    images: [...(SHARED_OG_CONFIG.images || []), ...(options?.images || [])],
 
     type: 'website',
-    title: options?.title || AppConstants.appName,
+    title: options?.title || APP_NAME,
     description: options?.description || '',
   };
 };

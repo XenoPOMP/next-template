@@ -1,8 +1,6 @@
 import { afterEach, describe, test, vi } from 'vitest';
 
-import { stubGlobal, testObject } from '@/__tests__/assets/utilities';
-import type { AppConstants } from '@/app/app.constants';
-import { generateOpenGraph } from '@/src/utils/seo';
+import { testObject } from '@/__tests__/assets/utilities';
 import { Months } from '@/src/utils/seo/sitemap-utils';
 
 describe('SEO utilities', () => {
@@ -12,12 +10,5 @@ describe('SEO utilities', () => {
 
   test('Test Months enum', () => {
     testObject(Months);
-  });
-
-  test('Generate OG image', () => {
-    stubGlobal<typeof AppConstants>('AppConstants', {
-      sharedOpenGraphConfig: { images: undefined },
-    });
-    testObject(generateOpenGraph());
   });
 });

@@ -1,6 +1,6 @@
 import { transliterate } from '@xenopomp/advanced-utils';
 
-import { AppConstants } from '@/app/app.constants';
+import { APP_NAME } from '@/app/constants';
 
 /**
  * Creates key for local storage.
@@ -10,8 +10,6 @@ import { AppConstants } from '@/app/app.constants';
  * // [YOUR_APP_NAME]:persist:auth_store
  */
 export const createStorageKey = (...keys: string[]) => {
-  const { appName } = AppConstants;
-
   keys = keys
     .filter(key => key !== '')
     .map(key => transliterate(key))
@@ -19,7 +17,7 @@ export const createStorageKey = (...keys: string[]) => {
       key.trim().replace(/\s/gi, '_').replace(/\W/gi, '').toLowerCase(),
     );
 
-  keys = [`[${appName}]`, ...keys];
+  keys = [`[${APP_NAME}]`, ...keys];
 
   return keys.join(':');
 };

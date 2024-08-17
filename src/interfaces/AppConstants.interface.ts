@@ -1,9 +1,9 @@
 import type { ModifiedOGConfig } from '@/src/types';
 
 interface IAppConstants {
-  appName: string;
+  APP_NAME: string;
   defaultCanonical: string;
-  sharedOpenGraphConfig: Partial<ModifiedOGConfig>;
+  SHARED_OG_CONFIG: Partial<ModifiedOGConfig>;
 }
 
 export default IAppConstants;
