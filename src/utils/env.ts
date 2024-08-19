@@ -1,10 +1,10 @@
 import { z } from 'zod';
 
-import { AppConstants } from '@/app/app.constants.ts';
+import { DEFAULT_CANONICAL } from '@/app/constants';
 
 // Schema of env parsed object
 const envSchema = z.object({
-  CANONICAL_URL: z.string().default(AppConstants.defaultCanonical),
+  CANONICAL_URL: z.string().default(DEFAULT_CANONICAL),
 });
 
 // Use this object to validate env file
