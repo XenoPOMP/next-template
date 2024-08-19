@@ -36,7 +36,7 @@ jobs:
           
           # Replace placeholders in the template-cleanup files
           sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/*
-          sed -i "s/%ACTOR%/ACTOR/g" .github/template-cleanup/*
+          sed -i "s/%ACTOR%/$ACTOR/g" .github/template-cleanup/*
           sed -i "s/%REPOSITORY%/${GITHUB_REPOSITORY/\//\\/}/g" .github/template-cleanup/*
           sed -i "s/%GROUP%/$GROUP/g" .github/template-cleanup/*
           
