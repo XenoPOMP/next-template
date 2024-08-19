@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 // Schema of env parsed object
 const envSchema = z.object({
-  CANONICAL_URL: z.string(),
+  CANONICAL_URL: z.string().default('http://localhost:3000'),
 });
 
 // Use this object to validate env file
