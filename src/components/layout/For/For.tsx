@@ -2,12 +2,17 @@ import type { ForProps } from './For.props';
 
 /**
  * Run same function to array of data.
- * @param data
+ * @param each
  * @param children
  * @constructor
+ *
+ * @example
+ * const data = [1, 2, 3];
+ *
+ * return <For each={data}>{item => <div>Row #{item}</div>}</For>;
  */
-function For<ItemType>({ data, children }: ForProps<ItemType>) {
-  return <>{data.map((item, index) => children?.(item, index))}</>;
+function For<ItemType>({ each, children }: ForProps<ItemType>) {
+  return <>{each.map((item, index) => children?.(item, index))}</>;
 }
 
 export default For;

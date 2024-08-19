@@ -8,7 +8,7 @@ describe('"For" component tests', () => {
   afterEach(() => cleanup());
 
   test('It renders', () => {
-    expectToRender(<For data={[]} />);
+    expectToRender(<For each={[]} />);
   });
 
   test('Internal .map functionality works', () => {
@@ -16,7 +16,7 @@ describe('"For" component tests', () => {
 
     render(
       <For
-        data={[
+        each={[
           {
             value: 2,
           },
