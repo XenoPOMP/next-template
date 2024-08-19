@@ -41,7 +41,6 @@ jobs:
           sed -i "s/%GROUP%/$GROUP/g" .github/template-cleanup/*
           
           # Move content
-          rm -rf README.md
           cp -R .github/template-cleanup/. .
           
           # Cleanup
