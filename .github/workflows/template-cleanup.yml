@@ -53,16 +53,11 @@ jobs:
           
           # Cleanup
           rm -rf \
-            .github/ISSUE_TEMPLATE \
-            .github/readme \
             .github/template-cleanup \
             .github/workflows/template-cleanup.yml \
             .github/workflows/template-verify.yml \
-            .idea/icon.png \
-            src/main/kotlin/org \
-            src/test/kotlin/org \
-            CODE_OF_CONDUCT.md \
-            LICENSE
+            .github/ISSUE_TEMPLATE \
+            .dev/docs \
 
       # Commit modified files
       - name: Commit files
