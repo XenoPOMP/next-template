@@ -1,4 +1,4 @@
 ---
 to: src/types/<%= h.changeCase.paramCase(name) %>.ts
 ---
-export type Sus = 12;
+export type <%= h.changeCase.pascalCase(name) %> = unknown;
