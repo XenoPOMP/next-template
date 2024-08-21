@@ -76,6 +76,7 @@
     "eslint-config-xeno": "^0.2.3",
     "eslint-plugin-storybook": "^0.8.0",
     "husky": "^9.1.4",
+    "hygen": "^6.2.11",
     "jsdom": "^24.1.1",
     "knip": "^5.27.0",
     "lint-staged": "^15.2.7",
