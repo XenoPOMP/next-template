@@ -4,6 +4,8 @@ import * as path from 'path';
 
 import { open, readFile, writeFile } from 'fs/promises';
 
+import { envSpecialSymbols } from './data/env-special-symbols';
+
 /** This script updates .env.example programmatically. */
 import { DevLogger } from './logger';
 import cwd from './utils/cwd';
@@ -39,8 +41,16 @@ const EXAMPLE_TARGET = '.env.example';
     }
 
     const [name] = item.split(/(((?<=\w+=")(.*)(?="))|((?<=\w+=)(.*)(?=)))/gi);
+    const normalizedName = name?.replace(/=/gi, '');
+    let assignment: string | undefined =
+      `"YOUR_${name?.toUpperCase().replace(/=$/gi, '')}"`;
 
-    return `${name}"YOUR_${name?.toUpperCase().replace(/=$/gi, '')}"`;
+    // Check if name is in special symbols` list
+    if (normalizedName && envSpecialSymbols.has(normalizedName)) {
+      assignment = `"${envSpecialSymbols.get(normalizedName)}"`;
+    }
+
+    return `${name}${assignment}`;
   });
 
   // Check if output file exists
