@@ -14,11 +14,11 @@ import {
  */
 export class DevLogger {
   private static PREFIXES = {
-    start: green('[START]'),
-    end: green('[ END ]'),
-    log: blueBright('[ LOG ]'),
-    error: red('[ ERR ]'),
-    warn: yellow('[ WRN ]'),
+    start: green('START'),
+    end: green('END'),
+    log: blueBright('LOG'),
+    error: red('ERR'),
+    warn: yellow('WRN'),
   };
 
   /** Generates time label. */
@@ -36,12 +36,25 @@ export class DevLogger {
     );
   }
 
+  /** Generates prefix with correct length. */
+  private static issuePrefix(prefix: keyof typeof this.PREFIXES) {
+    const largestPrefixLength = Object.values(this.PREFIXES).sort(
+      (a, b) => b.length - a.length,
+    )[0].length;
+
+    const selectedPrefix = this.PREFIXES[prefix];
+    const lastedSpace = largestPrefixLength - selectedPrefix.length;
+    const space = lastedSpace >= 0 ? ' '.repeat(lastedSpace) : '';
+
+    return space + this.PREFIXES[prefix];
+  }
+
   /** Generates logger message with prefix, time etc. */
   private static issueMessage(
     prefix: keyof typeof this.PREFIXES,
     message?: any,
   ) {
-    return `${this.PREFIXES[prefix]} ${this.issueTime()} ${message}`;
+    return `${this.issuePrefix(prefix)} ${this.issueTime()} ${message}`;
   }
 
   /** Send [START] message. */
