@@ -24,7 +24,8 @@
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "knip": "knip"
+    "knip": "knip",
+    "pack:env": "npx esno ./.dev/scripts/pack-env.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
