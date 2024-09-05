@@ -40,6 +40,8 @@ jobs:
           # Add author info
           sed -i "s/next-template/$NAME/g" .github/template-cleanup/package.json
           sed -i "s/XenoPOMP/$ACTOR/g" .github/template-cleanup/package.json
+          sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/package.json
+          sed -i "s/%ACTOR%/$ACTOR/g" .github/template-cleanup/package.json
           
           # Replace placeholders in the template-cleanup files
           sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/*
