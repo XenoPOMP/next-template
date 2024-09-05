@@ -42,6 +42,7 @@ jobs:
           sed -i "s/XenoPOMP/$ACTOR/g" .github/template-cleanup/package.json
           sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/package.json
           sed -i "s/%ACTOR%/$ACTOR/g" .github/template-cleanup/package.json
+          sed -i -E "s/"version": "((\d\.)|(\d))+"/"version": "0.0.0"/g" .github/template-cleanup/package.json
           
           # Replace placeholders in the template-cleanup files
           sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/*
