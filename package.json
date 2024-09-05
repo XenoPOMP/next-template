@@ -3,7 +3,7 @@
   "version": "4.4.0",
   "private": true,
   "author": "XenoPOMP",
-  "repository": "%REPO_LINK%",
+  "repository": "https://github.com/$ACTOR/$NAME",
   "engines": {
     "node": "^18.18.0 || ^20 || >=21",
     "yarn": ">=1.17.3"
