@@ -59,6 +59,8 @@ jobs:
             .github/workflows/template-cleanup.yml \
             .github/workflows/template-verify.yml \
             .github/ISSUE_TEMPLATE \
+            LICENSE \
+            CONTRIBUTING.md \
 
       # Commit modified files
       - name: Commit files
