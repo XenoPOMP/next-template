@@ -61,6 +61,7 @@ jobs:
             .github/ISSUE_TEMPLATE \
             LICENSE \
             CONTRIBUTING.md \
+            TODO.md \
 
       # Commit modified files
       - name: Commit files
