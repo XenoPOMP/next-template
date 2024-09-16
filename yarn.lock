@@ -9378,10 +9378,10 @@ klona@^2.0.4:
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
   integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
 
-knip@^5.30.0:
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.30.0.tgz#182e449a1bb246bb5d2ad1ffbfde6ae6be5ffd25"
-  integrity sha512-QDpxtXosXK3OBnmWC2LJudjJROozAXyGzSi+aTuEx/Pf9/OKjmegQWix+X6uBYhPbMb8YEFcKWvI7qBnQCkIEA==
+knip@^5.30.2:
+  version "5.30.2"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.30.2.tgz#3cee8df2e1eb0c858f81e64568b72c0a23b94479"
+  integrity sha512-UuUwuTN+6Aa6mjxufWwidayGX/tPJsxZSlwUo8q4R+Gf/0aNYuhHsUH/GccuKtRPfFnf3r+ZU/7BV0dNfC7OEQ==
   dependencies:
     "@nodelib/fs.walk" "1.2.8"
     "@snyk/github-codeowners" "1.1.0"
