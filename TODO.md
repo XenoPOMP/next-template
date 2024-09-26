@@ -3,7 +3,7 @@
 - [ ] ``feat/config-folder``
 > Move all config files to ``.config`` folder
   - [ ] ESLint
-  - [ ] Lint-staged
+  - [X] Lint-staged
   - [ ] Prettier
   - [ ] Stylelint
   - [ ] Cypress
