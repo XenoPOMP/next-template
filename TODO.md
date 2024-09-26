@@ -4,9 +4,9 @@
 > Move all config files to ``.config`` folder
   - [ ] ESLint
   - [X] Lint-staged
-  - [ ] Prettier
+  - ⛔ Prettier
   - [ ] Stylelint
-  - [ ] Cypress
+  - ⛔ Cypress
   - ⛔ Next.js. There is no way to place this file in another folder.
   - ⛔ PostCSS
   - ⛔ TailwindCSS
