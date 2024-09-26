@@ -8,6 +8,7 @@
   - [ ] Stylelint
   - [ ] Cypress
   - [ ] Next.js
+    - [ ] TS config
   - [ ] PostCSS
   - [ ] TailwindCSS
   - [ ] Vitest
