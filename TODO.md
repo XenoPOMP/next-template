@@ -7,7 +7,7 @@
   - [ ] Prettier
   - [ ] Stylelint
   - [ ] Cypress
-  - [ ] Next.js
+  - ❌ Next.js. There is no way to place this file in another folder.
   - [ ] PostCSS
   - [ ] TailwindCSS
   - [ ] Vitest
