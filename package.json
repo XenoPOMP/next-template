@@ -9,12 +9,12 @@
     "yarn": ">=1.17.3"
   },
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "unit:test": "vitest",
-    "coverage": "vitest run --coverage",
+    "unit:test": "vitest -c .config/vitest.config.ts",
+    "coverage": "vitest -c .config/vitest.config.ts run --coverage",
     "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
     "e2e:ci": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
     "lint:code": "eslint .",
