@@ -2719,10 +2719,10 @@
     "@types/node" "^18.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/core@8.3.3":
-  version "8.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-8.3.3.tgz#657ce39312ceec5ba03382fe4d4d83ca396bb9ab"
-  integrity sha512-pmf2bP3fzh45e56gqOuBT8sDX05hGdUKIZ/hcI84d5xmd6MeHiPW8th2v946wCHcxHzxib2/UU9vQUh+mB4VNw==
+"@storybook/core@8.3.5":
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-8.3.5.tgz#d77c93bb67c2df12e3bf84ae7def4693891b225d"
+  integrity sha512-GOGfTvdioNa/n+Huwg4u/dsyYyBcM+gEcdxi3B7i5x4yJ3I912KoVshumQAOF2myKSRdI8h8aGWdx7nnjd0+5Q==
   dependencies:
     "@storybook/csf" "^0.1.11"
     "@types/express" "^4.17.21"
@@ -11684,12 +11684,12 @@ store2@^2.14.2:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.14.3.tgz#24077d7ba110711864e4f691d2af941ec533deb5"
   integrity sha512-4QcZ+yx7nzEFiV4BMLnr/pRa5HYzNITX2ri0Zh6sT9EyQHbBHacC6YigllUPU9X3D0f/22QCgfokpKs52YRrUg==
 
-storybook@^8.3.3:
-  version "8.3.3"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-8.3.3.tgz#3de9be589815403539660653d2ec810348e7dafb"
-  integrity sha512-FG2KAVQN54T9R6voudiEftehtkXtLO+YVGP2gBPfacEdDQjY++ld7kTbHzpTT/bpCDx7Yq3dqOegLm9arVJfYw==
+storybook@^8.3.5:
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-8.3.5.tgz#aef0542c08e245b7ac22742c1e1633a125063b8e"
+  integrity sha512-hYQVtP2l+3kO8oKDn4fjXXQYxgTRsj/LaV6lUMJH0zt+OhVmDXKJLxmdUP4ieTm0T8wEbSYosFavgPcQZlxRfw==
   dependencies:
-    "@storybook/core" "8.3.3"
+    "@storybook/core" "8.3.5"
 
 str.scss@^1.2.0:
   version "1.2.0"
