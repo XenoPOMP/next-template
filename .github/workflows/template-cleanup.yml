@@ -59,6 +59,7 @@ jobs:
             .github/workflows/template-cleanup.yml \
             .github/workflows/template-verify.yml \
             .github/ISSUE_TEMPLATE \
+            .dev/docs \
             LICENSE \
             CONTRIBUTING.md \
             TODO.md \
