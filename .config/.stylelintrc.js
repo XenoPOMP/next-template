@@ -1,41 +1,4 @@
-/**
- * Allows you to choose severity.
- *
- * @template Value extends any
- * @param value {Value}
- * @param severity {string}
- * @return {[Value,{severity: string}]}
- */
-const withSeverity = (value, severity) => [
-  value,
-  {
-    severity,
-  },
-];
-
-/** Rule for pattern names (like, class selector names etc.) */
-const CAMEL_CASE = withSeverity(
-  '^(([a-z]+[A-Z]+\\w+)|([a-z]+\\w+))+$',
-  'error',
-);
-
-/**
- * Wraps rule with error severity.
- *
- * @template Value extends any
- * @param value {Value}
- * @return {[Value,{severity: string}]}
- */
-const withError = value => withSeverity(value, 'error');
-
-/**
- * Wraps rule with warning severity.
- *
- * @template Value extends any
- * @param value {Value}
- * @return {[Value,{severity: string}]}
- */
-const withWarning = value => withSeverity(value, 'warning');
+const { CAMEL_CASE, withError, withWarning } = require('./helpers/stylelint');
 
 module.exports = {
   rules: {

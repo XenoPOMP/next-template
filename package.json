@@ -18,7 +18,7 @@
     "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
     "e2e:ci": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
     "lint:code": "eslint -c .config/eslint.config.mjs .",
-    "lint:css": "stylelint **/*.{css,scss}",
+    "lint:css": "stylelint -c ./.config/.stylelintrc.js **/*.{css,scss}",
     "lint:ci": "concurrently \"yarn lint:code\" \"yarn lint:css\"",
     "cypress:open": "cypress open",
     "prepare": "husky",
