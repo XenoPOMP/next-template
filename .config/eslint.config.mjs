@@ -10,6 +10,7 @@ export default xenopomp(
       'test/prefer-lowercase-title': 'off',
       'style/jsx-quotes': 'off',
       'style/multiline-ternary': 'off',
+      'style/indent': 'off',
     },
     ignores: [
       'cypress'

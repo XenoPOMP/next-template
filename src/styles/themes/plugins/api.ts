@@ -1,6 +1,6 @@
 import { getObjectEntries } from '@xenopomp/advanced-utils';
-import { type CSSProperties } from 'react';
-import { type CSSRuleObject } from 'tailwindcss/types/config';
+import type { CSSProperties } from 'react';
+import type { CSSRuleObject } from 'tailwindcss/types/config';
 
 /**
  * Converts React`s CSSProperties to **CSS-in-JS** object.

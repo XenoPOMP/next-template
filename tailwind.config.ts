@@ -1,8 +1,7 @@
-import { type Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 import tailwindThemer from 'tailwindcss-themer';
 
-import { DesignSystemConfig } from '@/src/styles/themes/design-system.config.ts';
-
+// import { DesignSystemConfig } from '@/src/styles/themes/design-system.config.ts';
 import { CustomClassesPlugin } from './src/styles/themes/plugins';
 import { darkTheme, lightTheme } from './src/themes';
 

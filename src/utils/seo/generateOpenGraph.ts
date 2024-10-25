@@ -1,4 +1,4 @@
-import { type OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
+import type { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
 
 import { APP_NAME, SHARED_OG_CONFIG } from '@/app/constants';
 
