@@ -142,3 +142,4 @@ app/test
 
 *storybook.log
 !/.idea/jsLinters/eslint.xml
+!/.idea/stylesheetLinters/stylelint.xml
