@@ -4042,10 +4042,10 @@
     "@webassemblyjs/ast" "1.12.1"
     "@xtuc/long" "4.2.2"
 
-"@xenopomp/advanced-types@^1.x":
-  version "1.7.5"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.7.5.tgz#c98a3cdb95ad6a4a3d76a4da709f12f1fc441ca0"
-  integrity sha512-wMm0hbnk4ACth3iSYq1Q7uNeKVQtjrQUCV+SmTxco/OnLN5CwktK9Vic6nGujKihUJuika4DUC5f/e1F/P+wsA==
+"@xenopomp/advanced-types@*":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-2.0.1.tgz#1444d156a0f515b4a4f9c9ec888e12430a995f1e"
+  integrity sha512-1oWwhWsi/R5lS4actAwFBewkF5qnEBnA/bWy2MB1o4Nwxp6DeUelVdUs49U3KbxYMmUdJjcCUOo3+SLTdC1e0w==
 
 "@xenopomp/advanced-utils@^1.2.2":
   version "1.2.2"
