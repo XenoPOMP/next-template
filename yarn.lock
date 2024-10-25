@@ -6349,10 +6349,10 @@ eslint-config-flat-gitignore@^0.3.0:
     "@eslint/compat" "^1.1.1"
     find-up-simple "^1.0.0"
 
-eslint-config-xeno@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-xeno/-/eslint-config-xeno-2.0.1.tgz#d838ba164d7840cbca5c8f621c785708408a2049"
-  integrity sha512-jUtpbOWPvUgjdI38hTkYnwzCTeMcrlAM7Iqfh5Xm8DpZunm1G2fIHPv56Xi4+S/Kinsbm5i7oOaVGXvm4Ui9xw==
+eslint-config-xeno@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-xeno/-/eslint-config-xeno-2.0.2.tgz#5fd3f8f987c5ef242d31e622e5a9828147d4b43d"
+  integrity sha512-lbP0N0TlPiJBcnC5FWIK0eUUgW0i037iD7qqMgd19wqVblZJPNUVS4du7sUkeG+sHxnQYw70TIIXiACfXwX4VA==
   dependencies:
     "@antfu/eslint-config" "^3.8.0"
     "@ririd/eslint-config" "^1.3.4"
