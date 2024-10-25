@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useDebounce } from 'use-debounce';
 
-import { type IUseRaceOptions, type RaceCallback } from './index.ts';
+import type { IUseRaceOptions, RaceCallback } from './index.ts';
 
 /**
  * This hook eliminates race conditions. Hook tracks

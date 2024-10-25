@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import {
   blueBright,
   green,
@@ -38,9 +39,9 @@ export class DevLogger {
 
   /** Generates prefix with correct length. */
   private static issuePrefix(prefix: keyof typeof this.PREFIXES) {
-    const largestPrefixLength = Object.values(this.PREFIXES).sort(
-      (a, b) => b.length - a.length,
-    )[0].length;
+    const largestPrefixLength =
+      Object.values(this.PREFIXES).sort((a, b) => b.length - a.length)[0]
+        ?.length ?? 0;
 
     const selectedPrefix = this.PREFIXES[prefix];
     const lastedSpace = largestPrefixLength - selectedPrefix.length;
@@ -82,3 +83,4 @@ export class DevLogger {
     console.log(this.issueMessage('error', `${redBright(message)}`));
   }
 }
+/* eslint-enable no-console */

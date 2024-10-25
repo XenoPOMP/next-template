@@ -1,4 +1,4 @@
-import { type NextFont } from 'next/dist/compiled/@next/font';
+import type { NextFont } from 'next/dist/compiled/@next/font';
 import { vi } from 'vitest';
 
 import { FONTS_TO_MOCK } from '@/app/constants';

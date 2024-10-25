@@ -1,4 +1,4 @@
-import { PathLike, existsSync, unlinkSync } from 'fs';
+import { type PathLike, existsSync, unlinkSync } from 'node:fs';
 
 /**
  * Deletes file synchronously.

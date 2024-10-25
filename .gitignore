@@ -141,3 +141,5 @@ app/test
 **/__snapshots__/*
 
 *storybook.log
+!/.idea/jsLinters/eslint.xml
+!/.idea/stylesheetLinters/stylelint.xml

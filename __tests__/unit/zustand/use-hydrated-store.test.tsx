@@ -5,14 +5,14 @@ import {
   screen,
   waitFor,
 } from '@testing-library/react';
-import { type FC } from 'react';
+import type { FC } from 'react';
 import { afterEach, describe, expect, test } from 'vitest';
 
 import { expectToRender } from '@/__tests__/assets/utilities';
 import { useHydratedStore } from '@/src/zustand/hooks';
 import { useSettingsStore } from '@/src/zustand/stores';
 
-const TestComponent: FC<{}> = () => {
+const TestComponent: FC = () => {
   const {
     state: { lang, changeLang },
     isLoading,
@@ -26,17 +26,17 @@ const TestComponent: FC<{}> = () => {
         <div>
           <p>Hydrated!</p>
 
-          <p data-testid={'output'}>{lang}</p>
+          <p data-testid='output'>{lang}</p>
 
           <button
-            data-testid={'change-lang-to-ru'}
+            data-testid='change-lang-to-ru'
             onClick={() => changeLang('ru')}
           >
             Ru
           </button>
 
           <button
-            data-testid={'change-lang-to-en'}
+            data-testid='change-lang-to-en'
             onClick={() => changeLang('en')}
           >
             En

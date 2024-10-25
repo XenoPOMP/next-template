@@ -1,4 +1,4 @@
-import { type CustomTheme } from './index';
+import type { CustomTheme } from './index';
 
 export const darkTheme: CustomTheme = {
   colors: {

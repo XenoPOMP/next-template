@@ -14,7 +14,7 @@ export const createStorageKey = (...keys: string[]) => {
     .filter(key => key !== '')
     .map(key => transliterate(key))
     .map(key =>
-      key.trim().replace(/\s/gi, '_').replace(/\W/gi, '').toLowerCase(),
+      key.trim().replace(/\s/g, '_').replace(/\W/g, '').toLowerCase(),
     );
 
   keys = [`[${APP_NAME}]`, ...keys];

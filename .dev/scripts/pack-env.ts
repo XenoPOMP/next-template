@@ -1,8 +1,7 @@
 import { bold } from 'ansi-colors';
-import { closeSync, existsSync } from 'fs';
-import * as path from 'path';
-
-import { open, readFile, writeFile } from 'fs/promises';
+import { closeSync, existsSync } from 'node:fs';
+import { open, readFile, writeFile } from 'node:fs/promises';
+import * as path from 'node:path';
 
 import { envSpecialSymbols } from './data/env-special-symbols';
 
@@ -36,10 +35,12 @@ const EXAMPLE_TARGET = '.env.example';
   /** Process lines to change sensitive data. */
   const lines = envContent.split(/\n/gi).map(item => {
     // Line does not contain any variables.
+    // eslint-disable-next-line regexp/no-useless-flag, regexp/no-useless-escape, regexp/strict, regexp/no-unused-capturing-group
     if (!/(^\w+=(\".*)\"$)|(^\w+=(.*)$)/gi.test(item)) {
       return item;
     }
 
+    // eslint-disable-next-line regexp/no-useless-flag, regexp/no-useless-escape, regexp/strict, regexp/no-empty-lookarounds-assertion
     const [name] = item.split(/(((?<=\w+=")(.*)(?="))|((?<=\w+=)(.*)(?=)))/gi);
     const normalizedName = name?.replace(/=/gi, '');
     let assignment: string | undefined =

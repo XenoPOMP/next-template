@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { type ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 import { APP_NAME } from '@/app/constants';
 import { CoreLayout, Providers } from '@/src/components/layout';
@@ -41,9 +41,13 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
+// TODO Update next-themes and remove suppressHydrationWarning
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='ru'>
+    <html
+      lang='ru'
+      suppressHydrationWarning
+    >
       <body className={mainFont.className}>
         <Providers>
           <CoreLayout>{children}</CoreLayout>

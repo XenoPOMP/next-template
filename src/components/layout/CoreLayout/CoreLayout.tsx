@@ -1,7 +1,5 @@
-import { type PropsWith } from '@xenopomp/advanced-types';
-import { type FC } from 'react';
-
-import { Footer, Header } from '@/src/components/layout';
+import type { PropsWith } from '@xenopomp/advanced-types';
+import type { FC } from 'react';
 
 import type { CoreLayoutProps } from './CoreLayout.props';
 
@@ -24,15 +22,7 @@ import type { CoreLayoutProps } from './CoreLayout.props';
 const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
   children,
 }) => {
-  return (
-    <>
-      <Header />
-
-      {children}
-
-      <Footer />
-    </>
-  );
+  return <>{children}</>;
 };
 
 export default CoreLayout;
