@@ -18,7 +18,7 @@ import { useCopyToClipboard } from '@/src/hooks';
 
 /* eslint-disable no-console */
 
-const UseCopyToClipboardTestComponent: FC<{}> = () => {
+const UseCopyToClipboardTestComponent: FC = () => {
   const { copy, isCopied } = useCopyToClipboard();
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const UseCopyToClipboardTestComponent: FC<{}> = () => {
   return (
     <>
       <div
-        data-testid={'output'}
+        data-testid='output'
         data-is-copied={isCopied}
       >
         Is text copied: {booleanishString(isCopied)}
@@ -38,7 +38,7 @@ const UseCopyToClipboardTestComponent: FC<{}> = () => {
         onClick={() => {
           copy('amogus');
         }}
-        data-testid={'payload-button'}
+        data-testid='payload-button'
       >
         Copy
       </button>
@@ -92,6 +92,7 @@ describe('useCopyToClipboard hook', () => {
       clipboard: {
         writeText: async (_text: string) =>
           new Promise((_resolve, reject) => {
+            // eslint-disable-next-line prefer-promise-reject-errors
             reject();
           }),
       },

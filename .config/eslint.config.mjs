@@ -7,7 +7,12 @@ export default xenopomp(
     rules: {
       'style/operator-linebreak': 'off',
       'test/consistent-test-it': 'off',
-      'test/prefer-lowercase-title': 'off'
+      'test/prefer-lowercase-title': 'off',
+      'style/jsx-quotes': 'off',
+      'style/multiline-ternary': 'off',
     },
+    ignores: [
+      'cypress'
+    ]
   },
 );

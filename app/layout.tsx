@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { type ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 import { APP_NAME } from '@/app/constants';
 import { CoreLayout, Providers } from '@/src/components/layout';

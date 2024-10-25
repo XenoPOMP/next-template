@@ -1,12 +1,12 @@
 'use client';
 
 import { render } from '@testing-library/react';
-import { type FC } from 'react';
+import type { FC } from 'react';
 import { describe, expect, test } from 'vitest';
 
 import { useUniqueId } from '@/src/hooks';
 
-const UseUniqueIdTestComponent: FC<{}> = () => {
+const UseUniqueIdTestComponent: FC = () => {
   const notTransformedId = useUniqueId();
   const transformedId = useUniqueId(id => `generated-id-${id}`);
 
