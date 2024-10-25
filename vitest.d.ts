@@ -1,5 +1,3 @@
-import type { Assertion, AsymmetricMatchersContaining } from 'vitest';
-
 interface CustomMatchers<R = unknown> {
   toMatchStructure: (actual: any) => R;
 }
