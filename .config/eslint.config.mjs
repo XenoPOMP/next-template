@@ -13,7 +13,7 @@ export default xenopomp(
       'style/indent': 'off',
     },
     ignores: [
-      'cypress'
-    ]
+      'cypress',
+    ],
   },
 );

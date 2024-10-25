@@ -25,6 +25,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+/* eslint-disable ts/no-use-before-define, ts/no-namespace, ts/method-signature-style  */
+
 Cypress.Commands.add('metatag', (name: string) => {
   return cy.get(`head > meta[name="${name}"]`);
 });
@@ -35,3 +37,5 @@ declare namespace Cypress {
     metatag(name: string): Chainable<Subject>;
   }
 }
+
+/* eslint-enable ts/no-use-before-define, ts/no-namespace, ts/method-signature-style  */
