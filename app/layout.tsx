@@ -41,9 +41,13 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
+// TODO Update next-themes and remove suppressHydrationWarning
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='ru'>
+    <html
+      lang='ru'
+      suppressHydrationWarning
+    >
       <body className={mainFont.className}>
         <Providers>
           <CoreLayout>{children}</CoreLayout>
