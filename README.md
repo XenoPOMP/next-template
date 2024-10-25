@@ -1,13 +1,9 @@
 <img src="https://github.com/XenoPOMP/next-template/assets/101574433/4f668b51-381f-4f1f-8803-f0b6370fd1b5" width="160" align="left" />
 
-### Next.js 14 Template
+### Next.js 15 Template
 
 <p>
 <img alt="CI Status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square" />
-<a href="#contributors">
-<img alt="All Contributors" src="https://img.shields.io/github/all-contributors/XenoPOMP/next-template?color=ee8449&style=flat-square">
-</a>
-</p>
 
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
 
