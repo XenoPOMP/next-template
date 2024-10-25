@@ -1,4 +1,4 @@
 {
   "**/*.{js,ts,jsx,tsx}": "eslint -c .config/eslint.config.mjs",
-  "**/*.scss": "stylelint"
+  "**/*.scss": "stylelint -c ./.config/.stylelintrc.js --ignore-path ./.config/.stylelintignore"
 }
