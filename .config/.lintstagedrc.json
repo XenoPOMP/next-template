@@ -1,4 +1,4 @@
 {
-  "**/*.{js,ts,jsx,tsx}": "eslint",
+  "**/*.{js,ts,jsx,tsx}": "eslint -c .config/eslint.config.mjs",
   "**/*.scss": "stylelint"
 }
