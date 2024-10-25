@@ -1,5 +1,5 @@
-import { type Metadata } from 'next';
-import { type ReactNode } from 'react';
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import { test } from 'vitest';
 
 import { mockRouter } from '@/__tests__/assets/mocks';

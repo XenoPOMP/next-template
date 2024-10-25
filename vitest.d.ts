@@ -1,3 +1,6 @@
+// eslint-disable-next-line unused-imports/no-unused-imports
+import type { Assertion, AsymmetricMatchersContaining } from 'vitest';
+
 interface CustomMatchers<R = unknown> {
   toMatchStructure: (actual: any) => R;
 }

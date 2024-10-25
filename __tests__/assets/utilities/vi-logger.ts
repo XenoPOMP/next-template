@@ -24,6 +24,7 @@ export class ViLogger {
   }
 
   static debug: LogFn = (message?: string) => {
+    // eslint-disable-next-line no-console
     console.log(this.getPrefixedMessage('DEBUG', message));
   };
 }

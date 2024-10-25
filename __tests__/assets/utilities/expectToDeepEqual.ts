@@ -1,4 +1,4 @@
-import { type NoInfer } from '@xenopomp/advanced-types';
+import type { NoInfer } from '@xenopomp/advanced-types';
 import { expect } from 'vitest';
 
 /**
