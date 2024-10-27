@@ -6,8 +6,8 @@
   font-size: 20px;
 }
 
-// Uncomment line below if design system is needed
-// @import "src/styles/design-system";
+// Comment line below if design system is not needed
+@import "src/styles/design-system";
 
 body {
   @apply bg-primary-bg text-primary-font;

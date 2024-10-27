@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 import tailwindThemer from 'tailwindcss-themer';
 
-// import { DesignSystemConfig } from '@/src/styles/themes/design-system.config.ts';
+import { DesignSystemConfig } from './src/styles/themes/design-system.config.ts';
 import { CustomClassesPlugin } from './src/styles/themes/plugins';
 import { darkTheme, lightTheme } from './src/themes';
 
@@ -14,8 +14,8 @@ const tailwindConfig: Config = {
   ],
   theme: {
     extend: {
-      // Uncomment line below if design system is needed
-      // ...DesignSystemConfig,
+      // Comment line below if design system is not needed
+      ...DesignSystemConfig,
 
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
