@@ -4,12 +4,11 @@
 
 <p>
 <img alt="CI Status" src="https://img.shields.io/github/actions/workflow/status/%ACTOR%/%NAME%/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square" />
-<a href="#contributors">
-<img alt="All Contributors" src="https://img.shields.io/github/all-contributors/%ACTOR%/%NAME%?color=ee8449&style=flat-square">
-</a>
 </p>
 
 _Scaffolded from [``next-template``](https://github.com/XenoPOMP/next-template)._
+
+_Read docs at google.com_
 
 ## Contributors
 
