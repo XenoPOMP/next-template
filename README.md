@@ -17,4 +17,4 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 - 🌿 `.github` folder with ready-to-use **actions** and **dependabot**
 
 ## Documentation
-- [Installation & usage](./.dev/docs/usage.md)
+> TODO
