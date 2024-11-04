@@ -1483,12 +1483,12 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.1.tgz#371ba8be66d556812dc7fb169ebc3c08378f69d4"
   integrity sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==
 
-"@chromatic-com/storybook@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@chromatic-com/storybook/-/storybook-2.0.2.tgz#3e20de5a328165b66c4587dbed0843c6039400ce"
-  integrity sha512-7bPIliISedeIpnVKbzktysFYW5n56bN91kxuOj1XXKixmjbUHRUMvcXd4K2liN6MiR5ZqJtmtcPsZ6CebbGlEA==
+"@chromatic-com/storybook@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@chromatic-com/storybook/-/storybook-3.2.2.tgz#08754443de55618f802f88450c35266fd6d25db5"
+  integrity sha512-xmXt/GW0hAPbzNTrxYuVo43Adrtjue4DeVrsoIIEeJdGaPNNeNf+DHMlJKOBdlHmCnFUoe9R/0mLM9zUp5bKWw==
   dependencies:
-    chromatic "^11.4.0"
+    chromatic "^11.15.0"
     filesize "^10.0.12"
     jsonfile "^6.1.0"
     react-confetti "^6.1.0"
@@ -5215,10 +5215,10 @@ chokidar@^4.0.0:
   dependencies:
     readdirp "^4.0.1"
 
-chromatic@^11.4.0:
-  version "11.5.3"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-11.5.3.tgz#3a57bfa9bd46057eac32e69d02cbc6e93d04536d"
-  integrity sha512-EtDDXA4OdhsjE0IuLr5AZvOX+ZYXgqdRPtdTAQrM3nImjlteQ5biBmdEEEcdAXDTPU881rEUaUIy2owecB0wYg==
+chromatic@^11.15.0:
+  version "11.16.3"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-11.16.3.tgz#53484e447c7afb31a2d6e63aad9c62117d426a75"
+  integrity sha512-bckarRbZ3M1BvsmhLqEMschuQPk2FlSD9cvy8383JwoVvaIqLr0dv1tI/DPM4LMuXOjTjeBSZZINVH9r3RMiiA==
 
 chrome-trace-event@^1.0.2:
   version "1.0.3"
