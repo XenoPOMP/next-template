@@ -12419,10 +12419,10 @@ table@^6.8.2:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tailwindcss-themer@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-themer/-/tailwindcss-themer-4.0.0.tgz#8034e8111861c20116fad0f3b8602351881402f0"
-  integrity sha512-kngKDW+z36JtjvaNziX0aesO95r8f5+3FFdANVFDt1uzNHZsL6XLla1YDK6EBAYFqPichoPDbO4lrrTyB+UAbA==
+tailwindcss-themer@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-themer/-/tailwindcss-themer-4.1.0.tgz#59c38ccab9ae2c5da640362b27d5a175d5898f3c"
+  integrity sha512-zbou6wTFFaICkNqYN/RA/MkGrLtbCHx4LYH7yeQViBu2lCGPbH0SuJ3v5ED1Q3WzUDur2DQu5T9Rr0VUd5iDfg==
   dependencies:
     color "^4.1.0"
     just-unique "^4.2.0"
