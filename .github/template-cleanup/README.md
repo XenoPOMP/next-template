@@ -8,4 +8,8 @@
 
 _Scaffolded from [``next-template``](https://github.com/XenoPOMP/next-template)._
 
-_Read docs at google.com_
+<br/>
+
+### See also
+
+- #### [Documentation](https://next-template-docs.vercel.app/)
