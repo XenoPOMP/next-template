@@ -16,5 +16,8 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 - 🐶 Husky hooks
 - 🌿 `.github` folder with ready-to-use **actions** and **dependabot**
 
-## Documentation
-- [Installation & usage](./.dev/docs/usage.md)
+## Read also
+
+- #### [Documentation](https://next-template-docs.vercel.app/)
+- #### [Contributing](https://next-template-docs.vercel.app/docs/contributing)
+
