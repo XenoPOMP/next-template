@@ -10,6 +10,7 @@ _Scaffolded from [``next-template``](https://github.com/XenoPOMP/next-template).
 
 <br/>
 
-### See also
+## Read also
 
 - #### [Documentation](https://next-template-docs.vercel.app/)
+- #### [Contributing](https://next-template-docs.vercel.app/docs/contributing)

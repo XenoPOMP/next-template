@@ -19,5 +19,5 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 ## Read also
 
 - #### [Documentation](https://next-template-docs.vercel.app/)
-- #### Contributing
+- #### [Contributing](https://next-template-docs.vercel.app/docs/contributing)
 
