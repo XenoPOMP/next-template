@@ -21,7 +21,7 @@
     "lint:css": "stylelint -c ./.config/.stylelintrc.js --ignore-path ./.config/.stylelintignore **/*.{css,scss}",
     "lint:ci": "concurrently \"yarn lint:code\" \"yarn lint:css\"",
     "cypress:open": "cypress open",
-    "prepare": "husky .config/.husky",
+    "prepare": "husky",
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
