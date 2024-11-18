@@ -1,3 +1,4 @@
+cd ../../
 yarn lint-staged -c ./.config/.lintstagedrc.json
 
 exit 1
