@@ -1,7 +1,6 @@
 @import "src/styles/templates";
 
 .uiContainer {
-  @apply mx-auto;
   --margin: 2rem;
 
   width: min(var(--max-container-width), calc(100% - 2 * var(--margin)));
