@@ -4,6 +4,10 @@ import type { CSSProperties, FC } from 'react';
 
 import styles from './UiContainer.module.scss';
 import type { UiContainerProps } from './UiContainer.props';
+import {
+  type UiContainerVariantsType,
+  uiContainerVariants,
+} from './UiContainer.variants.ts';
 
 interface UiContainerNestedProps
   extends PropsWith<
@@ -11,7 +15,7 @@ interface UiContainerNestedProps
     UiContainerProps
   > {}
 
-const UiContainer: FC<UiContainerNestedProps> = ({
+const UiContainer: FC<UiContainerNestedProps & UiContainerVariantsType> = ({
   children,
   className,
   id,
@@ -19,6 +23,7 @@ const UiContainer: FC<UiContainerNestedProps> = ({
   margin = '2rem',
   maxWidth = '1680px',
   as = 'section',
+  ...variants
 }) => {
   const Component = as;
 
@@ -31,7 +36,11 @@ const UiContainer: FC<UiContainerNestedProps> = ({
           ...style,
         } as CSSProperties
       }
-      className={cn(styles.uiContainer, className)}
+      className={cn(
+        styles.uiContainer,
+        uiContainerVariants(variants),
+        className,
+      )}
       id={id}
     >
       {children}

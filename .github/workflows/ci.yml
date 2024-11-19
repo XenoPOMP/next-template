@@ -3,12 +3,12 @@ on:
   push:
     branches:
       - main
-      - staging
+      - canary
 
   pull_request:
     branches:
       - main
-      - staging
+      - canary
 
 jobs:
   # Install Node.js and dependencies
