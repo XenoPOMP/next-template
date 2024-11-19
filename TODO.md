@@ -11,9 +11,3 @@
   - ⛔ PostCSS
   - ⛔ TailwindCSS
   - [X] Vitest
-
-<hr />
-
-- [ ] ``upd/docs``
-> Update documentation, remove previous docs
-  - [ ] CONTRIBUTING.md should move to docs website
