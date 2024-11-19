@@ -2,7 +2,7 @@ name: 'CI'
 
 # Setup workflow-wide variables here
 env:
-  canary_branch_name: staging2
+  canary_branch_name: canary
 
 on:
   push:
