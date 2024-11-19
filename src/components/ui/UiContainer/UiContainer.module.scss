@@ -1,7 +1,8 @@
 @import "src/styles/templates";
 
 .uiContainer {
+  --margin-multiplier: 2;
   --margin: 2rem;
 
-  width: min(var(--max-container-width), calc(100% - 2 * var(--margin)));
+  width: min(var(--max-container-width), calc(100% - var(--margin-multiplier) * var(--margin)));
 }

@@ -5,8 +5,8 @@ export type UiContainerVariantsType = VariantProps<typeof uiContainerVariants>;
 export const uiContainerVariants = cva('', {
   variants: {
     alignContainer: {
-      left: 'mr-auto',
-      right: 'ml-auto',
+      left: 'mr-auto ml-[--margin]',
+      right: 'ml-auto mr-[--margin]',
       center: 'mx-auto',
     },
   },
