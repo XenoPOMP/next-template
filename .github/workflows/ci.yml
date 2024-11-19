@@ -3,16 +3,12 @@ on:
   push:
     branches:
       - main
-      - ${{ env.canary_branch_name }}
+      - canary
 
   pull_request:
     branches:
       - main
-      - ${{ env.canary_branch_name }}
-
-# Setup workflow-wide variables here
-env:
-  canary_branch_name: canary
+      - canary
 
 jobs:
   # Install Node.js and dependencies
