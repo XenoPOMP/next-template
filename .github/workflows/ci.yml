@@ -1,14 +1,19 @@
 name: 'CI'
+
+# Setup workflow-wide variables here
+env:
+  canary_branch_name: staging2
+
 on:
   push:
     branches:
       - main
-      - staging
+      - ${{ env.canary_branch_name }}
 
   pull_request:
     branches:
       - main
-      - staging
+      - ${{ env.canary_branch_name }}
 
 jobs:
   # Install Node.js and dependencies
