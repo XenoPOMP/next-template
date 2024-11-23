@@ -8,10 +8,19 @@ import { useMemo } from 'react';
 
 import type { NavbarItemProps } from './NavbarItem.props.ts';
 
+/**
+ * @param className
+ * @param children
+ * @param parentPath
+ * @param index       Marks item as index in navbar
+ * @param props
+ * @constructor
+ */
 export const NavbarItem: VariableFC<typeof Link, NavbarItemProps> = ({
   className,
   children,
   parentPath,
+  index,
   ...props
 }) => {
   const path = usePathname();
@@ -28,8 +37,12 @@ export const NavbarItem: VariableFC<typeof Link, NavbarItemProps> = ({
       return path?.startsWith(parentPath.toString());
     }
 
+    if (!index) {
+      return href.toString().startsWith(path) && href === path;
+    }
+
     return href.toString().startsWith(path);
-  }, [props.href, path, parentPath]);
+  }, [index, props.href, path, parentPath]);
 
   return (
     <Link

@@ -3,4 +3,5 @@ import type { ComponentProps } from 'react';
 
 export interface NavbarItemProps {
   parentPath?: ComponentProps<typeof Link>['href'];
+  index?: boolean;
 }
