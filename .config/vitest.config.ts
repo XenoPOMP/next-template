@@ -2,6 +2,11 @@ import react from '@vitejs/plugin-react';
 import tsconfigPathsPlugin from 'vite-tsconfig-paths';
 import { configDefaults, defineConfig } from 'vitest/config';
 
+// Makes prefixed test exclusions.
+const prefixed = (prefix: string, items: string[]): string[] => {
+  return items.map(item => `${prefix}${item}`);
+};
+
 const testingExclusion: string[] = [
   // Default exclusions
   ...configDefaults.exclude,
@@ -23,8 +28,7 @@ const testingExclusion: string[] = [
   '__tests__/{e2e,assets}',
 
   // Resource configs
-  '.*rc',
-  '.*rc.js',
+  ...prefixed('.config/', ['.*rc', '.*rc.js', '.dev', 'helpers']),
 
   // Ignore configs
   '**/{next,postcss,tailwind}.config.{ts,js}',
