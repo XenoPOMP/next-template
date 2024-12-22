@@ -11165,10 +11165,10 @@ table@^6.8.2:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tailwindcss-themer@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-themer/-/tailwindcss-themer-4.1.0.tgz#59c38ccab9ae2c5da640362b27d5a175d5898f3c"
-  integrity sha512-zbou6wTFFaICkNqYN/RA/MkGrLtbCHx4LYH7yeQViBu2lCGPbH0SuJ3v5ED1Q3WzUDur2DQu5T9Rr0VUd5iDfg==
+tailwindcss-themer@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-themer/-/tailwindcss-themer-4.1.1.tgz#623356a2e08b458b8e60112481189cf8708e76ab"
+  integrity sha512-1dXGQwr3p8G78Qh3ORaNsXofnAQi6CSjVaSEJ8G4R9pjFvS/lNIA+xznRbYoYATbXaQcYBYrvc9v8hwY7WzwWw==
   dependencies:
     color "^4.1.0"
     just-unique "^4.2.0"
