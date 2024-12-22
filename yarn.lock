@@ -7916,10 +7916,10 @@ kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-knip@^5.36.2:
-  version "5.36.2"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.36.2.tgz#346ce5eb464bdf34329cdcf3a6d41d0a41dce647"
-  integrity sha512-MudNTKBSqThAFAV29GuRPSKSebByZeQCFeNgXVRVSd+sXcubehTgQHTGqqiwlXGCt4WBP7vuVekp0ZehfZtHuw==
+knip@^5.40.0:
+  version "5.40.0"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.40.0.tgz#6da9113d9d0c696fc3e5dc3f3a281db57b4b828a"
+  integrity sha512-EzBfQDz4YBzYnMLueWnaaVr15mneqZs1c3RanttciuVuRcodlNjzAmR2nch/khlRdVABAxAdMGFxfSvhvcH1NA==
   dependencies:
     "@nodelib/fs.walk" "1.2.8"
     "@snyk/github-codeowners" "1.1.0"
@@ -7932,7 +7932,7 @@ knip@^5.36.2:
     picocolors "^1.1.0"
     picomatch "^4.0.1"
     pretty-ms "^9.0.0"
-    smol-toml "^1.3.0"
+    smol-toml "^1.3.1"
     strip-json-comments "5.0.1"
     summary "2.1.0"
     zod "^3.22.4"
@@ -10666,10 +10666,10 @@ slice-ansi@^7.1.0:
     ansi-styles "^6.2.1"
     is-fullwidth-code-point "^5.0.0"
 
-smol-toml@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/smol-toml/-/smol-toml-1.3.0.tgz#5200e251fffadbb72570c84e9776d2a3eca48143"
-  integrity sha512-tWpi2TsODPScmi48b/OQZGi2lgUmBCHy6SZrhi/FdnnHiU1GwebbCfuQuxsC3nHaLwtYeJGPrDZDIeodDOc4pA==
+smol-toml@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/smol-toml/-/smol-toml-1.3.1.tgz#d9084a9e212142e3cab27ef4e2b8e8ba620bfe15"
+  integrity sha512-tEYNll18pPKHroYSmLLrksq233j021G0giwW7P3D24jC54pQ5W5BXMsQ/Mvw1OJCmEYDgY+lrzT+3nNUtoNfXQ==
 
 snake-case@^2.1.0:
   version "2.1.0"
