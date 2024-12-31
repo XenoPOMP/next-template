@@ -79,7 +79,7 @@
     "hygen": "^6.2.11",
     "jsdom": "^25.0.1",
     "knip": "^5.40.0",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.3.0",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
