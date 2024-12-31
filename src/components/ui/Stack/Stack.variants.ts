@@ -5,8 +5,8 @@ export type StackVariantsType = VariantProps<typeof stackVariants>;
 export const stackVariants = cva('', {
   variants: {
     alignStack: {
-      left: 'mr-auto ml-[--margin]',
-      right: 'ml-auto mr-[--margin]',
+      left: 'mr-auto ml-[--insets]',
+      right: 'ml-auto mr-[--insets]',
       center: 'mx-auto',
     },
   },
