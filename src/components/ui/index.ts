@@ -1,3 +1,3 @@
-import UiContainer from './UiContainer/UiContainer';
+import Stack from './Stack/Stack';
 
-export { UiContainer };
+export { Stack };

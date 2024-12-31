@@ -31,6 +31,11 @@
     "noImplicitReturns": true,
     "strictNullChecks": true
   },
-  "include": ["next-env.d.ts", "vitest.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    ".config/declarations/vitest.d.ts", ".config/declarations/*.d.ts",
+    "**/*.ts", "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

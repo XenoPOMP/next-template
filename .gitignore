@@ -54,6 +54,8 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
+# TypeScript backup files
+*.d 2.ts
 
 # Optional npm cache directory
 .npm

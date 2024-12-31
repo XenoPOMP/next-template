@@ -1,0 +1,6 @@
+.uiStack {
+  --insets: 2rem;
+  --max-width: 1680px;
+
+  width: min(var(--max-width), calc(100% - 2 * var(--insets)));
+}
