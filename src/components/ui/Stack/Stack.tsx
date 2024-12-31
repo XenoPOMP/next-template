@@ -13,7 +13,7 @@ const Stack = slotable<'section', StackProps & StackVariantsType>(
     Comp,
     className,
     style,
-    insets = '1rem',
+    insets = '2rem',
     maxWidth = '1680px',
     alignStack,
     ...props
