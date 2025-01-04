@@ -20,7 +20,7 @@ describe('useRace hook', () => {
 
   test('Resolve condition works', () => {
     const hook = renderHook(() =>
-      useRace('race', async () => {}, {
+      useRace('race', undefined, {
         raceResolveCondition: _ => false,
       }),
     );
