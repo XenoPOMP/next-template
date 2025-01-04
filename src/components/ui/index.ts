@@ -1,3 +1,4 @@
+import Spacer from './Spacer/Spacer';
 import Stack from './Stack/Stack';
 
-export { Stack };
+export { Stack, Spacer };

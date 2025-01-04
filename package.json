@@ -74,7 +74,7 @@
     "concurrently": "^9.1.0",
     "cypress": "^13.17.0",
     "eslint": "^9.17.0",
-    "eslint-config-xeno": "^2.0.2",
+    "eslint-config-xeno": "^2.0.3-rc.3",
     "husky": "^9.1.6",
     "hygen": "^6.2.11",
     "jsdom": "^25.0.1",
