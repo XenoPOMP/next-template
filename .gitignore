@@ -54,8 +54,10 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
-# TypeScript backup files
+
+# MacOS
 *.d 2.ts
+.DS_Store
 
 # Optional npm cache directory
 .npm
