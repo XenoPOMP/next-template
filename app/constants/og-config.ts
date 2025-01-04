@@ -3,7 +3,7 @@ import ogWideImg from '@/public/open-graph/og (1200x627).png';
 import type { ModifiedOGConfig } from '@/src/types';
 import { env } from '@/src/utils/env';
 
-export const SHARED_OG_CONFIG: Partial<ModifiedOGConfig> = {
+export const SHARED_OG_CONFIG = {
   images: [
     {
       url: ogSquareImg.src,
@@ -18,4 +18,4 @@ export const SHARED_OG_CONFIG: Partial<ModifiedOGConfig> = {
   ],
   siteName: 'Next Template',
   url: env.CANONICAL_URL,
-};
+} satisfies Partial<ModifiedOGConfig>;

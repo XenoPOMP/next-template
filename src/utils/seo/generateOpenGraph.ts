@@ -27,7 +27,7 @@ export const generateOpenGraph = (
   return {
     ...SHARED_OG_CONFIG,
 
-    images: [...(SHARED_OG_CONFIG.images || []), ...(options?.images || [])],
+    images: [...SHARED_OG_CONFIG.images, ...(options?.images || [])],
 
     type: 'website',
     title: options?.title || APP_NAME,
