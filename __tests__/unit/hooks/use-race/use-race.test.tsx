@@ -17,4 +17,16 @@ describe('useRace hook', () => {
       hook.unmount();
     });
   });
+
+  test('Resolve condition works', () => {
+    const hook = renderHook(() =>
+      useRace('race', async () => {}, {
+        raceResolveCondition: _ => false,
+      }),
+    );
+
+    assertNotThrowing(() => {
+      hook.unmount();
+    });
+  });
 });
