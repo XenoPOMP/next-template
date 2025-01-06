@@ -11548,10 +11548,10 @@ vite@^5.0.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitest-matchmedia-mock@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/vitest-matchmedia-mock/-/vitest-matchmedia-mock-1.0.6.tgz#e363fa8ee0e4e708de3af43e5a6f058c8223907c"
-  integrity sha512-UUU0YY6BpmcuD2p4DpUVUP0afKuxHX6YAQs5J5skP+ksm+yXJHi9kSN5eOQuC0TFVTuXnIFPl0U9vGPNgnzA1g==
+vitest-matchmedia-mock@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vitest-matchmedia-mock/-/vitest-matchmedia-mock-2.0.0.tgz#201f9d355f3147f33e13973e7961eddf114c7110"
+  integrity sha512-zyR5VaHRftUSNjcfbQFbaFT2rvvJUqFUl1QqnzIKPw0zzun34od4A8t+Ck1Jro2C6/1PNdacESutVZ4QGBuUIw==
   dependencies:
     vitest "^2.0.1"
 

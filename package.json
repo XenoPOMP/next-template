@@ -100,7 +100,7 @@
     "type-fest": "^4.31.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.1.8",
-    "vitest-matchmedia-mock": "^1.0.6"
+    "vitest-matchmedia-mock": "^2.0.0"
   },
   "resolutions": {
     "@types/react": "19.0.1",
