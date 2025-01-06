@@ -43,6 +43,8 @@ jobs:
       - name: 'Report coverage'
         if: always() # Also generate the report if tests are failing
         uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          vite-config-path: .config/vitest.config.ts
 
       # E2E testing
       - name: 'Run Cypress in headless mode'
