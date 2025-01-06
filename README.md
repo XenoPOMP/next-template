@@ -7,7 +7,14 @@
 
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
 
-## Features
+<br/>
+
+## 🏛️ Use this template
+```sh
+yarn create next-app -e https://github.com/XenoPOMP/next-template .
+```
+
+## ⭐️ Features
 
 - 🖼️ SEO optimization + Open Graph images
 - 🧪 Unit testing with Vitest and E2E with Cypress
