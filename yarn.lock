@@ -7666,10 +7666,10 @@ kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-knip@^5.40.0:
-  version "5.40.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.40.0.tgz#6da9113d9d0c696fc3e5dc3f3a281db57b4b828a"
-  integrity sha512-EzBfQDz4YBzYnMLueWnaaVr15mneqZs1c3RanttciuVuRcodlNjzAmR2nch/khlRdVABAxAdMGFxfSvhvcH1NA==
+knip@^5.41.1:
+  version "5.41.1"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.41.1.tgz#b6e27186d38e6bccd2ef8346294e78d13322f1cd"
+  integrity sha512-yNpCCe2REU7U3VRvMASnXSEtfEC2HmOoDW9Vp9teQ9FktJYnuagvSZD3xWq8Ru7sPABkmvbC5TVWuMzIaeADNA==
   dependencies:
     "@nodelib/fs.walk" "1.2.8"
     "@snyk/github-codeowners" "1.1.0"
