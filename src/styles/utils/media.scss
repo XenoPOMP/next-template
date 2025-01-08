@@ -1,5 +1,7 @@
 @import "../config";
 
+// TODO REWORK DEPRECATED
+
 @function getBreakpointValue($breakpoint-name) {
   $breakpoint: map-get($gridBreakpoints, $breakpoint-name);
 

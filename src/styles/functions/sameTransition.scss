@@ -1,5 +1,7 @@
 @import "~str.scss/str";
 
+// TODO REWORK DEPRECATED
+
 @function sameTransition($anim, $properties...) {
   $result: '';
 

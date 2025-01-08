@@ -1,3 +1,5 @@
+// TODO REWORK DEPRECATED
+
 @mixin userSelect($select) {
   -webkit-touch-callout: $select; /* iOS Safari */
     -webkit-user-select: $select; /* Safari */

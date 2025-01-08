@@ -1,3 +1,5 @@
+// TODO REWORK DEPRECATED
+
 @function globalPadding($coefficient) {
   @return calc(var(--global-padding) * $coefficient);
 }
