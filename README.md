@@ -14,6 +14,11 @@ Next is modern React-based framework that provides major features, like SSR, Tur
 yarn create next-app -e https://github.com/XenoPOMP/next-template .
 ```
 
+## 🌌 Environment
+
+- ⛓️‍💥 `Node.js` ^20 || >=22 (installed [via nvm](https://github.com/nvm-sh/nvm))
+- 😼 `Yarn` as a package manager
+
 ## ⭐️ Features
 
 - 🖼️ SEO optimization + Open Graph images
