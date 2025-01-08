@@ -1,5 +1,3 @@
-// TODO REWORK
-
 @mixin automaticColumns($avgWidth) {
   grid-template-columns: repeat(auto-fit, minmax($avgWidth, 1fr));
 }

@@ -1,9 +1,0 @@
-// TODO REWORK
-
-@mixin desktopHover {
-  @media (hover: hover){
-    &:hover{
-      @content;
-    }
-  }
-}

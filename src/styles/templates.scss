@@ -1,13 +1,6 @@
-// Import mixins
-@import "mixins/boxSizing";
-@import "mixins/customScrollbar";
-@import "mixins/svgMonofill";
-@import "mixins/desktopHover";
-
 // These imports handles design system
 @import "mixins/cascade-down";
 @import "mixins/assign-variable";
-
 
 // Import utils
 @import "utils/media";

@@ -1,7 +1,0 @@
-// TODO REWORK
-
-@mixin boxSizing($sizing) {
-  -webkit-box-sizing: $sizing;
-  -moz-box-sizing: $sizing;
-  box-sizing: $sizing;
-}
