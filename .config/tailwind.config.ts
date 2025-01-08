@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import FullBleed from 'tailwindcss-full-bleed';
 import tailwindThemer from 'tailwindcss-themer';
 
 import { DesignSystemConfig } from '../src/styles/themes/design-system.config.ts';
@@ -26,6 +27,7 @@ const tailwindConfig: Config = {
   },
   plugins: [
     CustomClassesPlugin(),
+    FullBleed,
     tailwindThemer({
       defaultTheme: {
         extend: lightTheme,
