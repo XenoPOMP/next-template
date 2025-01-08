@@ -1,7 +1,0 @@
-// TODO REWORK
-
-@mixin fullBleed($value) {
-  box-shadow: 0 0 0 100vmax $value;
-  background: $value;
-  clip-path: inset(0 -100vmax);
-}
