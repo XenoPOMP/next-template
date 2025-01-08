@@ -1,7 +1,0 @@
-// TODO REWORK DEPRECATED
-
-@function colorOpacity($color, $opacity) {
-  $result: change-color($color, $alpha: $opacity);
-
-  @return $result;
-}

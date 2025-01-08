@@ -1,7 +1,0 @@
-// TODO REWORK DEPRECATED
-
-@mixin mediaWidthRange($min, $max) {
-  @media (min-width: $min) and (max-width: $max) {
-    @content;
-  }
-}

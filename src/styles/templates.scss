@@ -2,30 +2,18 @@
 @import "mixins/appearance";
 @import "mixins/backdrop";
 @import "mixins/boxSizing";
-@import "mixins/userSelect";
 @import "mixins/customScrollbar";
 @import "mixins/svgMonofill";
 @import "mixins/full-bleed";
-@import "mixins/padding";
 @import "mixins/desktopHover";
+
+// These imports handles design system
 @import "mixins/cascade-down";
 @import "mixins/assign-variable";
-@import "mixins/maskImage";
-@import "mixins/polyfills";
+
 
 // Import templates
-@import "templates/contentlessOverlay";
-@import "templates/flexCenter";
-@import "templates/fonts";
-@import "templates/notSelectable";
-@import "templates/scrollable";
 @import "templates/tabularNumbers";
-
-// Import functions
-@import "functions/globalPadding";
-@import "functions/colorOpacity";
-@import "functions/toRem";
-@import "functions/sameTransition";
 
 // Import utils
 @import "utils/media";
