@@ -10895,6 +10895,11 @@ table@^6.8.2:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
+tailwindcss-full-bleed@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss-full-bleed/-/tailwindcss-full-bleed-2.0.2.tgz#5de7d8d38a84f3894a3abeff5f581a176ab1ed81"
+  integrity sha512-5Gy8e6TlpZ3eE7oabSXGaVCNH6pDeqytnsJgWmZjbqe2vfCUE+16fZIywCQyJDGWvOY7/nM4FW87AlTc9B+JLA==
+
 tailwindcss-themer@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/tailwindcss-themer/-/tailwindcss-themer-4.1.1.tgz#623356a2e08b458b8e60112481189cf8708e76ab"

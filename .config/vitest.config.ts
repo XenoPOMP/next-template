@@ -33,6 +33,8 @@ const testingExclusion: string[] = [
   // Ignore configs
   '**/{next,postcss,tailwind}.config.{ts,js}',
   'mdx-components.tsx',
+
+  './src/components/ui/DesignSystem/*',
 ];
 
 export default defineConfig(({ mode }) => ({
