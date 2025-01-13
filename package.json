@@ -98,7 +98,7 @@
     "tailwindcss-full-bleed": "^2.0.2",
     "tailwindcss-themer": "^4.1.1",
     "ts-custom-error": "^3.3.1",
-    "type-fest": "^4.31.0",
+    "type-fest": "^4.32.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.1.8",
     "vitest-matchmedia-mock": "^2.0.0"
