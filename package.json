@@ -41,7 +41,7 @@
     "@types/react-dom": "19.0.2",
     "@xenopomp/advanced-utils": "^1.2.2",
     "autoprefixer": "10.4.16",
-    "axios": ">=1.7.4",
+    "axios": ">=1.7.9",
     "class-variance-authority": "^0.7.1",
     "classnames": "^2.5.1",
     "next": "15.1.3",
