@@ -13,15 +13,15 @@ describe('env with zod schema tests', () => {
   });
 
   test('Default production mode is set', () => {
-    expect(env.NEXT_PUBLIC_PRODUCTION_MODE).toBe('dev');
+    expect(env.NODE_ENV).toBe('test');
   });
 
-  test('Production mode is parsed only with allowed values', () => {
+  test('Mocking is not affecting NODE_ENV', () => {
     mockEnv({
-      NEXT_PUBLIC_PRODUCTION_MODE: 'someThingElse',
+      NODE_ENV: 'someThingElse',
     });
 
-    expect(env.NEXT_PUBLIC_PRODUCTION_MODE).toBe('dev');
+    expect(env.NODE_ENV).toBe('test');
 
     clearMocks();
   });
