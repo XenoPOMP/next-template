@@ -1,6 +1,8 @@
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react';
+import cn from 'classnames';
 
+import { MAIN_FONT } from '../app/constants';
 import '../app/globals.scss';
 
 const preview: Preview = {
@@ -14,14 +16,22 @@ const preview: Preview = {
   },
 
   decorators: [
+    // Apply theme plugin
     withThemeByClassName({
       themes: {
         // nameOfTheme: 'classNameForTheme',
         light: '',
         dark: 'dark',
       },
-      defaultTheme: 'light',
+      defaultTheme: 'dark',
     }),
+
+    // Apply global font
+    Story => (
+      <div className={cn(MAIN_FONT.className)}>
+        <Story />
+      </div>
+    ),
   ],
 };
 
