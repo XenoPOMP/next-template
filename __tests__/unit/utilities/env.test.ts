@@ -1,6 +1,7 @@
 import { afterAll, describe, expect, test } from 'vitest';
 
 import { clearMocks, mockEnv } from '@/__tests__/assets/mocks';
+import { TESTING } from '@/app/constants/node-env';
 import { env } from '@/src/utils/env';
 
 describe('env with zod schema tests', () => {
@@ -13,7 +14,7 @@ describe('env with zod schema tests', () => {
   });
 
   test('Default production mode is set', () => {
-    expect(env.NODE_ENV).toBe('test');
+    expect(env.NODE_ENV).toBe(TESTING);
   });
 
   test('Mocking is not affecting NODE_ENV', () => {
@@ -21,7 +22,7 @@ describe('env with zod schema tests', () => {
       NODE_ENV: 'someThingElse',
     });
 
-    expect(env.NODE_ENV).toBe('test');
+    expect(env.NODE_ENV).toBe(TESTING);
 
     clearMocks();
   });
