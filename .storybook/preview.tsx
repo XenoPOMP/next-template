@@ -1,9 +1,13 @@
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react';
 import cn from 'classnames';
+import { Inter } from 'next/font/google';
 
-import { MAIN_FONT } from '../app/constants';
 import '../app/globals.scss';
+
+const mainFont = Inter({
+  subsets: ['latin', 'cyrillic'],
+});
 
 const preview: Preview = {
   parameters: {
@@ -28,7 +32,7 @@ const preview: Preview = {
 
     // Apply global font
     Story => (
-      <div className={cn(MAIN_FONT.className)}>
+      <div className={cn(mainFont.className)}>
         <Story />
       </div>
     ),
