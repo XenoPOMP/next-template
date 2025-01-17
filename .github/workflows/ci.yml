@@ -27,25 +27,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: 'Install Node (${{ matrix.NODE_VERSION }})'
+      - name: '🧩 Install Node (${{ matrix.NODE_VERSION }})'
         uses: actions/setup-node@v4
         with:
           node-version: '${{ matrix.NODE_VERSION }}'
 
-      - name: 'Install dependencies'
+      - name: '📦 Install dependencies'
         run: yarn install --frozen-lockfile
+
+      - name: '📕 Linting'
+        run: yarn lint:ci
 
       # Start to run our inline jobs
       # Vitest
-      - name: 'Run coverage'
+      - name: '🧪 Run coverage'
         run: yarn coverage
 
-      - name: 'Report coverage'
+      - name: '✍️ Report coverage'
         if: always() # Also generate the report if tests are failing
         uses: davelosert/vitest-coverage-report-action@v2
         with:
           vite-config-path: .config/vitest.config.ts
 
       # E2E testing
-      - name: 'Run Cypress in headless mode'
+      - name: '🖥️ Run Cypress in headless mode'
         run: yarn e2e:ci
