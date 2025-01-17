@@ -25,7 +25,6 @@
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "knip": "knip",
     "pack:env": "esno .config/.dev/scripts/pack-env.ts"
   },
   "dependencies": {
@@ -79,7 +78,6 @@
     "husky": "^9.1.7",
     "hygen": "^6.2.11",
     "jsdom": "^25.0.1",
-    "knip": "^5.42.0",
     "lint-staged": "^15.3.0",
     "postcss": "^8",
     "prettier": "^3.3.3",
