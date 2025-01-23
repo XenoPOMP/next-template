@@ -80,7 +80,7 @@
     "jsdom": "^25.0.1",
     "lint-staged": "^15.3.0",
     "postcss": "^8",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.10",
     "sass": "^1.83.1",
     "start-server-and-test": "^2.0.9",
