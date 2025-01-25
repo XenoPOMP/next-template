@@ -1,5 +1,5 @@
-import type { ReplaceReturnType } from '@xenopomp/advanced-types';
 import { useEffect, useState } from 'react';
+import type { ReplaceReturnType } from 'xenopomp-essentials/types';
 
 import type { createBoundStore } from '@/src/zustand/utils';
 

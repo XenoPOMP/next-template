@@ -70,7 +70,6 @@
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-istanbul": "^2.1.8",
-    "@xenopomp/advanced-types": "^2.0.2",
     "cypress": "^13.17.0",
     "eslint": "^9.18.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
@@ -98,7 +97,8 @@
     "type-fest": "^4.32.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.1.8",
-    "vitest-matchmedia-mock": "^2.0.0"
+    "vitest-matchmedia-mock": "^2.0.0",
+    "xenopomp-essentials": "0.0.1-beta.0"
   },
   "resolutions": {
     "@types/react": "19.0.2",

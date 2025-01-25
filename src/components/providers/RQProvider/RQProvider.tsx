@@ -2,14 +2,11 @@
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import type { PropsWith } from '@xenopomp/advanced-types';
-import { type FC, useState } from 'react';
+import { type FC, type PropsWithChildren, useState } from 'react';
 
 import type { RQProviderProps } from './RQProvider.props';
 
-const RQProvider: FC<PropsWith<'children', RQProviderProps>> = ({
-  children,
-}) => {
+const RQProvider: FC<PropsWithChildren<RQProviderProps>> = ({ children }) => {
   const [client] = useState(
     new QueryClient({
       defaultOptions: {

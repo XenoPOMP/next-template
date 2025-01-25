@@ -1,5 +1,5 @@
-import type { Undefinable } from '@xenopomp/advanced-types';
 import { afterAll, beforeAll } from 'vitest';
+import type { Undefinable } from 'xenopomp-essentials/types';
 
 import { clearMocks } from '@/__tests__/assets/mocks';
 

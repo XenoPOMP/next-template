@@ -1,4 +1,4 @@
-import type { Synchronous, Undefinable } from '@xenopomp/advanced-types';
+import type { Synchronous, Undefinable } from 'xenopomp-essentials/types';
 
 // Base type for race callbacks.
 export type RaceFunc<TValue = unknown, TResult = unknown, TReturn = TResult> = (

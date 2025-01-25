@@ -1,4 +1,4 @@
-import type { FcProps, VariableFC } from '@xenopomp/advanced-types';
+import type { FcProps, VariableFC } from 'xenopomp-essentials/types';
 
 import type { ButtonVariantsType } from './Button.variants.ts';
 
