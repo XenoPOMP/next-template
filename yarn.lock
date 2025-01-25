@@ -11740,10 +11740,10 @@ ws@^8.18.0, ws@^8.2.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.0.tgz#0d7505a6eafe2b0e712d232b42279f53bc289bbc"
   integrity sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==
 
-xenopomp-essentials@0.0.1-beta.0:
-  version "0.0.1-beta.0"
-  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.0.1-beta.0.tgz#751062bf4a52bee9cfd9e68ade1cbf533170ccc9"
-  integrity sha512-xkibPkNPgE78qQWsNh0w3vza48NZoUYUgJ0kXAgoP12/buiP3qv/XPbIAQZoSj5oVKFTtuKIoy9alLyOOdQ17A==
+xenopomp-essentials@^0.0.1-beta.1:
+  version "0.0.1-beta.1"
+  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.0.1-beta.1.tgz#cb4bd85b1dd69f8b063e52b68104b5161b9fe15f"
+  integrity sha512-frcOiOCWhgWtMTYyZx7Qqnsv1VJwdsiW+Oh08LFGBYX+LRimlKFOl+jLNJrrtGVpvUvkkhB5eBHUUkUW9Jskwg==
   dependencies:
     "@types/react" "^19.0.8"
     react "^19.0.0"

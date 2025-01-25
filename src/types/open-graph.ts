@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import type { Defined, Modify } from 'xenopomp-essentials/types';
+import type { Defined, Modify } from 'xenopomp-essentials';
 
 /**
  * Config of Open Graph from Next Metadata.

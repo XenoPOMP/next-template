@@ -4,7 +4,7 @@ import cn from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useMemo } from 'react';
-import type { VariableFC } from 'xenopomp-essentials/types';
+import type { VariableFC } from 'xenopomp-essentials';
 
 import type { NavbarItemProps } from './NavbarItem.props.ts';
 

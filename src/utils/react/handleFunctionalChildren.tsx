@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { FunctionalChildren } from 'xenopomp-essentials/types';
+import type { FunctionalChildren } from 'xenopomp-essentials';
 
 /**
  * Handle functional children with function interface.
