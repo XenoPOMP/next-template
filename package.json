@@ -37,7 +37,7 @@
     "@types/mdx": "^2.0.13",
     "@types/node": "^22.10.7",
     "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2",
+    "@types/react-dom": "19.0.3",
     "@xenopomp/advanced-utils": "^1.2.2",
     "autoprefixer": "10.4.16",
     "axios": ">=1.7.9",
@@ -102,6 +102,6 @@
   },
   "resolutions": {
     "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2"
+    "@types/react-dom": "19.0.3"
   }
 }
