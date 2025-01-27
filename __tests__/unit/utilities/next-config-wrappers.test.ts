@@ -1,3 +1,5 @@
+import type { NextConfig } from 'next';
+import { expectType } from 'tsd';
 import { describe, test } from 'vitest';
 
 import { assertNotThrowing } from '@/__tests__/assets/assertions';
@@ -11,5 +13,9 @@ describe('withWrappers utility', () => {
 
   test('It does not throw', () => {
     assertNotThrowing(() => withWrappers({}));
+  });
+
+  test('Test return type', () => {
+    expectType<(config: NextConfig) => NextConfig>(withWrappers);
   });
 });
