@@ -7,11 +7,6 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# IntelliJ Idea
-.idea/*
-!.idea/icon.svg
-!.idea/runConfigurations
-
 .vscode/*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
