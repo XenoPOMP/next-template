@@ -25,6 +25,10 @@ jobs:
       pull-requests: write
 
     steps:
+      - uses: mstachniuk/ci-skip@v1
+        with:
+          commit-filter: '[skip ci]'
+
       - uses: actions/checkout@v4
 
       - name: '🧩 Install Node (${{ matrix.NODE_VERSION }})'
