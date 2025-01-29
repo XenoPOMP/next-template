@@ -6,7 +6,7 @@
   "repository": "https://github.com/%ACTOR%/%NAME%",
   "engines": {
     "node": "^20 || >=22",
-    "yarn": ">=1.17.3"
+    "yarn": "^1"
   },
   "scripts": {
     "dev": "next dev",
