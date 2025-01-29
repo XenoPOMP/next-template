@@ -22,7 +22,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "~/*": ["./*"],
+      "@/*": ["./src/*"],
+      "@app/*": ["./app/*"],
+      "@test/*": ["./__tests__/*"],
+      "@cfg/*": ["./.config/*"],
+      "@public/*": ["./public/*"],
     },
 
     /* Make compiler more strict. */
