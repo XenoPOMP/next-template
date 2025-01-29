@@ -1,13 +1,15 @@
 import { afterEach, describe, test, vi } from 'vitest';
 import MatchMediaMock from 'vitest-matchmedia-mock';
 
-import { mockEnv, mockFonts } from '@/__tests__/assets/mocks';
+import RootLayout, { generateMetadata } from '@app/layout';
+
 import {
   expectToRender,
   injectMocks,
+  mockEnv,
+  mockFonts,
   testObject,
-} from '@/__tests__/assets/utilities';
-import RootLayout, { generateMetadata } from '@/app/layout';
+} from '@test/assets';
 
 describe('Root layout test', () => {
   const matchMediaMock = new MatchMediaMock();

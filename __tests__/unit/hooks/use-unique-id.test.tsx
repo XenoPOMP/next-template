@@ -1,25 +1,14 @@
 'use client';
 
-import { render } from '@testing-library/react';
-import type { FC } from 'react';
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
-import { useUniqueId } from '@/src/hooks';
+import { useUniqueId } from '@/hooks';
 
-const UseUniqueIdTestComponent: FC = () => {
-  const notTransformedId = useUniqueId();
-  const transformedId = useUniqueId(id => `generated-id-${id}`);
-
-  return (
-    <>
-      <p>Not transformed id: {notTransformedId}</p>
-      <p>Transformed id: {transformedId}</p>
-    </>
-  );
-};
+import { expectHookToRender } from '@test/assets';
 
 describe('useUniqueId hook', () => {
   test('Not throwing errors', () => {
-    expect(() => render(<UseUniqueIdTestComponent />)).not.toThrow();
+    expectHookToRender(() => useUniqueId());
+    expectHookToRender(() => useUniqueId(t => `gen-${t}`));
   });
 });

@@ -1,7 +1,8 @@
 import { describe, test } from 'vitest';
 
-import { expectToRender } from '@/__tests__/assets/utilities';
-import { Heading } from '@/src/components/ui/kit';
+import { Heading } from '@/components/ui/kit';
+
+import { expectToRender } from '@test/assets';
 
 describe('Heading element', () => {
   test('It renders', () => {

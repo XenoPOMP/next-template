@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 
-import { APP_NAME } from '@/app/constants';
-import { CoreLayout, Providers } from '@/src/components/layout';
-import { env } from '@/src/utils/env';
-import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
+import { CoreLayout, Providers } from '@/components/layout';
+import { env } from '@/utils/env';
+import { generateOpenGraph, generateStaticMetadata } from '@/utils/seo';
+
+import { APP_NAME } from '@app/constants';
 
 import './globals.scss';
 

@@ -2,9 +2,9 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import type { ComponentRef } from 'react';
 import { describe, test } from 'vitest';
 
-import { assertNotThrowing } from '@/__tests__/assets/assertions';
-import { expectHookToRender } from '@/__tests__/assets/utilities';
-import { useOutSide } from '@/src/hooks';
+import { useOutSide } from '@/hooks';
+
+import { assertNotThrowing, expectHookToRender } from '@test/assets';
 
 function Testing() {
   const { ref } = useOutSide<ComponentRef<'div'>>();

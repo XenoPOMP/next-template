@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { ReplaceReturnType } from 'xenopomp-essentials';
 
-import type { createBoundStore } from '@/src/zustand/utils';
+import type { createBoundStore } from '@/zustand';
 
 type ReturnedStore<TStore> = ReturnType<typeof createBoundStore<TStore>>;
 

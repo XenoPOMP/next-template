@@ -1,9 +1,9 @@
 import { cleanup } from '@testing-library/react';
 import { afterEach, describe, test } from 'vitest';
 
-import { mockRouter } from '@/__tests__/assets/mocks';
-import { expectToRender, injectMocks } from '@/__tests__/assets/utilities';
-import { NavbarItem } from '@/src/components/ui/kit/NavbarItem/NavbarItem.tsx';
+import { NavbarItem } from '@/components/ui/kit';
+
+import { expectToRender, injectMocks, mockRouter } from '@test/assets';
 
 describe('UI Kit / Navbar item', () => {
   injectMocks(() => {

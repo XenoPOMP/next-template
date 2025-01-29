@@ -1,5 +1,6 @@
-import { expectToRender } from '@/__tests__/assets/utilities';
-import { handleFunctionalChildren } from '@/src/utils/react';
+import { handleFunctionalChildren } from '@/utils/react';
+
+import { expectToRender } from '@test/assets';
 
 export function testFunctionalApproach(values: boolean[]) {
   values.forEach(val => {

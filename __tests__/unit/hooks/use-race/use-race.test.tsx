@@ -1,9 +1,9 @@
 import { renderHook } from '@testing-library/react';
 import { describe, test } from 'vitest';
 
-import { assertNotThrowing } from '@/__tests__/assets/assertions';
-import { expectHookToRender } from '@/__tests__/assets/utilities';
-import { useRace } from '@/src/hooks';
+import { useRace } from '@/hooks';
+
+import { assertNotThrowing, expectHookToRender } from '@test/assets';
 
 describe('useRace hook', () => {
   test('It renders', () => {

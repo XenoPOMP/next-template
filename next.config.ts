@@ -1,6 +1,6 @@
 import type { NextConfig } from 'next';
 
-import { withWrappers } from '@/src/utils/next';
+import { withWrappers } from '@/utils/next';
 
 const nextConfig: NextConfig = {
   // Configure `pageExtensions` to include MDX files

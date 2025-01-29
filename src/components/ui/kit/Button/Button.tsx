@@ -1,9 +1,9 @@
 import cn from 'classnames';
 
-import { slotable } from '@/src/components/hoc';
-import { buttonVariants } from '@/src/components/ui/kit/Button/Button.variants.ts';
+import { slotable } from '@/components/hoc';
 
 import type { ButtonProps } from './Button.props';
+import { buttonVariants } from './Button.variants';
 
 export const Button = slotable<'button', ButtonProps>(
   'button',

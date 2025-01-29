@@ -1,7 +1,8 @@
 import { describe, test } from 'vitest';
 
-import { testObject } from '@/__tests__/assets/utilities';
-import { DesignSystemConfig } from '@/src/styles/themes/design-system.config.ts';
+import { DesignSystemConfig } from '@/styles/themes/design-system.config';
+
+import { testObject } from '@test/assets';
 
 describe('Design config', () => {
   test('It exists', () => {

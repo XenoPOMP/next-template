@@ -1,5 +1,5 @@
-import { createStorageKey } from '@/src/utils/misc';
-import { createBoundStore } from '@/src/zustand/utils';
+import { createStorageKey } from '@/utils/misc';
+import { createBoundStore } from '@/zustand';
 
 interface SettingsStore {
   lang: 'ru' | 'en';

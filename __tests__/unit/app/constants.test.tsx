@@ -1,7 +1,8 @@
 import { describe, test } from 'vitest';
 
-import { testObject } from '@/__tests__/assets/utilities';
-import { NO_INDEX_PAGE } from '@/app/constants';
+import { NO_INDEX_PAGE } from '@app/constants';
+
+import { testObject } from '@test/assets';
 
 describe('Test all constants', () => {
   test('SEO', () => {

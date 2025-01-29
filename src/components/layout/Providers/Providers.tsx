@@ -1,8 +1,8 @@
 import { ThemeProvider } from 'next-themes';
 import type { FC, PropsWithChildren } from 'react';
 
-import { RQProvider } from '@/src/components/providers';
-import { createStorageKey } from '@/src/utils/misc';
+import { RQProvider } from '@/components/providers';
+import { createStorageKey } from '@/utils/misc';
 
 import type { ProvidersProps } from './Providers.props';
 

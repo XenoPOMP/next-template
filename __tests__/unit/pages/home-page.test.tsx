@@ -1,10 +1,9 @@
-import { describe, test } from 'vitest';
+import { describe } from 'vitest';
 
-import { expectToRender } from '@/__tests__/assets/utilities';
-import Home from '@/app/page';
+import Home from '@app/page';
+
+import { testNextPage } from '@test/assets';
 
 describe('Index page', () => {
-  test('Render without errors', () => {
-    expectToRender(<Home />);
-  });
+  testNextPage(<Home />);
 });

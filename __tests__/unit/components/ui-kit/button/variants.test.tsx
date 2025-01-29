@@ -1,7 +1,8 @@
 import { describe, test } from 'vitest';
 
-import { assertNotThrowing } from '@/__tests__/assets/assertions';
-import { buttonVariants } from '@/src/components/ui/kit/Button/Button.variants.ts';
+import { buttonVariants } from '@/components/ui/kit/Button/Button.variants';
+
+import { assertNotThrowing } from '@test/assets';
 
 describe('UI Kit / Button / Variants', () => {
   test('It does not throw', () => {

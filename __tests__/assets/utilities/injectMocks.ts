@@ -1,7 +1,7 @@
 import { afterAll, beforeAll } from 'vitest';
 import type { Undefinable } from 'xenopomp-essentials';
 
-import { clearMocks } from '@/__tests__/assets/mocks';
+import { clearMocks } from '@test/assets';
 
 type Fn = () => void;
 type Strategy = keyof typeof strategies;

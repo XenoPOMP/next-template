@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import type { CSSProperties } from 'react';
 
-import { slotable } from '@/src/components/hoc';
+import { slotable } from '@/components/hoc';
 
 import styles from './Stack.module.scss';
 import type { StackProps } from './Stack.props.ts';

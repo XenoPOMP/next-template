@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react';
 
-import { Heading } from '@/src/components/ui/kit';
+import { Heading } from '@/components/ui/kit';
 
 import { useComputedStyles } from './use-computed-styles.ts';
 

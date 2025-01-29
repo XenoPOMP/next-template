@@ -1,7 +1,7 @@
 import type { NextFont } from 'next/dist/compiled/@next/font';
 import { vi } from 'vitest';
 
-import { FONTS_TO_MOCK } from '@/app/constants';
+import { FONTS_TO_MOCK } from '@app/constants';
 
 /** Primitive font mock. */
 const MockFont: NextFont = {

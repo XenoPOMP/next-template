@@ -1,7 +1,8 @@
 import { describe } from 'vitest';
 
-import { testNextPage } from '@/__tests__/assets/utilities';
-import Home from '@/app/page.tsx';
+import Home from '@app/page';
+
+import { testNextPage } from '@test/assets';
 
 describe('MainPage tests', () => {
   testNextPage(<Home />);

@@ -1,7 +1,8 @@
-import ogSquareImg from '@/public/open-graph/og (200x200).png';
-import ogWideImg from '@/public/open-graph/og (1200x627).png';
-import type { ModifiedOGConfig } from '@/src/types';
-import { env } from '@/src/utils/env';
+import type { ModifiedOGConfig } from '@/types';
+import { env } from '@/utils/env';
+
+import ogSquareImg from '@public/open-graph/og (200x200).png';
+import ogWideImg from '@public/open-graph/og (1200x627).png';
 
 export const SHARED_OG_CONFIG = {
   images: [
