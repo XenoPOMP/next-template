@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 
 import { CoreLayout, Providers } from '@/components/layout';
 import { env } from '@/utils/env';
-import { generateOpenGraph, generateStaticMetadata } from '@/utils/seo';
+import { generateOpenGraph } from '@/utils/seo';
 
 import { APP_NAME } from '@app/constants';
 
@@ -17,7 +17,7 @@ const mainFont = Inter({
 export async function generateMetadata(): Promise<Metadata> {
   const CANONICAL_URL = env.CANONICAL_URL;
 
-  return generateStaticMetadata({
+  return {
     metadataBase: new URL(CANONICAL_URL),
     title: {
       template: `%s | ${APP_NAME}`,
@@ -41,7 +41,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: 'Main page',
       description: 'This is a main page',
     }),
-  });
+  };
 }
 
 // TODO Update next-themes and remove suppressHydrationWarning
