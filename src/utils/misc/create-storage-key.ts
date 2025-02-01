@@ -1,4 +1,4 @@
-import { transliterate } from '@xenopomp/advanced-utils';
+import { transliterate } from 'xenopomp-essentials';
 
 import { APP_NAME } from '@app/constants';
 

@@ -1,4 +1,3 @@
-import { isUndefined } from '@xenopomp/advanced-utils';
 import { useId } from 'react';
 
 /**
@@ -29,7 +28,7 @@ export const useUniqueId = (
    * If transformer callback is defined, call it
    * and return result of it.
    */
-  if (!isUndefined(transformer)) {
+  if (transformer !== undefined) {
     return transformer(id);
   }
 

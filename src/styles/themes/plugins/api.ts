@@ -1,4 +1,3 @@
-import { getObjectEntries } from '@xenopomp/advanced-utils';
 import type { CSSProperties } from 'react';
 import type { CSSRuleObject } from 'tailwindcss/types/config';
 
@@ -14,7 +13,7 @@ export const cssPropertiesToTw = (styles: CSSProperties): CSSRuleObject => {
     result[key] = value;
   };
 
-  getObjectEntries(styles).forEach(([cssProperty, value]) => {
+  Object.entries(styles).forEach(([cssProperty, value]) => {
     /** Convert number value to string. */
     if (typeof value === 'number') {
       appendResult(cssProperty, value.toString());
