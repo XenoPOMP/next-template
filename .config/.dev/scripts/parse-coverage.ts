@@ -57,7 +57,7 @@ const writeToReadme = async (avg: number) => {
     /<img alt="Coverage status" src="https:\/\/img\.shields\.io\/badge.*>/g;
   const replaced = readmeContent.replace(
     regex,
-    `<img alt="Coverage status" src="https://img.shields.io/badge/coverage-${avg.toFixed(0)}%25-${color}">`,
+    `<img alt="Coverage status" src="https://img.shields.io/badge/coverage-${avg.toFixed(0)}%25-${color}?style=flat-square">`,
   );
 
   await writeFile(pathToReadme, replaced);
