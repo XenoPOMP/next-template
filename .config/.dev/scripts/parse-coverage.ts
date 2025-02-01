@@ -65,5 +65,5 @@ const writeToReadme = async (avg: number) => {
 
 (async () => {
   const avg = await getAvgCoverage();
-  await writeToReadme(100);
+  await writeToReadme(avg);
 })();
