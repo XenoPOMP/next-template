@@ -4,7 +4,6 @@
 
 <p>
 <img alt="CI Status" src="https://img.shields.io/github/actions/workflow/status/XenoPOMP/next-template/ci.yml?logo=github&logoColor=%23fff&label=CI&style=flat-square" />
-<img alt="Coverage status" src="https://img.shields.io/badge/coverage-96%25-05e01e?style=flat-square">
 
 Next is modern React-based framework that provides major features, like SSR, Turbopack, SEO-friendly.
 
