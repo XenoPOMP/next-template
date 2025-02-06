@@ -1,3 +1,4 @@
 export * from './Button/Button';
 export * from './NavbarItem/NavbarItem';
 export * from './Heading/Heading';
+export * from './Loading/Loading';
