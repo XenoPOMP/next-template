@@ -1,5 +1,4 @@
-import type { PropsWith } from '@xenopomp/advanced-types';
-import type { FC } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
 import type { CoreLayoutProps } from './CoreLayout.props';
 
@@ -19,9 +18,7 @@ import type { CoreLayoutProps } from './CoreLayout.props';
  *   </main>
  * </CoreLayout>
  */
-const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
-  children,
-}) => {
+const CoreLayout: FC<PropsWithChildren<CoreLayoutProps>> = ({ children }) => {
   return <>{children}</>;
 };
 

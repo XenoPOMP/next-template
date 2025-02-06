@@ -1,8 +1,9 @@
 import type { CSSRuleObject } from 'tailwindcss/types/config';
 import { describe, test } from 'vitest';
 
-import { expectToDeepEqual } from '@/__tests__/assets/utilities';
-import { cssPropertiesToTw } from '@/src/styles/themes/plugins/api';
+import { cssPropertiesToTw } from '@/styles/themes/plugins/api';
+
+import { expectToDeepEqual } from '@test/assets';
 
 describe('Theme plugins API', () => {
   test('Convert React`s CSSProperties to CSS-in-JS', () => {

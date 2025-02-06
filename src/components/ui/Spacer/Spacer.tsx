@@ -1,5 +1,5 @@
-import type { VariableFC } from '@xenopomp/advanced-types';
 import cn from 'classnames';
+import type { VariableFC } from 'xenopomp-essentials';
 
 /**
  * This component works similar to SwiftUI`s Spacer struct.

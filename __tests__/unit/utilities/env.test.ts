@@ -1,8 +1,10 @@
 import { afterAll, describe, expect, test } from 'vitest';
 
-import { clearMocks, mockEnv } from '@/__tests__/assets/mocks';
-import { TESTING } from '@/app/constants/node-env';
-import { env } from '@/src/utils/env';
+import { env } from '@/utils/env';
+
+import { TESTING } from '@app/constants/node-env';
+
+import { clearMocks, mockEnv } from '@test/assets';
 
 describe('env with zod schema tests', () => {
   afterAll(() => {

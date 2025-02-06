@@ -1,6 +1,6 @@
 import { vi } from 'vitest';
 
-import type { DeepPartial, Stub } from '@/__tests__/assets/types';
+import type { DeepPartial, Stub } from '@test/assets';
 
 /**
  * Mocks global scope object.

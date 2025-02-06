@@ -1,12 +1,12 @@
 {
   "name": "next-template",
-  "version": "5.2.1",
+  "version": "5.3.0-canary.1",
   "private": true,
   "author": "XenoPOMP",
   "repository": "https://github.com/%ACTOR%/%NAME%",
   "engines": {
     "node": "^20 || >=22",
-    "yarn": ">=1.17.3"
+    "yarn": "^1"
   },
   "scripts": {
     "dev": "next dev",
@@ -25,7 +25,9 @@
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "pack:env": "esno .config/.dev/scripts/pack-env.ts"
+    "fullpack": "run-s pack:*",
+    "pack:env": "esno .config/.dev/scripts/pack-env.ts",
+    "pack:coverage-percent": "esno .config/.dev/scripts/parse-coverage.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -38,7 +40,6 @@
     "@types/node": "^22.10.7",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
-    "@xenopomp/advanced-utils": "^1.2.2",
     "autoprefixer": "10.4.16",
     "axios": ">=1.7.9",
     "class-variance-authority": "^0.7.1",
@@ -70,7 +71,7 @@
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-istanbul": "^2.1.8",
-    "@xenopomp/advanced-types": "^2.0.2",
+    "cheerio": "^1.0.0",
     "cypress": "^13.17.0",
     "eslint": "^9.18.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
@@ -79,6 +80,7 @@
     "hygen": "^6.2.11",
     "jsdom": "^25.0.1",
     "lint-staged": "^15.3.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.10",
@@ -95,10 +97,12 @@
     "tailwindcss-full-bleed": "^2.0.2",
     "tailwindcss-themer": "^4.1.1",
     "ts-custom-error": "^3.3.1",
+    "tsd": "^0.31.2",
     "type-fest": "^4.32.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.1.8",
-    "vitest-matchmedia-mock": "^2.0.0"
+    "vitest-matchmedia-mock": "^2.0.0",
+    "xenopomp-essentials": "^0.0.1-beta.11"
   },
   "resolutions": {
     "@types/react": "19.0.2",

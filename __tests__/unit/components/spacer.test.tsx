@@ -1,7 +1,8 @@
 import { describe, test } from 'vitest';
 
-import { expectToRender } from '@/__tests__/assets/utilities';
-import { Spacer } from '@/src/components/ui';
+import { Spacer } from '@/components/ui';
+
+import { expectToRender } from '@test/assets';
 
 describe('Spacer component', () => {
   test('It renders', () => {

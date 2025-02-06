@@ -1,7 +1,8 @@
 import { describe, expect, test } from 'vitest';
 
-import { APP_NAME } from '@/app/constants';
-import { createStorageKey } from '@/src/utils/misc';
+import { createStorageKey } from '@/utils/misc';
+
+import { APP_NAME } from '@app/constants';
 
 describe('createStorageKey func', () => {
   const generateAndExpect = (expected: string, ...keys: string[]) => {

@@ -1,3 +1,1 @@
-import useSettingsStore from './useSettingsStore';
-
-export { useSettingsStore };
+export * from './useExampleStore';

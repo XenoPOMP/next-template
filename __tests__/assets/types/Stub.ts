@@ -1,6 +1,6 @@
 import type { Mock } from 'vitest';
 
-import type { DeepTypeReplace } from '@/__tests__/assets/types';
+import type { DeepTypeReplace } from '@test/assets';
 
 type StubValue = Mock | (() => Mock) | (() => Promise<Mock>);
 

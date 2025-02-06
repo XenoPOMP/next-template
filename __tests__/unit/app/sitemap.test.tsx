@@ -1,8 +1,8 @@
 import { describe, test, vi } from 'vitest';
 
-import { mockEnv } from '@/__tests__/assets/mocks';
-import { injectMocks, testObject } from '@/__tests__/assets/utilities';
-import sitemap from '@/app/sitemap';
+import sitemap from '@app/sitemap';
+
+import { injectMocks, mockEnv, testObject } from '@test/assets';
 
 describe('Next.js sitemap generation', () => {
   injectMocks(() => {

@@ -1,6 +1,6 @@
 import { render, renderHook } from '@testing-library/react';
 
-import { assertNotThrowing } from '../assertions/not-throwing.ts';
+import { assertNotThrowing } from '@test/assets';
 
 type RenderArguments = Parameters<typeof render>;
 type RenderHookArguments = Parameters<typeof renderHook>;

@@ -1,7 +1,8 @@
 import { describe, test } from 'vitest';
 
-import { expectToRender } from '@/__tests__/assets/utilities';
-import { handleFunctionalChildren } from '@/src/utils/react';
+import { handleFunctionalChildren } from '@/utils/react';
+
+import { expectToRender } from '@test/assets';
 
 import { testFunctionalApproach } from './utils';
 

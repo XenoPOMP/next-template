@@ -1,8 +1,9 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, test } from 'vitest';
 
-import { expectToRender } from '@/__tests__/assets/utilities';
-import { For } from '@/src/components/layout';
+import { For } from '@/components/layout';
+
+import { expectToRender } from '@test/assets';
 
 describe('"For" component tests', () => {
   afterEach(() => cleanup());

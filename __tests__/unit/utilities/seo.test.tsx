@@ -1,7 +1,8 @@
 import { afterEach, describe, test, vi } from 'vitest';
 
-import { assertNotThrowing } from '@/__tests__/assets/assertions';
-import { generateOpenGraph } from '@/src/utils/seo';
+import { generateOpenGraph } from '@/utils/seo';
+
+import { assertNotThrowing } from '@test/assets';
 
 describe('SEO utilities', () => {
   afterEach(() => {

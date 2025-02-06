@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss';
 import FullBleed from 'tailwindcss-full-bleed';
 import tailwindThemer from 'tailwindcss-themer';
 
-import { DesignSystemConfig } from '../src/styles/themes/design-system.config.ts';
+import { DesignSystemConfig } from '../src/styles/themes/design-system.config';
 import { CustomClassesPlugin } from '../src/styles/themes/plugins';
 import { darkTheme, lightTheme } from '../src/themes';
 

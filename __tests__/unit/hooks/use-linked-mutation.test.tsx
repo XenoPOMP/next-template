@@ -1,10 +1,10 @@
 import { renderHook } from '@testing-library/react';
 import { describe, test } from 'vitest';
 
-import { assertNotThrowing } from '@/__tests__/assets/assertions';
-import { expectHookToRender } from '@/__tests__/assets/utilities';
-import { RQProvider } from '@/src/components/providers';
-import { useLinkedMutation } from '@/src/hooks';
+import { RQProvider } from '@/components/providers';
+import { useLinkedMutation } from '@/hooks';
+
+import { assertNotThrowing, expectHookToRender } from '@test/assets';
 
 describe('useLinkedMutation hook', () => {
   const sharedProps = [

@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { describe, test } from 'vitest';
 
-import { expectToRender } from '@/__tests__/assets/utilities';
-import { Button } from '@/src/components/ui/kit';
+import { Button } from '@/components/ui/kit';
+
+import { expectToRender } from '@test/assets';
 
 describe('UI Kit / Button', () => {
   test('It renders', () => {

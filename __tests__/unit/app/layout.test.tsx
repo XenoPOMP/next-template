@@ -1,44 +1,26 @@
-import { afterEach, describe, test, vi } from 'vitest';
+import { describe, vi } from 'vitest';
 import MatchMediaMock from 'vitest-matchmedia-mock';
 
-import { mockEnv, mockFonts } from '@/__tests__/assets/mocks';
-import {
-  expectToRender,
-  injectMocks,
-  testObject,
-} from '@/__tests__/assets/utilities';
-import RootLayout, { generateMetadata } from '@/app/layout';
+import { FONT_MOCK } from '@app/constants';
+import RootLayout, { generateMetadata } from '@app/layout.tsx';
+
+import { injectMocks, testNextPage } from '@test/assets';
 
 describe('Root layout test', () => {
-  const matchMediaMock = new MatchMediaMock();
+  const matcher = new MatchMediaMock();
 
   injectMocks(() => {
-    mockEnv();
-    mockFonts();
-
-    // Mock window.matchMedia.
-    matchMediaMock.useMediaQuery('(prefers-color-scheme: dark)');
-
-    return () => matchMediaMock.destroy();
+    vi.mock('next/font/google', () => ({
+      Inter: FONT_MOCK,
+    }));
   });
 
-  afterEach(() => {
-    matchMediaMock.clear();
-  });
+  injectMocks(() => {
+    matcher.clear();
+    return () => matcher.destroy();
+  }, 'afterEach');
 
-  test('It renders', () => {
-    expectToRender(<RootLayout>Hello world!</RootLayout>);
-  });
-
-  test('Metadata generates', async () => {
-    const metadata = await generateMetadata();
-    testObject(metadata);
-  });
-
-  test('Canonical url equals to constant value by default', async () => {
-    vi.unstubAllEnvs();
-
-    const metadata = await generateMetadata();
-    testObject(metadata);
+  testNextPage(<RootLayout children={undefined} />, {
+    generateMetadata,
   });
 });

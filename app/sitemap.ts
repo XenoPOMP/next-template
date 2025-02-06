@@ -1,5 +1,5 @@
-import { env } from '@/src/utils/env';
-import type { Sitemap } from '@/src/utils/seo/sitemap-utils';
+import { env } from '@/utils/env';
+import type { Sitemap } from '@/utils/seo/sitemap-utils';
 
 export default function sitemap(): Sitemap {
   const CANONICAL = env.CANONICAL_URL;

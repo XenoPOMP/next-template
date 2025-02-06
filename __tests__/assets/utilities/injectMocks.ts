@@ -1,7 +1,7 @@
-import type { Undefinable } from '@xenopomp/advanced-types';
-import { afterAll, beforeAll } from 'vitest';
+import { afterAll, afterEach, beforeAll } from 'vitest';
+import type { Undefinable } from 'xenopomp-essentials';
 
-import { clearMocks } from '@/__tests__/assets/mocks';
+import { clearMocks } from '@test/assets';
 
 type Fn = () => void;
 type Strategy = keyof typeof strategies;
@@ -14,6 +14,7 @@ type AfterAllCallback = Undefinable<Fn> | void;
  */
 const strategies = {
   beforeAll,
+  afterEach,
 };
 
 /**

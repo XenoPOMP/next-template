@@ -1,4 +1,4 @@
-import type { FunctionalChildren } from '@xenopomp/advanced-types';
+import type { FunctionalChildren } from 'xenopomp-essentials';
 
 export interface ForProps<ItemType> {
   each: ItemType[];

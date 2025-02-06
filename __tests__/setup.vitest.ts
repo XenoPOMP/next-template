@@ -1,6 +1,6 @@
 import { expect } from 'vitest';
 
-import { toMatchStructure } from '@/__tests__/assets/extensions';
+import { toMatchStructure } from '@test/assets/extensions';
 
 expect.extend({
   toMatchStructure,

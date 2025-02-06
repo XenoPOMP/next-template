@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 
-import { APP_NAME } from '@/app/constants';
-import { CoreLayout, Providers } from '@/src/components/layout';
-import { env } from '@/src/utils/env';
-import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
+import { CoreLayout, Providers } from '@/components/layout';
+import { env } from '@/utils/env';
+import { generateOpenGraph } from '@/utils/seo';
+
+import { APP_NAME } from '@app/constants';
 
 import './globals.scss';
 
@@ -16,7 +17,7 @@ const mainFont = Inter({
 export async function generateMetadata(): Promise<Metadata> {
   const CANONICAL_URL = env.CANONICAL_URL;
 
-  return generateStaticMetadata({
+  return {
     metadataBase: new URL(CANONICAL_URL),
     title: {
       template: `%s | ${APP_NAME}`,
@@ -40,7 +41,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: 'Main page',
       description: 'This is a main page',
     }),
-  });
+  };
 }
 
 // TODO Update next-themes and remove suppressHydrationWarning

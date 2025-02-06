@@ -1,9 +1,10 @@
-import { cleanup } from '@testing-library/react';
-import { afterEach, describe, test } from 'vitest';
+import { cleanup, render, screen } from '@testing-library/react';
+import type { usePathname } from 'next/navigation';
+import { afterEach, describe, expect, test, vi } from 'vitest';
 
-import { mockRouter } from '@/__tests__/assets/mocks';
-import { expectToRender, injectMocks } from '@/__tests__/assets/utilities';
-import { NavbarItem } from '@/src/components/ui/kit/NavbarItem/NavbarItem.tsx';
+import { NavbarItem } from '@/components/ui/kit';
+
+import { expectToRender, injectMocks, mockRouter } from '@test/assets';
 
 describe('UI Kit / Navbar item', () => {
   injectMocks(() => {
@@ -14,6 +15,31 @@ describe('UI Kit / Navbar item', () => {
 
   test('It renders', () => {
     expectToRender(<NavbarItem href='/'>Go home</NavbarItem>);
+  });
+
+  test('Link becomes active if target url is met', () => {
+    vi.mock('next/navigation', () => {
+      return {
+        usePathname: (): Partial<ReturnType<typeof usePathname>> => {
+          return '/other';
+        },
+      };
+    });
+
+    render(
+      <NavbarItem
+        href='/other'
+        data-testid='item'
+      />,
+    );
+
+    const navItem = screen.getByTestId('item');
+    const isActive = navItem.getAttribute('data-is-active') === 'true';
+
+    expect(isActive).toBe(true);
+
+    // Return base mocks
+    mockRouter();
   });
 
   test('Target URL works', () => {

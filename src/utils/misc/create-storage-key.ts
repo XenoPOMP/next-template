@@ -1,6 +1,6 @@
-import { transliterate } from '@xenopomp/advanced-utils';
+import { transliterate } from 'xenopomp-essentials';
 
-import { APP_NAME } from '@/app/constants';
+import { APP_NAME } from '@app/constants';
 
 /**
  * Creates key for local storage.
