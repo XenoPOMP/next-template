@@ -30,6 +30,7 @@
     "pack:coverage-percent": "esno .config/.dev/scripts/parse-coverage.ts"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "15.1.5",
