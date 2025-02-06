@@ -9,12 +9,6 @@ describe('Root layout test', () => {
     mockFonts();
   });
 
-  test('It imports', async () => {
-    const sus = await import('next/font/google');
-    // eslint-disable-next-line no-console
-    console.log(sus);
-  });
-
   test('It renders', () => {
     expectToRender(<RootLayout children={undefined} />);
   });
