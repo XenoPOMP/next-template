@@ -85,7 +85,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "sass": "^1.83.1",
-    "start-server-and-test": "^2.0.9",
+    "start-server-and-test": "^2.0.10",
     "storybook": "^8.5.3",
     "str.scss": "^1.2.0",
     "stylelint": "^16.6.1",
