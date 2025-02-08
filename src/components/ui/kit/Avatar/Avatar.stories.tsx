@@ -26,11 +26,14 @@ export const Primary: Story = {
   args: {
     ...sharedProps,
   },
-  decorators: (_story, props) => (
-    <div className={cn('flex gap-[.5rem]')}>
-      <Avatar {...props.args} />
-      <Avatar src={catImg} />
-      <Avatar {...props.args} />
-    </div>
+
+  render: args => (
+    <>
+      <div className={cn('flex gap-[.5rem]')}>
+        <Avatar {...args} />
+        <Avatar src={catImg} />
+        <Avatar {...args} />
+      </div>
+    </>
   ),
 };

@@ -3,6 +3,8 @@ import { User } from 'lucide-react';
 import Image from 'next/image';
 import type { VariableFC } from 'xenopomp-essentials';
 
+import { DicebearImage } from '@/components/ui/kit';
+
 import type { AvatarProps } from './Avatar.props';
 
 export const Avatar: VariableFC<'div', AvatarProps, 'children'> = ({
@@ -12,6 +14,7 @@ export const Avatar: VariableFC<'div', AvatarProps, 'children'> = ({
   ...props
 }) => {
   const altText = `${placeholder ?? 'User'}\`s avatar image`;
+  const imageCn = 'size-full object-cover object-center';
 
   return (
     <div
@@ -26,12 +29,17 @@ export const Avatar: VariableFC<'div', AvatarProps, 'children'> = ({
         <Image
           src={src}
           alt={altText}
-          className={cn('size-full object-cover object-center')}
+          className={cn(imageCn)}
         />
       ) : (
         <>
           {placeholder ? (
-            <></>
+            <>
+              <DicebearImage
+                seed={placeholder}
+                className={cn(imageCn)}
+              />
+            </>
           ) : (
             <>
               <User color='currentColor' />
