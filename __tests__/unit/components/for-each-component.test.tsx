@@ -3,13 +3,13 @@ import { afterEach, describe, expect, test } from 'vitest';
 
 import { For } from '@/components/layout';
 
-import { expectToRender } from '@test/assets';
+import { assertRendering } from '@test/assets';
 
 describe('"For" component tests', () => {
   afterEach(() => cleanup());
 
   test('It renders', () => {
-    expectToRender(<For each={[]} />);
+    assertRendering(<For each={[]} />);
   });
 
   test('Internal .map functionality works', () => {

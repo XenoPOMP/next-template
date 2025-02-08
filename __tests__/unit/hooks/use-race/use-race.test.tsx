@@ -3,11 +3,11 @@ import { describe, test } from 'vitest';
 
 import { useRace } from '@/hooks';
 
-import { assertNotThrowing, expectHookToRender } from '@test/assets';
+import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
 describe('useRace hook', () => {
   test('It renders', () => {
-    expectHookToRender(() => useRace('race', async () => {}));
+    assertHookRendering(() => useRace('race', async () => {}));
   });
 
   test('Abort controller works', () => {

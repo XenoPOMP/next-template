@@ -5,7 +5,7 @@ import { test } from 'vitest';
 import { RQProvider } from '@/components/providers';
 
 import {
-  expectToRender,
+  assertRendering,
   injectMocks,
   mockRouter,
   testObject,
@@ -33,7 +33,7 @@ export const testNextPage = (
   });
 
   test('It renders', () => {
-    expectToRender(page, {
+    assertRendering(page, {
       wrapper: RQProvider,
     });
   });

@@ -4,7 +4,7 @@ import { describe, test } from 'vitest';
 import { RQProvider } from '@/components/providers';
 import { useLinkedMutation } from '@/hooks';
 
-import { assertNotThrowing, expectHookToRender } from '@test/assets';
+import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
 describe('useLinkedMutation hook', () => {
   const sharedProps = [
@@ -18,10 +18,10 @@ describe('useLinkedMutation hook', () => {
     {
       wrapper: RQProvider,
     },
-  ] satisfies Parameters<typeof expectHookToRender>;
+  ] satisfies Parameters<typeof assertHookRendering>;
 
   test('It renders', () => {
-    expectHookToRender(...sharedProps);
+    assertHookRendering(...sharedProps);
   });
 
   test('Mutation works', () => {

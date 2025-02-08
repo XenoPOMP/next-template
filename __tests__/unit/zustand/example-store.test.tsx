@@ -3,11 +3,11 @@ import { describe, expect, test } from 'vitest';
 
 import { DEFAULT_SELECTOR, useExampleStore } from '@/zustand';
 
-import { assertNotThrowing, expectHookToRender } from '@test/assets';
+import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
 describe('useExampleStore hook', () => {
   test('It renders', () => {
-    expectHookToRender(() => useExampleStore(DEFAULT_SELECTOR));
+    assertHookRendering(() => useExampleStore(DEFAULT_SELECTOR));
   });
 
   test('Setter function works as expected', () => {
