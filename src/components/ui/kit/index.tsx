@@ -6,3 +6,4 @@ export * from './Toggle/Toggle';
 export * from './Input/Input';
 export * from './Accordion/Accordion';
 export * from './Avatar/Avatar';
+export * from './DicebearImage/DicebearImage';
