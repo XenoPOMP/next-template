@@ -6,9 +6,7 @@ import { APP_NAME } from '@app/constants';
 
 describe('createStorageKey func', () => {
   const generateAndExpect = (expected: string, ...keys: string[]) => {
-    const generated = createStorageKey(...keys);
-
-    expect(generated).to.equal(expected);
+    expect(createStorageKey(...keys)).to.equal(expected);
   };
 
   test('Func filters empty strings', () => {

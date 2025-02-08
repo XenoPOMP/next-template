@@ -20,6 +20,7 @@ type RenderFunc<Args extends unknown[] = RenderArguments> = (
  *     });
  *   });
  * });
+ *
  */
 export const assertRendering: RenderFunc = (...props) => {
   assertNotThrowing(() => render(...props));

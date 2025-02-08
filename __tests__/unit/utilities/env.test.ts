@@ -1,15 +1,13 @@
-import { afterAll, describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
 import { env } from '@/utils/env';
 
 import { TESTING } from '@app/constants/node-env';
 
-import { clearMocks, mockEnv } from '@test/assets';
+import { clearMocks, injectMocks, mockEnv } from '@test/assets';
 
 describe('env with zod schema tests', () => {
-  afterAll(() => {
-    clearMocks();
-  });
+  injectMocks(() => {});
 
   test('Default canonical url is set', () => {
     expect(env.CANONICAL_URL).toBe('http://localhost:3000');

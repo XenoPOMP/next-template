@@ -14,21 +14,10 @@ describe('"For" component tests', () => {
 
   test('Internal .map functionality works', () => {
     const testId = `value-holder`;
+    const testData = [2, 4, 8].map(v => ({ value: v }));
 
     render(
-      <For
-        each={[
-          {
-            value: 2,
-          },
-          {
-            value: 4,
-          },
-          {
-            value: 8,
-          },
-        ]}
-      >
+      <For each={testData}>
         {({ value }, index) => (
           <div
             data-testid={testId}
