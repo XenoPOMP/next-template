@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 
 const sharedProps = {} satisfies Partial<Story['args']>;
 
-export const Primary: Story = {
+export const Default: Story = {
   args: {
     ...sharedProps,
   },
