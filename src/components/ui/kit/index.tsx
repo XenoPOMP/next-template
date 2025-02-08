@@ -7,3 +7,5 @@ export * from './Input/Input';
 export * from './Accordion/Accordion';
 export * from './Avatar/Avatar';
 export * from './DicebearImage/DicebearImage';
+export * from './Sidebar/Sidebar';
+export * from './Logo/Logo';
