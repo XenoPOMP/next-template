@@ -8,10 +8,7 @@ export const Sidebar: FC<unknown> = () => {
   const [opened, setOpened] = useState(true);
 
   return (
-    <aside
-      className={cn('bg-red-500/20')}
-      data-opened={opened}
-    >
+    <aside data-opened={opened}>
       <header className={cn('flex select-none items-center gap-4')}>
         <section
           data-testid='sidebar-open-icon'
