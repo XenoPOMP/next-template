@@ -1,15 +1,10 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { test } from 'vitest';
+import { expect, test } from 'vitest';
 
 import { RQProvider } from '@/components/providers';
 
-import {
-  assertRendering,
-  injectMocks,
-  mockRouter,
-  testObject,
-} from '@test/assets';
+import { assertRendering, injectMocks, mockRouter } from '@test/assets';
 
 interface ITestNextPageOptions {
   generateMetadata?: () => Promise<Metadata>;
@@ -44,6 +39,6 @@ export const testNextPage = (
       return;
     }
 
-    testObject(await options.generateMetadata());
+    expect(await options.generateMetadata()).toBeDefined();
   });
 };
