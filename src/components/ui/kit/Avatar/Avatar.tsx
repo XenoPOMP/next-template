@@ -19,7 +19,7 @@ export const Avatar: VariableFC<'div', AvatarProps, 'children'> = ({
   return (
     <div
       className={cn(
-        'flex-center size-[2.5rem] cursor-pointer select-none overflow-hidden rounded-full',
+        'flex-center aspect-square size-[2.5rem] cursor-pointer select-none overflow-hidden rounded-full',
         className,
       )}
       aria-roledescription='avatar'
@@ -29,6 +29,8 @@ export const Avatar: VariableFC<'div', AvatarProps, 'children'> = ({
         <Image
           src={src}
           alt={altText}
+          width={300}
+          height={300}
           className={cn(imageCn)}
         />
       ) : (
