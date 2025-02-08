@@ -1,3 +1,5 @@
+import type { VitestMatcher } from '@test/assets';
+
 function hasEqualStructure(obj1: any, obj2: any): boolean {
   return Object.keys(obj1).every(key => {
     const v = obj1[key];
@@ -16,7 +18,7 @@ function hasEqualStructure(obj1: any, obj2: any): boolean {
  * @param actual
  * @param expected
  */
-export const toMatchStructure = (actual: any, expected: any) => {
+export const toMatchStructure: VitestMatcher = (actual: any, expected: any) => {
   const pass = hasEqualStructure(actual, expected);
   return {
     message: () => `expected ${expected} to match structure ${actual}`,
