@@ -1,7 +1,7 @@
+import type { ExpectationResult } from '@vitest/expect';
+
 /** Adds type-safety for vitest matcher extensions. */
-export type VitestMatcher<Actual = any, Expected = any> = (
-  actual: Actual,
+export type VitestMatcher<Got = any, Expected = any> = (
+  received: Got,
   expected: Expected,
-) => {
-  pass: boolean;
-};
+) => ExpectationResult;
