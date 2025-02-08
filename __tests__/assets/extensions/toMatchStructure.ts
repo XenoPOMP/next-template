@@ -18,10 +18,7 @@ function hasEqualStructure(obj1: any, obj2: any): boolean {
  * @param received
  * @param expected
  */
-export const toMatchStructure: VitestMatcher = (
-  received: any,
-  expected: any,
-) => {
+export const toMatchStructure: VitestMatcher = (received, expected) => {
   const pass = hasEqualStructure(received, expected);
   return {
     message: () => `expected ${expected} to match structure ${received}`,

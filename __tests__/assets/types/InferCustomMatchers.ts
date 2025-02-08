@@ -10,8 +10,6 @@ export type InferCustomMatchers<R extends MatcherState = any> = {
   [Matcher in keyof Matchers as Matchers[Matcher] extends Fn
     ? Matcher
     : never]: Matchers[Matcher] extends VitestMatcher<any, infer Expected>
-    ? [Expected] extends [unknown]
-      ? () => R
-      : (expected: Expected) => R
+    ? (expected: Expected) => R
     : never;
 };
