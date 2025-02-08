@@ -7,6 +7,31 @@ import { DicebearImage } from '@/components/ui/kit';
 
 import type { AvatarProps } from './Avatar.props';
 
+/**
+ * Avatar image with dicebear-image fallback.
+ *
+ * @param src
+ * @param placeholder
+ * @param className
+ * @param props
+ * @constructor
+ *
+ * @example
+ * // Renders default icon if neither placeholder nor src are defined.
+ * <Avatar {...SHARED_PROPS} />
+ *
+ * // If use with src, will render image as avatar.
+ * <Avatar
+ *   {...SHARED_PROPS}
+ *   src={catImg}
+ * />
+ *
+ * // If src is not defined but placeholder is, renders Dicebear image.
+ * <Avatar
+ *   {...SHARED_PROPS}
+ *   placeholder='XenoPOMP'
+ * />
+ */
 export const Avatar: VariableFC<'div', AvatarProps, 'children'> = ({
   src,
   placeholder,
