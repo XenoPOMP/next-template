@@ -1,29 +1,20 @@
-'use client';
-
 import cn from 'classnames';
-import { useState } from 'react';
 import { type VariableFC, jsxDotNotation } from 'xenopomp-essentials';
 
-import { AccordionContext } from './accordion.context.ts';
 import { AccordionBody, AccordionCollapse } from './components';
 
-const InternalAccordion: VariableFC<'div', unknown> = ({
+const InternalAccordion: VariableFC<'details', unknown> = ({
   className,
   children,
   ...props
 }) => {
-  const [collapsed, setCollapsed] = useState<boolean>(true);
-
   return (
-    <AccordionContext value={{ collapsed, setCollapsed }}>
-      <div
-        data-collapsed={collapsed}
-        className={cn('group', className)}
-        {...props}
-      >
-        {children}
-      </div>
-    </AccordionContext>
+    <details
+      className={cn('group', className)}
+      {...props}
+    >
+      {children}
+    </details>
   );
 };
 

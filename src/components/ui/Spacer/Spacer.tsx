@@ -9,6 +9,10 @@ import type { VariableFC } from 'xenopomp-essentials';
  * @param ariaHidden
  * @param props
  * @constructor
+ *
+ * @example
+ * // UI
+ * Logo <----- Spacer -----> Nav
  */
 const Spacer: VariableFC<'div', unknown, 'children'> = ({
   className,
