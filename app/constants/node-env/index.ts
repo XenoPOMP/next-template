@@ -6,6 +6,3 @@ export const TESTING = 'test';
 
 /** NODE_ENV === ... when building project with next build. */
 export const DEVELOPMENT = 'development';
-
-/** NODE_ENV === ... when deploying project with docker. */
-export const DOCKER = 'docker';
