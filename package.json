@@ -13,6 +13,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "deploy": "docker build -t next-app -f .config/Dockerfile . && docker run --name=\"next-template\" -p 3000:3000 next-app",
     "unit:test": "vitest -c .config/vitest.config.ts",
     "coverage": "vitest -c .config/vitest.config.ts run --coverage",
     "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --config-file .config/cypress.config.ts --e2e\"",
