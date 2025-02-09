@@ -4,7 +4,7 @@ import { describe, test } from 'vitest';
 
 import { useOutSide } from '@/hooks';
 
-import { assertNotThrowing, expectHookToRender } from '@test/assets';
+import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
 function Testing() {
   const { ref } = useOutSide<ComponentRef<'div'>>();
@@ -19,7 +19,7 @@ function Testing() {
 
 describe('useOutside hook', () => {
   test('It renders', () => {
-    expectHookToRender(() => useOutSide());
+    assertHookRendering(() => useOutSide());
   });
 
   test('Outside click', () => {

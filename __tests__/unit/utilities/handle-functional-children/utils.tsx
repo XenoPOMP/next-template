@@ -1,10 +1,10 @@
 import { handleFunctionalChildren } from '@/utils/react';
 
-import { expectToRender } from '@test/assets';
+import { assertRendering } from '@test/assets';
 
 export function testFunctionalApproach(values: boolean[]) {
   values.forEach(val => {
-    expectToRender(
+    assertRendering(
       <>
         {handleFunctionalChildren<[disabled: boolean]>(
           disabled => (

@@ -3,32 +3,21 @@ import { afterEach, describe, expect, test } from 'vitest';
 
 import { For } from '@/components/layout';
 
-import { expectToRender } from '@test/assets';
+import { assertRendering } from '@test/assets';
 
 describe('"For" component tests', () => {
   afterEach(() => cleanup());
 
   test('It renders', () => {
-    expectToRender(<For each={[]} />);
+    assertRendering(<For each={[]} />);
   });
 
   test('Internal .map functionality works', () => {
     const testId = `value-holder`;
+    const testData = [2, 4, 8].map(v => ({ value: v }));
 
     render(
-      <For
-        each={[
-          {
-            value: 2,
-          },
-          {
-            value: 4,
-          },
-          {
-            value: 8,
-          },
-        ]}
-      >
+      <For each={testData}>
         {({ value }, index) => (
           <div
             data-testid={testId}

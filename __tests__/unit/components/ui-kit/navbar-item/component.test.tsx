@@ -4,7 +4,7 @@ import { afterEach, describe, expect, test, vi } from 'vitest';
 
 import { NavbarItem } from '@/components/ui/kit';
 
-import { expectToRender, injectMocks, mockRouter } from '@test/assets';
+import { assertRendering, injectMocks, mockRouter } from '@test/assets';
 
 describe('UI Kit / Navbar item', () => {
   injectMocks(() => {
@@ -14,7 +14,7 @@ describe('UI Kit / Navbar item', () => {
   afterEach(() => cleanup());
 
   test('It renders', () => {
-    expectToRender(<NavbarItem href='/'>Go home</NavbarItem>);
+    assertRendering(<NavbarItem href='/'>Go home</NavbarItem>);
   });
 
   test('Link becomes active if target url is met', () => {
@@ -43,7 +43,7 @@ describe('UI Kit / Navbar item', () => {
   });
 
   test('Target URL works', () => {
-    expectToRender(
+    assertRendering(
       <NavbarItem
         parentPath='/'
         href='/faq'
@@ -54,7 +54,7 @@ describe('UI Kit / Navbar item', () => {
   });
 
   test('Link can be marked as index', () => {
-    expectToRender(
+    assertRendering(
       <NavbarItem
         href='/faq'
         index
@@ -63,6 +63,6 @@ describe('UI Kit / Navbar item', () => {
       </NavbarItem>,
     );
 
-    expectToRender(<NavbarItem href='/faq'>Faq</NavbarItem>);
+    assertRendering(<NavbarItem href='/faq'>Faq</NavbarItem>);
   });
 });

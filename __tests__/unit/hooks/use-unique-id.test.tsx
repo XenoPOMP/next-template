@@ -1,14 +1,20 @@
 'use client';
 
-import { describe, test } from 'vitest';
+import { renderHook } from '@testing-library/react';
+import { describe, expect, test } from 'vitest';
 
 import { useUniqueId } from '@/hooks';
 
-import { expectHookToRender } from '@test/assets';
+import { assertHookRendering } from '@test/assets';
 
 describe('useUniqueId hook', () => {
   test('Not throwing errors', () => {
-    expectHookToRender(() => useUniqueId());
-    expectHookToRender(() => useUniqueId(t => `gen-${t}`));
+    assertHookRendering(() => useUniqueId());
+    assertHookRendering(() => useUniqueId(t => `gen-${t}`));
+  });
+
+  test('Templating works', () => {
+    const hook = renderHook(() => useUniqueId(t => `generated-${t}`));
+    expect(hook.result.current.startsWith('generated-')).toBe(true);
   });
 });

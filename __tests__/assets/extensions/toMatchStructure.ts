@@ -1,3 +1,5 @@
+import type { ExpectationResult } from '@vitest/expect';
+
 function hasEqualStructure(obj1: any, obj2: any): boolean {
   return Object.keys(obj1).every(key => {
     const v = obj1[key];
@@ -13,13 +15,16 @@ function hasEqualStructure(obj1: any, obj2: any): boolean {
  * Extends expect function with toMatchStructure
  * method. It checks if one object has the same structure
  * as second.
- * @param actual
+ * @param received
  * @param expected
  */
-export const toMatchStructure = (actual: any, expected: any) => {
-  const pass = hasEqualStructure(actual, expected);
+export const toMatchStructure = (
+  received: any,
+  expected: any,
+): ExpectationResult => {
+  const pass = hasEqualStructure(received, expected);
   return {
-    message: () => `expected ${expected} to match structure ${actual}`,
+    message: () => `expected ${expected} to match structure ${received}`,
     pass,
   };
 };

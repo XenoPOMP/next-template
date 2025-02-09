@@ -1,9 +1,7 @@
 import type { CSSRuleObject } from 'tailwindcss/types/config';
-import { describe, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
 import { cssPropertiesToTw } from '@/styles/themes/plugins/api';
-
-import { expectToDeepEqual } from '@test/assets';
 
 describe('Theme plugins API', () => {
   test('Convert React`s CSSProperties to CSS-in-JS', () => {
@@ -19,6 +17,6 @@ describe('Theme plugins API', () => {
       opacity: null,
     };
 
-    expectToDeepEqual(converted, real);
+    expect(converted).to.deep.equal(real);
   });
 });

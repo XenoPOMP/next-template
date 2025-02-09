@@ -1,14 +1,14 @@
 import type { NextConfig } from 'next';
 import { expectType } from 'tsd';
-import { describe, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
 import { withWrappers } from '@/utils/next';
 
-import { assertNotThrowing, testObject } from '@test/assets';
+import { assertNotThrowing } from '@test/assets';
 
 describe('withWrappers utility', () => {
   test('Object is not undefined', () => {
-    testObject(withWrappers({}));
+    expect(withWrappers({})).toBeDefined();
   });
 
   test('It does not throw', () => {
