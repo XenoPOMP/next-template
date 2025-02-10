@@ -78,7 +78,7 @@
     "@vitest/coverage-istanbul": "^3.0.5",
     "cheerio": "^1.0.0",
     "cypress": "^14.0.2",
-    "eslint": "^9.18.0",
+    "eslint": "^9.20.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
     "esno": "^4.8.0",
     "husky": "^9.1.7",
