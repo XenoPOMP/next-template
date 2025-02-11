@@ -3,8 +3,8 @@ import FullBleed from 'tailwindcss-full-bleed';
 import tailwindThemer from 'tailwindcss-themer';
 
 import { DesignSystemConfig } from '../src/styles/themes/design-system.config';
-import { CustomClassesPlugin } from '../src/styles/themes/plugins';
 import { darkTheme, lightTheme } from '../src/themes';
+import { CustomClassesPlugin } from '../src/themes/plugins';
 
 const tailwindConfig: Config = {
   darkMode: 'class',
