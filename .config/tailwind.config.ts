@@ -2,8 +2,8 @@ import type { Config } from 'tailwindcss';
 import FullBleed from 'tailwindcss-full-bleed';
 import tailwindThemer from 'tailwindcss-themer';
 
-import { DesignSystemConfig } from '../src/styles/themes/design-system.config';
 import { darkTheme, lightTheme } from '../src/themes';
+import { DesignSystemConfig } from '../src/themes/design';
 import { CustomClassesPlugin } from '../src/themes/plugins';
 
 const tailwindConfig: Config = {

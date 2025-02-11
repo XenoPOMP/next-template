@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { DesignSystemConfig } from '@/styles/themes/design-system.config';
+import { DesignSystemConfig } from '@/themes/design';
 
 describe('Design config', () => {
   test('It exists', () => {
