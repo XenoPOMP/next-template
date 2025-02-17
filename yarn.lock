@@ -3359,10 +3359,10 @@
     "@types/node" "^22.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/core@8.5.3":
-  version "8.5.3"
-  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-8.5.3.tgz#a353472e5069d127af7ada97f9db601c3d3cd1b5"
-  integrity sha512-ZLlr2pltbj/hmC54lggJTnh09FCAJR62lIdiXNwa+V+/eJz0CfD8tfGmZGKPSmaQeZBpMwAOeRM97k2oLPF+0w==
+"@storybook/core@8.5.6":
+  version "8.5.6"
+  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-8.5.6.tgz#7075ab8852984aaf44b5d041f60532e815131c91"
+  integrity sha512-ibgTGI3mcSsADABIQuhHWL8rxqF6CvooKIWpkZsB9kwNActS3OJzfCSAZDcgtvRkwaarPVjYX/sAOBzjqQNkXg==
   dependencies:
     "@storybook/csf" "0.1.12"
     better-opn "^3.0.2"
@@ -12132,12 +12132,12 @@ std-env@^3.8.0:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.8.0.tgz#b56ffc1baf1a29dcc80a3bdf11d7fca7c315e7d5"
   integrity sha512-Bc3YwwCB+OzldMxOXJIIvC6cPRWr/LxOp48CdQTOkPyk/t4JWWJbrilwBd7RJzKV8QW7tJkcgAmeuLLJugl5/w==
 
-storybook@^8.5.3:
-  version "8.5.3"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-8.5.3.tgz#9758f0da8a9ee4f6a600370f64833fa5d3079c96"
-  integrity sha512-2WtNBZ45u1AhviRU+U+ld588tH8gDa702dNSq5C8UBaE9PlOsazGsyp90dw1s9YRvi+ejrjKAupQAU0GwwUiVg==
+storybook@^8.5.6:
+  version "8.5.6"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-8.5.6.tgz#f8f34cabc3445806447474d418fd97cf58787c95"
+  integrity sha512-mrcYAA5CP6QBrq5O9grz2eqBoEfJNsK3b+Iz+PdGYqpr04oMC7rg1h80murV2pRwsbHxIWBFpLpXAVX8tMK01w==
   dependencies:
-    "@storybook/core" "8.5.3"
+    "@storybook/core" "8.5.6"
 
 str.scss@^1.2.0:
   version "1.2.0"
