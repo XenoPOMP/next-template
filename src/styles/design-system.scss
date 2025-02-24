@@ -31,6 +31,12 @@
     --p14: 14px,
   ));
 
-  font-size: var(--p20);
-  line-height: 140%;
+  // This rule is for sass backwards capability.
+  & {
+    font-size: var(--p20);
+  }
+
+  & * {
+    line-height: 140%;
+  }
 }
