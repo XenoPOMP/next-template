@@ -34,7 +34,7 @@ export const assertRendering: RenderFunc = (...props) => {
  *
  * @example
  * test('It renders', () => {
- *   assertHookRendering(() => useExampleStore(DEFAULT_SELECTOR));
+ *   assertHookRendering(() => useExampleStore());
  * });
  */
 export const assertHookRendering: RenderFunc<RenderHookArguments> = (
