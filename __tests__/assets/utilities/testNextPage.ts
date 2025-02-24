@@ -4,7 +4,12 @@ import { expect, test } from 'vitest';
 
 import { RQProvider } from '@/components/providers';
 
-import { assertRendering, injectMocks, mockRouter } from '@test/assets';
+import {
+  assertNotThrowing,
+  assertRendering,
+  injectMocks,
+  mockRouter,
+} from '@test/assets';
 
 interface ITestNextPageOptions {
   generateMetadata?: () => Promise<Metadata>;
@@ -33,12 +38,13 @@ export const testNextPage = (
     });
   });
 
-  test('Metadata is correct', async () => {
-    // Test metadata only if it is provided
-    if (!options?.generateMetadata) {
-      return;
-    }
+  test.skipIf(!options?.generateMetadata)('Metadata is correct', async () => {
+    expect(await options!.generateMetadata!()).toBeDefined();
+  });
 
-    expect(await options.generateMetadata()).toBeDefined();
+  test.skipIf(!options?.generateMetadata)('Metadata won`t throw', async () => {
+    assertNotThrowing(async () => {
+      await options!.generateMetadata!();
+    });
   });
 };

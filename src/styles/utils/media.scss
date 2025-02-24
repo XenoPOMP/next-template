@@ -1,7 +1,8 @@
-@import "../config";
+@use "sass:map";
+@use "../config";
 
 @function getBreakpointValue($breakpoint-name) {
-  $breakpoint: map-get($gridBreakpoints, $breakpoint-name);
+  $breakpoint: map.get(config.$gridBreakpoints, $breakpoint-name);
 
   @if $breakpoint {
     @return $breakpoint;

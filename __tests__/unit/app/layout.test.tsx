@@ -1,24 +1,19 @@
 import { describe, vi } from 'vitest';
-import MatchMediaMock from 'vitest-matchmedia-mock';
 
 import { FONT_MOCK } from '@app/constants';
 import RootLayout, { generateMetadata } from '@app/layout.tsx';
 
-import { injectMocks, testNextPage } from '@test/assets';
+import { injectMatchMediaMock, injectMocks, testNextPage } from '@test/assets';
 
 describe('Root layout test', () => {
-  const matcher = new MatchMediaMock();
+  // Use it inside describe suite. Place it to top
+  injectMatchMediaMock();
 
   injectMocks(() => {
     vi.mock('next/font/google', () => ({
       Inter: FONT_MOCK,
     }));
   });
-
-  injectMocks(() => {
-    matcher.clear();
-    return () => matcher.destroy();
-  }, 'afterEach');
 
   testNextPage(<RootLayout children={undefined} />, {
     generateMetadata,

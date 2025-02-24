@@ -6,6 +6,6 @@ import { assertRendering } from '@test/assets';
 
 describe('DicebearImage component', () => {
   test('It renders', () => {
-    assertRendering(<DicebearImage />);
+    assertRendering(<DicebearImage seed='XenoPOMP' />);
   });
 });
