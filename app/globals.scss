@@ -1,3 +1,4 @@
+@use "sass:meta";
 @config "../.config/tailwind.config.ts";
 
 @tailwind base;
@@ -9,7 +10,7 @@
 }
 
 // Comment line below if design system is not needed
-@import "src/styles/design-system";
+@include meta.load-css("../src/styles/design-system");
 
 body {
   @apply bg-primary-bg text-primary-font;

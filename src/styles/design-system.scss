@@ -1,10 +1,12 @@
-@import "src/styles/templates";
+@use "templates";
+@use "config";
+@use "mixins/cascade-down";
 
 // Design system related variables.
 // Can be enabled if needed.
 :root {
   // Paddings
-  @include cascadeDown($mobileBreakpoint, (
+  @include cascade-down.cascadeDown(config.$mobileBreakpoint, (
     --p-level-1: 56px,
     --p-level-2: 32px,
     --p-level-3: 24px,
@@ -13,7 +15,7 @@
   ));
 
   // Headings
-  @include cascadeDown($mobileBreakpoint, (
+  @include cascade-down.cascadeDown(config.$mobileBreakpoint, (
     --heading-1: 32px,
     --heading-2: 24px,
     --heading-3: 20px,
@@ -22,7 +24,7 @@
   ));
 
   // Text
-  @include cascadeDown($mobileBreakpoint, (
+  @include cascade-down.cascadeDown(config.$mobileBreakpoint, (
     --p24: 24px,
     --p20: 20px,
     --p16: 16px,

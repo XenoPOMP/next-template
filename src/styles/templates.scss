@@ -1,6 +1,6 @@
 // These imports handles design system
-@import "mixins/cascade-down";
-@import "mixins/assign-variable";
+@use "mixins/cascade-down";
+@use "mixins/assign-variable";
 
 // Import utils
-@import "utils/media";
+@use "utils/media";
