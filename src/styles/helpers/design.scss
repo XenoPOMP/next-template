@@ -1,0 +1,10 @@
+// Auto-generates all padding sizes based on lowest level
+@function createPaddingGrade($base) {
+  @return (
+    --p-level-1: calc(7 * $base),
+    --p-level-2: calc(4 * $base),
+    --p-level-3: calc(3 * $base),
+    --p-level-4: calc(2 * $base),
+    --p-level-5: calc(1 * $base),
+  );
+}
