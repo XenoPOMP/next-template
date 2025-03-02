@@ -19,12 +19,10 @@
   );
 
   // Text
-  @include cascade-down.cascadeDown(config.$mobileBreakpoint, (
-    --p24: 24px,
-    --p20: 20px,
-    --p16: 16px,
-    --p14: 14px,
-  ));
+  @include cascade-down.cascadeDown(
+    config.$mobileBreakpoint,
+    design.createTextGrade(14px)
+  );
 
   // This rule is for sass backwards capability.
   & {

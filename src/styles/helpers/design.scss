@@ -9,7 +9,7 @@
   );
 }
 
-// Auto-generates all headings` sizes based on lowest level
+// Auto-generates all heading sizes based on lowest level
 @function createHeadingGrade($base) {
   @return (
     --heading-1: calc((128 / 56) * $base),
@@ -17,5 +17,15 @@
     --heading-3: calc((80 / 56) * $base),
     --heading-4: calc((64 / 56) * $base),
     --heading-5: calc(1 * $base),
+  );
+}
+
+// Auto-generates all text sizes based on lowest level
+@function createTextGrade($base) {
+  @return (
+    --p24: calc((96 / 56) * $base),
+    --p20: calc((80 / 56) * $base),
+    --p16: calc((64 / 56) * $base),
+    --p14: calc(1 * $base),
   );
 }
