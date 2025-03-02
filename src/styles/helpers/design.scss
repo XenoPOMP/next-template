@@ -8,3 +8,14 @@
     --p-level-5: calc(1 * $base),
   );
 }
+
+// Auto-generates all headings` sizes based on lowest level
+@function createHeadingGrade($base) {
+  @return (
+    --heading-1: calc((128 / 56) * $base),
+    --heading-2: calc((96 / 56) * $base),
+    --heading-3: calc((80 / 56) * $base),
+    --heading-4: calc((64 / 56) * $base),
+    --heading-5: calc(1 * $base),
+  );
+}
