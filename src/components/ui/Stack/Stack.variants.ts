@@ -10,8 +10,8 @@ export const stackVariants = cva('', {
     },
 
     alignStack: {
-      left: 'mr-auto ml-[--insets]',
-      right: 'ml-auto mr-[--insets]',
+      start: 'mr-auto ml-[--insets]',
+      end: 'ml-auto mr-[--insets]',
       center: 'mx-auto',
     },
   },

@@ -29,12 +29,12 @@ export const Containers: Story = {
         <div className={cn('flex flex-col gap-4')}>
           <Stack
             {...sharedProps}
-            alignStack='left'
+            alignStack='start'
           />
           <Stack {...sharedProps} />
           <Stack
             {...sharedProps}
-            alignStack='right'
+            alignStack='end'
           />
         </div>
 
