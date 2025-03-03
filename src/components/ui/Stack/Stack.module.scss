@@ -2,5 +2,13 @@
   --insets: 2rem;
   --max-width: 1680px;
 
-  width: min(var(--max-width), calc(100% - 2 * var(--insets)));
+  &.orientation {
+    &.vertical {
+      height: min(var(--max-width), calc(100% - 2 * var(--insets)));
+    }
+
+    &.horizontal {
+      width: min(var(--max-width), calc(100% - 2 * var(--insets)));
+    }
+  }
 }

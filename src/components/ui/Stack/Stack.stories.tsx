@@ -38,7 +38,25 @@ export const Containers: Story = {
           />
         </div>
 
-        <div className={cn('h-[500px] w-full', 'flex justify-center')}>Sus</div>
+        <div className={cn('h-[500px] w-full', 'flex justify-center')}>
+          <Stack
+            {...sharedProps}
+            maxWidth='100px'
+            orientation='vertical'
+            alignStack='start'
+          />
+          <Stack
+            {...sharedProps}
+            maxWidth='100px'
+            orientation='vertical'
+          />
+          <Stack
+            {...sharedProps}
+            maxWidth='100px'
+            alignStack='end'
+            orientation='vertical'
+          />
+        </div>
       </div>
     ),
   ],
