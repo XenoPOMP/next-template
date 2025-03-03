@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import cn from 'classnames';
 
+import { Stack } from '@/components/ui';
+
 import { Glass } from './Glass';
 
 const meta = {
@@ -31,14 +33,20 @@ export const StickyHeader: Story = {
     <div className={cn('h-[200dvh]')}>
       {Array.from({ length: 5 }, () => (
         // eslint-disable-next-line react/no-missing-key
-        <p>Content</p>
+        <Stack asChild>
+          <p>Content</p>
+        </Stack>
       ))}
 
-      <Glass {...props} />
+      <Stack asChild>
+        <Glass {...props} />
+      </Stack>
 
       {Array.from({ length: 25 }, () => (
         // eslint-disable-next-line react/no-missing-key
-        <p>Content</p>
+        <Stack asChild>
+          <p>Content</p>
+        </Stack>
       ))}
     </div>
   ),
