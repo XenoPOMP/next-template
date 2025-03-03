@@ -24,6 +24,7 @@ yarn create next-app -e https://github.com/XenoPOMP/next-template .
 - 🖼️ SEO optimization + Open Graph images
 - 🧪 Unit testing with Vitest and E2E with Cypress
 - 🌓 Multiple themes support with [`next-themes`](https://github.com/pacocoursey/next-themes) integrated with TailwindCSS
+- 📚 Storybook for visual testing
 - 🐻 Zustand as state manager
 - 🐶 Husky hooks
 - 🌿 `.github` folder with ready-to-use **actions** and **dependabot**
