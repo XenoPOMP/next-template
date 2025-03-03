@@ -16,8 +16,8 @@ yarn create next-app -e https://github.com/XenoPOMP/next-template .
 
 ## 🌌 Environment
 
-- ⛓️‍💥 `Node.js` ^20 || >=22 (installed [via nvm](https://github.com/nvm-sh/nvm))
-- 😼 `Yarn` as a package manager
+- ⛓️‍💥 `Node.js` ^20 || >=22 _(installed [via nvm](https://github.com/nvm-sh/nvm))_
+- 😼 `Yarn` v1 _as a package manager_
 
 ## ⭐️ Features
 
