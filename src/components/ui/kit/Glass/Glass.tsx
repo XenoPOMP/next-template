@@ -7,6 +7,9 @@ import type { GlassProps } from './Glass.props';
 
 type Props = FcProps<VariableFC<'div', unknown>> & GlassProps;
 
+/**
+ * Makes container that blurs backdrop.
+ */
 export const Glass = slotable<'div', Props>(
   'div',
   ({ Comp, className, style, children, blur = 8, ...props }) => {
