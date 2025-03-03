@@ -25,16 +25,20 @@ const sharedProps = {
 export const Containers: Story = {
   decorators: [
     () => (
-      <div className={cn('flex flex-col gap-4')}>
-        <Stack
-          {...sharedProps}
-          alignStack='left'
-        />
-        <Stack {...sharedProps} />
-        <Stack
-          {...sharedProps}
-          alignStack='right'
-        />
+      <div className={cn('flex flex-col gap-1')}>
+        <div className={cn('flex flex-col gap-4')}>
+          <Stack
+            {...sharedProps}
+            alignStack='left'
+          />
+          <Stack {...sharedProps} />
+          <Stack
+            {...sharedProps}
+            alignStack='right'
+          />
+        </div>
+
+        <div className={cn('h-[500px] w-full', 'flex justify-center')}>Sus</div>
       </div>
     ),
   ],
