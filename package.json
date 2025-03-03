@@ -102,7 +102,7 @@
     "tailwindcss-full-bleed": "^2.0.2",
     "tailwindcss-themer": "^4.1.1",
     "tsd": "^0.31.2",
-    "type-fest": "^4.34.1",
+    "type-fest": "^4.36.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^3.0.5",
     "vitest-matchmedia-mock": "^2.0.0",
