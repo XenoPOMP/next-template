@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import cn from 'classnames';
 
+import { HStack, VStack } from '@/components/ui';
+
 import Stack from './Stack';
 
 const meta = {
@@ -27,34 +29,31 @@ export const Containers: Story = {
     () => (
       <div className={cn('flex flex-col gap-1')}>
         <div className={cn('flex flex-col gap-4')}>
-          <Stack
+          <HStack
             {...sharedProps}
             alignStack='start'
           />
-          <Stack {...sharedProps} />
-          <Stack
+          <HStack {...sharedProps} />
+          <HStack
             {...sharedProps}
             alignStack='end'
           />
         </div>
 
-        <div className={cn('h-[500px] w-full', 'flex justify-center')}>
-          <Stack
+        <div className={cn('h-[45dvh] w-full', 'flex justify-center')}>
+          <VStack
             {...sharedProps}
             maxWidth='100px'
-            orientation='vertical'
             alignStack='start'
           />
-          <Stack
+          <VStack
             {...sharedProps}
             maxWidth='100px'
-            orientation='vertical'
           />
-          <Stack
+          <VStack
             {...sharedProps}
             maxWidth='100px'
             alignStack='end'
-            orientation='vertical'
           />
         </div>
       </div>
