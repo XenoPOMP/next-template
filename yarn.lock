@@ -5296,10 +5296,10 @@ chrome-trace-event@^1.0.2:
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz#1015eced4741e15d06664a957dbbf50d041e26ac"
   integrity sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==
 
-ci-info@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-4.0.0.tgz#65466f8b280fc019b9f50a5388115d17a63a44f2"
-  integrity sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==
+ci-info@^4.0.0, ci-info@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-4.1.0.tgz#92319d2fa29d2620180ea5afed31f589bc98cf83"
+  integrity sha512-HutrvTNsF48wnxkzERIXOe5/mlcfFcbfCmwcg6CJnizbSue78AbDt+1cgl26zwn61WFxhcPykPfZrbqjGmBb4A==
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
@@ -5756,10 +5756,10 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
-cypress@14.0.3:
-  version "14.0.3"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-14.0.3.tgz#7873d21f61d0559edb9c041316d450cf7ef9d5fa"
-  integrity sha512-yIdvobANw3kS+KF/t5vwjjPNufBA8ux7iQHaWxPTkUw2yCKI72m9mKM24eOwE84Wk4ALPsSvEcGbDrwgmhr4RA==
+cypress@14.1.0:
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-14.1.0.tgz#b2dbe7bbc529dc0c93ffd4e0e9fa59763afba0b8"
+  integrity sha512-pPPj8Uu9NwjaaiXAEcjYZZmgsq6v9Zs1Nw6a+zRF+ANgYSNhH4S32SjFRsvMcuOHR/8dp4GBJhBPqIPSs+TxaA==
   dependencies:
     "@cypress/request" "^3.0.7"
     "@cypress/xvfb" "^1.2.4"
@@ -5772,7 +5772,7 @@ cypress@14.0.3:
     cachedir "^2.3.0"
     chalk "^4.1.0"
     check-more-types "^2.24.0"
-    ci-info "^4.0.0"
+    ci-info "^4.1.0"
     cli-cursor "^3.1.0"
     cli-table3 "~0.6.1"
     commander "^6.2.1"
@@ -11778,15 +11778,10 @@ semver@^6.0.0, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.3.4:
+semver@^7.3.4, semver@^7.3.5, semver@^7.3.6, semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0, semver@^7.6.2, semver@^7.6.3:
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.1.tgz#abd5098d82b18c6c81f6074ff2647fd3e7220c9f"
   integrity sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==
-
-semver@^7.3.5, semver@^7.3.6, semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0, semver@^7.6.2, semver@^7.6.3:
-  version "7.6.3"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.3.tgz#980f7b5550bc175fb4dc09403085627f9eb33143"
-  integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
 
 sentence-case@^2.1.0:
   version "2.1.1"
