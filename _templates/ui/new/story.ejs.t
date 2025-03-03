@@ -3,7 +3,7 @@ to: src/components/ui/kit/<%= h.changeCase.pascalCase(name) %>/<%= h.changeCase.
 ---
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { <%= h.changeCase.pascalCase(name) %> } from './Badge';
+import { <%= h.changeCase.pascalCase(name) %> } from './<%= h.changeCase.pascalCase(name) %>';
 
 const meta = {
   title: 'UI Kit / <%= h.changeCase.pascalCase(name) %>',
