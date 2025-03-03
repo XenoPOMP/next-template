@@ -1,0 +1,7 @@
+.zStack {
+  @apply relative;
+
+  & > :not(:first-child) {
+     @apply absolute top-0 left-0;
+  }
+}
