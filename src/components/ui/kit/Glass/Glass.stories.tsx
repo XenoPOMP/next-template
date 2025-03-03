@@ -20,6 +20,7 @@ const sharedProps = {
   children: <header>Glass header</header>,
   blur: 8,
   className: cn('py-[8px] sticky top-0'),
+  asChild: true,
 } satisfies Partial<Story['args']>;
 
 export const StickyHeader: Story = {
@@ -33,15 +34,38 @@ export const StickyHeader: Story = {
         <p>Content</p>
       ))}
 
-      <Glass
-        asChild
-        {...props}
-      />
+      <Glass {...props} />
 
       {Array.from({ length: 25 }, () => (
         // eslint-disable-next-line react/no-missing-key
         <p>Content</p>
       ))}
+    </div>
+  ),
+};
+
+export const GlassBlock: Story = {
+  args: {
+    ...sharedProps,
+  },
+  parameters: {
+    layout: 'centered',
+  },
+  render: props => (
+    <div className={cn('relative size-[100px]')}>
+      <Glass
+        {...props}
+        className={cn(
+          'absolute left-0 top-0 size-full',
+          'flex-center aspect-square rounded bg-white p-[8px]',
+          'z-20',
+        )}
+        blur={2}
+      />
+
+      <div className={cn('absolute left-0 top-0 size-full', 'z-10')}>
+        Backdrop
+      </div>
     </div>
   ),
 };
