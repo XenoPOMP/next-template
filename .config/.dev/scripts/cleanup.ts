@@ -1,5 +1,5 @@
 import { bold } from 'ansi-colors';
-import { writeFile } from 'node:fs/promises';
+import { cp, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { PackageJson } from 'type-fest';
 import { z } from 'zod';
@@ -58,6 +58,12 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
   });
 
   DevLogger.log(`Changed ${bold('author info')} at cleanup dir`);
+
+  // Copy all modified files
+  await cp(CLEANUP_DIR, cwd(), {
+    force: true,
+  });
+  DevLogger.log('Copied modified files');
 
   DevLogger.end('Cleanup ended. ✨');
 })();
