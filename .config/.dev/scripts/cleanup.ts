@@ -8,6 +8,7 @@ import packageJson from '../../../package.json';
 
 import { DevLogger } from './logger.ts';
 import cwd from './utils/cwd.ts';
+import { deleteFiles } from './utils/deletion.ts';
 import { sed } from './utils/sed.ts';
 
 const envSchema = z.object({
@@ -65,6 +66,24 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
     recursive: true,
   });
   DevLogger.log('Copied modified files');
+
+  // Delete template specific files
+  await deleteFiles([
+    CLEANUP_DIR,
+
+    // .github folder
+    path.join(CLEANUP_DIR, '../', 'workflows/template-cleanup.yml'),
+    path.join(CLEANUP_DIR, '../', 'workflows/template-verify.yml'),
+    path.join(CLEANUP_DIR, '../', 'ISSUE_TEMPLATE'),
+
+    // from root
+    path.join(cwd(), '.dev/docs'),
+    path.join(cwd(), 'LICENSE'),
+    path.join(cwd(), 'CONTRIBUTING.md'),
+    path.join(cwd(), 'TODO.md'),
+    path.join(cwd(), 'SECURITY.md'),
+  ]);
+  DevLogger.log('Deleted temp files');
 
   DevLogger.end('Cleanup ended. ✨');
 })();
