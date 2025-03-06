@@ -1,5 +1,4 @@
 import { bold } from 'ansi-colors';
-import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { PackageJson } from 'type-fest';
 import { z } from 'zod';
@@ -8,6 +7,7 @@ import packageJson from '../../../package.json';
 
 import { DevLogger } from './logger.ts';
 import cwd from './utils/cwd.ts';
+import { sed } from './utils/sed.ts';
 
 const envSchema = z.object({
   ACTOR: z.string().optional(),
@@ -40,11 +40,21 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
   packageJsonContent.version = '0.0.0';
 
   // Create file at cleanup dir
-  await writeFile(
-    path.join(CLEANUP_DIR, 'package.json'),
-    JSON.stringify(packageJsonContent, null, 2),
-  );
+  // await writeFile(
+  //   path.join(CLEANUP_DIR, 'package.json'),
+  //   JSON.stringify(packageJsonContent, null, 2),
+  // );
   DevLogger.log(`Generated ${bold('package.json')} at cleanup dir`);
+
+  await sed(CLEANUP_DIR, {
+    pattern: /%NAME%/g,
+    replace: env.REPO_NAME ?? '',
+  });
+
+  await sed(CLEANUP_DIR, {
+    pattern: /%ACTOR%/g,
+    replace: env.ACTOR ?? '',
+  });
 
   DevLogger.end('Cleanup ended. ✨');
 })();
