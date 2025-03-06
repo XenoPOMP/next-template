@@ -27,8 +27,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "fullpack": "run-s pack:*",
-    "pack:env": "esno .config/.dev/scripts/pack-env.ts",
-    "pack:coverage-percent": "esno .config/.dev/scripts/parse-coverage.ts"
+    "pack:env": "esno .config/.dev/scripts/pack-env.ts"
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
