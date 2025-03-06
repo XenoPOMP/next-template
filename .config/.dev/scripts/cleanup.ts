@@ -82,6 +82,9 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
     path.join(cwd(), 'CONTRIBUTING.md'),
     path.join(cwd(), 'TODO.md'),
     path.join(cwd(), 'SECURITY.md'),
+
+    // cleanup script itself
+    path.join(cwd(), '.config/.dev/scripts/cleanup.ts'),
   ]);
   DevLogger.log('Deleted temp files');
 
