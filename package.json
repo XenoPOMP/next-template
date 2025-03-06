@@ -28,7 +28,7 @@
     "build-storybook": "storybook build",
     "fullpack": "run-s pack:*",
     "pack:env": "esno .config/.dev/scripts/pack-env.ts",
-    "cleanup": "npx cross-env ACTOR=\"XenoPOMP\" REPO_NAME=\"next-template\" esno .config/.dev/scripts/cleanup.ts"
+    "cleanup": "npx cross-env ACTOR=\"Xeno\" REPO_NAME=\"repo-name\" esno .config/.dev/scripts/cleanup.ts"
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
