@@ -10,7 +10,9 @@ describe('useLinkedMutation hook', () => {
   const sharedProps = [
     () =>
       useLinkedMutation(['profile'], {
+        // eslint-disable-next-line jsdoc/require-jsdoc
         onSuccess() {},
+        // eslint-disable-next-line jsdoc/require-jsdoc
         async mutationFn() {
           return 'ze english language';
         },

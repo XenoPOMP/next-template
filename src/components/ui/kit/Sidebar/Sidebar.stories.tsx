@@ -22,6 +22,7 @@ export const Primary: Story = {
   args: {
     ...sharedProps,
   },
+  // eslint-disable-next-line jsdoc/require-jsdoc
   render: args => (
     <div
       className={cn('h-dvh w-dvw bg-red-500/20')}

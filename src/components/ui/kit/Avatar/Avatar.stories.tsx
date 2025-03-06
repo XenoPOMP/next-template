@@ -27,6 +27,7 @@ export const Primary: Story = {
     ...sharedProps,
   },
 
+  // eslint-disable-next-line jsdoc/require-jsdoc
   render: args => (
     <>
       <div className={cn('flex gap-[.5rem]')}>

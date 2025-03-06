@@ -29,6 +29,7 @@ export const StickyHeader: Story = {
   args: {
     ...sharedProps,
   },
+  // eslint-disable-next-line jsdoc/require-jsdoc
   render: props => (
     <div className={cn('h-[200dvh]')}>
       {Array.from({ length: 5 }, () => (
@@ -59,6 +60,7 @@ export const GlassBlock: Story = {
   parameters: {
     layout: 'centered',
   },
+  // eslint-disable-next-line jsdoc/require-jsdoc
   render: props => (
     <div className={cn('relative size-[100px]')}>
       <Glass

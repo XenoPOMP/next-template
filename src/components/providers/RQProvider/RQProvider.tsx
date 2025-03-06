@@ -6,6 +6,11 @@ import { type FC, type PropsWithChildren, useState } from 'react';
 
 import type { RQProviderProps } from './RQProvider.props';
 
+/**
+ * Wrapper for React-query
+ * @param children
+ * @constructor
+ */
 const RQProvider: FC<PropsWithChildren<RQProviderProps>> = ({ children }) => {
   const [client] = useState(
     new QueryClient({

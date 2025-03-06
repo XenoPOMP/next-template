@@ -24,7 +24,9 @@ export class DevLogger {
 
   /** Generates time label. */
   private static issueTime() {
-    const formatDateInteger = (num: number) => (num >= 10 ? num : `0${num}`);
+    /** Formats date integer to match pattern X => 0X. */
+    const formatDateInteger = (num: number): string =>
+      num.toString().padStart(2, '0');
 
     const current = new Date();
 

@@ -29,6 +29,7 @@ export const toMatchStructure = (
 ): ExpectationResult => {
   const pass = hasEqualStructure(received, expected);
   return {
+    /** Generated message on error. */
     message: () => `expected ${expected} to match structure ${received}`,
     pass,
   };

@@ -4,6 +4,7 @@ import styles from './Stack.module.scss';
 
 export type StackVariantsType = VariantProps<typeof stackVariants>;
 
+/** Helper function for creating compound variants with proper typing. */
 const createCompoundVariants = (
   orientation: 'vertical' | 'horizontal',
   args: Record<'start' | 'end' | 'center', string>,

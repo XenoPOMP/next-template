@@ -5,6 +5,7 @@ export default defineConfig({
   supportFolder: '.config/cypress/support',
   e2e: {
     supportFile: false,
+    /** Implement node.js events that will be available in the browser. */
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

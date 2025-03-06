@@ -1,6 +1,23 @@
 import Link from 'next/link';
-import type { FC } from 'react';
+import type { VariableFC } from 'xenopomp-essentials';
 
-export const Logo: FC<unknown> = () => {
-  return <Link href='/'>Logo</Link>;
+import type { LogoProps } from './Logo.props';
+
+/**
+ * App`s logo component. Contains link to root
+ * page (can be overwritten).
+ * @constructor
+ */
+export const Logo: VariableFC<typeof Link, LogoProps, 'children' | 'href'> = ({
+  href = '/',
+  ...props
+}) => {
+  return (
+    <Link
+      href={href}
+      {...props}
+    >
+      Logo
+    </Link>
+  );
 };

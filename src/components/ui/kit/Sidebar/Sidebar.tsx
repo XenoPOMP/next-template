@@ -4,6 +4,12 @@ import cn from 'classnames';
 import { PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 import { type FC, useState } from 'react';
 
+/**
+ * Expandable sidebar component.
+ *
+ * *CLIENT-ONLY*
+ * @constructor
+ */
 export const Sidebar: FC<unknown> = () => {
   const [opened, setOpened] = useState(true);
 

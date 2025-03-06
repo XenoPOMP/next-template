@@ -28,6 +28,7 @@ export const AllBadges: Story = {
   args: {
     ...sharedProps,
   },
+  // eslint-disable-next-line jsdoc/require-jsdoc
   render: () => (
     <div className={cn('flex flex-wrap justify-center gap-[.4em]')}>
       {Object.keys(allBadgeVariants).map(name => (

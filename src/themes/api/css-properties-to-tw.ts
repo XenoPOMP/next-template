@@ -9,6 +9,7 @@ import type { CSSRuleObject } from 'tailwindcss/types/config';
 export const cssPropertiesToTw = (styles: CSSProperties): CSSRuleObject => {
   const result: CSSRuleObject = {};
 
+  /** Assigns value to result by key. */
   const appendResult = (key: string, value: null | string) => {
     result[key] = value;
   };

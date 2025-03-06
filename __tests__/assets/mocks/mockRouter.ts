@@ -7,12 +7,15 @@ import { vi } from 'vitest';
 export const mockRouter = () => {
   vi.mock('next/navigation', () => {
     return {
+      /** Mock implementation for useRouter */
       useRouter: (): Partial<ReturnType<typeof useRouter>> => {
         return {
+          /** Mock implementation for useRouter().push */
           push() {},
         };
       },
 
+      /** Mock implementation for usePathname */
       usePathname: (): Partial<ReturnType<typeof usePathname>> => {
         return '/';
       },

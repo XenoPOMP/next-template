@@ -37,6 +37,7 @@ export const useLinkedMutation = <
   const queryClient = useQueryClient();
 
   return useMutation({
+    /** Run code on successful mutation. */
     onSuccess(...args) {
       // Run onSuccess func from options.
       onSuccess?.(...args);
