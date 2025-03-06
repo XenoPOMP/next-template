@@ -27,7 +27,7 @@ jobs:
           node-version: '22'
 
       - name: '📦 Install dependencies'
-        run: \
+        run: |
           npm i -g cross-env
           yarn install --frozen-lockfile
 
