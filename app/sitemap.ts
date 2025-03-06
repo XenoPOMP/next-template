@@ -1,6 +1,10 @@
 import { env } from '@/utils/env';
 import type { Sitemap } from '@/utils/seo/sitemap-utils';
 
+/**
+ * Generates sitemap for whole application.
+ * Please, edit it manually for each app`s page.
+ */
 export default function sitemap(): Sitemap {
   const CANONICAL = env.CANONICAL_URL;
 

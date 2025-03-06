@@ -80,6 +80,7 @@
     "cypress": "14.1.0",
     "eslint": "9.21.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
+    "eslint-plugin-jsdoc": "^50.6.3",
     "esno": "^4.8.0",
     "husky": "^9.1.7",
     "hygen": "^6.2.11",

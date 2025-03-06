@@ -10,6 +10,10 @@ export const metadata: Metadata = generateStaticMetadata({
   title: 'Main',
 });
 
+/**
+ * Home page at url/
+ * @constructor
+ */
 export default function Home() {
   return (
     <main className={cn(styles.mainPage)}>

@@ -6,6 +6,10 @@ import { useOutSide } from '@/hooks';
 
 import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
+/**
+ * Just a testing component that renders ref.
+ * @constructor
+ */
 function Testing() {
   const { ref } = useOutSide<ComponentRef<'div'>>();
 
