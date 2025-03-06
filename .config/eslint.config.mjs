@@ -3,6 +3,7 @@ import xenopomp from 'eslint-config-xeno';
 export default xenopomp(
   {},
   {
+    name: 'JSDoc',
     rules: {
       'jsdoc/require-jsdoc': [
         'error',
@@ -16,6 +17,12 @@ export default xenopomp(
           },
         },
       ],
+    },
+  },
+  {
+    name: 'Disable default styles',
+    rules: {
+      'style/brace-style': 'off',
     },
   },
 );
