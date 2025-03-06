@@ -21,6 +21,14 @@ jobs:
       - name: Fetch Sources
         uses: actions/checkout@v4
 
+      - name: '🧩 Install Node 22'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: '📦 Install dependencies'
+        run: npm i -g cross-env
+
       # Cleanup project
       - name: Cleanup
         run: |
@@ -30,40 +38,8 @@ jobs:
           # Prepare variables
           NAME="${GITHUB_REPOSITORY##*/}"
           ACTOR=$(echo $GITHUB_ACTOR)
-          SAFE_NAME=$(echo $NAME | sed 's/[^a-zA-Z0-9]//g' | tr '[:upper:]' '[:lower:]')
-          SAFE_ACTOR=$(echo $ACTOR | sed 's/[^a-zA-Z0-9]//g' | tr '[:upper:]' '[:lower:]')
-          GROUP="com.github.$SAFE_ACTOR.$SAFE_NAME"
           
-          # Update package.json
-          cp package.json ./.github/template-cleanup/
-          
-          # Add author info
-          sed -i "s/next-template/$NAME/g" .github/template-cleanup/package.json
-          sed -i "s/XenoPOMP/$ACTOR/g" .github/template-cleanup/package.json
-          sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/package.json
-          sed -i "s/%ACTOR%/$ACTOR/g" .github/template-cleanup/package.json
-          sed -i -E 's/"version": "[0-9].[0-9].[0-9]"/"version": "0.0.0"/g' .github/template-cleanup/package.json
-          
-          # Replace placeholders in the template-cleanup files
-          sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/*
-          sed -i "s/%ACTOR%/$ACTOR/g" .github/template-cleanup/*
-          sed -i "s/%REPOSITORY%/${GITHUB_REPOSITORY/\//\\/}/g" .github/template-cleanup/*
-          sed -i "s/%GROUP%/$GROUP/g" .github/template-cleanup/*
-          
-          # Move content
-          cp -R .github/template-cleanup/. .
-          
-          # Cleanup
-          rm -rf \
-            .github/template-cleanup \
-            .github/workflows/template-cleanup.yml \
-            .github/workflows/template-verify.yml \
-            .github/ISSUE_TEMPLATE \
-            .dev/docs \
-            LICENSE \
-            CONTRIBUTING.md \
-            TODO.md \
-            SECURITY.md \
+          npx cross-env ACTOR="$NAME" REPO_NAME="$ACTOR" esno .config/.dev/scripts/cleanup.ts
 
       # Commit modified files
       - name: Commit files
