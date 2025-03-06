@@ -14,7 +14,7 @@ const Stack = slotable<'section', StackProps & StackVariantsType>(
     className,
     style,
     insets = '2rem',
-    maxWidth = '1680px',
+    maxSize = '1680px',
     alignStack,
     orientation,
     ...props
@@ -28,7 +28,7 @@ const Stack = slotable<'section', StackProps & StackVariantsType>(
       style={
         {
           '--insets': insets,
-          '--max-width': maxWidth,
+          '--max-width': maxSize,
           ...style,
         } as CSSProperties
       }

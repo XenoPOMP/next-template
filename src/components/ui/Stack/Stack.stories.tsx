@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 const sharedProps = {
   children: 'I am UiContainer, but modern',
   className: 'bg-red-400/25',
-  maxWidth: '1000px',
+  maxSize: '1000px',
 } satisfies Partial<Story['args']>;
 
 export const Containers: Story = {
@@ -43,16 +43,16 @@ export const Containers: Story = {
         <div className={cn('h-[45dvh] w-full', 'flex justify-center')}>
           <VStack
             {...sharedProps}
-            maxWidth='100px'
+            maxSize='100px'
             alignStack='start'
           />
           <VStack
             {...sharedProps}
-            maxWidth='100px'
+            maxSize='100px'
           />
           <VStack
             {...sharedProps}
-            maxWidth='100px'
+            maxSize='100px'
             alignStack='end'
           />
         </div>
