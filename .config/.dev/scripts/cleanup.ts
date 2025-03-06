@@ -1,4 +1,6 @@
 import { bold } from 'ansi-colors';
+import { writeFile } from 'node:fs/promises';
+import path from 'node:path';
 import type { PackageJson } from 'type-fest';
 import { z } from 'zod';
 
@@ -13,6 +15,8 @@ const envSchema = z.object({
 });
 
 const env = envSchema.parse(process.env);
+
+const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
 
 (async () => {
   DevLogger.start('Starting cleanup process...');
@@ -34,6 +38,12 @@ const env = envSchema.parse(process.env);
   packageJsonContent.name = env.REPO_NAME;
   packageJsonContent.repository = `https://github.com/${env.ACTOR}/${env.REPO_NAME}`;
   packageJsonContent.version = '0.0.0';
+
+  // Create file at cleanup dir
+  await writeFile(
+    path.join(CLEANUP_DIR, 'package.json'),
+    JSON.stringify(packageJsonContent, null, 2),
+  );
 
   DevLogger.end('Cleanup ended. ✨');
 })();
