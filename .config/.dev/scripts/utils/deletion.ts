@@ -1,5 +1,5 @@
 import { type PathLike, existsSync, unlinkSync } from 'node:fs';
-import { unlink } from 'node:fs/promises';
+import { rm } from 'node:fs/promises';
 
 /**
  * Deletes file synchronously.
@@ -23,7 +23,7 @@ export const deleteFile = async (path: PathLike) => {
     return;
   }
 
-  await unlink(path);
+  await rm(path);
 };
 
 /**
