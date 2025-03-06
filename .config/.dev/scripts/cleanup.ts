@@ -62,6 +62,7 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
   // Copy all modified files
   await cp(CLEANUP_DIR, cwd(), {
     force: true,
+    recursive: true,
   });
   DevLogger.log('Copied modified files');
 
