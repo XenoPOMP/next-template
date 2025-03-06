@@ -44,6 +44,7 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
     path.join(CLEANUP_DIR, 'package.json'),
     JSON.stringify(packageJsonContent, null, 2),
   );
+  DevLogger.log(`Generated ${bold('package.json')} at cleanup dir`);
 
   DevLogger.end('Cleanup ended. ✨');
 })();
