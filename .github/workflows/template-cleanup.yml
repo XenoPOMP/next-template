@@ -27,7 +27,7 @@ jobs:
           node-version: '22'
 
       - name: '📦 Install dependencies'
-        run: npm i -g cross-env
+        run: npm i -g cross-env esno
 
       # Cleanup project
       - name: Cleanup
