@@ -3,6 +3,12 @@ import { Loader, type LucideProps } from 'lucide-react';
 import { type SVGMotionProps, motion } from 'motion/react';
 import type { FC } from 'react';
 
+/**
+ * Circle loader with animation.
+ * @param className
+ * @param props
+ * @constructor
+ */
 export const Circle: FC<LucideProps & SVGMotionProps<any>> = ({
   className,
   ...props

@@ -70,6 +70,7 @@ export const useRace = <TValue = unknown, TResult = unknown>(
   value?: TValue,
   callback?: RaceCallback<TValue, TResult>,
   options: IUseRaceOptions<TValue> = {
+    // eslint-disable-next-line jsdoc/require-jsdoc
     raceResolveCondition: value => value !== undefined,
   },
 ) => {

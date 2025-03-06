@@ -20,6 +20,7 @@ describe('UI Kit / Navbar item', () => {
   test('Link becomes active if target url is met', () => {
     vi.mock('next/navigation', () => {
       return {
+        // eslint-disable-next-line jsdoc/require-jsdoc
         usePathname: (): Partial<ReturnType<typeof usePathname>> => {
           return '/other';
         },

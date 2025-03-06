@@ -5,6 +5,7 @@ import { createStorageKey } from '@/utils/misc';
 import { APP_NAME } from '@app/constants';
 
 describe('createStorageKey func', () => {
+  // eslint-disable-next-line jsdoc/require-jsdoc
   const generateAndExpect = (expected: string, ...keys: string[]) => {
     expect(createStorageKey(...keys)).to.equal(expected);
   };

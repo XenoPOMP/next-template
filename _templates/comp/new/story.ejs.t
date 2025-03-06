@@ -6,7 +6,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { <%= h.changeCase.pascalCase(name) %> } from '@/components/ui';
 
 const meta = {
-  title: 'UI Kit / <%= h.changeCase.pascalCase(name) %>',
+  title: 'UI / <%= h.changeCase.pascalCase(name) %>',
   component: <%= h.changeCase.pascalCase(name) %>,
   tags: ['autodoc'],
   parameters: {

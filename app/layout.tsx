@@ -14,6 +14,9 @@ const mainFont = Inter({
   subsets: ['latin', 'cyrillic'],
 });
 
+/**
+ * Generic application`s metadata generation.
+ */
 export async function generateMetadata(): Promise<Metadata> {
   const CANONICAL_URL = env.CANONICAL_URL;
 
@@ -44,7 +47,12 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-// TODO Update next-themes and remove suppressHydrationWarning
+/**
+ * Top-level app layout. Contains providers, core layout.
+ *
+ * @constructor
+ * @todo Update next-themes and remove suppressHydrationWarning
+ */
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html

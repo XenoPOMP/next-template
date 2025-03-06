@@ -21,6 +21,7 @@ describe('useRace hook', () => {
   test('Resolve condition works', () => {
     const hook = renderHook(() =>
       useRace('race', undefined, {
+        // eslint-disable-next-line jsdoc/require-jsdoc
         raceResolveCondition: _ => false,
       }),
     );

@@ -3,6 +3,13 @@ import { type VariableFC, jsxDotNotation } from 'xenopomp-essentials';
 
 import { AccordionBody, AccordionCollapse } from './components';
 
+/**
+ * Base element for Accordion.
+ * @param className
+ * @param children
+ * @param props
+ * @constructor
+ */
 const InternalAccordion: VariableFC<'details', unknown> = ({
   className,
   children,

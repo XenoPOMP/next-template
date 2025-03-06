@@ -6,6 +6,11 @@ import { createStorageKey } from '@/utils/misc';
 
 import type { ProvidersProps } from './Providers.props';
 
+/**
+ * Root wrapper for application level.
+ * @param children
+ * @constructor
+ */
 const Providers: FC<PropsWithChildren<ProvidersProps>> = ({ children }) => {
   return (
     <ThemeProvider

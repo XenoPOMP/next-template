@@ -13,6 +13,7 @@ const deleteFileSync = (path: PathLike) => {
   unlinkSync(path);
 };
 
+/** Synchronously deletes directory and checks if it already exists. */
 const deleteDirSync = (path: PathLike) => {
   return deleteFileSync(path);
 };

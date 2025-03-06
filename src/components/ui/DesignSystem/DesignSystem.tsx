@@ -11,6 +11,7 @@ import { Heading } from '@/components/ui/kit';
 
 import { useComputedStyles } from './use-computed-styles.ts';
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 const createSection = (
   isSub: boolean = false,
 ): FC<PropsWithChildren & { heading?: string }> => {
@@ -32,6 +33,7 @@ const createSection = (
 const Section = createSection();
 const SubSection = createSection(true);
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 const AutoHeading = ({
   level,
 }: Pick<ComponentProps<typeof Heading>, 'level'>) => {
@@ -51,6 +53,7 @@ const AutoHeading = ({
   );
 };
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 const AutoText = ({ size }: { size: 24 | 20 | 16 | 14 }) => {
   const fontSize = `var(--p${size})`;
   const { ref, computed } = useComputedStyles<HTMLParagraphElement>();
@@ -71,6 +74,7 @@ const AutoText = ({ size }: { size: 24 | 20 | 16 | 14 }) => {
   );
 };
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 const AutoPadding = ({ level }: { level: 1 | 2 | 3 | 4 | 5 }) => {
   const marginRight = `var(--p-level-${level})`;
   const { ref, computed } = useComputedStyles<HTMLParagraphElement>();

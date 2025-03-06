@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const useComputedStyles = <
   R extends HTMLHeadingElement | HTMLParagraphElement = HTMLHeadingElement,
 >() => {

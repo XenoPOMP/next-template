@@ -14,16 +14,21 @@ const Stack = slotable<'section', StackProps & StackVariantsType>(
     className,
     style,
     insets = '2rem',
-    maxWidth = '1680px',
+    maxSize = '1680px',
     alignStack,
+    orientation,
     ...props
   }) => (
     <Comp
-      className={cn(styles.uiStack, stackVariants({ alignStack }), className)}
+      className={cn(
+        styles.uiStack,
+        stackVariants({ alignStack, orientation }),
+        className,
+      )}
       style={
         {
           '--insets': insets,
-          '--max-width': maxWidth,
+          '--max-size': maxSize,
           ...style,
         } as CSSProperties
       }

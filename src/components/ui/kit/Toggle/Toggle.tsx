@@ -2,6 +2,12 @@ import { Switch } from '@headlessui/react';
 import cn from 'classnames';
 import type { VariableFC } from 'xenopomp-essentials';
 
+/**
+ * Toggle component for UI kit
+ * @param className
+ * @param props
+ * @constructor
+ */
 export const Toggle: VariableFC<typeof Switch, unknown, 'children'> = ({
   className,
   ...props

@@ -16,6 +16,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 const decorators = (vertical?: boolean): Story['decorators'] => [
   (child, args) => (
     <div
