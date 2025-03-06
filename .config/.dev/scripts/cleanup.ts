@@ -1,4 +1,5 @@
 import { bold } from 'ansi-colors';
+import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { PackageJson } from 'type-fest';
 import { z } from 'zod';
@@ -40,10 +41,10 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
   packageJsonContent.version = '0.0.0';
 
   // Create file at cleanup dir
-  // await writeFile(
-  //   path.join(CLEANUP_DIR, 'package.json'),
-  //   JSON.stringify(packageJsonContent, null, 2),
-  // );
+  await writeFile(
+    path.join(CLEANUP_DIR, 'package.json'),
+    JSON.stringify(packageJsonContent, null, 2),
+  );
   DevLogger.log(`Generated ${bold('package.json')} at cleanup dir`);
 
   await sed(CLEANUP_DIR, {
@@ -55,6 +56,8 @@ const CLEANUP_DIR = path.join(cwd(), '.github/template-cleanup');
     pattern: /%ACTOR%/g,
     replace: env.ACTOR ?? '',
   });
+
+  DevLogger.log(`Changed ${bold('author info')} at cleanup dir`);
 
   DevLogger.end('Cleanup ended. ✨');
 })();
