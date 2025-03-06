@@ -1,13 +1,6 @@
-/* eslint-disable no-console */
-import {
-  blueBright,
-  green,
-  grey,
-  red,
-  redBright,
-  yellow,
-  yellowBright,
-} from 'ansi-colors';
+import { blueBright, cyan, green, grey, red, yellow } from 'ansi-colors';
+
+type MethodsType = keyof (typeof DevLogger)['PREFIXES'];
 
 /**
  * The purpose of this logger is to write messages
@@ -20,6 +13,7 @@ export class DevLogger {
     log: blueBright('LOG'),
     error: red('ERR'),
     warn: yellow('WRN'),
+    info: cyan('INF'),
   };
 
   /** Generates time label. */
@@ -40,49 +34,34 @@ export class DevLogger {
   }
 
   /** Generates prefix with correct length. */
-  private static issuePrefix(prefix: keyof typeof this.PREFIXES) {
-    const largestPrefixLength =
-      Object.values(this.PREFIXES).sort((a, b) => b.length - a.length)[0]
-        ?.length ?? 0;
-
-    const selectedPrefix = this.PREFIXES[prefix];
-    const lastedSpace = largestPrefixLength - selectedPrefix.length;
-    const space = lastedSpace >= 0 ? ' '.repeat(lastedSpace) : '';
-
-    return space + this.PREFIXES[prefix];
+  private static issuePrefix(prefix: MethodsType) {
+    return this.PREFIXES[prefix];
   }
 
   /** Generates logger message with prefix, time etc. */
-  private static issueMessage(
-    prefix: keyof typeof this.PREFIXES,
-    message?: any,
-  ) {
+  private static issueMessage(prefix: MethodsType, message?: any) {
     return `${this.issuePrefix(prefix)} ${this.issueTime()} ${message}`;
   }
 
-  /** Send [START] message. */
-  static start(message?: any) {
-    console.log(this.issueMessage('start', message));
+  private static createMethod(prefix: MethodsType) {
+    return (message?: any) => console.log(this.issueMessage(prefix, message));
   }
+
+  /** Send [START] message. */
+  static start = this.createMethod('start');
 
   /** Send [END] message. */
-  static end(message?: any) {
-    console.log(this.issueMessage('end', message));
-  }
+  static end = this.createMethod('end');
 
   /** Send [LOG] message. */
-  static log(message?: any) {
-    console.log(this.issueMessage('log', message));
-  }
+  static log = this.createMethod('log');
 
   /** Send [WRN] message. */
-  static warn(message?: any) {
-    console.log(this.issueMessage('warn', `${yellowBright(message)}`));
-  }
+  static warn = this.createMethod('warn');
 
   /** Send [ERR] message. */
-  static error(message?: any) {
-    console.log(this.issueMessage('error', `${redBright(message)}`));
-  }
+  static error = this.createMethod('error');
+
+  /** Send [INF] message. */
+  static info = this.createMethod('info');
 }
-/* eslint-enable no-console */
