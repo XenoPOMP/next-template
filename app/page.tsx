@@ -2,13 +2,12 @@ import cn from 'classnames';
 import type { Metadata } from 'next';
 
 import { Stack } from '@/components/ui';
-import { generateStaticMetadata } from '@/utils/seo';
 
 import styles from './main-page.module.scss';
 
-export const metadata: Metadata = generateStaticMetadata({
+export const metadata: Metadata = {
   title: 'Main',
-});
+};
 
 /**
  * Home page at url/
