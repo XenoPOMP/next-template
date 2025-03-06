@@ -1,25 +1,40 @@
-/* eslint-disable no-console */
-import {
-  blueBright,
-  green,
-  grey,
-  red,
-  redBright,
-  yellow,
-  yellowBright,
-} from 'ansi-colors';
+import { cyanBright, green, grey, red, white, yellow } from 'ansi-colors';
+
+type MethodsType = 'start' | 'end' | 'log' | 'error' | 'warn' | 'info';
 
 /**
  * The purpose of this logger is to write messages
  * when running dev scripts.
  */
 export class DevLogger {
-  private static PREFIXES = {
-    start: green('START'),
-    end: green('END'),
-    log: blueBright('LOG'),
-    error: red('ERR'),
-    warn: yellow('WRN'),
+  private static PREFIXES: Record<
+    MethodsType,
+    { raw: string; color: (s: string) => string }
+  > = {
+    start: {
+      raw: 'START',
+      color: green,
+    },
+    end: {
+      raw: 'END',
+      color: green,
+    },
+    log: {
+      raw: 'LOG',
+      color: white,
+    },
+    error: {
+      raw: 'ERROR',
+      color: red,
+    },
+    warn: {
+      raw: 'WARN',
+      color: yellow,
+    },
+    info: {
+      raw: 'INFO',
+      color: cyanBright,
+    },
   };
 
   /** Generates time label. */
@@ -40,49 +55,40 @@ export class DevLogger {
   }
 
   /** Generates prefix with correct length. */
-  private static issuePrefix(prefix: keyof typeof this.PREFIXES) {
-    const largestPrefixLength =
-      Object.values(this.PREFIXES).sort((a, b) => b.length - a.length)[0]
-        ?.length ?? 0;
+  private static issuePrefix(prefix: MethodsType): string {
+    const longestPrefix =
+      Object.values(this.PREFIXES)
+        .map(v => v.raw)
+        .sort((a, b) => b.length - a.length)[0]?.length ?? 0;
 
-    const selectedPrefix = this.PREFIXES[prefix];
-    const lastedSpace = largestPrefixLength - selectedPrefix.length;
-    const space = lastedSpace >= 0 ? ' '.repeat(lastedSpace) : '';
-
-    return space + this.PREFIXES[prefix];
+    const { raw, color } = this.PREFIXES[prefix];
+    return color(raw.padStart(longestPrefix, ' '));
   }
 
   /** Generates logger message with prefix, time etc. */
-  private static issueMessage(
-    prefix: keyof typeof this.PREFIXES,
-    message?: any,
-  ) {
+  private static issueMessage(prefix: MethodsType, message?: any) {
     return `${this.issuePrefix(prefix)} ${this.issueTime()} ${message}`;
   }
 
-  /** Send [START] message. */
-  static start(message?: any) {
-    console.log(this.issueMessage('start', message));
+  private static createMethod(prefix: MethodsType) {
+    return (message?: any) => console.log(this.issueMessage(prefix, message));
   }
+
+  /** Send [START] message. */
+  static start = this.createMethod('start');
 
   /** Send [END] message. */
-  static end(message?: any) {
-    console.log(this.issueMessage('end', message));
-  }
+  static end = this.createMethod('end');
 
   /** Send [LOG] message. */
-  static log(message?: any) {
-    console.log(this.issueMessage('log', message));
-  }
+  static log = this.createMethod('log');
 
   /** Send [WRN] message. */
-  static warn(message?: any) {
-    console.log(this.issueMessage('warn', `${yellowBright(message)}`));
-  }
+  static warn = this.createMethod('warn');
 
   /** Send [ERR] message. */
-  static error(message?: any) {
-    console.log(this.issueMessage('error', `${redBright(message)}`));
-  }
+  static error = this.createMethod('error');
+
+  /** Send [INF] message. */
+  static info = this.createMethod('info');
 }
-/* eslint-enable no-console */
