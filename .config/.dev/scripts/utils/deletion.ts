@@ -23,7 +23,10 @@ export const deleteFile = async (path: PathLike) => {
     return;
   }
 
-  await rm(path);
+  await rm(path, {
+    force: true,
+    recursive: true,
+  });
 };
 
 /**
