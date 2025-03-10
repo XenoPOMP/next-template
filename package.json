@@ -76,7 +76,7 @@
     "@testing-library/react": "^15.0.7",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/coverage-istanbul": "^3.0.7",
+    "@vitest/coverage-istanbul": "^3.0.8",
     "cypress": "14.1.0",
     "eslint": "9.21.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
@@ -105,7 +105,7 @@
     "tsd": "^0.31.2",
     "type-fest": "^4.36.0",
     "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^3.0.7",
+    "vitest": "^3.0.8",
     "vitest-matchmedia-mock": "^2.0.0",
     "xenopomp-essentials": "^0.0.1-beta.13"
   },
