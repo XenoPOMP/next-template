@@ -45,7 +45,7 @@
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
     "autoprefixer": "10.4.16",
-    "axios": ">=1.8.1",
+    "axios": ">=1.8.2",
     "class-variance-authority": "^0.7.1",
     "classnames": "^2.5.1",
     "lucide-react": "^0.477.0",
