@@ -3,6 +3,7 @@ to: __tests__/assets/test-components/<%= h.changeCase.pascalCase(name) %>Test.ts
 eol_last: true
 ---
 import { fireEvent, render, screen } from '@testing-library/react';
+import type { ComponentProps, ComponentRef } from 'react';
 import { useRef } from 'react';
 
 import { <%= h.changeCase.camelCase(name) %> } from '@/hooks';
