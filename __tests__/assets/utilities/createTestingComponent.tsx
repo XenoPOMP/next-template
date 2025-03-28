@@ -1,20 +1,32 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import type { ComponentProps, ComponentRef, PropsWithChildren } from 'react';
+import type { ComponentProps, ComponentRef, FC } from 'react';
 import { useRef } from 'react';
 
-import { useTrackedState } from '@/hooks';
+import { useEffectAfterMount, useTrackedState } from '@/hooks';
 
 // eslint-disable-next-line jsdoc/require-jsdoc
-function TestComponent({ trackedState }: { trackedState?: unknown }) {
-  // eslint-disable-next-line antfu/consistent-list-newline
-  const [state, updateState] = useTrackedState(trackedState, u =>
-    updateState(u),
-  );
+function TestComponent({
+  trackedState,
+  onStateChange,
+}: {
+  trackedState?: string;
+  onStateChange?: (state: string | undefined) => void;
+}) {
+  const [state, updateState] = useTrackedState(trackedState, u => {
+    updateState(u);
+  });
+
+  useEffectAfterMount(() => {
+    onStateChange?.(state);
+  }, [state]);
+
   const inputRef = useRef<ComponentRef<'input'>>(null);
 
   // eslint-disable-next-line jsdoc/require-jsdoc
   const handleClick: ComponentProps<'input'>['onClick'] = () => {
-    updateState(Number(inputRef.current?.getAttribute('data-input-string')));
+    updateState(
+      inputRef.current?.getAttribute('data-input-string')?.toString(),
+    );
   };
 
   return (
@@ -37,15 +49,22 @@ function TestComponent({ trackedState }: { trackedState?: unknown }) {
 }
 
 // eslint-disable-next-line jsdoc/require-jsdoc
-export function createTestingComponent() {
+export function createTestingComponent<TestProps>() {
   return ({
     children,
+    trackedState,
+    onStateChange,
     ...props
-  }: PropsWithChildren & ComponentProps<typeof TestComponent>) => {
+  }: ComponentProps<typeof TestComponent> & {
+    children?: FC<TestProps>;
+  } & TestProps) => {
     const res = render(
       <>
-        <TestComponent {...props} />
-        {children}
+        <TestComponent
+          trackedState={trackedState}
+          onStateChange={onStateChange}
+        />
+        {children?.(props as TestProps)}
       </>,
     );
 
