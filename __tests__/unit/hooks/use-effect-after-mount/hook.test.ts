@@ -1,22 +1,22 @@
 import { renderHook } from '@testing-library/react';
 import { describe, expect, test, vi } from 'vitest';
 
-import { useTrackedState } from '@/hooks';
+import { useEffectAfterMount } from '@/hooks';
 
 import { assertHookRendering } from '@test/assets';
 
-describe('useTrackedState', () => {
+describe('useEffectAfterMount', () => {
   test('It renders', () => {
-    assertHookRendering(() => useTrackedState(12));
+    assertHookRendering(() => useEffectAfterMount(() => {}));
   });
 
-  test('Callback should not be running before mount', () => {
+  test('It does not run initially', () => {
     const spy = vi.spyOn(console, 'log');
 
     renderHook(() =>
-      useTrackedState(12, updated => {
+      useEffectAfterMount(() => {
         // eslint-disable-next-line no-console
-        console.log(`Hook mount detected: ${updated}`);
+        console.log('This should never been logged...');
       }),
     );
 

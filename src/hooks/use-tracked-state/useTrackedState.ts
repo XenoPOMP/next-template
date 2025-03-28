@@ -1,7 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import type { Fn, SetState } from 'xenopomp-essentials';
+
+import { useEffectAfterMount } from '@/hooks';
 
 type MountFn<S> = (updated: S) => void;
 type UseStateResult<S> = [S, SetState<S>];
@@ -15,7 +17,7 @@ export function useTrackedState<S>(
 ): UseStateResult<S> {
   const [state, updateState] = useState(initialState);
 
-  useEffect(() => {
+  useEffectAfterMount(() => {
     callback?.(state);
   }, [callback, state]);
 
