@@ -6,5 +6,7 @@ const envSchema = z.object({
   NODE_ENV: z.string().optional(),
 });
 
+export type EnvSchema = z.infer<typeof envSchema>;
+
 // Use this object to validate env file
 export const env = envSchema.parse(process.env);
