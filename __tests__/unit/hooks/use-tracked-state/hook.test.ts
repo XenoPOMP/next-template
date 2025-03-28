@@ -36,7 +36,7 @@ describe('useTrackedState', () => {
 
   test('State works as state', () => {
     const { getCurrentState, updateState } = createUseTrackedStateTest({
-      initialValue: 12,
+      trackedState: '12',
     });
 
     // Default value
@@ -53,7 +53,7 @@ describe('useTrackedState', () => {
     );
 
     const { updateState } = createUseTrackedStateTest({
-      callback: spyLog,
+      onStateChange: spyLog,
     });
     updateState(20);
 
