@@ -1,10 +1,15 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import type { ComponentProps, ComponentRef, PropsWithChildren } from 'react';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
+
+import { useTrackedState } from '@/hooks';
 
 // eslint-disable-next-line jsdoc/require-jsdoc
-function TestComponent({ initialState }: { initialState?: unknown }) {
-  const [state, updateState] = useState(initialState);
+function TestComponent({ trackedState }: { trackedState?: unknown }) {
+  // eslint-disable-next-line antfu/consistent-list-newline
+  const [state, updateState] = useTrackedState(trackedState, u =>
+    updateState(u),
+  );
   const inputRef = useRef<ComponentRef<'input'>>(null);
 
   // eslint-disable-next-line jsdoc/require-jsdoc
@@ -33,11 +38,14 @@ function TestComponent({ initialState }: { initialState?: unknown }) {
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 export function createTestingComponent() {
-  return (props?: PropsWithChildren & ComponentProps<typeof TestComponent>) => {
+  return ({
+    children,
+    ...props
+  }: PropsWithChildren & ComponentProps<typeof TestComponent>) => {
     const res = render(
       <>
-        <TestComponent initialState={props?.initialState} />
-        {props?.children}
+        <TestComponent {...props} />
+        {children}
       </>,
     );
 
