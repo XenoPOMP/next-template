@@ -4,14 +4,14 @@ eol_last: true
 ---
 import { fireEvent, render, screen } from '@testing-library/react';
 import type { ComponentProps, ComponentRef } from 'react';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import { <%= h.changeCase.camelCase(name) %> } from '@/hooks';
 
 interface TestProps {}
 
 // eslint-disable-next-line jsdoc/require-jsdoc
-function <%= h.changeCase.pascalCase(name) %>Test({}: TestProps) {
+function <%= h.changeCase.pascalCase(name) %>Test(props: Partial<TestProps>) {
   // <%= h.changeCase.camelCase(name) %>();
 
   const [state, updateState] = useState(12);
