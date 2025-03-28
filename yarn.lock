@@ -2847,10 +2847,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pacote/react-use-outside@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@pacote/react-use-outside/-/react-use-outside-2.0.2.tgz#837199ca6e2b43990d423d58860d17144be63a2e"
-  integrity sha512-nDUmhDcMwj0CYQ5O7ZRmdI55lpJ+RR6Tbeqhy1OcHvrZw2aephU5sjO7vUo1ZvtoSKqkKdkv7K20N8P7YlLNjg==
+"@pacote/react-use-outside@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@pacote/react-use-outside/-/react-use-outside-2.0.4.tgz#4e284cb22f6667a7e9e1a405078db6c9bfb6b92b"
+  integrity sha512-HMK2BLaIDWqP4a4F1FQHYKZkl0pPuknyKtCZkhZhnkAWtjoJ2xhCwtFodVwU1YfOJdY1bx+gA+7Tur1MpWgkeg==
 
 "@parcel/watcher-android-arm64@2.4.1":
   version "2.4.1"
