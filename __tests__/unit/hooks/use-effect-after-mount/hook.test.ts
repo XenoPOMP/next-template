@@ -1,9 +1,9 @@
 import { renderHook } from '@testing-library/react';
-import { describe, expect, test, vi } from 'vitest';
+import { describe, test } from 'vitest';
 
 import { useEffectAfterMount } from '@/hooks';
 
-import { assertHookRendering } from '@test/assets';
+import { assertHookRendering, spyOnConsole } from '@test/assets';
 
 describe('useEffectAfterMount', () => {
   test('It renders', () => {
@@ -11,16 +11,11 @@ describe('useEffectAfterMount', () => {
   });
 
   test('It does not run initially', () => {
-    const expectedWord = '<HOOK_CALLED_ON_MOUNT>';
-    const spy = vi.spyOn(console, 'log');
-
-    renderHook(() =>
-      useEffectAfterMount(() => {
-        // eslint-disable-next-line no-console
-        console.log(expectedWord);
-      }),
+    const { spyLog, expectToBeNotCalled } = spyOnConsole(
+      '<HOOK_CALLED_ON_MOUNT>',
     );
 
-    expect(spy).not.toHaveBeenCalledWith(expectedWord);
+    renderHook(() => useEffectAfterMount(spyLog));
+    expectToBeNotCalled();
   });
 });
