@@ -11,15 +11,16 @@ describe('useEffectAfterMount', () => {
   });
 
   test('It does not run initially', () => {
+    const expectedWord = '<HOOK_CALLED_ON_MOUNT>';
     const spy = vi.spyOn(console, 'log');
 
     renderHook(() =>
       useEffectAfterMount(() => {
         // eslint-disable-next-line no-console
-        console.log('This should never been logged...');
+        console.log(expectedWord);
       }),
     );
 
-    expect(spy).not.toHaveBeenCalled();
+    expect(spy).not.toHaveBeenCalledWith(expectedWord);
   });
 });
