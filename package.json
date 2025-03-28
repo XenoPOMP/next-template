@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.5",
-    "@next-devtools/core": "^0.3.0-beta.1",
+    "@next-devtools/core": "^0.3.0-beta.3",
     "@storybook/addon-essentials": "^8.4.5",
     "@storybook/addon-interactions": "^8.4.5",
     "@storybook/addon-links": "^8.4.5",
