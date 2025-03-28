@@ -1,9 +1,13 @@
 import { cleanup, renderHook } from '@testing-library/react';
-import { afterEach, describe, test } from 'vitest';
+import { afterEach, describe, expect, test } from 'vitest';
 
 import { useTrackedState } from '@/hooks';
 
-import { assertHookRendering, spyOnConsole } from '@test/assets';
+import {
+  assertHookRendering,
+  createUseTrackedStateTest,
+  spyOnConsole,
+} from '@test/assets';
 
 describe('useTrackedState', () => {
   afterEach(() => {
@@ -30,5 +34,29 @@ describe('useTrackedState', () => {
     expectToBeNotCalled();
   });
 
-  test('Certain callback is called on mount', () => {});
+  test('State works as state', () => {
+    const { getCurrentState, updateState } = createUseTrackedStateTest({
+      initialValue: 12,
+    });
+
+    // Default value
+    expect(getCurrentState()).toBe('12');
+
+    // State update
+    updateState(156);
+    expect(getCurrentState()).toBe('156');
+  });
+
+  test('Mount callback is called only after initial mount', () => {
+    const { spyLog, expectToBeCalled } = spyOnConsole(
+      '<MOUNT_EFFECT_CALLED_ON_USE_TRACKED_STATE>',
+    );
+
+    const { updateState } = createUseTrackedStateTest({
+      callback: spyLog,
+    });
+    updateState(20);
+
+    expectToBeCalled();
+  });
 });
