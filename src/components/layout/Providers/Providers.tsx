@@ -1,3 +1,4 @@
+import { NextDevtoolsProvider } from '@next-devtools/core';
 import { ThemeProvider } from 'next-themes';
 import type { FC, PropsWithChildren } from 'react';
 
@@ -13,13 +14,15 @@ import type { ProvidersProps } from './Providers.props';
  */
 const Providers: FC<PropsWithChildren<ProvidersProps>> = ({ children }) => {
   return (
-    <ThemeProvider
-      attribute='class'
-      storageKey={createStorageKey('theme')}
-      enableSystem
-    >
-      <RQProvider>{children}</RQProvider>
-    </ThemeProvider>
+    <NextDevtoolsProvider>
+      <ThemeProvider
+        attribute='class'
+        storageKey={createStorageKey('theme')}
+        enableSystem
+      >
+        <RQProvider>{children}</RQProvider>
+      </ThemeProvider>
+    </NextDevtoolsProvider>
   );
 };
 

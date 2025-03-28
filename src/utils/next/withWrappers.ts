@@ -1,4 +1,6 @@
+import { withNextDevtools } from '@next-devtools/core/plugin';
 import mdxWrapper from '@next/mdx';
+import type { NextConfig } from 'next';
 import { pipe } from 'xenopomp-essentials';
 
 /**
@@ -7,4 +9,5 @@ import { pipe } from 'xenopomp-essentials';
  * @example
  * export default withWrappers(nextConfig);
  */
-export const withWrappers = pipe(mdxWrapper());
+export const withWrappers: (config: NextConfig) => NextConfig =
+  pipe(mdxWrapper()).pipe(withNextDevtools);
