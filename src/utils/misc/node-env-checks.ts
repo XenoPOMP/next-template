@@ -9,4 +9,4 @@ const createCheck = <C extends string>(expected: C) => {
 
 export const isDevelopment = createCheck(DEVELOPMENT);
 export const isProduction = createCheck(PRODUCTION);
-export const isTest = createCheck(TESTING);
+export const isTesting = createCheck(TESTING);
