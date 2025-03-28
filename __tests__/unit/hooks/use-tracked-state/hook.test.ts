@@ -43,7 +43,7 @@ describe('useTrackedState', () => {
     expect(getCurrentState()).toBe('12');
 
     // State update
-    updateState(156);
+    updateState('156');
     expect(getCurrentState()).toBe('156');
   });
 
@@ -55,7 +55,7 @@ describe('useTrackedState', () => {
     const { updateState } = createUseTrackedStateTest({
       onStateChange: spyLog,
     });
-    updateState(20);
+    updateState('20');
 
     expectToBeCalled();
   });

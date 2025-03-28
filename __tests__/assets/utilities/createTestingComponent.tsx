@@ -48,7 +48,28 @@ function TestComponent({
   );
 }
 
-// eslint-disable-next-line jsdoc/require-jsdoc
+/**
+ * Helper function for creating vitest components for testing UI, hooks etc.
+ *
+ * @example Creating testing component
+ * import { createTestingComponent } from '@test/assets';
+ *
+ * export const createUseTrackedStateTest = createTestingComponent();
+ *
+ * @example Using created component
+ * test('Mount callback is called only after initial mount', () => {
+ *   const { spyLog, expectToBeCalled } = spyOnConsole(
+ *     '<MOUNT_EFFECT_CALLED_ON_USE_TRACKED_STATE>',
+ *   );
+ *
+ *   const { updateState } = createUseTrackedStateTest({
+ *     onStateChange: spyLog,
+ *   });
+ *   updateState('20');
+ *
+ *   expectToBeCalled();
+ * });
+ */
 export function createTestingComponent<TestProps>() {
   return ({
     children,
@@ -75,9 +96,9 @@ export function createTestingComponent<TestProps>() {
     };
 
     // eslint-disable-next-line jsdoc/require-jsdoc
-    const updateState = (newValue: number) => {
+    const updateState = (newValue: string | undefined) => {
       const input = screen.getByTestId<HTMLInputElement>('input');
-      input.setAttribute('data-input-string', newValue.toString());
+      input.setAttribute('data-input-string', newValue ?? '');
       fireEvent.click(input);
     };
 
