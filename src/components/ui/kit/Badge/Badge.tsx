@@ -1,6 +1,8 @@
 import cn from 'classnames';
 import type { VariableFC } from 'xenopomp-essentials';
 
+import uiStyles from '@/components/ui/kit/UIKit.module.scss';
+
 import { type BadgeVariantsType, badgeVariants } from './Badge.variants.ts';
 
 /**
@@ -19,7 +21,12 @@ export const Badge: VariableFC<'div', BadgeVariantsType> = ({
 }) => {
   return (
     <div
-      className={cn(badgeVariants({ variant }), className)}
+      className={cn(
+        uiStyles.uiField,
+        'text-16',
+        badgeVariants({ variant }),
+        className,
+      )}
       {...props}
     >
       {children}
