@@ -19,11 +19,7 @@ export const Badge: VariableFC<'div', BadgeVariantsType> = ({
 }) => {
   return (
     <div
-      className={cn(
-        'text-14 rounded-[.25em] px-[.35em] py-[.175em] font-mono leading-[normal]',
-        badgeVariants({ variant }),
-        className,
-      )}
+      className={cn(badgeVariants({ variant }), className)}
       {...props}
     >
       {children}
