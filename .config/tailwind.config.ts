@@ -30,12 +30,12 @@ const tailwindConfig: Config = {
     FullBleed,
     tailwindThemer({
       defaultTheme: {
-        extend: lightTheme,
+        extend: darkTheme,
       },
       themes: [
         {
-          name: 'dark',
-          extend: darkTheme,
+          name: 'light',
+          extend: lightTheme,
         },
       ],
     }),
