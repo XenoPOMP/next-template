@@ -5,7 +5,13 @@ import type { VariableFC } from 'xenopomp-essentials';
 import styles from './ShortcutHint.module.scss';
 
 /**
+ * Presents Keyboard Key hint.
+ * @param className
+ * @param props
+ * @constructor
  *
+ * @example
+ * <ShortcutHint keys={['command', 'ctrl']}>S</ShortcutHint>
  */
 export const ShortcutHint: VariableFC<typeof Kbd> = ({
   className,
