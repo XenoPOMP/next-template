@@ -24,11 +24,6 @@
     design.createTextGrade(14px)
   );
 
-  // This rule is for sass backwards capability.
-  & {
-    font-size: var(--p20);
-  }
-
   & * {
     line-height: 140%;
   }
