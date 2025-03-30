@@ -1,8 +1,18 @@
-import type { FC } from 'react';
+import { Kbd } from '@heroui/kbd';
+import cn from 'classnames';
+import type { VariableFC } from 'xenopomp-essentials';
 
 /**
  *
  */
-export const ShortcutHint: FC<unknown> = () => {
-  return <div></div>;
+export const ShortcutHint: VariableFC<typeof Kbd> = ({
+  className,
+  ...props
+}) => {
+  return (
+    <Kbd
+      className={cn(className)}
+      {...props}
+    />
+  );
 };

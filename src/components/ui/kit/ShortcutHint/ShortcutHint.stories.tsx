@@ -15,11 +15,13 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const sharedProps = {} satisfies Partial<Story['args']>;
+const sharedProps = {
+  keys: ['command', 'ctrl'],
+  children: 'S',
+} satisfies Partial<Story['args']>;
 
 export const Primary: Story = {
   args: {
     ...sharedProps,
   },
 };
-
