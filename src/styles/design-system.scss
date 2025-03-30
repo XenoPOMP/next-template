@@ -26,7 +26,8 @@
 
   // This rule is for sass backwards capability.
   & {
-    font-size: var(--p20);
+    // font-size: var(--p20);
+    font-size: 1rem;
   }
 
   & * {
