@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss';
 import FullBleed from 'tailwindcss-full-bleed';
 import tailwindThemer from 'tailwindcss-themer';
 
-import { THEME_NAMES } from '../app/constants';
 import { darkTheme, lightTheme } from '../src/themes';
 import { DesignSystemConfig } from '../src/themes/design';
 import { CustomClassesPlugin } from '../src/themes/plugins';
@@ -35,7 +34,7 @@ const tailwindConfig: Config = {
       },
       themes: [
         {
-          name: THEME_NAMES.LIGHT,
+          name: 'light',
           extend: lightTheme,
         },
       ],
