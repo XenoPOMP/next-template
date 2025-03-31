@@ -1,3 +1,9 @@
+@mixin declareNotAffectingFont($color) {
+  &:not(:active, :hover), &:disabled:is(:active, :hover) {
+    @apply text-#{$color};
+  }
+}
+
 @mixin declareButtonEffects($onHover, $onActive) {
   &:not(:disabled):active {
     @apply bg-#{$onActive};
@@ -23,10 +29,7 @@
   }
 
   &.dangerEffects {
-    &:not(:active, :hover), &:disabled:is(:active, :hover) {
-       @apply text-ui-btn-danger-font;
-    }
-
+    @include declareNotAffectingFont("ui-btn-danger-font");
     @include declareButtonEffects(
       "ui-btn-danger-hover-fill",
       "ui-btn-danger-active-fill"
