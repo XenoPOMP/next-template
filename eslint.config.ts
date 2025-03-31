@@ -4,6 +4,7 @@ export default xenopomp(
   {
     rules: {
       'style/brace-style': 'off',
+      'style/quote-props': 'off',
     },
   },
   {
