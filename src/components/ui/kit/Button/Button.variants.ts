@@ -17,7 +17,7 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         default: '',
-        accent: '',
+        accent: 'bg-accent',
       },
     },
 
