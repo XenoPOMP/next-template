@@ -23,6 +23,7 @@ export const Badge: VariableFC<'div', BadgeVariantsType> = ({
     <div
       className={cn(
         uiStyles.uiField,
+        uiStyles.withBg,
         'text-16',
         badgeVariants({ variant }),
         className,

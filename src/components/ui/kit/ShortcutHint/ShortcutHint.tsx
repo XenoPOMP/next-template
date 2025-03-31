@@ -25,6 +25,7 @@ export const ShortcutHint: VariableFC<typeof Kbd> = ({
         'leading-[inherit]',
         'whitespace-nowrap text-nowrap',
         uiStyles.uiField,
+        uiStyles.withBg,
         styles.hint,
         className,
       )}

@@ -1,6 +1,8 @@
 import { type VariantProps, cva } from 'class-variance-authority';
 import cn from 'classnames';
 
+import uiStyles from '@/components/ui/kit/UIKit.module.scss';
+
 import styles from './Button.module.scss';
 
 export type ButtonVariantsType = VariantProps<typeof buttonVariants>;
@@ -16,7 +18,7 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: '',
+        default: cn(uiStyles.withBg),
         accent: 'bg-accent',
       },
     },
