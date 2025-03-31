@@ -7,7 +7,7 @@ interface Item {
   values: [real: AnyObject, toMatch: AnyObject];
 }
 
-export const matchingDataFixture: Item[] = [
+export const constantsDataFixture: Item[] = [
   {
     name: 'No index page',
     values: [NO_INDEX_PAGE, { robots: { index: true, follow: true } }],
