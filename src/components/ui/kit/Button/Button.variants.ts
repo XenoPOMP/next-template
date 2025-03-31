@@ -10,6 +10,7 @@ export type ButtonVariantsType = VariantProps<typeof buttonVariants>;
 export const buttonVariants = cva(
   cn(
     'inline-flex',
+    'flex-center gap-[.125em]',
     styles.uiButton,
     styles.defaultLike,
     'disabled:opacity-40 disabled:cursor-not-allowed',

@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 
 import { Button } from './Button';
@@ -39,7 +40,9 @@ export const AsLink: Story = {
   decorators: [
     _story => (
       <Button asChild>
-        <Link href='https://www.google.com'>google.com</Link>
+        <Link href='https://www.google.com'>
+          google.com <ArrowUpRight size='.8em' />
+        </Link>
       </Button>
     ),
   ],
