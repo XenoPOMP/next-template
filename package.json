@@ -79,7 +79,7 @@
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-istanbul": "^3.0.8",
-    "cypress": "14.1.0",
+    "cypress": "14.2.1",
     "eslint": "9.23.0",
     "eslint-plugin-jsdoc": "^50.6.3",
     "esno": "^4.8.0",
