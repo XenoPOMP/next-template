@@ -1,0 +1,17 @@
+.uiButton {
+  @apply select-none;
+
+  &.defaultLike {
+    @apply px-[.6em] py-[.2em];
+  }
+
+  &.defaultEffects {
+    &:not(:disabled):active {
+      @apply bg-accent-darker;
+    }
+
+    &:not(:disabled, :active):hover {
+      @apply bg-accent;
+    }
+  }
+}
