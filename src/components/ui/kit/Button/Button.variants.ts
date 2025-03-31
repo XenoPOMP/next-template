@@ -21,6 +21,7 @@ export const buttonVariants = cva(
       variant: {
         default: cn(uiStyles.withBg),
         accent: 'bg-accent',
+        danger: cn(uiStyles.withBg, styles.dangerEffects),
       },
     },
 

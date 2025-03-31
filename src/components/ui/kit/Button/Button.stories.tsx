@@ -35,6 +35,13 @@ export const Accent: Story = {
   },
 };
 
+export const Danger: Story = {
+  args: {
+    ...sharedProps,
+    variant: 'danger',
+  },
+};
+
 export const AsLink: Story = {
   name: 'As link',
   decorators: [

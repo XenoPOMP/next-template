@@ -21,4 +21,15 @@
       "accent-darker"
     );
   }
+
+  &.dangerEffects {
+    &:not(:active, :hover), &:disabled:is(:active, :hover) {
+       @apply text-ui-btn-danger-font;
+    }
+
+    @include declareButtonEffects(
+      "ui-btn-danger-hover-fill",
+      "ui-btn-danger-active-fill"
+    );
+  }
 }
