@@ -48,15 +48,20 @@ describe('useTrackedState', () => {
   });
 
   test('Mount callback is called only after initial mount', () => {
-    const { spyLog, expectToBeCalled } = spyOnConsole(
+    const { spyLog, expectToBeCalled, expectToBeNotCalled } = spyOnConsole(
       '<MOUNT_EFFECT_CALLED_ON_USE_TRACKED_STATE>',
     );
 
     const { updateState } = createUseTrackedStateTest({
       onStateChange: spyLog,
     });
-    updateState('20');
 
+    // Log message should not be sent on initial mount
+    expectToBeNotCalled();
+
+    // On this action code should send log message, because
+    // mount has been proceeded.
+    updateState('20');
     expectToBeCalled();
   });
 });
