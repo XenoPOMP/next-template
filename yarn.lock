@@ -13856,10 +13856,10 @@ ws@^8.18.0, ws@^8.2.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.0.tgz#0d7505a6eafe2b0e712d232b42279f53bc289bbc"
   integrity sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==
 
-xenopomp-essentials@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.1.1.tgz#0574b0e943e777895522c5c0599e5f094b9f4c0a"
-  integrity sha512-QVKdT7bBLpA0gqLxV8tKpCSZDRb4eKBBtinSBMjWLKK3kqUZPuzYXZ1f3zJHsmJTLI2nDkeJkLqeFPienMTe+g==
+xenopomp-essentials@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.1.2.tgz#17c9f1cc73feeb7c70edb48c4d4a8e80c1ec2a45"
+  integrity sha512-xjtnNLY050pcg1t3oEg7D4TCASBEyGLB5f/CphXSodpxlze5P+Gw9YWrwf+y+0dhgLCA3SNk8ys8MbiV4w2Ohw==
   dependencies:
     "@antfu/eslint-config" "^4.10.1"
     "@ririd/eslint-config" "^1.4.0"
