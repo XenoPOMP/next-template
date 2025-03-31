@@ -40,6 +40,17 @@ export const darkTheme = {
             'rgba(194.2797902226448 46.14460989832878 46.976826041936874 / 0.20000000298023224)',
         },
       },
+      btn: {
+        danger: {
+          font: '#F85149',
+          hover: {
+            fill: '#B62324',
+          },
+          active: {
+            fill: '#E22E2F',
+          },
+        },
+      },
     },
   },
 } satisfies Theme;
