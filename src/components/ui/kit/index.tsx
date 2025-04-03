@@ -11,3 +11,4 @@ export * from './Logo/Logo';
 export * from './Badge/Badge';
 export * from './Glass/Glass';
 export * from './ShortcutHint/ShortcutHint';
+export * from './SplitView/SplitView';
