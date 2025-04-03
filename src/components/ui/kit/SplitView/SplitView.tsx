@@ -16,7 +16,7 @@ export const SplitView = slotable<
     Comp,
     className,
     children,
-    disableIcon,
+    disableChevronIcon,
     style,
     icon: Icon,
     emptyIcon,
@@ -43,7 +43,7 @@ export const SplitView = slotable<
 
       <Spacer />
 
-      {!disableIcon && <ChevronRight size='.8em' />}
+      {!disableChevronIcon && <ChevronRight size='.8em' />}
     </Comp>
   ),
 );
