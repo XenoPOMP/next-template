@@ -51,6 +51,12 @@ export const darkTheme = {
           },
         },
       },
+      list: {
+        border:
+          'rgba(89.00000229477882 89.00000229477882 89.00000229477882 / 0.5)',
+        fill: '#2D2C2C',
+        'fill-hover': '#383737',
+      },
     },
   },
 } satisfies Theme;
