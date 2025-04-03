@@ -1,0 +1,13 @@
+.list {
+  @apply overflow-hidden bg-ui-list-fill;
+
+  border-radius: calc(var(--p-level-4) * .5);
+
+  li.item {
+    &:not(:last-of-type) {
+      .splitView {
+        @apply border-b border-b-ui-list-border;
+      }
+    }
+  }
+}
