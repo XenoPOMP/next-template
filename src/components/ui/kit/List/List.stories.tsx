@@ -33,7 +33,12 @@ const sharedProps = {
 
       <List.Item icon={Shield}>Privacy</List.Item>
 
-      <List.Item icon={Info}>About</List.Item>
+      <List.Item
+        icon={Info}
+        disableChevronIcon
+      >
+        About
+      </List.Item>
     </>
   ),
 } satisfies Partial<Story['args']>;
