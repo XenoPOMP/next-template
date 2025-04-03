@@ -41,7 +41,7 @@ jobs:
           NAME="${GITHUB_REPOSITORY##*/}"
           ACTOR=$(echo $GITHUB_ACTOR)
           
-          npx cross-env ACTOR="$ACTOR" REPO_NAME="$NAME" esno .config/.dev/scripts/cleanup.ts
+          npx cross-env ACTOR="$ACTOR" REPO_NAME="$NAME" tsx .config/.dev/scripts/cleanup.ts
 
       # Commit modified files
       - name: Commit files

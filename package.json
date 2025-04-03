@@ -27,8 +27,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "fullpack": "run-s pack:*",
-    "pack:env": "esno .config/.dev/scripts/pack-env.ts",
-    "cleanup": "npx cross-env ACTOR=\"Xeno\" REPO_NAME=\"repo-name\" esno .config/.dev/scripts/cleanup.ts"
+    "pack:env": "tsx .config/.dev/scripts/pack-env.ts",
+    "cleanup": "npx cross-env ACTOR=\"Xeno\" REPO_NAME=\"repo-name\" tsx .config/.dev/scripts/cleanup.ts"
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
@@ -82,7 +82,6 @@
     "cypress": "14.2.1",
     "eslint": "9.23.0",
     "eslint-plugin-jsdoc": "^50.6.3",
-    "esno": "^4.8.0",
     "husky": "^9.1.7",
     "hygen": "^6.2.11",
     "jiti": "^2.4.2",
@@ -105,6 +104,7 @@
     "tailwindcss-full-bleed": "^2.0.2",
     "tailwindcss-themer": "^4.1.1",
     "tsd": "^0.31.2",
+    "tsx": "^4.19.3",
     "type-fest": "^4.38.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^3.0.8",
