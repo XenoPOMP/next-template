@@ -36,6 +36,7 @@ const sharedProps = {
       <List.Item
         icon={Info}
         disableChevronIcon
+        noHoverAnimation
       >
         About
       </List.Item>

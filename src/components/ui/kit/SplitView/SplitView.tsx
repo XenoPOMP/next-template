@@ -20,13 +20,17 @@ export const SplitView = slotable<
     style,
     icon: Icon,
     emptyIcon,
+    noHoverAnimation,
     ...props
   }) => (
     <Comp
       className={cn(
         'flex items-center justify-between',
         'cursor-pointer',
-        'hover:bg-ui-list-fill-hover transition-colors',
+        'transition-colors',
+        {
+          'hover:bg-ui-list-fill-hover': !noHoverAnimation,
+        },
         className,
       )}
       style={{
