@@ -29,21 +29,6 @@ type MorphlingProps<TComp extends ElementType, As> = SelectiveRequired<
   'Comp'
 >;
 
-export function morphable<
-  TComp extends ElementType,
-  ReqProps extends Undefinable<keyof ComponentProps<TComp>>,
-  As extends AsGuard<ReqProps> = AsGuard<ReqProps>,
->(baseComp: TComp): FC<MorphlingBody<TComp, As>>;
-
-export function morphable<
-  TComp extends ElementType,
-  ReqProps extends Undefinable<keyof ComponentProps<TComp>>,
-  As extends AsGuard<ReqProps> = AsGuard<ReqProps>,
->(
-  baseComp: TComp,
-  morphling: FC<MorphlingProps<TComp, As>>,
-): FC<MorphlingBody<TComp, As>>;
-
 /** */
 export function morphable<
   TComp extends ElementType,
