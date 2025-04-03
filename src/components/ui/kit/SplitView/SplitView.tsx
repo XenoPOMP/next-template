@@ -40,8 +40,8 @@ export const SplitView = slotable<
       {...props}
     >
       <div className={cn('flex items-center gap-[.75rem]')}>
-        {!emptyIcon && Icon && <Icon size='1rem' />}
-        {!!emptyIcon && <div className={cn('w-[1rem]')}></div>}
+        {!emptyIcon && !!Icon && <Icon size='1rem' />}
+        {!!emptyIcon && !Icon && <div className={cn('w-[1rem]')}></div>}
         {children}
       </div>
 

@@ -6,6 +6,12 @@ import { assertRendering } from '@test/assets';
 
 describe('List component', () => {
   test('It renders', () => {
-    assertRendering(<List />);
+    assertRendering(
+      <List>
+        <List.Item>List item 1</List.Item>
+        <List.Item>List item 1</List.Item>
+        <List.Item>List item 1</List.Item>
+      </List>,
+    );
   });
 });
