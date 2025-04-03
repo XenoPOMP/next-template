@@ -6,6 +6,25 @@
   li.item {
     &:not(:last-of-type) {
       .splitView {
+        @apply relative;
+
+        & * {
+          @apply z-[2];
+        }
+
+        &:after {
+          @apply absolute content-[""] bottom-0
+             h-[1px] bg-ui-list-border z-[0];
+
+          $leftPadding: calc(
+            var(--p-level-4) * 0.625 +
+            1rem + .75rem
+          );
+
+          left: $leftPadding;
+          width: calc(100% - 1 * $leftPadding);
+        }
+
         // @apply border-b border-b-ui-list-border;
       }
     }

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import cn from 'classnames';
+import { Cog, Info, Shield } from 'lucide-react';
 
 import { SplitView } from '@/components/ui/kit';
 
@@ -28,10 +29,11 @@ const sharedProps = {
   className: cn('w-[300px]'),
   children: (
     <>
-      <List.Item>List item</List.Item>
-      <List.Item>List item</List.Item>
-      <List.Item disableIcon>List item</List.Item>
-      <List.Item disableIcon>List item</List.Item>
+      <List.Item icon={Cog}>Core settings</List.Item>
+
+      <List.Item icon={Shield}>Privacy</List.Item>
+
+      <List.Item icon={Info}>About</List.Item>
     </>
   ),
 } satisfies Partial<Story['args']>;
