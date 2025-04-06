@@ -1,3 +1,4 @@
+import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 
 import { useOptimisticMutation } from '@/hooks';
@@ -18,7 +19,17 @@ function AdditionalTestComp() {
   // Some local state for our example
   const [history, setHistory] = useState<History>([]);
 
-  const DELETE_ITEM_ID = 'sus';
+  useQuery<Items>({
+    queryKey: ['items'],
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    queryFn: async () => [{ id: '12', name: 'sus' }],
+  });
+
+  useQuery<Likes>({
+    queryKey: ['likes'],
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    queryFn: async () => [{ itemId: '12' }],
+  });
 
   // Mutation to delete an item and optimistically update data in three locations
   const { mutate: deleteItem } = useOptimisticMutation<
@@ -74,6 +85,15 @@ function AdditionalTestComp() {
 
   return (
     <TestUI>
+      <TestUI.Button
+        testButtonAttribute='delete-item'
+        onClick={() => {
+          deleteItem({
+            itemId: '12',
+          });
+        }}
+      />
+
       <TestUI.Output
         output={JSON.stringify(history)}
         outputAttribute='history-output'

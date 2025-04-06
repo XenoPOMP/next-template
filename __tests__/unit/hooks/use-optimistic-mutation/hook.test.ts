@@ -14,10 +14,11 @@ describe('useOptimisticMutation', () => {
   });
 
   test('It renders', () => {
-    const { getCurrentState } = createUseOptimisticMutationTest({
+    const { getCurrentState, clickButton } = createUseOptimisticMutationTest({
       trackedState: '12',
     });
 
+    clickButton('delete-item');
     expect(getCurrentState('history-output')).toBe('[]');
   });
 });

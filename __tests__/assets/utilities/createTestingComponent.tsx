@@ -88,10 +88,17 @@ export function createTestingComponent(DefaultUI?: FC) {
       fireEvent.click(input);
     };
 
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    const clickButton = (id: string) => {
+      const button = screen.getByTestId<HTMLButtonElement>(id);
+      fireEvent.click(button);
+    };
+
     return {
       renderResult: res,
       getCurrentState,
       updateState,
+      clickButton,
     };
   };
 }

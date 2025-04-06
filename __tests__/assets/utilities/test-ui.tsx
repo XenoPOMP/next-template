@@ -56,7 +56,24 @@ const Internal_TestUI_Input: FC<
   );
 };
 
+/** */
+const Internal_TestUI_Button: FC<
+  Required<StrictOmit<InoutProps<'testButton'>, 'testButton'>> &
+    Pick<ComponentProps<'button'>, 'onClick'>
+> = ({ testButtonAttribute, onClick }) => {
+  return (
+    <button
+      type='button'
+      data-testid={testButtonAttribute}
+      onClick={onClick}
+    >
+      Button
+    </button>
+  );
+};
+
 export const TestUI = jsxDotNotation(Internal_TestUI, {
   Output: Internal_TestUI_Output,
   Input: Internal_TestUI_Input,
+  Button: Internal_TestUI_Button,
 });
