@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import type { ComponentProps } from 'react';
+import type { ComponentProps, FC } from 'react';
 
 import { Providers } from '@/components/layout';
 import { useEffectAfterMount, useTrackedState } from '@/hooks';
@@ -52,7 +52,7 @@ function TestComponent({
  *   expectToBeCalled();
  * });
  */
-export function createTestingComponent() {
+export function createTestingComponent(DefaultUI?: FC) {
   return ({
     trackedState,
     onStateChange,
@@ -63,6 +63,8 @@ export function createTestingComponent() {
           trackedState={trackedState}
           onStateChange={onStateChange}
         />
+
+        {!!DefaultUI && <DefaultUI />}
       </>,
       {
         wrapper: Providers,
