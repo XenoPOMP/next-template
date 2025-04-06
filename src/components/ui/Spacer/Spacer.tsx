@@ -5,9 +5,6 @@ import type { VariableFC } from 'xenopomp-essentials';
  * This component works similar to SwiftUI`s Spacer struct.
  * Grows inside flex container.
  *
- * @param className
- * @param ariaHidden
- * @param props
  * @constructor
  *
  * @example

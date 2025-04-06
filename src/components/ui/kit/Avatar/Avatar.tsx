@@ -10,10 +10,6 @@ import type { AvatarProps } from './Avatar.props';
 /**
  * Avatar image with dicebear-image fallback.
  *
- * @param src
- * @param placeholder
- * @param className
- * @param props
  * @constructor
  *
  * @example

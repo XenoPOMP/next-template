@@ -6,9 +6,7 @@ import { Spacer } from '@/components/ui';
 
 /**
  * Collapse control element for Accordion.
- * @param className
- * @param children
- * @param props
+ *
  * @constructor
  */
 export const AccordionCollapse: VariableFC<'summary'> = ({

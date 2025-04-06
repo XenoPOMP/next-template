@@ -11,11 +11,6 @@ import type {
 import { defaultAvatarOptions } from './DicebearImage.props';
 
 /**
- *
- * @param options
- * @param seed
- * @param alt
- * @param props
  * @constructor
  *
  * @example
