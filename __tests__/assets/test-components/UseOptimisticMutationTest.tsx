@@ -40,7 +40,7 @@ function AdditionalTestComp() {
     [Items | undefined, Likes | undefined, History]
   >({
     // eslint-disable-next-line jsdoc/require-jsdoc
-    mutationFn: async variables => {
+    mutationFn: async _variables => {
       return true;
     },
     // This is where the magic happens
