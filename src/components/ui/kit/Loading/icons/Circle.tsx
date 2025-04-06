@@ -7,8 +7,7 @@ import type { FC } from 'react';
 
 /**
  * Circle loader with animation.
- * @param className
- * @param props
+ *
  * @constructor
  */
 export const Circle: FC<LucideProps & SVGMotionProps<any>> = ({

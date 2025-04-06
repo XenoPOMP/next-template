@@ -16,10 +16,7 @@ const SHARED_ICON_PROPS: LucideProps & SVGMotionProps<any> = {
 
 /**
  * Adds loader icon with predefined animations.
- * @param variant see {@link LoadingVariantsType}
- * @param className
- * @param ariaBusy
- * @param props
+ *
  * @constructor
  */
 export const Loading: VariableFC<'div', LoadingVariantsType, 'children'> = ({

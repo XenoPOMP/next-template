@@ -35,7 +35,7 @@ export const DicebearImage: FC<DicebearImageProps & PartialImageProps> = ({
     });
 
     return avatar.toDataUri();
-  }, []);
+  }, [seed, options]);
 
   return (
     <Image
