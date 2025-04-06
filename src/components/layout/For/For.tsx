@@ -2,8 +2,7 @@ import type { ForProps } from './For.props';
 
 /**
  * Run same function to array of data.
- * @param each
- * @param children
+ *
  * @constructor
  *
  * @example

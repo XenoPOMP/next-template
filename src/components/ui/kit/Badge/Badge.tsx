@@ -8,10 +8,7 @@ import { badgeVariants } from './Badge.variants.ts';
 
 /**
  * Badge component for UI Kit.
- * @param children
- * @param className
- * @param variant
- * @param props
+ *
  * @constructor
  */
 export const Badge: VariableFC<'div', BadgeVariantsType> = ({

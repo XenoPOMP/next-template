@@ -6,9 +6,7 @@ import { AccordionBody, AccordionCollapse } from './components';
 
 /**
  * Base element for Accordion.
- * @param className
- * @param children
- * @param props
+ *
  * @constructor
  */
 const InternalAccordion: VariableFC<'details', unknown> = ({

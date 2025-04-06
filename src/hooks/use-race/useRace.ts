@@ -93,6 +93,7 @@ export const useRace = <TValue = unknown, TResult = unknown>(
     }
 
     return () => abortController.abort();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedValue]);
 
   return data;

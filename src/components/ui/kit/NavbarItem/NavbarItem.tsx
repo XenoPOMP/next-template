@@ -9,11 +9,6 @@ import type { VariableFC } from 'xenopomp-essentials';
 import type { NavbarItemProps } from './NavbarItem.props.ts';
 
 /**
- * @param className
- * @param children
- * @param parentPath
- * @param index       Marks item as index in navbar
- * @param props
  * @constructor
  */
 export const NavbarItem: VariableFC<typeof Link, NavbarItemProps> = ({

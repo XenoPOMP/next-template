@@ -6,7 +6,6 @@ import type { CoreLayoutProps } from './CoreLayout.props';
  * Wrapper for core layout. Provides access to fully manageable
  * page layout.
  *
- * @param children
  * @constructor
  *
  * @example

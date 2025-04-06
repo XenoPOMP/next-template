@@ -32,6 +32,7 @@ const EXAMPLE_TARGET = '.env.example';
     encoding: 'utf-8',
   });
   /** Process lines to change sensitive data. */
+  // eslint-disable-next-line regexp/no-useless-flag
   const lines = envContent.split(/\n/gi).map(item => {
     // Line does not contain any variables.
     // eslint-disable-next-line regexp/no-useless-flag, regexp/no-useless-escape, regexp/strict, regexp/no-unused-capturing-group
@@ -39,10 +40,12 @@ const EXAMPLE_TARGET = '.env.example';
       return item;
     }
 
-    // eslint-disable-next-line regexp/no-useless-flag, regexp/no-useless-escape, regexp/strict, regexp/no-empty-lookarounds-assertion
+    // eslint-disable-next-line regexp/no-useless-flag, regexp/no-empty-lookarounds-assertion,regexp/optimal-lookaround-quantifier
     const [name] = item.split(/(((?<=\w+=")(.*)(?="))|((?<=\w+=)(.*)(?=)))/gi);
+    // eslint-disable-next-line regexp/no-useless-flag
     const normalizedName = name?.replace(/=/gi, '');
     let assignment: string | undefined =
+      // eslint-disable-next-line regexp/no-useless-flag
       `"YOUR_${name?.toUpperCase().replace(/=$/gi, '')}"`;
 
     // Check if name is in special symbols` list

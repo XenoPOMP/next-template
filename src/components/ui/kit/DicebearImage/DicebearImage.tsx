@@ -11,11 +11,6 @@ import type {
 import { defaultAvatarOptions } from './DicebearImage.props';
 
 /**
- *
- * @param options
- * @param seed
- * @param alt
- * @param props
  * @constructor
  *
  * @example
@@ -40,7 +35,7 @@ export const DicebearImage: FC<DicebearImageProps & PartialImageProps> = ({
     });
 
     return avatar.toDataUri();
-  }, []);
+  }, [seed, options]);
 
   return (
     <Image

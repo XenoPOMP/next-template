@@ -8,8 +8,7 @@ import styles from './ShortcutHint.module.scss';
 
 /**
  * Presents Keyboard Key hint.
- * @param className
- * @param props
+ *
  * @constructor
  *
  * @example

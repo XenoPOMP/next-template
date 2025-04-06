@@ -6,7 +6,7 @@ export default defineConfig({
   e2e: {
     supportFile: false,
     /** Implement node.js events that will be available in the browser. */
-    setupNodeEvents(on, config) {
+    setupNodeEvents(_on, _config) {
       // implement node event listeners here
     },
     baseUrl: 'http://localhost:3000',

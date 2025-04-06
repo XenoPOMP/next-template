@@ -10,10 +10,6 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
  * You have to specify query key to invalidate
  * after successful mutation.
  *
- * @param queryKey
- * @param onSuccess
- * @param mutRest
- *
  * @example
  * const { mutate } = useLinkedMutation(['query key'], {
  *   onSuccess() {
