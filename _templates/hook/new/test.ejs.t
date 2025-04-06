@@ -7,7 +7,7 @@ import { afterEach, describe, expect, test } from 'vitest';
 
 import { <%= h.changeCase.camelCase(name) %> } from '@/hooks';
 
-import { assertHookRendering, createUseSusTest } from '@test/assets';
+import { assertHookRendering, create<%= h.changeCase.pascalCase(name) %>Test } from '@test/assets';
 
 describe('<%= h.changeCase.camelCase(name) %>', () => {
   afterEach(() => {
