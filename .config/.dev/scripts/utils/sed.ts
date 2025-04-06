@@ -10,10 +10,12 @@ interface IOptions {
 /**
  * Replaces all pattern matches in directory.
  * @param path
- * @param pattern
- * @param replace
+ * @param options          function options
+ * @param options.pattern  regexp to find and replace
+ * @param options.replace  replacement
  */
-export const sed = async (path: PathLike, { pattern, replace }: IOptions) => {
+export const sed = async (path: PathLike, options: IOptions) => {
+  const { pattern, replace } = options;
   const files = await readdir(path);
 
   for (const file of files) {
