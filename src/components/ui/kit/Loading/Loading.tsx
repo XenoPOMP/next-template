@@ -5,10 +5,8 @@ import type { LucideProps } from 'lucide-react';
 import type { SVGMotionProps } from 'motion/react';
 import type { VariableFC } from 'xenopomp-essentials';
 
-import {
-  type LoadingVariantsType,
-  loadingVariants,
-} from './Loading.variants.ts';
+import type { LoadingVariantsType } from './Loading.variants.ts';
+import { loadingVariants } from './Loading.variants.ts';
 import { Circle } from './icons';
 
 const SHARED_ICON_PROPS: LucideProps & SVGMotionProps<any> = {

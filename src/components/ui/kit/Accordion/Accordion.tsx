@@ -1,5 +1,6 @@
 import cn from 'classnames';
-import { type VariableFC, jsxDotNotation } from 'xenopomp-essentials';
+import type { VariableFC } from 'xenopomp-essentials';
+import { jsxDotNotation } from 'xenopomp-essentials';
 
 import { AccordionBody, AccordionCollapse } from './components';
 

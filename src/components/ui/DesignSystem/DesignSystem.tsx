@@ -1,11 +1,6 @@
 import cn from 'classnames';
-import {
-  type ComponentProps,
-  type FC,
-  type PropsWithChildren,
-  useEffect,
-  useState,
-} from 'react';
+import type { ComponentProps, FC, PropsWithChildren } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Heading } from '@/components/ui/kit';
 

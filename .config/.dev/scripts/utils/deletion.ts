@@ -1,4 +1,5 @@
-import { type PathLike, existsSync, unlinkSync } from 'node:fs';
+import type { PathLike } from 'node:fs';
+import { existsSync, unlinkSync } from 'node:fs';
 import { rm } from 'node:fs/promises';
 
 /**

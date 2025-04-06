@@ -1,6 +1,8 @@
 import cn from 'classnames';
-import { Loader, type LucideProps } from 'lucide-react';
-import { type SVGMotionProps, motion } from 'motion/react';
+import type { LucideProps } from 'lucide-react';
+import { Loader } from 'lucide-react';
+import type { SVGMotionProps } from 'motion/react';
+import { motion } from 'motion/react';
 import type { FC } from 'react';
 
 /**

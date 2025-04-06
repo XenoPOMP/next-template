@@ -3,7 +3,8 @@ import type { VariableFC } from 'xenopomp-essentials';
 
 import uiStyles from '@/components/ui/kit/UIKit.module.scss';
 
-import { type BadgeVariantsType, badgeVariants } from './Badge.variants.ts';
+import type { BadgeVariantsType } from './Badge.variants.ts';
+import { badgeVariants } from './Badge.variants.ts';
 
 /**
  * Badge component for UI Kit.

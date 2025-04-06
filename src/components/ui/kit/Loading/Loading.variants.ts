@@ -1,4 +1,5 @@
-import { type VariantProps, cva } from 'class-variance-authority';
+import type { VariantProps } from 'class-variance-authority';
+import { cva } from 'class-variance-authority';
 import type { Defined } from 'xenopomp-essentials';
 
 export type LoadingVariantsType = VariantProps<typeof loadingVariants>;

@@ -1,13 +1,14 @@
 import { initials } from '@dicebear/collection';
 import { createAvatar } from '@dicebear/core';
 import Image from 'next/image';
-import { type FC, useMemo } from 'react';
+import type { FC } from 'react';
+import { useMemo } from 'react';
 
-import {
-  type DicebearImageProps,
-  type PartialImageProps,
-  defaultAvatarOptions,
+import type {
+  DicebearImageProps,
+  PartialImageProps,
 } from './DicebearImage.props';
+import { defaultAvatarOptions } from './DicebearImage.props';
 
 /**
  *

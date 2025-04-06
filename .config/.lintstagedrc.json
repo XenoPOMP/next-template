@@ -1,4 +1,4 @@
 {
-  "**/*.{js,ts,jsx,tsx}": "yarn lint:code",
+  "**/*.{js,ts,jsx,tsx}": "yarn eslint",
   "**/*.scss": "stylelint -c ./.config/.stylelintrc.js --ignore-path ./.config/.stylelintignore"
 }

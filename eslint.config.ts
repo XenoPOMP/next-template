@@ -25,4 +25,8 @@ export default xenopomp(
       ],
     },
   },
+  {
+    name: 'Ignore files',
+    ignores: ['**/*.md'],
+  },
 );

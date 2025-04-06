@@ -1,10 +1,9 @@
-import {
-  type DefaultError,
-  type QueryKey,
-  type UseMutationOptions,
-  useMutation,
-  useQueryClient,
+import type {
+  DefaultError,
+  QueryKey,
+  UseMutationOptions,
 } from '@tanstack/react-query';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 /**
  * This hook is extended useMutation hook.

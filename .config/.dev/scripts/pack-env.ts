@@ -4,7 +4,6 @@ import { open, readFile, writeFile } from 'node:fs/promises';
 import * as path from 'node:path';
 
 import { envSpecialSymbols } from './data/env-special-symbols.ts';
-
 /** This script updates .env.example programmatically. */
 import { DevLogger } from './logger.ts';
 import cwd from './utils/cwd.ts';

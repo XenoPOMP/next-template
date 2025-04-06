@@ -5,7 +5,8 @@ import { slotable } from '@/components/hoc';
 
 import styles from './Stack.module.scss';
 import type { StackProps } from './Stack.props.ts';
-import { type StackVariantsType, stackVariants } from './Stack.variants.ts';
+import type { StackVariantsType } from './Stack.variants.ts';
+import { stackVariants } from './Stack.variants.ts';
 
 const Stack = slotable<'section', StackProps & StackVariantsType>(
   'section',
