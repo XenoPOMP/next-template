@@ -22,7 +22,7 @@ describe('<%= h.changeCase.camelCase(name) %>', () => {
   });
 
   test('Testing with test component', () => {
-    const { getCurrentState } = create<%= h.changeCase.pascalCase(name) %>Test ({
+    const { getCurrentState } = create<%= h.changeCase.pascalCase(name) %>Test({
       trackedState: '12',
     });
 
