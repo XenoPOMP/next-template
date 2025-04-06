@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import type { ComponentProps, ComponentRef, FC } from 'react';
 import { useRef } from 'react';
 
+import { Providers } from '@/components/layout';
 import { useEffectAfterMount, useTrackedState } from '@/hooks';
 
 // eslint-disable-next-line jsdoc/require-jsdoc
@@ -87,6 +88,9 @@ export function createTestingComponent<TestProps>() {
         />
         {children?.(props as TestProps)}
       </>,
+      {
+        wrapper: Providers,
+      },
     );
 
     // eslint-disable-next-line jsdoc/require-jsdoc
