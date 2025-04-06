@@ -5,6 +5,8 @@ import { useRef } from 'react';
 import { Providers } from '@/components/layout';
 import { useEffectAfterMount, useTrackedState } from '@/hooks';
 
+import { TestUI } from '@test/assets';
+
 // eslint-disable-next-line jsdoc/require-jsdoc
 function TestComponent({
   trackedState,
@@ -31,7 +33,7 @@ function TestComponent({
   };
 
   return (
-    <>
+    <TestUI>
       <input
         data-testid='input'
         data-input-string=''
@@ -39,13 +41,8 @@ function TestComponent({
         onClick={handleClick}
       />
 
-      <div
-        data-testid='output'
-        data-output={state}
-      >
-        <></>
-      </div>
-    </>
+      <TestUI.Output output={state} />
+    </TestUI>
   );
 }
 
@@ -94,8 +91,8 @@ export function createTestingComponent<TestProps>() {
     );
 
     // eslint-disable-next-line jsdoc/require-jsdoc
-    const getCurrentState = () => {
-      const output = screen.getByTestId('output');
+    const getCurrentState = (from?: string) => {
+      const output = screen.getByTestId(from ?? 'output');
       return output.getAttribute('data-output');
     };
 

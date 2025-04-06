@@ -6,10 +6,13 @@ import { useTrackedState } from '@/hooks';
 import {
   assertHookRendering,
   createUseTrackedStateTest,
+  injectMatchMediaMock,
   spyOnConsole,
 } from '@test/assets';
 
 describe('useTrackedState', () => {
+  injectMatchMediaMock();
+
   afterEach(() => {
     cleanup();
   });
