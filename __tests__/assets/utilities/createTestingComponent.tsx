@@ -1,6 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import type { ComponentProps, ComponentRef, FC } from 'react';
-import { useRef } from 'react';
+import type { ComponentProps, FC } from 'react';
 
 import { Providers } from '@/components/layout';
 import { useEffectAfterMount, useTrackedState } from '@/hooks';
@@ -23,24 +22,9 @@ function TestComponent({
     onStateChange?.(state);
   }, [state]);
 
-  const inputRef = useRef<ComponentRef<'input'>>(null);
-
-  // eslint-disable-next-line jsdoc/require-jsdoc
-  const handleClick: ComponentProps<'input'>['onClick'] = () => {
-    updateState(
-      inputRef.current?.getAttribute('data-input-string')?.toString(),
-    );
-  };
-
   return (
     <TestUI>
-      <input
-        data-testid='input'
-        data-input-string=''
-        ref={inputRef}
-        onClick={handleClick}
-      />
-
+      <TestUI.Input updateState={updateState} />
       <TestUI.Output output={state} />
     </TestUI>
   );
