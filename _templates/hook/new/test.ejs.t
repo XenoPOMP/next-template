@@ -9,7 +9,7 @@ import { <%= h.changeCase.camelCase(name) %> } from '@/hooks';
 
 import {
   assertHookRendering,
-  create<%= h.changeCase.pascalCase(name) %>Test,
+  create<%= h.changeCase.pascalCase(name) %>Test
 } from '@test/assets';
 
 describe('<%= h.changeCase.camelCase(name) %>', () => {
