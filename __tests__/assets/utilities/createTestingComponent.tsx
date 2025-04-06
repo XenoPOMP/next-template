@@ -1,8 +1,10 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import type { ComponentProps, ComponentRef, FC } from 'react';
-import { useRef } from 'react';
+import type { ComponentProps, FC } from 'react';
 
+import { Providers } from '@/components/layout';
 import { useEffectAfterMount, useTrackedState } from '@/hooks';
+
+import { TestUI } from '@test/assets';
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 function TestComponent({
@@ -20,31 +22,11 @@ function TestComponent({
     onStateChange?.(state);
   }, [state]);
 
-  const inputRef = useRef<ComponentRef<'input'>>(null);
-
-  // eslint-disable-next-line jsdoc/require-jsdoc
-  const handleClick: ComponentProps<'input'>['onClick'] = () => {
-    updateState(
-      inputRef.current?.getAttribute('data-input-string')?.toString(),
-    );
-  };
-
   return (
-    <>
-      <input
-        data-testid='input'
-        data-input-string=''
-        ref={inputRef}
-        onClick={handleClick}
-      />
-
-      <div
-        data-testid='output'
-        data-output={state}
-      >
-        <></>
-      </div>
-    </>
+    <TestUI>
+      <TestUI.Input updateState={updateState} />
+      <TestUI.Output output={state} />
+    </TestUI>
   );
 }
 
@@ -70,42 +52,53 @@ function TestComponent({
  *   expectToBeCalled();
  * });
  */
-export function createTestingComponent<TestProps>() {
+export function createTestingComponent(DefaultUI?: FC) {
   return ({
-    children,
     trackedState,
     onStateChange,
-    ...props
-  }: ComponentProps<typeof TestComponent> & {
-    children?: FC<TestProps>;
-  } & TestProps) => {
+  }: ComponentProps<typeof TestComponent>) => {
     const res = render(
       <>
         <TestComponent
           trackedState={trackedState}
           onStateChange={onStateChange}
         />
-        {children?.(props as TestProps)}
+
+        {!!DefaultUI && <DefaultUI />}
       </>,
+      {
+        wrapper: Providers,
+      },
     );
 
     // eslint-disable-next-line jsdoc/require-jsdoc
-    const getCurrentState = () => {
-      const output = screen.getByTestId('output');
+    const getCurrentState = (from?: string) => {
+      const output = screen.getByTestId(from ?? 'output');
       return output.getAttribute('data-output');
     };
 
     // eslint-disable-next-line jsdoc/require-jsdoc
-    const updateState = (newValue: string | undefined) => {
-      const input = screen.getByTestId<HTMLInputElement>('input');
+    const updateState = (
+      newValue: string | undefined,
+      options?: { to?: string },
+    ) => {
+      const target = options?.to ?? 'input';
+      const input = screen.getByTestId<HTMLInputElement>(target);
       input.setAttribute('data-input-string', newValue ?? '');
       fireEvent.click(input);
+    };
+
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    const clickButton = (id: string) => {
+      const button = screen.getByTestId<HTMLButtonElement>(id);
+      fireEvent.click(button);
     };
 
     return {
       renderResult: res,
       getCurrentState,
       updateState,
+      clickButton,
     };
   };
 }
