@@ -97,8 +97,12 @@ export function createTestingComponent<TestProps>() {
     };
 
     // eslint-disable-next-line jsdoc/require-jsdoc
-    const updateState = (newValue: string | undefined) => {
-      const input = screen.getByTestId<HTMLInputElement>('input');
+    const updateState = (
+      newValue: string | undefined,
+      options?: { to?: string },
+    ) => {
+      const target = options?.to ?? 'input';
+      const input = screen.getByTestId<HTMLInputElement>(target);
       input.setAttribute('data-input-string', newValue ?? '');
       fireEvent.click(input);
     };
