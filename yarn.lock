@@ -2212,15 +2212,15 @@
     "@react-aria/interactions" "^3.21.3"
     "@tanstack/react-virtual" "^3.8.1"
 
-"@heroui/kbd@^2.2.12":
-  version "2.2.12"
-  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.12.tgz#0045edba28830633b345d3b0558962ee3cf5368e"
-  integrity sha512-SlP1qy3ECidAl0ykXMkp4aevI3xCqf8kUegbOpYZ+qGUq76LJ3y3/mFotzhKJ67fki0crz3MjTAh5a0TSkMUjA==
+"@heroui/kbd@^2.2.13":
+  version "2.2.13"
+  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.13.tgz#78cce6a7ba8b63d61b6f7c2169674d72e3ba257b"
+  integrity sha512-3PR8h4swFJKO3yMBWip26UJZfMJkcxO7ZdofqKuAYkuBIxHQePt64+FN1Yyb6GZF3zo/0/K0NovkEhJNrb0kAA==
   dependencies:
     "@heroui/react-utils" "2.1.8"
     "@heroui/shared-utils" "2.1.7"
     "@heroui/system-rsc" "2.3.11"
-    "@react-aria/utils" "3.28.0"
+    "@react-aria/utils" "3.28.1"
 
 "@heroui/react-rsc-utils@2.1.6":
   version "2.1.6"
@@ -2889,26 +2889,15 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@react-aria/utils@3.28.0":
-  version "3.28.0"
-  resolved "https://registry.yarnpkg.com/@react-aria/utils/-/utils-3.28.0.tgz#8b524815bb368c16efa1aba04a5d92b7014624ee"
-  integrity sha512-FfpvpADk61OvEnFe37k6jF1zr5gtafIPN9ccJRnPCTqrzuExag01mGi+wX/hWyFK0zAe1OjWf1zFOX3FsFvikg==
+"@react-aria/utils@3.28.1", "@react-aria/utils@^3.27.0":
+  version "3.28.1"
+  resolved "https://registry.yarnpkg.com/@react-aria/utils/-/utils-3.28.1.tgz#13ab65094418e324242e37a5a433e1fb5f4e6d5c"
+  integrity sha512-mnHFF4YOVu9BRFQ1SZSKfPhg3z+lBRYoW5mLcYTQihbKhz48+I1sqRkP7ahMITr8ANH3nb34YaMME4XWmK2Mgg==
   dependencies:
     "@react-aria/ssr" "^3.9.7"
     "@react-stately/flags" "^3.1.0"
     "@react-stately/utils" "^3.10.5"
     "@react-types/shared" "^3.28.0"
-    "@swc/helpers" "^0.5.0"
-    clsx "^2.0.0"
-
-"@react-aria/utils@^3.27.0":
-  version "3.27.0"
-  resolved "https://registry.yarnpkg.com/@react-aria/utils/-/utils-3.27.0.tgz#92a58177c60055bb007c2e886d2d914f42df2386"
-  integrity sha512-p681OtApnKOdbeN8ITfnnYqfdHS0z7GE+4l8EXlfLnr70Rp/9xicBO6d2rU+V/B3JujDw2gPWxYKEnEeh0CGCw==
-  dependencies:
-    "@react-aria/ssr" "^3.9.7"
-    "@react-stately/utils" "^3.10.5"
-    "@react-types/shared" "^3.27.0"
     "@swc/helpers" "^0.5.0"
     clsx "^2.0.0"
 
