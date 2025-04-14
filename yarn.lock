@@ -2248,10 +2248,10 @@
     "@react-types/shared" "3.28.0"
     clsx "^1.2.1"
 
-"@heroui/theme@^2.4.12":
-  version "2.4.12"
-  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.12.tgz#1c250b24fb580bfa969014bbd906d7a1d1ce059b"
-  integrity sha512-sm4DOBhJW88U9h0dfXwX3eA6w125jUi/OfFZtV1zUIyXBPF3c1Va23XO6XmGxDTCgBT4iBwpGBoyHbSYpAnaVg==
+"@heroui/theme@^2.4.13":
+  version "2.4.13"
+  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.13.tgz#51c955fbd50ef080953a59c58b6e9aebd0b2818e"
+  integrity sha512-W1wm/x3dx9rZXNdyvjQRueK+9ieTpT2icyttGuVEn7NWgzMhpIbEKsAwtTLZGc5zMHJE2cxJQ/jpdCR8HBe0Dw==
   dependencies:
     "@heroui/shared-utils" "2.1.7"
     clsx "^1.2.1"
