@@ -36,9 +36,14 @@
     "strictNullChecks": true
   },
   "include": [
+    // Declarations
     "next-env.d.ts",
-    ".config/declarations/vitest.d.ts", ".config/declarations/**/*.d.ts",
+    ".config/declarations",
+
+    // TypeScript + JSX
     "**/*.ts", "**/*.tsx",
+
+    // Next.js types
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
