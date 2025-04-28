@@ -35,7 +35,7 @@
     "@dicebear/core": "^9.2.2",
     "@headlessui/react": "^2.2.0",
     "@heroui/kbd": "^2.2.13",
-    "@heroui/theme": "^2.4.12",
+    "@heroui/theme": "^2.4.13",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15",
