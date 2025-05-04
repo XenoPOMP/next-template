@@ -1,18 +1,19 @@
 import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import { useState } from 'react';
 
 import { useOptimisticMutation } from '@/hooks';
 
 import { TestUI, createTestingComponent } from '@test/assets';
 
-type Response = boolean;
-type Error = unknown;
-interface MutationVariables {
-  itemId: string;
-}
-type Items = { id: string; name: string }[];
-type Likes = { itemId: string }[];
-type History = { type: string }[];
+import type {
+  Error,
+  History,
+  Items,
+  Likes,
+  MutationVariables,
+  Response,
+} from './types';
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 function AdditionalTestComp() {
@@ -40,7 +41,15 @@ function AdditionalTestComp() {
     [Items | undefined, Likes | undefined, History]
   >({
     // eslint-disable-next-line jsdoc/require-jsdoc
-    mutationFn: async _variables => {
+    mutationFn: async ({ shouldFail, mockTimeout }) => {
+      if (shouldFail) {
+        throw new Error('Mutation fn should fail ¯\\_(ツ)_/¯');
+      }
+
+      if (mockTimeout) {
+        await axios.get('https://jsonplaceholder.typicode.com/posts');
+      }
+
       return true;
     },
     // This is where the magic happens
@@ -90,6 +99,26 @@ function AdditionalTestComp() {
         onClick={() => {
           deleteItem({
             itemId: '12',
+          });
+        }}
+      />
+
+      <TestUI.Button
+        testButtonAttribute='delete-item-that-throws'
+        onClick={() => {
+          deleteItem({
+            itemId: '12',
+            shouldFail: true,
+          });
+        }}
+      />
+
+      <TestUI.Button
+        testButtonAttribute='delete-item-that-awaits'
+        onClick={() => {
+          deleteItem({
+            itemId: '12',
+            mockTimeout: true,
           });
         }}
       />
