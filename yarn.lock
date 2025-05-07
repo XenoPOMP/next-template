@@ -2265,6 +2265,11 @@
   resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.7.tgz#7213ac10e9acb5b83ba7c9ad50f1a4aaa3df2e12"
   integrity sha512-1nx7y41P+Bsca7nDC+QFajAoFhSRGvjKhdFeopMQNTvU95L42PD7B0ThjcOretvQD0Ye2TsAEQInwsSgZ6kK/g==
 
+"@heroui/shared-utils@2.1.9":
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.9.tgz#bcfc019250cb1d1c376f4e09ef0f3b8e0cb0ee67"
+  integrity sha512-mM/Ep914cYMbw3T/b6+6loYhuNfzDaph76mzw/oIS05gw1Dhp9luCziSiIhqDGgzYck2d74oWTZlahyCsxf47w==
+
 "@heroui/system-rsc@2.3.11":
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.11.tgz#2beef523d44a0dc5bcb233f1da0cda10805283ea"
@@ -2273,12 +2278,12 @@
     "@react-types/shared" "3.28.0"
     clsx "^1.2.1"
 
-"@heroui/theme@^2.4.13":
-  version "2.4.13"
-  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.13.tgz#51c955fbd50ef080953a59c58b6e9aebd0b2818e"
-  integrity sha512-W1wm/x3dx9rZXNdyvjQRueK+9ieTpT2icyttGuVEn7NWgzMhpIbEKsAwtTLZGc5zMHJE2cxJQ/jpdCR8HBe0Dw==
+"@heroui/theme@^2.4.15":
+  version "2.4.15"
+  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.15.tgz#bb1614b414a87812552c051b90452b195898a4be"
+  integrity sha512-cP1N9Rqj5wzsKLpEzNdJQRjX2g9AuCZbRNaIuIGnztqmmGtP3Yykt1RzeQ4ukCdSDjk/PmV8XneTu8OC8Cs8HA==
   dependencies:
-    "@heroui/shared-utils" "2.1.7"
+    "@heroui/shared-utils" "2.1.9"
     clsx "^1.2.1"
     color "^4.2.3"
     color2k "^2.0.3"
