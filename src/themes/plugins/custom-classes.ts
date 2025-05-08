@@ -19,6 +19,12 @@ const createScrollable = (axis: string) =>
     [`overflow${axis.toUpperCase()}`]: 'auto',
   });
 
+// eslint-disable-next-line jsdoc/require-jsdoc
+const createNotScrollable = (axis: string) =>
+  createComponent(`.not-scrollable-${axis}`, {
+    [`overflow${axis.toUpperCase()}`]: 'hidden',
+  });
+
 /**
  * Add custom classes and utilities to tailwind.
  * @constructor
@@ -32,8 +38,13 @@ export const CustomClassesPlugin = () => {
         alignItems: 'center',
       }),
 
+      // .scrollable-${axis}
       ...createScrollable('x'),
       ...createScrollable('y'),
+
+      // .not-scrollable-${axis}
+      ...createNotScrollable('x'),
+      ...createNotScrollable('y'),
     });
   });
 };
