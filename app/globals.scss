@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-size: 20px;
-}
-
 // Comment line below if design system is not needed
 @include meta.load-css("../src/styles/design-system");
 

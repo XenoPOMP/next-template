@@ -1,32 +1,18 @@
 @use "templates";
 @use "config";
 @use "mixins/cascade-down";
-@use "helpers/design";
 
 // Design system related variables.
 // Can be enabled if needed.
 :root {
-  // Paddings
-  @include cascade-down.cascadeDown(
-    config.$mobileBreakpoint,
-    design.createPaddingGrade(8px)
-  );
-
-  // Headings
-  @include cascade-down.cascadeDown(
-    config.$mobileBreakpoint,
-    design.createHeadingGrade(14px)
-  );
-
-  // Text
-  @include cascade-down.cascadeDown(
-    config.$mobileBreakpoint,
-    design.createTextGrade(14px)
-  );
-
   // This rule is for sass backwards capability.
   & {
-    font-size: var(--p20);
+    /* Base font size is 10px, because of easy multiplication. */
+    font-size: 10px;
+  }
+
+  & body {
+    font-size: 2.0rem;
   }
 
   & * {

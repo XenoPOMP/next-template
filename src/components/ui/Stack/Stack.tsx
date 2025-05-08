@@ -14,8 +14,8 @@ const Stack = slotable<'section', StackProps & StackVariantsType>(
     Comp,
     className,
     style,
-    insets = '2rem',
-    maxSize = '1680px',
+    insets = '4.0rem',
+    maxSize = 'calc(1600px + 2 * var(--insets))',
     alignStack,
     orientation,
     ...props
