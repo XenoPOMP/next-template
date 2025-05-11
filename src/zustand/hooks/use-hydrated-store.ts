@@ -12,10 +12,7 @@ type ReturnedStore<TStore> = ReturnType<typeof createPersistentStore<TStore>>;
  * @param selector
  *
  * @example
- * const {
- *   state: { lang, changeLang },
- *   isLoading,
- * } = useHydratedStore(useSettingsStore, state => state);
+ * const [state, isLoading] = useHydratedStore(useSettingsStore, state => state);
  *
  * <>
  *   {isLoading ? <>Loading...</> : <>Hydrated!</>}
@@ -24,7 +21,7 @@ type ReturnedStore<TStore> = ReturnType<typeof createPersistentStore<TStore>>;
 export const useHydratedStore = <TBound, TSelect = unknown>(
   boundStore: ReturnedStore<TBound>,
   selector: ReplaceReturnType<Parameters<ReturnedStore<TBound>>[0], TSelect>,
-) => {
+): [state: TSelect, isLoading: boolean] => {
   const [hasHydrated, setHasHydrated] = useState<boolean>(false);
   const state = boundStore(selector);
 
@@ -36,8 +33,5 @@ export const useHydratedStore = <TBound, TSelect = unknown>(
     setHasHydrated(true);
   }, []);
 
-  return {
-    state,
-    isLoading: !hasHydrated,
-  };
+  return [state, !hasHydrated];
 };
