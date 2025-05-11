@@ -14,6 +14,7 @@ export const createPersistentStore = <T>(
   return create<T>()(
     persist<T>(creator, {
       storage: createJSONStorage(() => localStorage),
+      skipHydration: true,
       ...options,
     }),
   );
