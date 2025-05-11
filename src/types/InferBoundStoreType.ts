@@ -1,5 +1,7 @@
 import type { StoreApi, UseBoundStore } from 'zustand';
 
+export type BoundStore<Api> = UseBoundStore<StoreApi<Api>>;
+
 /**
  * This type allows you to infer type of bound store.
  *
@@ -12,4 +14,4 @@ import type { StoreApi, UseBoundStore } from 'zustand';
  * // }
  */
 export type InferBoundStoreType<Func extends UseBoundStore<StoreApi<any>>> =
-  Func extends UseBoundStore<StoreApi<infer StoreType>> ? StoreType : never;
+  Func extends BoundStore<infer StoreType> ? StoreType : never;
