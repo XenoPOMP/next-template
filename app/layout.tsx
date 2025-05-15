@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang='ru'
+      dir='ltr'
       suppressHydrationWarning
     >
       <body className={mainFont.className}>
