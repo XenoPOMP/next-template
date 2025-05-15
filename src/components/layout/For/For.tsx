@@ -11,7 +11,16 @@ import type { ForProps } from './For.props';
  * return <For each={data}>{item => <div>Row #{item}</div>}</For>;
  */
 function For<ItemType>({ each, children }: ForProps<ItemType>) {
-  return <>{each.map((item, index) => children?.(item, index))}</>;
+  return (
+    <>
+      {each.map((item, index) =>
+        children?.(item, index, {
+          isFirst: index === 0,
+          isLatest: index === each.length - 1,
+        }),
+      )}
+    </>
+  );
 }
 
 export default For;
