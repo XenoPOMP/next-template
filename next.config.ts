@@ -1,10 +1,10 @@
 import type { NextConfig } from 'next';
 
-import { withWrappers } from '@/utils/next';
+import config from '@/utils/next';
 
-const nextConfig: NextConfig = {
+const baseConfig: NextConfig = {
   // Configure `pageExtensions` to include MDX files
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 };
 
-export default withWrappers(nextConfig);
+export default config(baseConfig);
