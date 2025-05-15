@@ -1,23 +1,15 @@
 import cn from 'classnames';
 import type { VariableFC } from 'xenopomp-essentials';
 
-import type { BadgeVariantsType } from './Badge.variants.ts';
-import { badgeVariants } from './Badge.variants.ts';
-
 /**
  * Badge component for UI Kit.
  *
  * @constructor
  */
-export const Badge: VariableFC<'div', BadgeVariantsType> = ({
-  children,
-  className,
-  variant,
-  ...props
-}) => {
+export const Badge: VariableFC<'div'> = ({ children, className, ...props }) => {
   return (
     <div
-      className={cn('text-16', badgeVariants({ variant }), className)}
+      className={cn(className)}
       {...props}
     >
       {children}

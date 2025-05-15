@@ -17,10 +17,8 @@ export const SplitView = slotable<
     className,
     children,
     disableChevronIcon,
-    style,
     icon: Icon,
     emptyIcon,
-    noHoverAnimation,
     ...props
   }) => (
     <Comp
@@ -28,15 +26,8 @@ export const SplitView = slotable<
         'flex items-center justify-between',
         'cursor-pointer',
         'transition-colors',
-        {
-          'hover:bg-ui-list-fill-hover': !noHoverAnimation,
-        },
         className,
       )}
-      style={{
-        padding: 'calc(var(--p-level-4) * 0.625)',
-        ...style,
-      }}
       {...props}
     >
       <div className={cn('flex items-center gap-[.75rem]')}>

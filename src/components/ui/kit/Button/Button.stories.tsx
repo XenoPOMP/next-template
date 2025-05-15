@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 
 import { Button } from './Button';
@@ -28,28 +27,12 @@ export const Default: Story = {
   },
 };
 
-export const Accent: Story = {
-  args: {
-    ...sharedProps,
-    variant: 'accent',
-  },
-};
-
-export const Danger: Story = {
-  args: {
-    ...sharedProps,
-    variant: 'danger',
-  },
-};
-
 export const AsLink: Story = {
   name: 'As link',
   decorators: [
     _story => (
       <Button asChild>
-        <Link href='https://www.google.com'>
-          google.com <ArrowUpRight size='.8em' />
-        </Link>
+        <Link href='https://www.google.com'>google.com</Link>
       </Button>
     ),
   ],
