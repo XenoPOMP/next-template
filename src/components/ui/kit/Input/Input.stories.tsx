@@ -1,23 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Badge } from './Badge';
+import { Input } from './Input';
 
 const meta = {
-  title: 'UI Kit / Badge',
-  component: Badge,
+  title: 'UI Kit / Input',
+  component: Input,
   tags: ['autodoc'],
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Badge>;
+} satisfies Meta<typeof Input>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const sharedProps = {
-  children: 'Badge',
-} satisfies Partial<Story['args']>;
+const sharedProps = {} satisfies Partial<Story['args']>;
 
 export const Primary: Story = {
   args: {

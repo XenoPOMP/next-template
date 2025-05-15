@@ -3,8 +3,6 @@ import type { VariableFC } from 'xenopomp-essentials';
 
 import { SplitView } from '@/components/ui/kit';
 
-import styles from './List.module.scss';
-
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Internal_ListItem: VariableFC<typeof SplitView> = ({
   className,
@@ -12,9 +10,9 @@ export const Internal_ListItem: VariableFC<typeof SplitView> = ({
   ...props
 }) => {
   return (
-    <li className={cn(styles.item)}>
+    <li className={cn()}>
       <SplitView
-        className={cn(styles.splitView, className)}
+        className={cn(className)}
         {...props}
       >
         {children}

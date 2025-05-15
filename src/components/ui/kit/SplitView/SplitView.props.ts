@@ -4,5 +4,4 @@ export interface SplitViewProps {
   disableChevronIcon?: boolean;
   icon?: LucideIcon;
   emptyIcon?: boolean;
-  noHoverAnimation?: boolean;
 }

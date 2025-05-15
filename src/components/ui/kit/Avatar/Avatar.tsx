@@ -40,7 +40,7 @@ export const Avatar: VariableFC<'div', AvatarProps, 'children'> = ({
   return (
     <div
       className={cn(
-        'flex-center aspect-square size-[2.5rem] cursor-pointer select-none overflow-hidden rounded-full',
+        'flex-center aspect-square size-[5.0rem] cursor-pointer select-none overflow-hidden rounded-full',
         className,
       )}
       aria-roledescription='avatar'
