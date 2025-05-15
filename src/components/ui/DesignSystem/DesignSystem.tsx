@@ -11,7 +11,7 @@ const createSection = (
   isSub: boolean = false,
 ): FC<PropsWithChildren & { heading?: string }> => {
   const level = isSub ? 3 : 2;
-  const gap = isSub ? 'gap-3' : 'gap-2';
+  const gap = isSub ? 'gap-[2.4rem]' : 'gap-[3.2rem]';
 
   return ({ children, heading }) => (
     <div className={cn('flex flex-col', gap)}>
@@ -38,11 +38,12 @@ const AutoHeading = ({
     <Heading
       level={level}
       ref={ref}
+      className={cn('tabular-nums')}
     >
       {`H${level}`}
-      {' - '}
+      {' - font-size: '}
       {computed?.get('font-size')?.toString()}
-      {', '}
+      {', leading: '}
       {computed?.get('line-height')?.toString()}
     </Heading>
   );
@@ -50,7 +51,7 @@ const AutoHeading = ({
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 const AutoText = ({ size }: { size: 24 | 20 | 16 | 14 }) => {
-  const fontSize = `var(--p${size})`;
+  const fontSize = `${size / 10}rem`;
   const { ref, computed } = useComputedStyles<HTMLParagraphElement>();
 
   return (
@@ -59,11 +60,12 @@ const AutoText = ({ size }: { size: 24 | 20 | 16 | 14 }) => {
       style={{
         fontSize,
       }}
+      className={cn('tabular-nums')}
     >
       {`p${size}`}
-      {` - `}
+      {` - font-size: `}
       {computed?.get('font-size')?.toString()}
-      {`, `}
+      {`, leading: `}
       {computed?.get('line-height')?.toString()}
     </p>
   );
@@ -71,7 +73,15 @@ const AutoText = ({ size }: { size: 24 | 20 | 16 | 14 }) => {
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 const AutoPadding = ({ level }: { level: 1 | 2 | 3 | 4 | 5 }) => {
-  const marginRight = `var(--p-level-${level})`;
+  const levelMap: Record<typeof level, string> = {
+    1: '5.6rem',
+    2: '3.2rem',
+    3: '2.4rem',
+    4: '1.6rem',
+    5: '0.8rem',
+  };
+
+  const marginRight = levelMap[level];
   const { ref, computed } = useComputedStyles<HTMLParagraphElement>();
 
   return (
@@ -101,7 +111,7 @@ const DesignSystem: FC<unknown> = () => {
   }, []);
 
   return (
-    <div className={cn('flex flex-col gap-1')}>
+    <div className={cn('flex flex-col gap-[5.6rem] tabular-nums')}>
       <Heading level={1}>Design system</Heading>
 
       <Section heading='Paddings'>

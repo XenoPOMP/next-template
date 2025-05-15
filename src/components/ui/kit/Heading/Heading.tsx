@@ -16,11 +16,19 @@ export const Heading: VariableFC<'h1', HeadingProps> = ({
 }) => {
   const Comp = `h${level}` as HeadingType;
 
+  const levelMap: Record<typeof level, string> = {
+    1: '3.2rem',
+    2: '2.4rem',
+    3: '2.0rem',
+    4: '1.6rem',
+    5: '1.4rem',
+  };
+
   return (
     <Comp
       className={cn('font-bold leading-[normal]', className)}
       style={{
-        fontSize: `var(--heading-${level})`,
+        fontSize: levelMap[level],
         ...style,
       }}
       {...props}
