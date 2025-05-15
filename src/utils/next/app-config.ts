@@ -36,6 +36,7 @@ export const globalNextConfig = (
 ): NextConfig => {
   // Default options
   const useMdx = options?.mdx ?? true;
+  // eslint-disable-next-line unused-imports/no-unused-vars
   const usePwa = options?.pwa ?? false;
 
   if (useMdx) {

@@ -31,6 +31,7 @@ export const useHydratedStore = <TBound, TSelect = unknown>(
     }
 
     setHasHydrated(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return [state, !hasHydrated];
