@@ -4,7 +4,6 @@ import { defineConfig } from 'vitest/config';
 
 import { vitestExclusions } from '../.config/helpers/test-exclude';
 
-// @ts-expect-error Wrong library types
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tsconfigPathsPlugin()],
   test: {

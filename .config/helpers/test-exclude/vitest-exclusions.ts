@@ -30,4 +30,8 @@ export const vitestExclusions: string[] = [
   'mdx-components.tsx',
 
   './src/components/ui/DesignSystem/*',
+
+  // Serwist
+  './{app,public}/sw*',
+  './public/swe-worker*',
 ];

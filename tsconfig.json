@@ -2,7 +2,11 @@
   "compilerOptions": {
     /* Next default options. */
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom", "dom.iterable", "esnext",
+      // Add this! Doing so adds WebWorker and ServiceWorker types to the global.
+      "webworker"
+    ],
     "allowJs": true,
     "allowImportingTsExtensions": true,
     "skipLibCheck": true,
@@ -26,14 +30,18 @@
       "@/*": ["./src/*"],
       "@app/*": ["./app/*"],
       "@test/*": ["./__tests__/*"],
-      "@public/*": ["./public/*"],
+      "@public/*": ["./public/*"]
     },
 
     /* Make compiler more strict. */
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitReturns": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": [
+      // This allows Serwist to type `window.serwist`.
+      "@serwist/next/typings"
+    ]
   },
   "include": [
     // Declarations
@@ -46,5 +54,5 @@
     // Next.js types
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "public/sw.js"]
 }

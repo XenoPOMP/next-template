@@ -1,1 +1,3 @@
-export * from './withWrappers';
+import { globalNextConfig } from './app-config';
+
+export default globalNextConfig;
