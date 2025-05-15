@@ -22,4 +22,16 @@ const serwist = new Serwist({
   runtimeCaching: defaultCache,
 });
 
+const urlsToPrecache = ['/'] as const;
+
+self.addEventListener('install', event => {
+  const requestPromises = Promise.all(
+    urlsToPrecache.map(entry => {
+      return serwist.handleRequest({ request: new Request(entry), event });
+    }),
+  );
+
+  event.waitUntil(requestPromises);
+});
+
 serwist.addEventListeners();
