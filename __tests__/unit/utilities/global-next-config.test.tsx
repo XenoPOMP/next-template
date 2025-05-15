@@ -24,6 +24,7 @@ describe('Global NextConfig util', () => {
       base: {},
       options: {
         mdx: false,
+        serwist: false,
       },
       expected: {},
     });

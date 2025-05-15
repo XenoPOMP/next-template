@@ -12,7 +12,7 @@ interface ConfigOptions {
    */
   mdx?: boolean;
 
-  /** Enables service workers support. */
+  /** Enables PWA support. */
   serwist?: false | SerwistOptions;
 }
 
