@@ -7,4 +7,10 @@ const baseConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 };
 
-export default config(baseConfig);
+export default config(baseConfig, {
+  mdx: true,
+  serwist: {
+    swSrc: 'app/sw.ts',
+    swDest: 'public/sw.js',
+  },
+});

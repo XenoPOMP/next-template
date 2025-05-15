@@ -1,7 +1,9 @@
 import mdxWrapper from '@next/mdx';
+import withSerwistInit from '@serwist/next';
 import type { NextConfig } from 'next';
 
 type NextConfigWrapper = (init: NextConfig) => NextConfig;
+type SerwistOptions = Parameters<typeof withSerwistInit>[0];
 
 interface ConfigOptions {
   /**
@@ -10,8 +12,8 @@ interface ConfigOptions {
    */
   mdx?: boolean;
 
-  /** Enables PWA support. */
-  pwa?: boolean;
+  /** Enables service workers support. */
+  serwist?: false | SerwistOptions;
 }
 
 /**
@@ -36,11 +38,15 @@ export const globalNextConfig = (
 ): NextConfig => {
   // Default options
   const useMdx = options?.mdx ?? true;
-  // eslint-disable-next-line unused-imports/no-unused-vars
-  const usePwa = options?.pwa ?? false;
+  const serwist = options?.serwist !== undefined ? options.serwist : false;
 
   if (useMdx) {
     defaultConfig = applyWrapper(defaultConfig, mdxWrapper());
+  }
+
+  if (serwist !== false) {
+    const withSerwist = withSerwistInit(serwist);
+    defaultConfig = applyWrapper(defaultConfig, withSerwist);
   }
 
   return defaultConfig;
