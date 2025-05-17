@@ -1,7 +1,18 @@
+// Helper mixin for creating .disablable component
+@mixin disablable {
+  @apply disabled:opacity-40 transition-[opacity];
+}
+
 *:is(
   button,
   input,
   select
 ) {
-  @apply disabled:opacity-40 transition-[opacity];
+  @include disablable;
+}
+
+@layer components {
+  .disablable {
+    @include disablable;
+  }
 }
