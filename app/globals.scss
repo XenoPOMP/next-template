@@ -4,8 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-// Comment line below if design system is not needed
 @include meta.load-css("../src/styles/design-system");
+@include meta.load-css("../src/styles/nullstyles");
 
 body {
   @apply bg-primary-bg text-primary-font;

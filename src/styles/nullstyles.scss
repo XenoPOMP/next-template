@@ -1,0 +1,7 @@
+*:is(
+  button,
+  input,
+  select
+) {
+  @apply disabled:opacity-40 transition-[opacity];
+}
