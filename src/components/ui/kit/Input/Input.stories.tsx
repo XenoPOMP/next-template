@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import cn from 'classnames';
 
 import { Input } from './Input';
 
@@ -9,13 +10,24 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+  argTypes: {
+    type: {
+      options: ['text', 'date', 'number'],
+      control: {
+        type: 'select',
+      },
+    },
+  },
 } satisfies Meta<typeof Input>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const sharedProps = {} satisfies Partial<Story['args']>;
+const sharedProps = {
+  // type: 'text',
+  className: cn('text-black'),
+} satisfies Partial<Story['args']>;
 
 export const Primary: Story = {
   args: {
