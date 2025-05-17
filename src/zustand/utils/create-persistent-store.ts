@@ -1,6 +1,12 @@
 import type { SelectivePartial } from 'xenopomp-essentials';
+import type { StateCreator } from 'zustand';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
+
+type SimpleCreator<T> = StateCreator<T, [], []>;
+
+/** Use this type for adding create.set to shared state. */
+export type StoreSetter<Store> = Parameters<SimpleCreator<Store>>[0];
 
 type Creator<T> = typeof persist<T, [], [], T>;
 type Init<T> = Parameters<Creator<T>>[0];
