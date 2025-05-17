@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .disablable {
-    @apply disabled:opacity-40;
-  }
-}
-
 // Comment line below if design system is not needed
 @include meta.load-css("../src/styles/design-system");
 
