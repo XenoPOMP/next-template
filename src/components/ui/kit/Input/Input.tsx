@@ -2,6 +2,8 @@ import cn from 'classnames';
 import { useCallback, useState } from 'react';
 import type { VariableFC } from 'xenopomp-essentials';
 
+import { validateCallbacks } from './Input.callbacks';
+
 /**
  *
  */
@@ -26,6 +28,11 @@ export const Input: VariableFC<'input', unknown, 'children'> = ({
     <input
       value={localValue}
       onChange={e => {
+        // Validation
+        if (!validateCallbacks.get(type)?.(localValue, e)) {
+          return;
+        }
+
         // After all, set local state and run onChange callback
         setLocalValue(e.target.value);
         onChange?.(e);
