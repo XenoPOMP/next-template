@@ -5,8 +5,13 @@
 
 *:is(
   button,
+  fieldset,
   input,
-  select
+  keygen,
+  optgroup,
+  option,
+  select,
+  textarea
 ) {
   @include disablable;
 }
