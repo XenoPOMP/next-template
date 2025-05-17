@@ -3,6 +3,7 @@
   @apply disabled:opacity-40 transition-[opacity];
 }
 
+// Style elements that can be disabled
 *:is(
   button,
   fieldset,
