@@ -6,7 +6,7 @@ import type { ComponentType } from 'react';
  * Infers proper type for render function for
  * StoryBuilder instance.
  */
-export type InferRenderFnType<B extends StoryBuilder<any>> =
+export type InferRenderFnType<B extends StoryBuilder<any, any, any>> =
   B extends StoryBuilder<any, any, infer Story> ? Story['render'] : never;
 
 export class StoryBuilder<
