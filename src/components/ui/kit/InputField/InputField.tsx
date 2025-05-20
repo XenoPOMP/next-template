@@ -8,7 +8,7 @@ import { Field } from '@/components/ui/kit';
  * Wraps Input from headlessui with Field component.
  * @constructor
  */
-export const InputField: VariableFC<typeof Input, unknown, 'children'> = ({
+export const InputField: VariableFC<'input', unknown, 'children'> = ({
   className,
   ...props
 }) => {

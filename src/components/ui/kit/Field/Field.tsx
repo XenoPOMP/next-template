@@ -12,7 +12,12 @@ export const Field = slotable<'div', ComponentProps<'div'>>(
   ({ Comp, className, children, ...props }) => (
     <Comp
       // TODO Make this actual field wrapper
-      className={cn('TODO', className)}
+      className={cn(
+        'TODO',
+        // Nullstyles
+        'appearance-none bg-transparent text-primary-font placeholder:text-primary-font/60',
+        className,
+      )}
       {...props}
     >
       {children}
