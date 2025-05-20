@@ -1,6 +1,9 @@
 import type { FC } from 'react';
 
-// eslint-disable-next-line jsdoc/require-jsdoc
+/**
+ * Wraps Input from headlessui with Field component.
+ * @constructor
+ */
 export const InputField: FC<unknown> = () => {
   return <div></div>;
 };
