@@ -1,12 +1,14 @@
 ---
 to: src/components/ui/<%= h.changeCase.pascalCase(name) %>/<%= h.changeCase.pascalCase(name) %>.stories.tsx
 ---
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta } from '@storybook/react';
 
-import { <%= h.changeCase.pascalCase(name) %> } from '@/components/ui';
+import { StoryBuilder } from '@/utils/storybook';
+
+import { <%= h.changeCase.pascalCase(name) %> } from './<%= h.changeCase.pascalCase(name) %>';
 
 const meta = {
-  title: 'UI / <%= h.changeCase.pascalCase(name) %>',
+  title: 'UI Kit / <%= h.changeCase.pascalCase(name) %>',
   component: <%= h.changeCase.pascalCase(name) %>,
   tags: ['autodoc'],
   parameters: {
@@ -16,13 +18,8 @@ const meta = {
 
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+const builder = new StoryBuilder<typeof <%= h.changeCase.pascalCase(name) %>>()
+  .defineMeta(meta)
+  .defineSharedProps({});
 
-const sharedProps = {} satisfies Partial<Story['args']>;
-
-export const Primary: Story = {
-  args: {
-    ...sharedProps,
-  },
-};
-
+export const Base = builder.buildStory({});
