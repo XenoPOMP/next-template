@@ -13,3 +13,4 @@ export * from './ShortcutHint/ShortcutHint';
 export * from './SplitView/SplitView';
 export * from './List/List';
 export * from './InputField/InputField';
+export * from './Field/Field';
