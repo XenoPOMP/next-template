@@ -1,4 +1,5 @@
 import { Input } from '@headlessui/react';
+import type { Meta } from '@storybook/react';
 import { capitalize } from 'xenopomp-essentials';
 
 import { Field } from '@/components/ui/kit';
@@ -7,30 +8,34 @@ import { StoryBuilder } from '@/utils/storybook';
 
 import { InputField } from './InputField';
 
-const builder = new StoryBuilder<typeof InputField>()
-  .defineMeta({
-    title: 'UI Kit / Fields / Input field',
-    component: InputField,
-    subcomponents: {
-      Input,
-      Field,
-    },
-    tags: ['autodoc'],
-    parameters: {
-      layout: 'centered',
-    },
-    argTypes: {
-      type: {
-        options: ['text', 'date', 'number', 'datetime-local'] as const,
-        control: {
-          type: 'select',
-        },
+const meta = {
+  title: 'UI Kit / Fields / Input field',
+  component: InputField,
+  subcomponents: {
+    Input,
+    Field,
+  },
+  tags: ['autodoc'],
+  parameters: {
+    layout: 'centered',
+  },
+  argTypes: {
+    type: {
+      options: ['text', 'date', 'number', 'datetime-local'] as const,
+      control: {
+        type: 'select',
       },
     },
-  })
-  .defineSharedProps({});
+  },
+} satisfies Meta<typeof InputField>;
 
-export default builder.meta;
+const builder = new StoryBuilder<typeof InputField>()
+  .defineMeta(meta)
+  .defineSharedProps({
+    type: 'text',
+  });
+
+export default meta;
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 const render: InferRenderFnType<typeof builder> = ({
