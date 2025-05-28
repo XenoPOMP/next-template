@@ -94,7 +94,7 @@
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "sass": "1.88.0",
+    "sass": "1.89.0",
     "serwist": "^9.0.14",
     "start-server-and-test": "^2.0.11",
     "storybook": "8.6.12",
