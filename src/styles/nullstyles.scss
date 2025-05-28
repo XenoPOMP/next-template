@@ -1,11 +1,9 @@
 // Helper mixin for creating .disableable component
 @mixin disableable {
-  $val: 40;
+  @apply transition-[opacity];
 
-  @apply disabled:opacity-#{$val} transition-[opacity];
-
-  &[data-disabled] {
-    @apply opacity-#{$val};
+  &[data-disabled], &:disabled {
+    @apply opacity-40 pointer-events-none select-none;
   }
 }
 
