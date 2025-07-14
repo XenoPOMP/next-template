@@ -1,12 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import cn from 'classnames';
 
-import { HStack, VStack } from '@/components/ui';
-
-import Stack from './Stack';
+import { Container as Stack } from './Stack';
 
 const meta = {
-  title: 'UI / Stack',
+  title: 'UI / Container',
   component: Stack,
   tags: ['autodoc'],
   parameters: {
@@ -29,28 +27,28 @@ export const Containers: Story = {
     () => (
       <div className={cn('flex flex-col gap-1')}>
         <div className={cn('flex flex-col gap-4')}>
-          <HStack
+          <Stack
             {...sharedProps}
             alignStack='start'
           />
-          <HStack {...sharedProps} />
-          <HStack
+          <Stack {...sharedProps} />
+          <Stack
             {...sharedProps}
             alignStack='end'
           />
         </div>
 
         <div className={cn('h-[45dvh] w-full', 'flex justify-center')}>
-          <VStack
+          <Stack
             {...sharedProps}
             maxSize='100px'
             alignStack='start'
           />
-          <VStack
+          <Stack
             {...sharedProps}
             maxSize='100px'
           />
-          <VStack
+          <Stack
             {...sharedProps}
             maxSize='100px'
             alignStack='end'

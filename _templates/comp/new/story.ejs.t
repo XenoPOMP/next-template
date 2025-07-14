@@ -8,7 +8,7 @@ import { StoryBuilder } from '@/utils/storybook';
 import { <%= h.changeCase.pascalCase(name) %> } from './<%= h.changeCase.pascalCase(name) %>';
 
 const meta = {
-  title: 'UI Kit / <%= h.changeCase.pascalCase(name) %>',
+  title: 'UI / <%= h.changeCase.pascalCase(name) %>',
   component: <%= h.changeCase.pascalCase(name) %>,
   tags: ['autodoc'],
   parameters: {
