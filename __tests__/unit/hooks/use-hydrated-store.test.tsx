@@ -22,6 +22,7 @@ const Comp = ({ action }: { action: Fn<[], void> }) => {
     if (!isLoading) {
       action();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoading]);
 
   return <></>;
