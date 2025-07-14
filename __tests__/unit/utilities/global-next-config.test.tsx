@@ -32,6 +32,10 @@ describe('Global NextConfig util', () => {
     });
   });
 
+  test('Wrappers can be empty', () => {
+    assertNotThrowing(() => nextConfig({}));
+  });
+
   test('Wrappers can be enabled', () => {
     assertNotThrowing(() =>
       nextConfig(
