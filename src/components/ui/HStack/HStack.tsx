@@ -4,13 +4,13 @@ import type { FCProps, VariableFC } from 'xenopomp-essentials';
 import { slotable } from '@/components/hoc';
 import type { StackRelativeProps } from '@/components/ui/VStack/StackRelative.props.ts';
 
-type VStackProps = FCProps<VariableFC<'div'>>;
+type HStackProps = FCProps<VariableFC<'div'>>;
 
-export const VStack = slotable<'div', VStackProps & StackRelativeProps>(
+export const HStack = slotable<'div', HStackProps & StackRelativeProps>(
   'div',
   ({ Comp, className, children, style, spacing = '1.2rem', ...props }) => (
     <Comp
-      className={cn('flex flex-col', className)}
+      className={cn('flex', className)}
       style={{
         gap: spacing,
         ...style,
