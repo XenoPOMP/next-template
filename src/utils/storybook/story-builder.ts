@@ -14,8 +14,8 @@ export class StoryBuilder<
   M extends Meta<For> | undefined = undefined,
   Story extends StoryObj<M> = StoryObj<M>,
 > {
-  meta: M | undefined = undefined;
-  sharedProps: Partial<Story['args']> = {};
+  protected meta: M | undefined = undefined;
+  protected sharedProps: Partial<Story['args']> = {};
 
   defineMeta<DM extends Meta<For>>(meta: DM) {
     const newBuilder = new StoryBuilder<For, DM>();

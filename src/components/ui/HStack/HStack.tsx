@@ -1,19 +1,23 @@
-import type { VariableFC } from 'xenopomp-essentials';
+import cn from 'classnames';
+import type { FCProps, VariableFC } from 'xenopomp-essentials';
 
-import { Stack } from '@/components/ui';
+import { slotable } from '@/components/hoc';
+import type { StackRelativeProps } from '@/components/ui/VStack/StackRelative.props.ts';
 
-/**
- * {@link Stack} component with horizontal orientation.
- * @param props
- * @constructor
- */
-export const HStack: VariableFC<typeof Stack, unknown, 'orientation'> = ({
-  ...props
-}) => {
-  return (
-    <Stack
-      orientation='horizontal'
+type HStackProps = FCProps<VariableFC<'div'>>;
+
+export const HStack = slotable<'div', HStackProps & StackRelativeProps>(
+  'div',
+  ({ Comp, className, children, style, spacing = '1.2rem', ...props }) => (
+    <Comp
+      className={cn('flex', className)}
+      style={{
+        gap: spacing,
+        ...style,
+      }}
       {...props}
-    />
-  );
-};
+    >
+      {children}
+    </Comp>
+  ),
+);

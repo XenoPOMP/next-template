@@ -4,6 +4,8 @@ import type { Defined } from 'xenopomp-essentials';
 
 import nextConfig from '@/utils/next';
 
+import { assertNotThrowing } from '@test/assets';
+
 describe('Global NextConfig util', () => {
   // eslint-disable-next-line jsdoc/require-jsdoc
   const testCfg = ({
@@ -28,5 +30,20 @@ describe('Global NextConfig util', () => {
       },
       expected: {},
     });
+  });
+
+  test('Wrappers can be enabled', () => {
+    assertNotThrowing(() =>
+      nextConfig(
+        {},
+        {
+          mdx: true,
+          serwist: {
+            swSrc: 'app/sw.ts',
+            swDest: 'public/sw.js',
+          },
+        },
+      ),
+    );
   });
 });
