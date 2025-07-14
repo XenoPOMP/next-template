@@ -82,7 +82,7 @@
     "@vitest/coverage-istanbul": "^3.2.4",
     "cypress": "14.5.1",
     "eslint": "9.30.0",
-    "eslint-plugin-jsdoc": "^50.6.14",
+    "eslint-plugin-jsdoc": "^51.3.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "husky": "^9.1.7",
