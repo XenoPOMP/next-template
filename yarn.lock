@@ -3791,12 +3791,7 @@
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-8.26.1.tgz#d5978721670cff263348d5062773389231a64132"
   integrity sha512-n4THUQW27VmQMx+3P+B0Yptl7ydfceUj4ON/AQILAASwgYdZ/2dhfymRMh5egRUrvK5lSmaOm77Ry+lmXPOgBQ==
 
-"@typescript-eslint/types@8.36.0", "@typescript-eslint/types@^8.11.0", "@typescript-eslint/types@^8.26.0", "@typescript-eslint/types@^8.36.0":
-  version "8.36.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-8.36.0.tgz#d3d184adc2899e2912c13b17c1590486ef37c7ac"
-  integrity sha512-xGms6l5cTJKQPZOKM75Dl9yBfNdGeLRsIyufewnxT4vZTrjC0ImQT4fj8QmtJK84F58uSh5HVBSANwcfiXxABQ==
-
-"@typescript-eslint/types@^8.34.1":
+"@typescript-eslint/types@8.36.0", "@typescript-eslint/types@^8.11.0", "@typescript-eslint/types@^8.26.0", "@typescript-eslint/types@^8.34.1", "@typescript-eslint/types@^8.36.0":
   version "8.36.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-8.36.0.tgz#d3d184adc2899e2912c13b17c1590486ef37c7ac"
   integrity sha512-xGms6l5cTJKQPZOKM75Dl9yBfNdGeLRsIyufewnxT4vZTrjC0ImQT4fj8QmtJK84F58uSh5HVBSANwcfiXxABQ==
@@ -8394,7 +8389,7 @@ javascript-natural-sort@^0.7.1:
   resolved "https://registry.yarnpkg.com/javascript-natural-sort/-/javascript-natural-sort-0.7.1.tgz#f9e2303d4507f6d74355a73664d1440fb5a0ef59"
   integrity sha512-nO6jcEfZWQXDhOiBtG2KvKyEptz7RVbpGP4vTD2hLBdmNQSsCiicO2Ioinv6UI4y9ukqnBpy+XZ9H6uLNgJTlw==
 
-jest-diff@^29.0.3:
+jest-diff@^29.0.0, jest-diff@^29.0.3:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-29.7.0.tgz#017934a66ebb7ecf6f205e84699be10afd70458a"
   integrity sha512-LMIgiIrhigmPrs03JHpxUh2yISK3vLFPkAodPeo0+BuF7wA2FoQbkEg1u8gBYBThncu7e1oEDUfIXVuTqLRUjw==
@@ -8403,6 +8398,13 @@ jest-diff@^29.0.3:
     diff-sequences "^29.6.3"
     jest-get-type "^29.6.3"
     pretty-format "^29.7.0"
+
+jest-extended@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/jest-extended/-/jest-extended-6.0.0.tgz#bd29ba4154166875e53b25c674f1ad533243d1c1"
+  integrity sha512-SM249N/q33YQ9XE8E06qZSnFuuV4GQFx7WrrmIj4wQUAP43jAo6budLT482jdBhf8ASwUiEEfJNjej0UusYs5A==
+  dependencies:
+    jest-diff "^29.0.0"
 
 jest-get-type@^29.6.3:
   version "29.6.3"
