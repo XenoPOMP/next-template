@@ -7857,6 +7857,11 @@ idb@8.0.2:
   resolved "https://registry.yarnpkg.com/idb/-/idb-8.0.2.tgz#349af3974281879889e0572bbb231f978b9f3cf0"
   integrity sha512-CX70rYhx7GDDQzwwQMDwF6kDRQi5vVs6khHUumDrMecBylKkwvZ8HWvKV08AGb7VbpoGCWUQ4aHzNDgoUiOIUg==
 
+idb@8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/idb/-/idb-8.0.3.tgz#c91e558f15a8d53f1d7f53a094d226fc3ad71fd9"
+  integrity sha512-LtwtVyVYO5BqRvcsKuB2iUMnHwPVByPCXFXOpuU96IZPPoPN6xjOGxZQ74pgSVVLQWtUOYgyeL4GE98BY5D3wg==
+
 ieee754@^1.1.13, ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -11519,12 +11524,19 @@ serialize-javascript@^6.0.1:
   dependencies:
     randombytes "^2.1.0"
 
-serwist@9.0.14, serwist@^9.0.14:
+serwist@9.0.14:
   version "9.0.14"
   resolved "https://registry.yarnpkg.com/serwist/-/serwist-9.0.14.tgz#4c64aeaeffb3be86fceb58d45aa7f4d31dff54fc"
   integrity sha512-vr4uqSeB7NxrAJeneCxhnEDDksovTcVAxkWyse4DFj/OP8UVJkdsSEJlzT94gRu5qrTZxKrb+pFrxsIStfWTWg==
   dependencies:
     idb "8.0.2"
+
+serwist@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/serwist/-/serwist-9.1.1.tgz#33e090203a02639febd42120c715c1141e5160e4"
+  integrity sha512-DGwnsIOUmCNOMMsKzmZ9854iW0L0TNYN/E6AGUdEtDP2ZAOxQm32gIQPL9ZJCrs56eLMwXtfTmWjcgNEl+1Jng==
+  dependencies:
+    idb "8.0.3"
 
 set-function-length@^1.1.1:
   version "1.1.1"
