@@ -2113,37 +2113,42 @@
     "@tanstack/react-virtual" "^3.13.6"
     use-sync-external-store "^1.5.0"
 
-"@heroui/kbd@^2.2.17":
-  version "2.2.17"
-  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.17.tgz#2c4be6617592507b069d8c5a84c70eaca1c31e2f"
-  integrity sha512-WqKRE7p4h0G/BWywqOiHYLUZB0/Zqb7FggCCEh8c3nOwwTi5mfkcNAT8BmYbp/nAEUJO3yVVWxQQ0SWtSNB2Dw==
+"@heroui/kbd@^2.2.18":
+  version "2.2.18"
+  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.18.tgz#b4a4e0454116cb9766a4a4f907071e4c1c6d304d"
+  integrity sha512-z/Sjco9LZ9vavjoqIIN3Kca/TIVEqBOKHH3/B9Omj5DsoBJMEz7gXBynjkVGVUvyKq0pUnCgThc6HPSQ9wbuUA==
   dependencies:
-    "@heroui/react-utils" "2.1.11"
-    "@heroui/shared-utils" "2.1.9"
-    "@heroui/system-rsc" "2.3.15"
+    "@heroui/react-utils" "2.1.12"
+    "@heroui/shared-utils" "2.1.10"
+    "@heroui/system-rsc" "2.3.16"
 
-"@heroui/react-rsc-utils@2.1.8":
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/@heroui/react-rsc-utils/-/react-rsc-utils-2.1.8.tgz#27ebfa533196dd53913269f42afc4c7a6dd9bbca"
-  integrity sha512-qFJ0EYg2hVrsotAurd09ga8jZv1jTS6VSz919oC9u4E9xfN5/gFtdtF3HMiTUYRyN2yCP9GEZwyE8T2Y16DDiA==
+"@heroui/react-rsc-utils@2.1.9":
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/@heroui/react-rsc-utils/-/react-rsc-utils-2.1.9.tgz#fe0f71761560093db2557f93db8600f3dbf50c26"
+  integrity sha512-e77OEjNCmQxE9/pnLDDb93qWkX58/CcgIqdNAczT/zUP+a48NxGq2A2WRimvc1uviwaNL2StriE2DmyZPyYW7Q==
 
-"@heroui/react-utils@2.1.11":
-  version "2.1.11"
-  resolved "https://registry.yarnpkg.com/@heroui/react-utils/-/react-utils-2.1.11.tgz#660b326bb8463ac957ba543df1585946f4fed87c"
-  integrity sha512-UZnZBlmmJKBo1YmGnlih5WbzR0m/Qr8GNFiY73C8NMcIuSjr3VQOjTDwRu1lerzCEDV/EEqvyu+MYySdkBUPXQ==
+"@heroui/react-utils@2.1.12":
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/@heroui/react-utils/-/react-utils-2.1.12.tgz#256d3b7583c8465a872caed47be77d126157099b"
+  integrity sha512-D+EYFMtBuWGrtsw+CklgAHtQfT17wZcjmKIvUMGOjAFFSLHG9NJd7yOrsZGk90OuJVQ3O1Gj3MfchEmUXidxyw==
   dependencies:
-    "@heroui/react-rsc-utils" "2.1.8"
-    "@heroui/shared-utils" "2.1.9"
+    "@heroui/react-rsc-utils" "2.1.9"
+    "@heroui/shared-utils" "2.1.10"
+
+"@heroui/shared-utils@2.1.10":
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.10.tgz#15c12c49b92610a2cd545a74343b96bb4371e785"
+  integrity sha512-w6pSRZZBNDG5/aFueSDUWqOIzqUjKojukg7FxTnVeUX+vIlnYV2Wfv+W+C4l+OV7o0t8emeoe5tXZh8QcLEZEQ==
 
 "@heroui/shared-utils@2.1.9":
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.9.tgz#bcfc019250cb1d1c376f4e09ef0f3b8e0cb0ee67"
   integrity sha512-mM/Ep914cYMbw3T/b6+6loYhuNfzDaph76mzw/oIS05gw1Dhp9luCziSiIhqDGgzYck2d74oWTZlahyCsxf47w==
 
-"@heroui/system-rsc@2.3.15":
-  version "2.3.15"
-  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.15.tgz#53104ae2c17df028b5d224aee24280bc62c9bc9e"
-  integrity sha512-IGMgGTv9AEtjnA3ao8b3moxTHOiyH88hEH2tKd9lA9qkrXzuN0F81L34QxQMX0Zw7FwuxBdPXRSqcAvYx7ElNA==
+"@heroui/system-rsc@2.3.16":
+  version "2.3.16"
+  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.16.tgz#af7539af76ccf4c0d697c90bafa27b390a0c0d19"
+  integrity sha512-6zuKh5glnrrc8A7kCqjr5D1EWjUdBG0UqpX8rLQwXzY6p9hbhu0LSlkxuGoLW7goUBqa57MmGvJFVb8VZpk6EA==
   dependencies:
     "@react-types/shared" "3.30.0"
     clsx "^1.2.1"
