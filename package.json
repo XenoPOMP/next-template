@@ -78,7 +78,7 @@
     "@tanstack/react-query-devtools": "^5.81.5",
     "@testing-library/react": "^15.0.7",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@vitejs/plugin-react": "^4.4.1",
+    "@vitejs/plugin-react": "^5.0.0",
     "@vitest/coverage-istanbul": "^3.2.4",
     "cypress": "14.5.1",
     "eslint": "9.31.0",
