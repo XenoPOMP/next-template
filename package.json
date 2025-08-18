@@ -31,7 +31,7 @@
     "cleanup": "npx cross-env ACTOR=\"Xeno\" REPO_NAME=\"repo-name\" tsx .config/.dev/scripts/cleanup.ts"
   },
   "dependencies": {
-    "@dicebear/collection": "^9.2.2",
+    "@dicebear/collection": "^9.2.4",
     "@dicebear/core": "^9.2.3",
     "@headlessui/react": "^2.2.7",
     "@heroui/kbd": "^2.2.18",
