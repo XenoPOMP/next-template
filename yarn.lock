@@ -2162,14 +2162,14 @@
     "@tanstack/react-virtual" "^3.13.9"
     use-sync-external-store "^1.5.0"
 
-"@heroui/kbd@^2.2.18":
-  version "2.2.18"
-  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.18.tgz#b4a4e0454116cb9766a4a4f907071e4c1c6d304d"
-  integrity sha512-z/Sjco9LZ9vavjoqIIN3Kca/TIVEqBOKHH3/B9Omj5DsoBJMEz7gXBynjkVGVUvyKq0pUnCgThc6HPSQ9wbuUA==
+"@heroui/kbd@^2.2.19":
+  version "2.2.19"
+  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.19.tgz#52025cceea7f636849ef31bfe5366d7fdd650e07"
+  integrity sha512-PP8fMPRVMGqJU3T5ufyjPUrguBxNstdBLIqiwk4G6TXBTrTkfMxTYVNG+gvsB6tjzmVjPsHpv2IvCjG4arLojw==
   dependencies:
     "@heroui/react-utils" "2.1.12"
     "@heroui/shared-utils" "2.1.10"
-    "@heroui/system-rsc" "2.3.16"
+    "@heroui/system-rsc" "2.3.17"
 
 "@heroui/react-rsc-utils@2.1.9":
   version "2.1.9"
@@ -2194,12 +2194,12 @@
   resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.9.tgz#bcfc019250cb1d1c376f4e09ef0f3b8e0cb0ee67"
   integrity sha512-mM/Ep914cYMbw3T/b6+6loYhuNfzDaph76mzw/oIS05gw1Dhp9luCziSiIhqDGgzYck2d74oWTZlahyCsxf47w==
 
-"@heroui/system-rsc@2.3.16":
-  version "2.3.16"
-  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.16.tgz#af7539af76ccf4c0d697c90bafa27b390a0c0d19"
-  integrity sha512-6zuKh5glnrrc8A7kCqjr5D1EWjUdBG0UqpX8rLQwXzY6p9hbhu0LSlkxuGoLW7goUBqa57MmGvJFVb8VZpk6EA==
+"@heroui/system-rsc@2.3.17":
+  version "2.3.17"
+  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.17.tgz#859cfc087b0b0fb4ba5f5d72f474553ffdb76a9b"
+  integrity sha512-XtQJpLN8HkLYJsvfyBWA/RE8w3PJzEjItwGZ0NACCKRiwkQL205WXJNlkzXsO2/+Y7fEKXkqTMNpQYEhnUlEpw==
   dependencies:
-    "@react-types/shared" "3.30.0"
+    "@react-types/shared" "3.31.0"
     clsx "^1.2.1"
 
 "@heroui/theme@^2.4.17":
@@ -2898,12 +2898,7 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@react-types/shared@3.30.0":
-  version "3.30.0"
-  resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.30.0.tgz#616f3644e687ec3657e97bb821f8c219f6771311"
-  integrity sha512-COIazDAx1ncDg046cTJ8SFYsX8aS3lB/08LDnbkH/SkdYrFPWDlXMrO/sUam8j1WWM+PJ+4d1mj7tODIKNiFog==
-
-"@react-types/shared@^3.31.0":
+"@react-types/shared@3.31.0", "@react-types/shared@^3.31.0":
   version "3.31.0"
   resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.31.0.tgz#014be53096c3728f0684550430807e9962365c15"
   integrity sha512-ua5U6V66gDcbLZe4P2QeyNgPp4YWD1ymGA6j3n+s8CGExtrCPe64v+g4mvpT8Bnb985R96e4zFT61+m0YCwqMg==
