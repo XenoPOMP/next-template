@@ -2184,44 +2184,44 @@
     "@tanstack/react-virtual" "^3.13.9"
     use-sync-external-store "^1.5.0"
 
-"@heroui/kbd@^2.2.18":
-  version "2.2.18"
-  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.18.tgz#b4a4e0454116cb9766a4a4f907071e4c1c6d304d"
-  integrity sha512-z/Sjco9LZ9vavjoqIIN3Kca/TIVEqBOKHH3/B9Omj5DsoBJMEz7gXBynjkVGVUvyKq0pUnCgThc6HPSQ9wbuUA==
+"@heroui/kbd@^2.2.21":
+  version "2.2.21"
+  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.21.tgz#6ff7d57af33176e712a106a25316698e7ba32687"
+  integrity sha512-4AY0Q+jwDbY9ehhu0Vv68QIiSCnFEMPYpaPHVLNR/9rEJDN/BS+j4FyUfxjnyjD7EKa8CNs6Y7O0VnakUXGg+g==
   dependencies:
-    "@heroui/react-utils" "2.1.12"
-    "@heroui/shared-utils" "2.1.10"
-    "@heroui/system-rsc" "2.3.16"
+    "@heroui/react-utils" "2.1.13"
+    "@heroui/shared-utils" "2.1.11"
+    "@heroui/system-rsc" "2.3.19"
 
 "@heroui/react-rsc-utils@2.1.9":
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/@heroui/react-rsc-utils/-/react-rsc-utils-2.1.9.tgz#fe0f71761560093db2557f93db8600f3dbf50c26"
   integrity sha512-e77OEjNCmQxE9/pnLDDb93qWkX58/CcgIqdNAczT/zUP+a48NxGq2A2WRimvc1uviwaNL2StriE2DmyZPyYW7Q==
 
-"@heroui/react-utils@2.1.12":
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/@heroui/react-utils/-/react-utils-2.1.12.tgz#256d3b7583c8465a872caed47be77d126157099b"
-  integrity sha512-D+EYFMtBuWGrtsw+CklgAHtQfT17wZcjmKIvUMGOjAFFSLHG9NJd7yOrsZGk90OuJVQ3O1Gj3MfchEmUXidxyw==
+"@heroui/react-utils@2.1.13":
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/@heroui/react-utils/-/react-utils-2.1.13.tgz#b29ad7f88cb3c411f262013b4d4e792b182707f0"
+  integrity sha512-gJ89YL5UCilKLldJ4In0ZLzngg+tYiDuo1tQ7lf2aJB7SQMrZmEutsKrGCdvn/c2CSz5cRryo0H6JZCDsji3qg==
   dependencies:
     "@heroui/react-rsc-utils" "2.1.9"
-    "@heroui/shared-utils" "2.1.10"
+    "@heroui/shared-utils" "2.1.11"
 
-"@heroui/shared-utils@2.1.10":
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.10.tgz#15c12c49b92610a2cd545a74343b96bb4371e785"
-  integrity sha512-w6pSRZZBNDG5/aFueSDUWqOIzqUjKojukg7FxTnVeUX+vIlnYV2Wfv+W+C4l+OV7o0t8emeoe5tXZh8QcLEZEQ==
+"@heroui/shared-utils@2.1.11":
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.11.tgz#0aedf0142c829ec4a41a47d827581ee503af2a87"
+  integrity sha512-2zKVjCc9EMMk05peVpI1Q+vFf+dzqyVdf1DBCJ2SNQEUF7E+sRe1FvhHvPoye3TIFD/Fr6b3kZ6vzjxL9GxB6A==
 
 "@heroui/shared-utils@2.1.9":
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.9.tgz#bcfc019250cb1d1c376f4e09ef0f3b8e0cb0ee67"
   integrity sha512-mM/Ep914cYMbw3T/b6+6loYhuNfzDaph76mzw/oIS05gw1Dhp9luCziSiIhqDGgzYck2d74oWTZlahyCsxf47w==
 
-"@heroui/system-rsc@2.3.16":
-  version "2.3.16"
-  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.16.tgz#af7539af76ccf4c0d697c90bafa27b390a0c0d19"
-  integrity sha512-6zuKh5glnrrc8A7kCqjr5D1EWjUdBG0UqpX8rLQwXzY6p9hbhu0LSlkxuGoLW7goUBqa57MmGvJFVb8VZpk6EA==
+"@heroui/system-rsc@2.3.19":
+  version "2.3.19"
+  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.19.tgz#dd380098946b197a6afef4d07ab00bb9f44589da"
+  integrity sha512-ocjro5dYmDhRsxNAB/316zO6eqfKVjFDbnYnc+wlcjZXpw49A+LhE13xlo7LI+W2AHWh5NHcpo3+2O3G6WQxHA==
   dependencies:
-    "@react-types/shared" "3.30.0"
+    "@react-types/shared" "3.32.0"
     clsx "^1.2.1"
 
 "@heroui/theme@^2.4.17":
@@ -2920,10 +2920,10 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@react-types/shared@3.30.0":
-  version "3.30.0"
-  resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.30.0.tgz#616f3644e687ec3657e97bb821f8c219f6771311"
-  integrity sha512-COIazDAx1ncDg046cTJ8SFYsX8aS3lB/08LDnbkH/SkdYrFPWDlXMrO/sUam8j1WWM+PJ+4d1mj7tODIKNiFog==
+"@react-types/shared@3.32.0":
+  version "3.32.0"
+  resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.32.0.tgz#6c105ef05e1bd84ab04531e707074dc2a0b3ce07"
+  integrity sha512-t+cligIJsZYFMSPFMvsJMjzlzde06tZMOIOFa1OV5Z0BcMowrb2g4mB57j/9nP28iJIRYn10xCniQts+qadrqQ==
 
 "@react-types/shared@^3.31.0":
   version "3.31.0"
