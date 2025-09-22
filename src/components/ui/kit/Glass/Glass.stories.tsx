@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import cn from 'classnames';
 
-import { Stack } from '@/components/ui';
+import { Container as Stack } from '@/components/ui';
 
 import { Glass } from './Glass';
 

@@ -4,6 +4,7 @@ import { z } from 'zod';
 const envSchema = z.object({
   CANONICAL_URL: z.string().default('http://localhost:3000'),
   NODE_ENV: z.string().optional(),
+  IS_DOCKER: z.string().optional(),
 });
 
 export type EnvSchema = z.infer<typeof envSchema>;
