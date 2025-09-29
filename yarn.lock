@@ -2673,9 +2673,9 @@
     fast-glob "3.3.1"
 
 "@next/mdx@^15":
-  version "15.3.5"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-15.3.5.tgz#580fdec4a99b5891b4c2bc4a35a58757be3c6014"
-  integrity sha512-/2rRCgPKNp2ttQscU13auI+cYYACdPa80Okgi/1+NNJJeWn9yVxwGnqZc3SX30T889bZbLqcY4oUjqYGAygL4g==
+  version "15.5.4"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-15.5.4.tgz#b7e7da007a809aab03cbbb29a5fad7e773c7c917"
+  integrity sha512-QUc14KkswCau2/Lul13t13v8QYRiEh3aeyUMUix5mK/Zd8c/J9NQuVvLGhxS7fxGPU+fOcv0GaXqZshkvNaX7A==
   dependencies:
     source-map "^0.7.0"
 
