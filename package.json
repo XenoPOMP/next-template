@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.4",
-    "@dicebear/core": "^9.2.3",
+    "@dicebear/core": "^9.2.4",
     "@headlessui/react": "^2.2.7",
     "@heroui/kbd": "^2.2.21",
     "@heroui/theme": "^2.4.17",
