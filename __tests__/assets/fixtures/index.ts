@@ -1,1 +1,2 @@
-export * from './constants.fixtures.ts';
+export * from './constants.fixtures';
+export * from './typesafe-url.fixtures';

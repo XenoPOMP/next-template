@@ -7,7 +7,9 @@ type ExtractRouteParams<T extends string> = string extends T
       : // eslint-disable-next-line ts/no-empty-object-type
         {};
 
+type Sanitize<T> = Omit<T, ''>;
+
 export type TypesafeUrl<T extends string> =
   T extends `${string}://${string}/${infer Route}`
-    ? ExtractRouteParams<Route>
-    : ExtractRouteParams<T>;
+    ? Sanitize<ExtractRouteParams<Route>>
+    : Sanitize<ExtractRouteParams<T>>;

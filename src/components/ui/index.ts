@@ -6,3 +6,4 @@ export * from './Stack/Stack';
 export * from './ZStack/ZStack';
 export * from './VStack/VStack';
 export * from './HStack/HStack';
+export * from './TypesafeLink/TypesafeLink';
