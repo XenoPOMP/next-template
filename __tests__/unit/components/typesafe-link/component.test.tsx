@@ -6,6 +6,13 @@ import { assertRendering } from '@test/assets';
 
 describe('TypesafeLink component', () => {
   test('It renders', () => {
-    assertRendering(<TypesafeLink />);
+    assertRendering(
+      <TypesafeLink
+        href='/page/:number'
+        params={{
+          number: '1',
+        }}
+      />,
+    );
   });
 });

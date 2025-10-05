@@ -2,7 +2,7 @@ interface Fixture {
   name: string;
   href: string;
   params: Record<string, string>;
-  queryParams: Record<string, string>;
+  queryParams?: Record<string, string>;
   expected: string;
 }
 
@@ -11,7 +11,6 @@ export const typesafeUrlFixtures: Fixture[] = [
     name: 'No params',
     href: 'https://localhost.com',
     params: {},
-    queryParams: {},
     expected: 'https://localhost.com/',
   },
   {
