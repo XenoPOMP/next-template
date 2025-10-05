@@ -21,6 +21,7 @@ yarn create next-app -e https://github.com/XenoPOMP/next-template .
 
 ## ⭐️ Features
 
+- 🐳 Docker support
 - 🖼️ SEO optimization + Open Graph images
 - 📱 PWA support with [`@serwist/next`](https://serwist.pages.dev/docs/next)
 - 🧪 Unit testing with Vitest and E2E with Cypress
