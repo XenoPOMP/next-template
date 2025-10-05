@@ -2,8 +2,6 @@ import type { TypesafeLinkProps } from '@/components/ui';
 
 /**
  * Binds typesafe params to URL string.
- * @param href
- * @param options
  */
 export function createTypesafeUrl<T extends string>(
   href: T,
