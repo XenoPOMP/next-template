@@ -1,7 +1,10 @@
-import type Link from 'next/link';
+import cn from 'classnames';
+import Link from 'next/link';
+import { useMemo } from 'react';
 import type { FCProps, VariableFC } from 'xenopomp-essentials';
 
 import type { TypesafeUrl } from '@/types';
+import { createTypesafeUrl } from '@/utils/misc';
 
 export type TypesafeLinkProps<T extends string> = {
   href: T;
@@ -23,5 +26,20 @@ export function TypesafeLink<URLString extends string>({
   children,
   ...props
 }: TypesafeLinkProps<URLString> & LinkProps) {
-  return <></>;
+  const handledUrl: string = useMemo(() => {
+    return createTypesafeUrl(href, {
+      params,
+      queryParams,
+    });
+  }, [href, params, queryParams]);
+
+  return (
+    <Link
+      href={handledUrl}
+      className={cn(className)}
+      {...props}
+    >
+      {children}
+    </Link>
+  );
 }
