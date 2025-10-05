@@ -11589,10 +11589,17 @@ serialize-javascript@^6.0.1:
   dependencies:
     randombytes "^2.1.0"
 
-serwist@9.1.1, serwist@^9.1.1:
+serwist@9.1.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/serwist/-/serwist-9.1.1.tgz#33e090203a02639febd42120c715c1141e5160e4"
   integrity sha512-DGwnsIOUmCNOMMsKzmZ9854iW0L0TNYN/E6AGUdEtDP2ZAOxQm32gIQPL9ZJCrs56eLMwXtfTmWjcgNEl+1Jng==
+  dependencies:
+    idb "8.0.3"
+
+serwist@^9.2.1:
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/serwist/-/serwist-9.2.1.tgz#a0c2bf241cdaf9dfa2bb2fb770ad273ebb453b9d"
+  integrity sha512-icp1GQB3h9q1OqYeSw+iTTY0OZ3io+fzNG0Ot3p6Xe5DEZlSRn61FmGx9mq76q0CeMtZYBmmuw4tyIS1O76Lbw==
   dependencies:
     idb "8.0.3"
 
