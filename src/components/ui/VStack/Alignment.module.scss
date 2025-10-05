@@ -1,0 +1,93 @@
+.container.vstack {
+  &.topLeading {
+    justify-content: start;
+    align-items: start;
+  }
+
+  &.top {
+    justify-content: start;
+    align-items: center;
+  }
+
+  &.topTrailing {
+    justify-content: start;
+    align-items: end;
+  }
+
+  &.leading {
+    justify-content: center;
+    align-items: start;
+  }
+
+  &.center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.trailing {
+    justify-content: center;
+    align-items: end;
+  }
+
+  &.bottomLeading {
+    justify-content: end;
+    align-items: start;
+  }
+
+  &.bottom {
+    justify-content: end;
+    align-items: center;
+  }
+
+  &.bottomTrailing {
+    justify-content: end;
+    align-items: end;
+  }
+}
+
+.container.hstack {
+  &.topLeading {
+    justify-content: start;
+    align-items: start;
+  }
+
+  &.top {
+    justify-content: center;
+    align-items: start;
+  }
+
+  &.topTrailing {
+    justify-content: end;
+    align-items: start;
+  }
+
+  &.leading {
+    justify-content: start;
+    align-items: center;
+  }
+
+  &.center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.trailing {
+    justify-content: end;
+    align-items: center;
+  }
+
+  &.bottomLeading {
+    justify-content: start;
+    align-items: end;
+  }
+
+  &.bottom {
+    justify-content: center;
+    align-items: end;
+  }
+
+  &.bottomTrailing {
+    justify-content: end;
+    align-items: end;
+  }
+}

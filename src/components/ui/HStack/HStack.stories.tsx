@@ -1,11 +1,12 @@
 import type { Meta } from '@storybook/react';
 
+import { StackAlignmentPreview } from '@/components/ui/VStack/Preview.tsx';
 import { StoryBuilder } from '@/utils/storybook';
 
 import { HStack } from './HStack';
 
 const meta = {
-  title: 'UI / HStack',
+  title: 'UI / Stacks / HStack',
   component: HStack,
   tags: ['autodoc'],
   parameters: {
@@ -27,3 +28,7 @@ const builder = new StoryBuilder<typeof HStack>()
   });
 
 export const Base = builder.buildStory({});
+export const Alignment = builder.buildStory({
+  // eslint-disable-next-line jsdoc/require-jsdoc
+  render: () => <StackAlignmentPreview stackType='hstack' />,
+});
