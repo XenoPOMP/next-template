@@ -16,5 +16,15 @@ export function createTypesafeUrl<T extends string>(
     resultHref = resultHref.replace(`:${paramName}`, paramValue);
   });
 
-  return resultHref;
+  const url: URL = new URL(resultHref);
+  const searchParams = url.searchParams;
+
+  // Bind query params
+  Object.entries(queryParams ?? {}).forEach(
+    ([queryParamName, queryParamValue]) => {
+      searchParams.set(queryParamName, queryParamValue);
+    },
+  );
+
+  return url.toString();
 }

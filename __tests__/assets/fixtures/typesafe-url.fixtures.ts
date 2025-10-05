@@ -12,7 +12,7 @@ export const typesafeUrlFixtures: Fixture[] = [
     href: 'https://localhost.com',
     params: {},
     queryParams: {},
-    expected: 'https://localhost.com',
+    expected: 'https://localhost.com/',
   },
   {
     name: 'Path params',
@@ -32,7 +32,7 @@ export const typesafeUrlFixtures: Fixture[] = [
       location: 'Russia',
       pos: 'x1y2',
     },
-    expected: 'https://localhost.com?location=Russia&pos=x1y2',
+    expected: 'https://localhost.com/?location=Russia&pos=x1y2',
   },
   {
     name: 'Path params & Query params',
