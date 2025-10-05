@@ -48,4 +48,17 @@ export const typesafeUrlFixtures: Fixture[] = [
     expected:
       'https://localhost.com/pages/1/reviews/109?location=Russia&pos=x1y2',
   },
+  {
+    name: 'Relative paths',
+    href: '/pages/:page/reviews/:reviewId',
+    params: {
+      page: '1',
+      reviewId: '109',
+    },
+    queryParams: {
+      location: 'Russia',
+      pos: 'x1y2',
+    },
+    expected: '/pages/1/reviews/109?location=Russia&pos=x1y2',
+  },
 ];

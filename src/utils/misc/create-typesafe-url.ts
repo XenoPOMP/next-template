@@ -16,15 +16,30 @@ export function createTypesafeUrl<T extends string>(
     resultHref = resultHref.replace(`:${paramName}`, paramValue);
   });
 
-  const url: URL = new URL(resultHref);
-  const searchParams = url.searchParams;
+  try {
+    // Try using URL constructor
+    const url: URL = new URL(resultHref);
+    const searchParams = url.searchParams;
 
-  // Bind query params
-  Object.entries(queryParams ?? {}).forEach(
-    ([queryParamName, queryParamValue]) => {
-      searchParams.set(queryParamName, queryParamValue);
-    },
-  );
+    // Bind query params
+    Object.entries(queryParams ?? {}).forEach(
+      ([queryParamName, queryParamValue]) => {
+        searchParams.set(queryParamName, queryParamValue);
+      },
+    );
 
-  return url.toString();
+    return url.toString();
+  } catch {
+    // URL constructor failed. Relative path detected.
+    const searchParams = new URLSearchParams();
+
+    // Bind query params
+    Object.entries(queryParams ?? {}).forEach(
+      ([queryParamName, queryParamValue]) => {
+        searchParams.set(queryParamName, queryParamValue);
+      },
+    );
+
+    return `${resultHref}?${searchParams.toString()}`;
+  }
 }
