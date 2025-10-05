@@ -17,6 +17,19 @@ type LinkProps = FCProps<VariableFC<typeof Link, unknown, 'href'>>;
 
 /**
  * Link component with typesafe params.
+ * @example
+ * // /test/pages/1?logLevel=max
+ * <TypesafeLink
+ *   href='/test/pages/:pageNumber'
+ *   params={{
+ *     pageNumber: '1',
+ *   }}
+ *   queryParams={{
+ *     logLevel: 'max',
+ *   }}
+ * >
+ *   Go to page 1
+ * </TypesafeLink>
  */
 export function TypesafeLink<URLString extends string>({
   href,
