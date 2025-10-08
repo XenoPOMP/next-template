@@ -1637,10 +1637,10 @@
     "@dicebear/shapes" "9.2.4"
     "@dicebear/thumbs" "9.2.4"
 
-"@dicebear/core@^9.2.3":
-  version "9.2.3"
-  resolved "https://registry.yarnpkg.com/@dicebear/core/-/core-9.2.3.tgz#82d8cac3f0c5e6458937899d45a32e7227ca91dd"
-  integrity sha512-rsWmQO/TxBtnYbQSOrOESmf/XD5TC30cwKw9LBT2+7Q9HwIf5qJKBJT25bmwvn3RPHVe4A6DkTVMtmsoSaErFg==
+"@dicebear/core@^9.2.4":
+  version "9.2.4"
+  resolved "https://registry.yarnpkg.com/@dicebear/core/-/core-9.2.4.tgz#930d844fca2de33d6634297bf4fa68c9bd8b24ce"
+  integrity sha512-hz6zArEcUwkZzGOSJkWICrvqnEZY7BKeiq9rqKzVJIc1tRVv0MkR0FGvIxSvXiK9TTIgKwu656xCWAGAl6oh+w==
   dependencies:
     "@types/json-schema" "^7.0.11"
 
