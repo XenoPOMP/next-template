@@ -109,7 +109,7 @@
     "tailwindcss-full-bleed": "^2.0.2",
     "tailwindcss-themer": "^4.1.1",
     "tsd": "^0.33.0",
-    "tsx": "^4.20.3",
+    "tsx": "^4.20.6",
     "type-fest": "^5.0.1",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^3.2.4",
