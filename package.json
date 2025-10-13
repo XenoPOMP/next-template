@@ -33,9 +33,9 @@
   "dependencies": {
     "@dicebear/collection": "^9.2.4",
     "@dicebear/core": "^9.2.4",
-    "@headlessui/react": "^2.2.7",
+    "@headlessui/react": "^2.2.9",
     "@heroui/kbd": "^2.2.22",
-    "@heroui/theme": "^2.4.17",
+    "@heroui/theme": "^2.4.23",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15",
