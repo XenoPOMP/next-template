@@ -12311,7 +12311,7 @@ tailwindcss-themer@^4.1.1:
     lodash.merge "^4.6.2"
     lodash.mergewith "^4.6.2"
 
-tailwindcss@^3.4.18:
+"tailwindcss@^3.4.18 <4":
   version "3.4.18"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.18.tgz#9fa9650aace186644b608242f1e57d2d55593301"
   integrity sha512-6A2rnmW5xZMdw11LYjhcI5846rt9pbLSabY5XPxo+XWdxwZaFEn47Go4NzFiHu9sNNmr/kXivP1vStfvMaK1GQ==
