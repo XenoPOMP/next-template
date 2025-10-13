@@ -23,7 +23,7 @@ const Dot = () => (
 );
 
 // eslint-disable-next-line jsdoc/require-jsdoc
-export function StackAlignmentPreview({
+export default function StackAlignmentPreview({
   stackType,
 }: {
   stackType: 'vstack' | 'hstack';
