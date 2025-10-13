@@ -36,7 +36,7 @@
     "@headlessui/react": "^2.2.7",
     "@heroui/kbd": "^2.2.22",
     "@heroui/theme": "^2.4.17",
-    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15",
     "@pacote/react-use-outside": "^2.0.4",
