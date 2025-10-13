@@ -38,6 +38,19 @@ updates:
           - "vite-*"
           - "@vitejs/*"
           - "@testing-library/react"
+      tailwindcss:
+        patterns:
+          - "tailwindcss"
+          - "tailwindcss-*"
+      stylelint:
+        patterns:
+          - "stylelint"
+          - "stylelint-*"
+      prettier:
+        patterns:
+          - "@trivago/prettier-plugin-sort-imports"
+          - "prettier"
+          - "prettier-plugin-*"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
