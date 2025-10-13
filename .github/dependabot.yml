@@ -47,6 +47,8 @@ updates:
         patterns:
           - "tailwindcss"
           - "tailwindcss-*"
+          - "autoprefixer"
+          - "postcss"
       stylelint:
         patterns:
           - "stylelint"
@@ -68,9 +70,30 @@ updates:
             - "@eslint-react/eslint-plugin"
             - "eslint"
             - "eslint-plugin-*"
+            - "jiti"
       react-query:
           patterns:
             - "@tanstack/react-query*"
+      theming:
+          patterns:
+            - "@dicebear/collection"
+            - "@dicebear/core"
+            - "@headlessui/react"
+            - "@heroui/kbd"
+            - "@heroui/theme"
+            - "@radix-ui/react-slot"
+            - "class-variance-authority"
+      repo-workflow:
+          patterns:
+            - "lint-staged"
+            - "hygen"
+            - "husky"
+            - "npm-run-all"
+            - "start-server-and-test"
+      scss:
+          patterns:
+            - "sass"
+            - "str.scss"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
