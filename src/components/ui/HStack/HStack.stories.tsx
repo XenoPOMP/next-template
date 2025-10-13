@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/react';
 
-import StackAlignmentPreview from '@/components/ui/VStack/Preview.tsx';
+import StackAlignmentPreview from '@/components/ui/VStack/SB_Preview';
 import { StoryBuilder } from '@/utils/storybook';
 
 import { HStack } from './HStack';

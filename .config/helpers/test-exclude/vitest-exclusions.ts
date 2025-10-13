@@ -10,6 +10,9 @@ export const vitestExclusions: string[] = [
   // Storybook
   '.storybook',
   '**/*.stories.{ts,tsx}',
+  '**/SB_Preview_*.tsx',
+  '**/SB_Preview*.tsx',
+  'storybook-static',
 
   // Testing artifacts
   '__tests__/**/Test*.tsx',
