@@ -13,8 +13,9 @@ updates:
       react-core:
         patterns:
           - "react"
-          - "@types/react"
           - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
