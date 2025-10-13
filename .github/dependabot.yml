@@ -29,6 +29,15 @@ updates:
           - "@serwist/next"
           - "next"
           - "next-themes"
+      vitest:
+        patterns:
+          - "vitest"
+          - "vitest-*"
+          - "@vitest/*"
+          - "vite"
+          - "vite-*"
+          - "@vitejs/*"
+          - "@testing-library/react"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
