@@ -9,6 +9,12 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    groups:
+      react-core:
+        patterns:
+          - "react"
+          - "@types/react"
+          - "react-dom"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
