@@ -16,6 +16,11 @@ updates:
           - "react-dom"
           - "@types/react"
           - "@types/react-dom"
+      storybook:
+        patterns:
+          - "@storybook/*"
+          - "@chromatic-com/storybook"
+          - "storybook"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
