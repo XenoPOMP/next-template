@@ -32,6 +32,7 @@ updates:
           - "next"
           - "next-themes"
           - "@types/mdx"
+          - "serwist"
       vitest:
         patterns:
           - "vitest"
@@ -94,6 +95,18 @@ updates:
           patterns:
             - "sass"
             - "str.scss"
+      others:
+          patterns:
+            - "@pacote/react-use-outside"
+            - "axios"
+            - "classnames"
+            - "cypress"
+            - "lucide-react"
+            - "motion"
+            - "use-clipboard-copy"
+            - "use-debounce"
+            - "xenopomp-essentials"
+            - "zustand"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
