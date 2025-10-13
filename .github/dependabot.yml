@@ -51,6 +51,18 @@ updates:
           - "@trivago/prettier-plugin-sort-imports"
           - "prettier"
           - "prettier-plugin-*"
+      typescript:
+          patterns:
+            - "typescript"
+            - "type-fest"
+            - "tsx"
+            - "tsd"
+            - "zod"
+      eslint:
+          patterns:
+            - "@eslint-react/eslint-plugin"
+            - "eslint"
+            - "eslint-plugin-*"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
