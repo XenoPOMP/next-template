@@ -21,6 +21,14 @@ updates:
           - "@storybook/*"
           - "@chromatic-com/storybook"
           - "storybook"
+      next-js:
+        patterns:
+          - "@next/mdx"
+          - "@mdx-js/loader"
+          - "@mdx-js/react"
+          - "@serwist/next"
+          - "next"
+          - "next-themes"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
