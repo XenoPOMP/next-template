@@ -1,9 +1,11 @@
 @use "sass:meta";
 
+// noinspection Stylelint
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// noinspection Stylelint
 @include meta.load-css("../src/styles/design-system");
 @include meta.load-css("../src/styles/nullstyles");
 
