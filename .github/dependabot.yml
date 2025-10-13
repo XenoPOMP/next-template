@@ -9,6 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    # Grouping dependecies to remove flood PRs from Dependabot
     groups:
       react-core:
         patterns:
@@ -16,6 +17,7 @@ updates:
           - "react-dom"
           - "@types/react"
           - "@types/react-dom"
+          - "@types/node"
       storybook:
         patterns:
           - "@storybook/*"
@@ -29,6 +31,7 @@ updates:
           - "@serwist/next"
           - "next"
           - "next-themes"
+          - "@types/mdx"
       vitest:
         patterns:
           - "vitest"
@@ -38,6 +41,8 @@ updates:
           - "vite-*"
           - "@vitejs/*"
           - "@testing-library/react"
+          - "jest-extended"
+          - "jsdom"
       tailwindcss:
         patterns:
           - "tailwindcss"
@@ -63,6 +68,9 @@ updates:
             - "@eslint-react/eslint-plugin"
             - "eslint"
             - "eslint-plugin-*"
+      react-query:
+          patterns:
+            - "@tanstack/react-query*"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: '-'
