@@ -107,7 +107,7 @@ updates:
             - "use-debounce"
             - "xenopomp-essentials"
             - "zustand"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 15
     pull-request-branch-name:
       separator: '-'
     commit-message:
