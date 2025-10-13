@@ -9913,7 +9913,7 @@ next-themes@^0.4.6:
   resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.4.6.tgz#8d7e92d03b8fea6582892a50a928c9b23502e8b6"
   integrity sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==
 
-next@^15.2.4, next@^15.5.4:
+next@^15.4.7, next@^15.5.4:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/next/-/next-15.5.4.tgz#e7412c805c0b686ceaf294de703b7c9be59a4081"
   integrity sha512-xH4Yjhb82sFYQfY3vbkJfgSDgXvBB6a8xPs9i35k6oZJRoQRihZH+4s9Yo2qsWpzBmZ3lPXaJ2KPXLfkvW4LnA==
@@ -13589,10 +13589,10 @@ ws@^8.18.2, ws@^8.2.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.3.tgz#b56b88abffde62791c639170400c93dcb0c95472"
   integrity sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==
 
-xenopomp-essentials@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.2.0.tgz#6581dbe5da4811654aad92f0a7580beb4c1c68fe"
-  integrity sha512-oVdoATR9NF9Yh1YbGGtHhWAWqK/y2oq5+0GmU4LQQHMi3ydYTZsEyhP66BL7EuQlBwnwqJcRbvvTNrDhnIvtRw==
+xenopomp-essentials@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.2.2.tgz#41950d008de867ff4e1f46d0c2f176db56b41dec"
+  integrity sha512-gyHPQHqb7JIb/sZQNRoeepjf0oNb5Y25CXcdz/p+sn9LX2UZ5yJYlV4SYdh0wF7FBFpgtLKEalv56C3U2M4X5w==
   dependencies:
     "@antfu/eslint-config" "^4.10.1"
     "@next/eslint-plugin-next" "^15.2.3"
@@ -13602,7 +13602,7 @@ xenopomp-essentials@^0.2.0:
     eslint-config-prettier "^10.1.1"
     eslint-plugin-prettier "^5.2.3"
     globals "^16.0.0"
-    next "^15.2.4"
+    next "^15.4.7"
     react "^19.0.0"
     transliteration "^2.3.5"
     type-fest "^4.33.0"
