@@ -39,6 +39,9 @@ jobs:
       - name: '📦 Install dependencies'
         run: yarn install --frozen-lockfile
 
+      - name: '📚 Building Storybook'
+        run: yarn run build-storybook --test
+
       - name: '📕 Linting'
         run: yarn lint:ci
 
