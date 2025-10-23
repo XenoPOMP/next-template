@@ -1,10 +1,15 @@
 import { expect, vi } from 'vitest';
 
+// eslint-disable-next-line unused-imports/no-unused-imports
+import type { spyFactory } from '@test/assets';
+
 /**
  * Helper function for checking if console.log was used in
  * control flow.
  *
  * @param expectedWord
+ *
+ * @deprecated Use {@link spyFactory}
  *
  * @example
  * test('Callback should not be running before mount', () => {

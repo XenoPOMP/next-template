@@ -1,6 +1,6 @@
 import { describe, test } from 'vitest';
 
-import { spyFactory } from '@test/assets/spies/spy-factory.ts';
+import { spyFactory } from '@test/assets';
 
 describe('spyFactory utility', () => {
   test('Calling spy works', () => {
