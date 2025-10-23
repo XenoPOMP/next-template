@@ -52,7 +52,15 @@
     "**/*.ts", "**/*.tsx",
 
     // Next.js types
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+
+    // Config
+    ".config/.dev/scripts/utils/**/*.ts",
+    ".config/.dev/scripts/**/*.ts",
+    ".config/.dev/data/**/*.ts",
+    ".config/**/*.ts",
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx",
   ],
-  "exclude": ["node_modules", "public/sw.js"]
+  "exclude": ["node_modules", "public/sw.js"],
 }
