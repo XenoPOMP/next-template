@@ -1,5 +1,14 @@
 import type { TypesafeLinkProps } from '@/components/ui';
 
+// eslint-disable-next-line jsdoc/require-jsdoc
+function tryCreatingUrl(str: string): URL | undefined {
+  try {
+    return new URL(str);
+  } catch {
+    return undefined;
+  }
+}
+
 /**
  * Binds typesafe params to URL string.
  */
@@ -14,30 +23,20 @@ export function createTypesafeUrl<T extends string>(
     resultHref = resultHref.replace(`:${paramName}`, paramValue);
   });
 
-  try {
-    // Try using URL constructor
-    const url: URL = new URL(resultHref);
-    const searchParams = url.searchParams;
+  // Try creating url from string
+  const url = tryCreatingUrl(resultHref);
+  // We can optionally use safe search params from URL
+  const searchParams = url?.searchParams ?? new URLSearchParams();
 
-    // Bind query params
-    Object.entries(queryParams ?? {}).forEach(
-      ([queryParamName, queryParamValue]) => {
-        searchParams.set(queryParamName, queryParamValue);
-      },
-    );
+  // Bind query params
+  Object.entries(queryParams ?? {}).forEach(
+    ([queryParamName, queryParamValue]) => {
+      searchParams.set(queryParamName, queryParamValue);
+    },
+  );
 
-    return url.toString();
-  } catch {
-    // URL constructor failed. Relative path detected.
-    const searchParams = new URLSearchParams();
-
-    // Bind query params
-    Object.entries(queryParams ?? {}).forEach(
-      ([queryParamName, queryParamValue]) => {
-        searchParams.set(queryParamName, queryParamValue);
-      },
-    );
-
-    return `${resultHref}?${searchParams.toString()}`;
-  }
+  // Convert existing URL to string
+  if (url) return url.toString();
+  // Create URL string manually
+  return `${resultHref}?${searchParams.toString()}`;
 }
