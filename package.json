@@ -117,7 +117,7 @@
     "xenopomp-essentials": "^0.3.0"
   },
   "resolutions": {
-    "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2"
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0"
   }
 }
