@@ -229,3 +229,4 @@ fabric.properties
 # Serwist
 public/sw*
 public/swe-worker*
+certificates
