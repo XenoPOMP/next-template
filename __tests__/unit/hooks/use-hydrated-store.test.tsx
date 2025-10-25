@@ -7,7 +7,7 @@ import { createStorageKey } from '@/utils/misc';
 import { useHydratedStore } from '@/zustand';
 import { createPersistentStore } from '@/zustand/utils';
 
-import { assertHookRendering, spyOnConsole } from '@test/assets';
+import { assertHookRendering, spyFactory } from '@test/assets';
 
 const testStore = createPersistentStore(() => ({ data: '' }), {
   name: createStorageKey('test', 'store'),
@@ -36,9 +36,13 @@ describe('useHydratedStore hook', () => {
   });
 
   test('Persisting works', () => {
-    const { spyLog, expectToBeCalled } = spyOnConsole('<REHYDRATION_HAPPENED>');
+    const { callSpy, expectToBeCalled } = spyFactory('useHydratedStore');
+
+    const message = '<REHYDRATION_HAPPENED>';
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    const spyLog = () => callSpy(message);
 
     render(<Comp action={() => spyLog()} />);
-    expectToBeCalled();
+    expectToBeCalled(message);
   });
 });

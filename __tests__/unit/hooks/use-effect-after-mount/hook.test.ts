@@ -3,7 +3,7 @@ import { describe, test } from 'vitest';
 
 import { useEffectAfterMount } from '@/hooks';
 
-import { assertHookRendering, spyOnConsole } from '@test/assets';
+import { assertHookRendering, spyFactory } from '@test/assets';
 
 describe('useEffectAfterMount', () => {
   test('It renders', () => {
@@ -11,11 +11,18 @@ describe('useEffectAfterMount', () => {
   });
 
   test('It does not run initially', () => {
-    const { spyLog, expectToBeNotCalled } = spyOnConsole(
-      '<HOOK_CALLED_ON_MOUNT>',
-    );
+    // const { spyLog, expectToBeNotCalled } = spyOnConsole(
+    //   '<HOOK_CALLED_ON_MOUNT>',
+    // );
 
-    renderHook(() => useEffectAfterMount(spyLog));
-    expectToBeNotCalled();
+    const { callSpy, expectToBeNotCalled } = spyFactory('useEffectAfterMount');
+    const args: any[] = [1, 2];
+
+    renderHook(() =>
+      useEffectAfterMount(() => {
+        callSpy(...args);
+      }),
+    );
+    expectToBeNotCalled(...args);
   });
 });
