@@ -4,6 +4,7 @@ import type { FunctionalChildren } from 'xenopomp-essentials';
 /**
  * Handle functional children with function interface.
  *
+ * @deprecated Is not used.
  * @param children
  * @param args
  *
