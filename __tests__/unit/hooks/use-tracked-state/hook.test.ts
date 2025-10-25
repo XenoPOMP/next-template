@@ -7,7 +7,7 @@ import {
   assertHookRendering,
   createUseTrackedStateTest,
   injectMatchMediaMock,
-  spyOnConsole,
+  spyFactory,
 } from '@test/assets';
 
 describe('useTrackedState', () => {
@@ -22,9 +22,11 @@ describe('useTrackedState', () => {
   });
 
   test('Callback should not be running before mount', () => {
-    const { expectToBeNotCalled, spyLog } = spyOnConsole(
-      '<HOOK_UPDATE_DETECTED>',
-    );
+    const { expectToBeNotCalled, callSpy } = spyFactory('useTrackedState');
+
+    const message = '<HOOK_UPDATE_DETECTED>';
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    const spyLog = () => callSpy(message);
 
     renderHook(() =>
       useTrackedState(12, () => {
@@ -51,9 +53,12 @@ describe('useTrackedState', () => {
   });
 
   test('Mount callback is called only after initial mount', () => {
-    const { spyLog, expectToBeCalled, expectToBeNotCalled } = spyOnConsole(
-      '<MOUNT_EFFECT_CALLED_ON_USE_TRACKED_STATE>',
-    );
+    const { callSpy, expectToBeCalled, expectToBeNotCalled } =
+      spyFactory('useTrackedState');
+
+    const logMessage: string = '<MOUNT_EFFECT_CALLED_ON_USE_TRACKED_STATE>';
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    const spyLog = () => callSpy(logMessage);
 
     const { updateState } = createUseTrackedStateTest({
       onStateChange: spyLog,
@@ -65,6 +70,6 @@ describe('useTrackedState', () => {
     // On this action code should send log message, because
     // mount has been proceeded.
     updateState('20');
-    expectToBeCalled();
+    expectToBeCalled(logMessage);
   });
 });

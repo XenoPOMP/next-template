@@ -2,6 +2,9 @@ import xenopomp from 'xenopomp-essentials/eslint';
 
 export default xenopomp(
   {
+    // Prohibit deprecated symbols.
+    deprecation: 'error',
+    // Additional internal cfg rules.
     rules: {
       'style/brace-style': 'off',
       'style/quote-props': 'off',

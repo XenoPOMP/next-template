@@ -3597,24 +3597,12 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.2.tgz#5950e50960793055845e956c427fc2b0d70c5239"
   integrity sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==
 
-"@types/react-dom@19.0.2":
-  version "19.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.0.2.tgz#ad21f9a1ee881817995fd3f7fd33659c87e7b1b7"
-  integrity sha512-c1s+7TKFaDRRxr1TxccIX2u7sfCnc3RxkVyBIUA2lCpyqCF+QoAwQ/CBg7bsMdVwP120HEH143VQezKtef5nCg==
-
 "@types/react-dom@19.2.0":
   version "19.2.0"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.2.0.tgz#97ebfc8400702db00d1177b06ade6720dda641c1"
   integrity sha512-brtBs0MnE9SMx7px208g39lRmC5uHZs96caOJfTjFcYSLHNamvaSMfJNagChVNkup2SdtOxKX1FDBkRSJe1ZAg==
 
-"@types/react@19.0.2", "@types/react@^19.0.8":
-  version "19.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.0.2.tgz#9363e6b3ef898c471cb182dd269decc4afc1b4f6"
-  integrity sha512-USU8ZI/xyKJwFTpjSVIrSeHBVAGagkHQKPNbxeWwql/vDmnTIBgx+TJnhFnj1NXgz8XfprU0egV2dROLGpsBEg==
-  dependencies:
-    csstype "^3.0.2"
-
-"@types/react@19.2.0":
+"@types/react@19.2.0", "@types/react@^19.0.8":
   version "19.2.0"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.0.tgz#8412946e7e1efb0de9bb59b3aa87676d96add385"
   integrity sha512-1LOH8xovvsKsCBq1wnT4ntDUdCJKmnEakhsuoUSy6ExlHCkGP2hqnatagYTgFk6oeL0VU31u7SNjunPN+GchtA==
@@ -13408,10 +13396,10 @@ ws@^8.18.3, ws@^8.2.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.3.tgz#b56b88abffde62791c639170400c93dcb0c95472"
   integrity sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==
 
-xenopomp-essentials@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.2.2.tgz#41950d008de867ff4e1f46d0c2f176db56b41dec"
-  integrity sha512-gyHPQHqb7JIb/sZQNRoeepjf0oNb5Y25CXcdz/p+sn9LX2UZ5yJYlV4SYdh0wF7FBFpgtLKEalv56C3U2M4X5w==
+xenopomp-essentials@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.3.0.tgz#980cd1e848bd9a909274079fd0928763b932f6b7"
+  integrity sha512-h3UCLrDdzpd6Ob4CXw0ut41Z9SoBTTB9LWMy/+EHUM9IS/AGdSpaAasy78Fr4dEvu1j607N9vTH02IyPalCaww==
   dependencies:
     "@antfu/eslint-config" "^4.10.1"
     "@next/eslint-plugin-next" "^15.2.3"

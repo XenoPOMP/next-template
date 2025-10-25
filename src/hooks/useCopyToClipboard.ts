@@ -9,4 +9,5 @@ import { useClipboard } from 'use-clipboard-copy';
  */
 const useCopyToClipboard = useClipboard;
 
+// eslint-disable-next-line deprecation/deprecation
 export default useCopyToClipboard;

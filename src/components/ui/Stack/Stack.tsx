@@ -57,7 +57,9 @@ const Stack = slotable<'section', StackProps & StackVariantsType>(
  *   </Container>
  * </>
  */
+// eslint-disable-next-line deprecation/deprecation
 const Container: VariableFC<typeof Stack> = ({ children, ...props }) => {
+  // eslint-disable-next-line deprecation/deprecation
   return <Stack {...props}>{children}</Stack>;
 };
 

@@ -1,11 +1,11 @@
 import cn from 'classnames';
-import type { FcProps, VariableFC } from 'xenopomp-essentials';
+import type { FCProps, VariableFC } from 'xenopomp-essentials';
 
 import { slotable } from '@/components/hoc';
 
 import type { GlassProps } from './Glass.props';
 
-type Props = FcProps<VariableFC<'div', unknown>> & GlassProps;
+type Props = FCProps<VariableFC<'div', unknown>> & GlassProps;
 
 /**
  * Makes container that blurs backdrop.

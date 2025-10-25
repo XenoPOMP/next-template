@@ -10,6 +10,7 @@ export function testFunctionalApproach(values: boolean[]) {
   values.forEach(val => {
     assertRendering(
       <>
+        {/* eslint-disable-next-line deprecation/deprecation */}
         {handleFunctionalChildren<[disabled: boolean]>(
           disabled => (
             <>{disabled ? 'Disabled' : 'Enabled'}</>

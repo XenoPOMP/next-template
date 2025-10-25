@@ -8,6 +8,8 @@ import type { CoreLayoutProps } from './CoreLayout.props';
  *
  * @constructor
  *
+ * @deprecated Has no functionality.
+ *
  * @example
  * // Header and footer will be added
  * // automatically
@@ -21,4 +23,5 @@ const CoreLayout: FC<PropsWithChildren<CoreLayoutProps>> = ({ children }) => {
   return <>{children}</>;
 };
 
+// eslint-disable-next-line deprecation/deprecation
 export default CoreLayout;
