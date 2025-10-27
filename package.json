@@ -114,6 +114,7 @@
     "tsd": "^0.33.0",
     "tsx": "^4.20.6",
     "type-fest": "^5.1.0",
+    "user-agents": "^1.1.669",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^4.0.3",
     "vitest-matchmedia-mock": "^2.0.1",
