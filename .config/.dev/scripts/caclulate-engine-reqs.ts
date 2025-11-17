@@ -69,7 +69,6 @@ import { writePackageJson } from './utils/write-package-json';
         console.log(c.yellow('Nothing changed.'));
       }
 
-      return prev;
       return deepmerge(prev, {
         engines: {
           node: collapsedSemver,
