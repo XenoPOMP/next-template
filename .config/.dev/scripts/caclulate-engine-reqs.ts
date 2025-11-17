@@ -1,4 +1,5 @@
 import { intersect } from '@voxpelli/semver-set';
+import c from 'ansi-colors';
 import deepmerge from 'deepmerge';
 import { readFileSync } from 'node:fs';
 import { readdir } from 'node:fs/promises';
@@ -49,12 +50,29 @@ import { writePackageJson } from './utils/write-package-json';
   const collapsedSemver: string | null = intersect(...semvers);
   if (!collapsedSemver) return;
 
-  // eslint-disable-next-line antfu/consistent-list-newline
-  await writePackageJson(path.join(__dirname, '../../../package.json'), prev =>
-    deepmerge(prev, {
-      engines: {
-        node: collapsedSemver,
-      },
-    }),
+  await writePackageJson(
+    path.join(__dirname, '../../../package.json'),
+    prev => {
+      if (prev.engines?.node) {
+        console.log(
+          c.gray(
+            `Previous node engine requirement was ${c.green.bold(prev.engines.node)}`,
+          ),
+        );
+      }
+
+      console.log(
+        c.gray(
+          `Set node engine requirement to ${c.green.bold(collapsedSemver)}`,
+        ),
+      );
+
+      return prev;
+      return deepmerge(prev, {
+        engines: {
+          node: collapsedSemver,
+        },
+      });
+    },
   );
 })();
