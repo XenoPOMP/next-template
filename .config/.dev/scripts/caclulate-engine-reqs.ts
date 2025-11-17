@@ -1,17 +1,65 @@
 import { intersect } from '@voxpelli/semver-set';
 import c from 'ansi-colors';
+import axios from 'axios';
 import deepmerge from 'deepmerge';
 import { readFileSync } from 'node:fs';
 import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 import type { PackageJson } from 'type-fest';
+import { z } from 'zod';
 
 import { DevLogger } from './logger';
 import { writePackageJson } from './utils/write-package-json';
 
-const EXTRA_SEMVERS: string[] = ['<25'];
+// eslint-disable-next-line jsdoc/require-jsdoc
+const ignoreVersion = (version: string): string => `<${version} || >${version}`;
+
+// eslint-disable-next-line jsdoc/require-jsdoc
+function ltsOnly(): string[] {
+  const list: string[] = [];
+
+  for (const num in Array.from({ length: 30 })) {
+    const idx = +num + 1;
+
+    if (idx % 2 !== 0) {
+      list.push(ignoreVersion(idx.toString()));
+    }
+  }
+
+  return list;
+}
+
+// eslint-disable-next-line jsdoc/require-jsdoc
+async function parseLatestNodeVersion(): Promise<string | undefined> {
+  const meta = await axios.get('https://nodejs.org/dist/index.json');
+  const schema = z.array(
+    z.object({
+      version: z.string(),
+    }),
+  );
+  const parsed = schema.parse(meta.data);
+  const counted = parsed
+    .map(i => ({
+      version: i.version.replace(/^v/, ''),
+      parts: i.version.replace(/^v/, '').split('.'),
+    }))
+    .map(({ version, parts: [major, minor, patch] }) => ({
+      version,
+      count: +major! * 100 + +minor! * 10 + +patch!,
+    }))
+    .sort((a, b) => b.count - a.count)
+    .at(0)?.version;
+
+  return counted;
+}
 
 (async () => {
+  const LATEST_NODE_VERSION = await parseLatestNodeVersion();
+  const EXTRA_SEMVERS: string[] = [
+    ...ltsOnly(),
+    LATEST_NODE_VERSION ? `<${LATEST_NODE_VERSION}` : undefined,
+  ].filter(s => s !== undefined);
+
   DevLogger.start('Calculating Node.js engine semver from dependencies');
 
   const filenames = await readdir(
