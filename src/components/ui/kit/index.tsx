@@ -14,3 +14,6 @@ export * from './SplitView/SplitView';
 export * from './List/List';
 export * from './InputField/InputField';
 export * from './Field/Field';
+export * from './Tab/Tab';
+export * from './TabView/TabView';
+export * from './TabView/TabView.context';
