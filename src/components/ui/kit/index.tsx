@@ -15,3 +15,4 @@ export * from './List/List';
 export * from './InputField/InputField';
 export * from './Field/Field';
 export * from './TabView/TabView';
+export * from './TabView/TabView.context';
