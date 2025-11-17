@@ -10,7 +10,6 @@ import { z } from 'zod';
 
 import { DevLogger } from './logger';
 import { writePackageJson } from './utils/write-package-json';
-import { writeYamlFile } from './utils/write-yaml.file.ts';
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 const ignoreVersion = (version: string): string => `<${version} || >${version}`;
@@ -127,8 +126,6 @@ async function parseLatestNodeVersion(): Promise<string | undefined> {
             `Set node engine requirement to ${c.green.bold(collapsedSemver)}`,
           ),
         );
-
-        DevLogger.info('package.json has been updated.');
       } else {
         DevLogger.warn(c.yellow('Nothing changed.'));
       }
@@ -139,11 +136,6 @@ async function parseLatestNodeVersion(): Promise<string | undefined> {
         },
       });
     },
-  );
-
-  await writeYamlFile<any>(
-    path.join(__dirname, '../../../.github/workflows/ci.yml'),
-    prev => prev,
   );
 
   DevLogger.end('Calculation proceeded.');

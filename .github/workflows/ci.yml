@@ -1,46 +1,62 @@
-name: CI
+name: 'CI'
 on:
   push:
     branches:
       - main
       - canary
+
   pull_request:
     branches:
       - main
       - canary
+
 jobs:
+  # Install Node.js and dependencies
   ci:
     strategy:
       matrix:
         NODE_VERSION:
-          - "20"
-          - "22"
+          - '20'
+          - '22'
+
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
+
     steps:
       - uses: mstachniuk/ci-skip@v1
         with:
-          commit-filter: "[skip ci]"
+          commit-filter: '[skip ci]'
+
       - uses: actions/checkout@v4
-      - name: 🧩 Install Node (${{ matrix.NODE_VERSION }})
+
+      - name: '🧩 Install Node (${{ matrix.NODE_VERSION }})'
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.NODE_VERSION }}
-          cache: yarn
-      - name: 📦 Install dependencies
+          node-version: '${{ matrix.NODE_VERSION }}'
+          cache: 'yarn'
+
+      - name: '📦 Install dependencies'
         run: yarn install --frozen-lockfile --prefer-offline
-      - name: 📚 Building Storybook
+
+      - name: '📚 Building Storybook'
         run: yarn run build-storybook --test
-      - name: 📕 Linting
+
+      - name: '📕 Linting'
         run: yarn lint:ci
-      - name: 🧪 Run coverage
+
+      # Start to run our inline jobs
+      # Vitest
+      - name: '🧪 Run coverage'
         run: yarn coverage
-      - name: ✍️ Report coverage
-        if: always()
+
+      - name: '✍️ Report coverage'
+        if: always() # Also generate the report if tests are failing
         uses: davelosert/vitest-coverage-report-action@v2
         with:
           vite-config-path: .config/vitest.config.ts
-      - name: 🖥️ Run Cypress in headless mode
+
+      # E2E testing
+      - name: '🖥️ Run Cypress in headless mode'
         run: yarn e2e:ci
