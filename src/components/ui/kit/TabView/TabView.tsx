@@ -1,8 +1,8 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import type { ContextType, FC, PropsWithChildren } from 'react';
 import { useCallback, useMemo, useState } from 'react';
-import type { ArrayItemType } from 'xenopomp-essentials';
 
+import type { TabInfo } from './TabView.context';
 import { TabViewContext } from './TabView.context';
 
 // <TabView>
@@ -16,7 +16,7 @@ export const TabView: FC<PropsWithChildren> = ({ children }) => {
   );
 
   const registerTab = useCallback(
-    (newTab: ArrayItemType<ContextType<typeof TabViewContext>['tabs']>) => {
+    (newTab: TabInfo) => {
       setTabs(prev => [...prev, newTab]);
     },
     [setTabs],

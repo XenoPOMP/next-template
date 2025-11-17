@@ -13,4 +13,5 @@ export interface TavViewContextType {
 export interface TabInfo {
   name: string;
   content: ReactNode;
+  uuid: string;
 }
