@@ -1,6 +1,6 @@
 import { cyanBright, green, red, white, yellow } from 'ansi-colors';
 
-import type { MethodsType } from '../../logger';
+import type { MethodsType } from './types';
 
 export const PREFIXES: Record<
   MethodsType,
