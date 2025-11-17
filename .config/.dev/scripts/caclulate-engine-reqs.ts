@@ -53,19 +53,21 @@ import { writePackageJson } from './utils/write-package-json';
   await writePackageJson(
     path.join(__dirname, '../../../package.json'),
     prev => {
-      if (prev.engines?.node) {
+      if (prev.engines?.node !== collapsedSemver) {
         console.log(
           c.gray(
-            `Previous node engine requirement was ${c.green.bold(prev.engines.node)}`,
+            `Previous node engine requirement was ${c.green.bold(prev.engines?.node ?? 'unset')}`,
           ),
         );
-      }
 
-      console.log(
-        c.gray(
-          `Set node engine requirement to ${c.green.bold(collapsedSemver)}`,
-        ),
-      );
+        console.log(
+          c.gray(
+            `Set node engine requirement to ${c.green.bold(collapsedSemver)}`,
+          ),
+        );
+      } else {
+        console.log(c.yellow('Nothing changed.'));
+      }
 
       return prev;
       return deepmerge(prev, {
