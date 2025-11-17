@@ -7,6 +7,7 @@ import { createMethod } from './utils/logger';
  * The purpose of this logger is to write messages
  * when running dev scripts.
  */
+// eslint-disable-next-line prettier/prettier
 @staticImplements<MethodDelegate>()
 export class DevLogger {
   /** Send [START] message. */

@@ -22,6 +22,5 @@
     "^./(.*)$"
   ],
   "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true,
-  "importOrderParserPlugins": ["decorators-legacy", "typescript"]
+  "importOrderSortSpecifiers": true
 }
