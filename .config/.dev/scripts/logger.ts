@@ -1,42 +1,14 @@
-import { cyanBright, green, grey, red, white, yellow } from 'ansi-colors';
+import { grey } from 'ansi-colors';
 
-type MethodsType = 'start' | 'end' | 'log' | 'error' | 'warn' | 'info';
+import { PREFIXES } from './utils/logger/data';
+
+export type MethodsType = 'start' | 'end' | 'log' | 'error' | 'warn' | 'info';
 
 /**
  * The purpose of this logger is to write messages
  * when running dev scripts.
  */
 export class DevLogger {
-  private static PREFIXES: Record<
-    MethodsType,
-    { raw: string; color: (s: string) => string }
-  > = {
-    start: {
-      raw: 'START',
-      color: green,
-    },
-    end: {
-      raw: 'END',
-      color: green,
-    },
-    log: {
-      raw: 'LOG',
-      color: white,
-    },
-    error: {
-      raw: 'ERROR',
-      color: red,
-    },
-    warn: {
-      raw: 'WARN',
-      color: yellow,
-    },
-    info: {
-      raw: 'INFO',
-      color: cyanBright,
-    },
-  };
-
   /** Generates time label. */
   private static issueTime() {
     /** Formats date integer to match pattern X => 0X. */
@@ -57,11 +29,11 @@ export class DevLogger {
   /** Generates prefix with correct length. */
   private static issuePrefix(prefix: MethodsType): string {
     const longestPrefix =
-      Object.values(this.PREFIXES)
+      Object.values(PREFIXES)
         .map(v => v.raw)
         .sort((a, b) => b.length - a.length)[0]?.length ?? 0;
 
-    const { raw, color } = this.PREFIXES[prefix];
+    const { raw, color } = PREFIXES[prefix];
     return color(raw.padStart(longestPrefix, ' '));
   }
 
