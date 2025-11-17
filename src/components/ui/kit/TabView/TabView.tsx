@@ -40,14 +40,14 @@ export const TabView: FC<PropsWithChildren> = ({ children }) => {
 
   return (
     <TabViewContext value={contextValue}>
-      <TabGroup>
-        <TabList>
+      <TabGroup as='section'>
+        <TabList as='header'>
           {tabs.map(({ name }) => (
             <Tab key={name}>{name}</Tab>
           ))}
         </TabList>
 
-        <TabPanels>
+        <TabPanels as='article'>
           {tabs.map(({ name, content }) => (
             <TabPanel key={name}>{content}</TabPanel>
           ))}
