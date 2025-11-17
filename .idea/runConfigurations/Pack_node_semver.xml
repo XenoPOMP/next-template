@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="pack:env" type="js.build_tools.npm" folderName="CI" nameIsGenerated="true">
+  <configuration default="false" name="Pack node semver" type="js.build_tools.npm" folderName="Pack Assets">
     <package-json value="$PROJECT_DIR$/package.json" />
     <command value="run" />
     <scripts>
-      <script value="pack:env" />
+      <script value="pack:node:semver" />
     </scripts>
     <node-interpreter value="project" />
     <envs />

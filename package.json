@@ -26,8 +26,9 @@
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "fullpack": "run-s pack:*",
+    "fullpack": "run-s pack:**",
     "pack:env": "tsx .config/.dev/scripts/pack-env.ts",
+    "pack:node:semver": "tsx .config/.dev/scripts/caclulate-engine-reqs.ts",
     "cleanup": "npx cross-env ACTOR=\"Xeno\" REPO_NAME=\"repo-name\" tsx .config/.dev/scripts/cleanup.ts"
   },
   "dependencies": {
