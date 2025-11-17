@@ -1,12 +1,16 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
-import type { ContextType, FC } from 'react';
+import type { ContextType, FC, PropsWithChildren } from 'react';
 import { useCallback, useMemo, useState } from 'react';
 import type { ArrayItemType } from 'xenopomp-essentials';
 
 import { TabViewContext } from './TabView.context';
 
+// <TabView>
+//   <Tab name='First'>First tab</Tab>
+//   <Tab name='Second'>Second tab (indeed)</Tab>
+// </TabView>
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const TabView: FC<unknown> = () => {
+export const TabView: FC<PropsWithChildren> = ({ children }) => {
   const [tabs, setTabs] = useState<ContextType<typeof TabViewContext>['tabs']>(
     [],
   );
@@ -41,6 +45,8 @@ export const TabView: FC<unknown> = () => {
           ))}
         </TabPanels>
       </TabGroup>
+
+      {children}
     </TabViewContext>
   );
 };

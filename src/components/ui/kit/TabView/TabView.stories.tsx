@@ -1,5 +1,6 @@
 import type { Meta } from '@storybook/nextjs';
 
+import { Tab } from '@/components/ui/kit';
 import { StoryBuilder } from '@/utils/storybook';
 
 import { TabView } from './TabView';
@@ -11,12 +12,22 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+  subcomponents: {
+    Tab,
+  },
 } satisfies Meta<typeof TabView>;
 
 export default meta;
 
 const builder = new StoryBuilder<typeof TabView>()
   .defineMeta(meta)
-  .defineSharedProps({});
+  .defineSharedProps({
+    children: (
+      <>
+        <Tab name='Properties'>This is a properties tab</Tab>
+        <Tab name='CSS'>Preview CSS code</Tab>
+      </>
+    ),
+  });
 
 export const Base = builder.buildStory({});

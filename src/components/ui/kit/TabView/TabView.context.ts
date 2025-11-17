@@ -5,12 +5,12 @@ export const TabViewContext = createContext<TavViewContextType>(
   {} as TavViewContextType,
 );
 
-interface TavViewContextType {
+export interface TavViewContextType {
   tabs: TabInfo[];
   registerTab: (newTab: TabInfo) => void;
 }
 
-interface TabInfo {
+export interface TabInfo {
   name: string;
   content: ReactNode;
 }
