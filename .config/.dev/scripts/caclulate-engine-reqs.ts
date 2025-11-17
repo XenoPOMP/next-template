@@ -6,9 +6,12 @@ import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 import type { PackageJson } from 'type-fest';
 
+import { DevLogger } from './logger';
 import { writePackageJson } from './utils/write-package-json';
 
 (async () => {
+  DevLogger.start('Calculating Node.js engine semver from dependencies');
+
   const filenames = await readdir(
     path.join(__dirname, '../../../node_modules'),
     {
@@ -35,7 +38,7 @@ import { writePackageJson } from './utils/write-package-json';
           content: parsedJson,
         };
       } catch (e) {
-        console.warn(`Error handling \`${f.filename}\` (${e})`);
+        DevLogger.warn(`Error handling \`${f.filename}\` (${e})`);
         return undefined;
       }
     })
@@ -48,25 +51,30 @@ import { writePackageJson } from './utils/write-package-json';
     .map(file => file.nodeEngines!);
 
   const collapsedSemver: string | null = intersect(...semvers);
-  if (!collapsedSemver) return;
+  if (!collapsedSemver) {
+    DevLogger.warn(
+      c.yellow('Calculation seems to be null. Check the generation script.'),
+    );
+    return;
+  }
 
   await writePackageJson(
     path.join(__dirname, '../../../package.json'),
     prev => {
       if (prev.engines?.node !== collapsedSemver) {
-        console.log(
+        DevLogger.log(
           c.gray(
             `Previous node engine requirement was ${c.green.bold(prev.engines?.node ?? 'unset')}`,
           ),
         );
 
-        console.log(
+        DevLogger.log(
           c.gray(
             `Set node engine requirement to ${c.green.bold(collapsedSemver)}`,
           ),
         );
       } else {
-        console.log(c.yellow('Nothing changed.'));
+        DevLogger.warn(c.yellow('Nothing changed.'));
       }
 
       return deepmerge(prev, {
@@ -76,4 +84,6 @@ import { writePackageJson } from './utils/write-package-json';
       });
     },
   );
+
+  DevLogger.end('Calculation proceeded.');
 })();
