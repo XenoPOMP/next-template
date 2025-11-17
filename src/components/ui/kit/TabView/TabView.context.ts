@@ -8,6 +8,7 @@ export const TabViewContext = createContext<TavViewContextType>(
 export interface TavViewContextType {
   tabs: TabInfo[];
   registerTab: (newTab: TabInfo) => void;
+  deleteTab: (uuid: TabInfo['uuid']) => void;
 }
 
 export interface TabInfo {

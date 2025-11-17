@@ -13,7 +13,7 @@ export const Tab: FC<PropsWithChildren<Omit<TabInfo, 'content' | 'uuid'>>> = ({
   children,
 }) => {
   const uuid = useUniqueId();
-  const { registerTab } = useContext(TabViewContext);
+  const { registerTab, deleteTab } = useContext(TabViewContext);
 
   useEffect(() => {
     registerTab({
@@ -21,7 +21,9 @@ export const Tab: FC<PropsWithChildren<Omit<TabInfo, 'content' | 'uuid'>>> = ({
       content: children,
       uuid,
     });
-  }, [name, children, registerTab, uuid]);
+
+    return () => deleteTab(uuid);
+  }, [name, children, registerTab, uuid, deleteTab]);
 
   return <></>;
 };

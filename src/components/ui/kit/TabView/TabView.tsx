@@ -22,12 +22,20 @@ export const TabView: FC<PropsWithChildren> = ({ children }) => {
     [setTabs],
   );
 
+  const deleteTab = useCallback(
+    (uuid: TabInfo['uuid']) => {
+      setTabs(prev => prev.filter(tab => tab.uuid === uuid));
+    },
+    [setTabs],
+  );
+
   const contextValue = useMemo(
     () => ({
       tabs,
       registerTab,
+      deleteTab,
     }),
-    [registerTab, tabs],
+    [deleteTab, registerTab, tabs],
   );
 
   return (
