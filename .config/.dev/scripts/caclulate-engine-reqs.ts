@@ -55,6 +55,7 @@ import { writePackageJson } from './utils/write-package-json';
     DevLogger.warn(
       c.yellow('Calculation seems to be null. Check the generation script.'),
     );
+    DevLogger.end('Nothing happened.');
     return;
   }
 
