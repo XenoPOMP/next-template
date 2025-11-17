@@ -1,8 +1,11 @@
 import { intersect } from '@voxpelli/semver-set';
+import deepmerge from 'deepmerge';
 import { readFileSync } from 'node:fs';
 import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 import type { PackageJson } from 'type-fest';
+
+import { writePackageJson } from './utils/write-package-json';
 
 (async () => {
   const filenames = await readdir(
@@ -44,6 +47,14 @@ import type { PackageJson } from 'type-fest';
     .map(file => file.nodeEngines!);
 
   const collapsedSemver: string | null = intersect(...semvers);
+  if (!collapsedSemver) return;
 
-  console.log(collapsedSemver);
+  // eslint-disable-next-line antfu/consistent-list-newline
+  await writePackageJson(path.join(__dirname, '../../../package.json'), prev =>
+    deepmerge(prev, {
+      engines: {
+        node: collapsedSemver,
+      },
+    }),
+  );
 })();
