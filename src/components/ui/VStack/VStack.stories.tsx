@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/nextjs';
 
 import StackAlignmentPreview from '@/components/ui/VStack/SB_Preview';
 import { StoryBuilder } from '@/utils/storybook';
