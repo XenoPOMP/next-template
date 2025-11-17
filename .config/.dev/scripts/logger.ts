@@ -1,15 +1,7 @@
+import { staticImplements } from '@/decorators';
+
 import type { MethodDelegate } from './utils/logger';
 import { createMethod } from './utils/logger';
-
-/**
- * class decorator
- */
-function staticImplements<T>() {
-  return <U extends T>(constructor: U) => {
-    // eslint-disable-next-line ts/no-unused-expressions
-    constructor;
-  };
-}
 
 /**
  * The purpose of this logger is to write messages
