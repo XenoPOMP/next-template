@@ -1,3 +1,4 @@
+import { intersect } from '@voxpelli/semver-set';
 import { readFileSync } from 'node:fs';
 import { readdir } from 'node:fs/promises';
 import path from 'node:path';
@@ -11,7 +12,7 @@ import type { PackageJson } from 'type-fest';
       withFileTypes: true,
     },
   );
-  const packageJsons = filenames
+  const semvers = filenames
     .filter(file => path.basename(file.name) === 'package.json')
     .filter(f => f.isFile())
     .map(f => path.join(f.parentPath, f.name))
@@ -42,5 +43,7 @@ import type { PackageJson } from 'type-fest';
     .filter(file => file.nodeEngines !== undefined)
     .map(file => file.nodeEngines!);
 
-  console.log(packageJsons);
+  const collapsedSemver: string | null = intersect(...semvers);
+
+  console.log(collapsedSemver);
 })();
