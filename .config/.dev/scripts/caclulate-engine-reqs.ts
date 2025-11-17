@@ -52,10 +52,9 @@ import { writePackageJson } from './utils/write-package-json';
 
   const collapsedSemver: string | null = intersect(...semvers);
   if (!collapsedSemver) {
-    DevLogger.warn(
+    DevLogger.error(
       c.yellow('Calculation seems to be null. Check the generation script.'),
     );
-    DevLogger.end('Nothing happened.');
     return;
   }
 
