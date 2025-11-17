@@ -9,6 +9,8 @@ import type { PackageJson } from 'type-fest';
 import { DevLogger } from './logger';
 import { writePackageJson } from './utils/write-package-json';
 
+const EXTRA_SEMVERS: string[] = ['<25'];
+
 (async () => {
   DevLogger.start('Calculating Node.js engine semver from dependencies');
 
@@ -50,7 +52,10 @@ import { writePackageJson } from './utils/write-package-json';
     .filter(file => file.nodeEngines !== undefined)
     .map(file => file.nodeEngines!);
 
-  const collapsedSemver: string | null = intersect(...semvers);
+  const collapsedSemver: string | null = intersect(
+    ...semvers,
+    ...EXTRA_SEMVERS,
+  );
   if (!collapsedSemver) {
     DevLogger.error(
       c.yellow('Calculation seems to be null. Check the generation script.'),
