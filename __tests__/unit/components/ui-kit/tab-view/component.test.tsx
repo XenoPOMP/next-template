@@ -1,11 +1,16 @@
 import { describe, test } from 'vitest';
 
-import { TabView } from '@/components/ui/kit';
+import { Tab, TabView } from '@/components/ui/kit';
 
 import { assertRendering } from '@test/assets';
 
 describe('TabView component', () => {
   test('It renders', () => {
-    assertRendering(<TabView />);
+    assertRendering(
+      <TabView>
+        <Tab name='First'>First</Tab>
+        <Tab name='Second'>Second</Tab>
+      </TabView>,
+    );
   });
 });
