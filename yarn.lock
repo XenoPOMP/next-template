@@ -3658,6 +3658,13 @@
     "@vitest/pretty-format" "4.0.8"
     tinyrainbow "^3.0.3"
 
+"@voxpelli/semver-set@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@voxpelli/semver-set/-/semver-set-7.0.0.tgz#7207e6dc7b45b659d792f697cf0c66ccb2c9c3f2"
+  integrity sha512-jSh/l4UsPAz1xBkkvGVcTSauT85hep7VOYier/V3fW8aqv2feCoYnnKD2rbwd4f8ERvasLT6GPZ4ZecwUCPVJw==
+  dependencies:
+    semver "^7.5.3"
+
 "@webassemblyjs/ast@1.12.1", "@webassemblyjs/ast@^1.12.1":
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.12.1.tgz#bb16a0e8b1914f979f45864c23819cc3e3f0d4bb"
