@@ -3,5 +3,5 @@ import type { MethodsType } from '../../logger';
 
 /** Generates logger message with prefix, time etc. */
 export function issueMessage(prefix: MethodsType, message?: any) {
-  return `${issuePrefix(prefix)} ${issueTime()} ${message}`;
+  return [issueTime(), issuePrefix(prefix), message].join(' ');
 }
