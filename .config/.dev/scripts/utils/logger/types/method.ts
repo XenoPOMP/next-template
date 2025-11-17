@@ -5,7 +5,7 @@ import type { DevLogger } from '../../../logger';
 export type MethodsType =
   | 'start'
   | 'end'
-  | SelectKeys<typeof console, 'log' | 'error' | 'warn' | 'info'>;
+  | SelectKeys<typeof console, 'log' | 'error' | 'warn' | 'info' | 'debug'>;
 
 export type DevLoggerMethod = (message?: any) => void;
 

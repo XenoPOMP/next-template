@@ -26,4 +26,7 @@ export class DevLogger {
 
   /** Send [INF] message. */
   static info = createMethod('info');
+
+  /** Send [DEBUG] message. */
+  static debug = createMethod('debug');
 }

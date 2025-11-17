@@ -1,4 +1,4 @@
-import { cyanBright, green, red, white, yellow } from 'ansi-colors';
+import c, { cyanBright, green, red, white, yellow } from 'ansi-colors';
 
 import type { MethodsType } from './types';
 
@@ -29,5 +29,9 @@ export const PREFIXES: Record<
   info: {
     raw: 'INFO',
     color: cyanBright,
+  },
+  debug: {
+    raw: 'DEBUG',
+    color: c.magenta.bold,
   },
 };
