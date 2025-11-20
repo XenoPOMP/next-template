@@ -15,7 +15,6 @@ const tailwindConfig: Config = {
   ],
   theme: {
     extend: {
-      // Comment line below if design system is not needed
       ...DesignSystemConfig,
 
       backgroundImage: {
