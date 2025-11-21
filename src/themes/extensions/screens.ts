@@ -1,4 +1,4 @@
-import type { TailwindExtension } from '@/themes/extensions/extension-type.ts';
+import type { TailwindExtension } from '../extensions';
 
 export const SCREENS: TailwindExtension = {
   screens: {
