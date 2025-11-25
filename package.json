@@ -119,6 +119,7 @@
   "resolutions": {
     "@types/react": "19.2.0",
     "@types/react-dom": "19.2.0",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "glob": "^10.5.0"
   }
 }
