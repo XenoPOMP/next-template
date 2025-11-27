@@ -13106,10 +13106,10 @@ ws@^8.18.0, ws@^8.18.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.3.tgz#b56b88abffde62791c639170400c93dcb0c95472"
   integrity sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==
 
-xenopomp-essentials@^0.3.4-hotfix.1:
-  version "0.3.4-hotfix.1"
-  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.3.4-hotfix.1.tgz#0c7912437aa38fb50583138d8f0bc9680fa70329"
-  integrity sha512-KzCi4C2rG4SOZq6nEXO9ZJ39+FHaO5R8gybpWZOGAShg6FcAhN024qvrPLibJRtX1f33rtYtD6YS1j18DAqm8w==
+xenopomp-essentials@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.4.1.tgz#339aafee52e50968bb616dae00b1f1b74d9d0646"
+  integrity sha512-oQ4jR3nxPD+OV5u0cT2jnLycGalTIzwaT4GZ174x9rFnW3bhVirSyzGkdh3TpHCcodAkA8JF2Pf+wFgfnIwdZA==
   dependencies:
     "@antfu/eslint-config" "^4.10.1"
     "@next/eslint-plugin-next" "^15.2.3"

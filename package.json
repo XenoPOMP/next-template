@@ -114,7 +114,7 @@
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^4.0.14",
     "vitest-matchmedia-mock": "^2.0.1",
-    "xenopomp-essentials": "^0.3.4-hotfix.1"
+    "xenopomp-essentials": "^0.4.1"
   },
   "resolutions": {
     "@types/react": "19.2.0",
