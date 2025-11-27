@@ -9663,6 +9663,11 @@ nth-check@^2.0.1, nth-check@^2.1.1:
   dependencies:
     boolbase "^1.0.0"
 
+nyc-dark@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/nyc-dark/-/nyc-dark-3.0.3.tgz#fb7ab3ed7686e2f8a4fa021f0ab9b4b65c762347"
+  integrity sha512-jcb5VU7F9zrikF6BW+tPdTNEl7PRL1H4rwYqcqjAxLnVCH1nKqgSBngMv/D336SS/Dn2CNzM6JzN6NcGyDdbHA==
+
 object-assign@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
