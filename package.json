@@ -98,7 +98,7 @@
     "sass": "1.94.2",
     "serwist": "^9.2.1",
     "start-server-and-test": "^2.1.3",
-    "storybook": "10.0.8",
+    "storybook": "10.1.0",
     "str.scss": "^1.2.0",
     "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.0",
