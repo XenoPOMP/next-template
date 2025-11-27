@@ -7,7 +7,15 @@ import type { TabInfo } from '@/components/ui/kit';
 import { TabViewContext } from '@/components/ui/kit';
 import { useUniqueId } from '@/hooks';
 
-// eslint-disable-next-line jsdoc/require-jsdoc
+/**
+ * Use this component inside `TabView`. Context will be created automatically!
+ * > This component is client-side.
+ * @example
+ * <TabView>
+ *   <Tab name='First'>First</Tab>
+ *   <Tab name='Second'>Second</Tab>
+ * </TabView>,
+ */
 export const Tab: FC<PropsWithChildren<Omit<TabInfo, 'content' | 'uuid'>>> = ({
   name,
   children,

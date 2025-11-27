@@ -1,3 +1,5 @@
+'use client';
+
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import type { ContextType, FC, PropsWithChildren } from 'react';
 import { useCallback, useMemo, useState } from 'react';
@@ -5,11 +7,15 @@ import { useCallback, useMemo, useState } from 'react';
 import type { TabInfo } from './TabView.context';
 import { TabViewContext } from './TabView.context';
 
-// <TabView>
-//   <Tab name='First'>First tab</Tab>
-//   <Tab name='Second'>Second tab (indeed)</Tab>
-// </TabView>
-// eslint-disable-next-line jsdoc/require-jsdoc
+/**
+ * Creates component with changeable tabs. Context will be created automatically!
+ * > This component is client-side.
+ * @example
+ * <TabView>
+ *   <Tab name='First'>First</Tab>
+ *   <Tab name='Second'>Second</Tab>
+ * </TabView>,
+ */
 export const TabView: FC<PropsWithChildren> = ({ children }) => {
   const [tabs, setTabs] = useState<ContextType<typeof TabViewContext>['tabs']>(
     [],
