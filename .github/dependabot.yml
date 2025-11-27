@@ -44,7 +44,7 @@ updates:
           - "vite"
           - "vite-*"
           - "@vitejs/*"
-          - "@testing-library/react"
+          - "@testing-library/*"
           - "jest-extended"
           - "jsdom"
       tailwindcss:
@@ -110,6 +110,7 @@ updates:
             - "use-debounce"
             - "xenopomp-essentials"
             - "zustand"
+            - "@voxpelli/semver-set"
     open-pull-requests-limit: 15
     pull-request-branch-name:
       separator: '-'
