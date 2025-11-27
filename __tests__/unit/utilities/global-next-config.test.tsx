@@ -1,6 +1,5 @@
 import type { NextConfig } from 'next';
 import { describe, expect, test } from 'vitest';
-import type { Defined } from 'xenopomp-essentials';
 
 import nextConfig from '@/utils/next';
 
@@ -14,7 +13,7 @@ describe('Global NextConfig util', () => {
     expected,
   }: {
     base: NextConfig;
-    options: Defined<Parameters<typeof nextConfig>[1]>;
+    options: NonNullable<Parameters<typeof nextConfig>[1]>;
     expected: NextConfig;
   }) => {
     const transformed = nextConfig(base, options);

@@ -1,6 +1,5 @@
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
-import type { Defined } from 'xenopomp-essentials';
 
 export type LoadingVariantsType = VariantProps<typeof loadingVariants>;
 
@@ -16,4 +15,4 @@ export const loadingVariants = cva('', {
   },
 });
 
-export type Variant = Defined<NonNullable<LoadingVariantsType['variant']>>;
+export type Variant = NonNullable<NonNullable<LoadingVariantsType['variant']>>;

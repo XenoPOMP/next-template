@@ -1,7 +1,6 @@
 import type { Config } from 'tailwindcss';
-import type { Defined } from 'xenopomp-essentials';
 
-type Theme = Defined<Defined<Config['theme']>['extend']>;
+type Theme = NonNullable<NonNullable<Config['theme']>['extend']>;
 
 /**
  * This theme is **default**.

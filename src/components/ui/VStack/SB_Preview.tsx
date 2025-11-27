@@ -1,11 +1,10 @@
 import cn from 'classnames';
 import type { ComponentProps, ReactNode } from 'react';
-import type { Defined } from 'xenopomp-essentials';
 
 import { For } from '@/components/layout';
 import { HStack, VStack } from '@/components/ui';
 
-const alignments: Defined<ComponentProps<typeof HStack>['alignment']>[] = [
+const alignments: NonNullable<ComponentProps<typeof HStack>['alignment']>[] = [
   'topLeading',
   'top',
   'topTrailing',

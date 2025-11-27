@@ -1,12 +1,12 @@
 import { afterAll, afterEach, beforeAll } from 'vitest';
-import type { Undefinable } from 'xenopomp-essentials';
+import type { Optional } from 'xenopomp-essentials';
 
 import { clearMocks } from '@test/assets';
 
 type Fn = () => void;
 type Strategy = keyof typeof strategies;
 
-type AfterAllCallback = Undefinable<Fn> | void;
+type AfterAllCallback = Optional<Fn> | void;
 
 /**
  * Map of all available strategies for
