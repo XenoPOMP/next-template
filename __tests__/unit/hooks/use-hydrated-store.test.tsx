@@ -2,13 +2,11 @@ import { cleanup, render } from '@testing-library/react';
 import { useEffect } from 'react';
 import { afterEach, describe, test } from 'vitest';
 import type { Fn } from 'xenopomp-essentials';
-import { assertHookRendering } from 'xenopomp-essentials/vitest';
+import { assertHookRendering, spyFactory } from 'xenopomp-essentials/vitest';
 
 import { createStorageKey } from '@/utils/misc';
 import { useHydratedStore } from '@/zustand';
 import { createPersistentStore } from '@/zustand/utils';
-
-import { spyFactory } from '@test/assets';
 
 const testStore = createPersistentStore(() => ({ data: '' }), {
   name: createStorageKey('test', 'store'),
