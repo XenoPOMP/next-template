@@ -16,6 +16,7 @@
     "deploy": "yarn build && yarn start",
     "unit:test": "vitest -c .config/vitest.config.ts",
     "coverage": "vitest -c .config/vitest.config.ts run --coverage",
+    "coverage:watch": "vitest -c .config/vitest.config.ts --coverage",
     "postcoverage": "cp ./node_modules/nyc-dark/*.css coverage/",
     "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --config-file .config/cypress.config.ts --e2e\"",
     "e2e:ci": "start-server-and-test dev http://localhost:3000 \"cypress run --config-file .config/cypress.config.ts --e2e\"",
