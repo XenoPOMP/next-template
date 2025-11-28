@@ -13249,10 +13249,10 @@ ws@^8.18.0, ws@^8.18.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.3.tgz#b56b88abffde62791c639170400c93dcb0c95472"
   integrity sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==
 
-xenopomp-essentials@^0.5.0-canary.2:
-  version "0.5.0-canary.2"
-  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.5.0-canary.2.tgz#c3777d2585ea39cc7d7d9c640025441365e3e7ee"
-  integrity sha512-h0Lt4133O9oeYI4aokwqBqpwMVydZKkainSjLu1YOIJpeKAec6QAuCjoG80V2Z5f6B0PZfrsvXv19a6Z+b4GSA==
+xenopomp-essentials@^0.5.0-canary.3:
+  version "0.5.0-canary.3"
+  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.5.0-canary.3.tgz#bcab70c1472fd88d5f8e6f1ff7d62ca05bdb6009"
+  integrity sha512-gXqpl6R0z5y5EAmgQGug6fy5Z1Rx0b6RV9ckvdKKuczFZ//RBWdNuN4UZTIfVQmqF3X5kqqF8ahCfU232+IvBA==
   dependencies:
     "@antfu/eslint-config" "^4.10.1"
     "@eslint-community/eslint-utils" "^4.9.0"

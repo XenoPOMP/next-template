@@ -116,7 +116,7 @@
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^4.0.14",
     "vitest-matchmedia-mock": "^2.0.1",
-    "xenopomp-essentials": "^0.5.0-canary.2"
+    "xenopomp-essentials": "^0.5.0-canary.3"
   },
   "resolutions": {
     "@types/react": "19.2.0",
