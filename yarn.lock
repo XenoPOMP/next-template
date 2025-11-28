@@ -12881,6 +12881,13 @@ vitest-matchmedia-mock@^2.0.1:
   dependencies:
     vitest "^3.0.2"
 
+vitest-matchmedia-mock@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/vitest-matchmedia-mock/-/vitest-matchmedia-mock-2.0.3.tgz#4d68c54cc94506023945e68dd4c4b64a4c004f40"
+  integrity sha512-Oa2fI+dfaqcs67D08PqBL0D+Ymm4MYGZn1WimUgfZGDxp9/eb8gl6xqPmhjyrV3p9KdhKj2tp6E1b4YWiSg1lw==
+  dependencies:
+    vitest "^3.0.2"
+
 vitest@^3.0.2:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/vitest/-/vitest-3.2.4.tgz#0637b903ad79d1539a25bc34c0ed54b5c67702ea"
@@ -13249,10 +13256,10 @@ ws@^8.18.0, ws@^8.18.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.3.tgz#b56b88abffde62791c639170400c93dcb0c95472"
   integrity sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==
 
-xenopomp-essentials@^0.5.0-canary.3:
-  version "0.5.0-canary.3"
-  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.5.0-canary.3.tgz#bcab70c1472fd88d5f8e6f1ff7d62ca05bdb6009"
-  integrity sha512-gXqpl6R0z5y5EAmgQGug6fy5Z1Rx0b6RV9ckvdKKuczFZ//RBWdNuN4UZTIfVQmqF3X5kqqF8ahCfU232+IvBA==
+xenopomp-essentials@^0.5.0-canary.4:
+  version "0.5.0-canary.4"
+  resolved "https://registry.yarnpkg.com/xenopomp-essentials/-/xenopomp-essentials-0.5.0-canary.4.tgz#396532631f1e90443cf900de919c0ed2a0513a3c"
+  integrity sha512-imDjgi8rOJ9JqOe8jjanjx/eXsnU0UJU0Vhw+23j2dMKomQV2jgCZ0h/MbGftjFh+mMSwC30z4BO6QYyzkAl2w==
   dependencies:
     "@antfu/eslint-config" "^4.10.1"
     "@eslint-community/eslint-utils" "^4.9.0"
@@ -13280,6 +13287,7 @@ xenopomp-essentials@^0.5.0-canary.3:
     type-fest "^4.33.0"
     typescript "^5.7.3"
     vitest "^4.0.14"
+    vitest-matchmedia-mock "^2.0.3"
     zod "^3.24.1"
 
 xml-name-validator@^4.0.0:
