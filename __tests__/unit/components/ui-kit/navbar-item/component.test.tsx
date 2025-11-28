@@ -1,11 +1,11 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import type { usePathname } from 'next/navigation';
 import { afterEach, describe, expect, test, vi } from 'vitest';
-import { assertRendering } from 'xenopomp-essentials/vitest';
+import { assertRendering, mockRouter } from 'xenopomp-essentials/vitest';
 
 import { NavbarItem } from '@/components/ui/kit';
 
-import { injectMocks, mockRouter } from '@test/assets';
+import { injectMocks } from '@test/assets';
 
 describe('UI Kit / Navbar item', () => {
   injectMocks(() => {

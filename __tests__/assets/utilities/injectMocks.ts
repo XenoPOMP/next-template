@@ -1,7 +1,6 @@
 import { afterAll, afterEach, beforeAll } from 'vitest';
 import type { Optional } from 'xenopomp-essentials';
-
-import { clearMocks } from '@test/assets';
+import { clearMocks } from 'xenopomp-essentials/vitest';
 
 type Fn = () => void;
 type Strategy = keyof typeof strategies;
