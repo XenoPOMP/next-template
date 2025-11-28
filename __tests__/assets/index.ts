@@ -1,5 +1,4 @@
 export * from './extensions';
-export * from './mocks';
 export * from './types';
 export * from './utilities';
 export * from './fixtures';
