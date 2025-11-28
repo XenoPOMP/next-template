@@ -1,9 +1,10 @@
 import { describe, vi } from 'vitest';
+import { injectMatchMediaMock, injectMocks } from 'xenopomp-essentials/vitest';
 
 import { FONT_MOCK } from '@app/constants';
 import RootLayout, { generateMetadata } from '@app/layout.tsx';
 
-import { injectMatchMediaMock, injectMocks, testNextPage } from '@test/assets';
+import { testNextPage } from '@test/assets';
 
 describe('Root layout test', () => {
   // Use it inside describe suite. Place it to top

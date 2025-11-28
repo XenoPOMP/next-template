@@ -4,12 +4,11 @@ import { expect, test } from 'vitest';
 import {
   assertNotThrowing,
   assertRendering,
+  injectMocks,
   mockRouter,
 } from 'xenopomp-essentials/vitest';
 
 import { RQProvider } from '@/components/providers';
-
-import { injectMocks } from '@test/assets';
 
 interface ITestNextPageOptions {
   generateMetadata?: () => Promise<Metadata>;
