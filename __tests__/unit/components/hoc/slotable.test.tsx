@@ -2,10 +2,9 @@ import { cleanup, render } from '@testing-library/react';
 import cn from 'classnames';
 import type { ComponentProps } from 'react';
 import { afterEach, describe, expect, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { slotable } from '@/components/hoc';
-
-import { assertRendering } from '@test/assets';
 
 describe('slotable hoc', () => {
   const TARGET_CLASSNAME = '<target_classname>';

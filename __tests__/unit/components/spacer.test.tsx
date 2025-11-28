@@ -1,8 +1,7 @@
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { Spacer } from '@/components/ui';
-
-import { assertRendering } from '@test/assets';
 
 describe('Spacer component', () => {
   test('It renders', () => {

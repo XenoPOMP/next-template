@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { Button } from '@/components/ui/kit';
-
-import { assertRendering } from '@test/assets';
 
 describe('UI Kit / Button', () => {
   test('It renders', () => {

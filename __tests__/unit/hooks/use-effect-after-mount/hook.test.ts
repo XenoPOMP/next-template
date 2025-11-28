@@ -1,9 +1,8 @@
 import { renderHook } from '@testing-library/react';
 import { describe, test } from 'vitest';
+import { assertHookRendering, spyFactory } from 'xenopomp-essentials/vitest';
 
 import { useEffectAfterMount } from '@/hooks';
-
-import { assertHookRendering, spyFactory } from '@test/assets';
 
 describe('useEffectAfterMount', () => {
   test('It renders', () => {

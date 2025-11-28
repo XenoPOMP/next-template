@@ -2,10 +2,9 @@ import { cleanup, render, screen } from '@testing-library/react';
 import cn from 'classnames';
 import { afterEach, describe, expect, test } from 'vitest';
 import type { VariableFC } from 'xenopomp-essentials';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { withClassname } from '@/components/hoc';
-
-import { assertRendering } from '@test/assets';
 
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Comp: VariableFC<'div'> = ({ className, children, ...props }) => (

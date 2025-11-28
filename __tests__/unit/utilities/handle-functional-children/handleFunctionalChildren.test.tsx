@@ -1,8 +1,7 @@
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { handleFunctionalChildren } from '@/utils/react';
-
-import { assertRendering } from '@test/assets';
 
 import { testFunctionalApproach } from './utils';
 

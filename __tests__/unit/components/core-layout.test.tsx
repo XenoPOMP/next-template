@@ -1,8 +1,7 @@
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { CoreLayout } from '@/components/layout';
-
-import { assertRendering } from '@test/assets';
 
 describe('CoreLayout', () => {
   test('It renders', () => {

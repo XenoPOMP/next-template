@@ -1,9 +1,11 @@
 import { renderHook } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
+import {
+  assertHookRendering,
+  assertNotThrowing,
+} from 'xenopomp-essentials/vitest';
 
 import { useExampleStore } from '@/zustand';
-
-import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
 describe('useExampleStore hook', () => {
   test('It renders', () => {

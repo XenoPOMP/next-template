@@ -1,8 +1,7 @@
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { Accordion } from '@/components/ui/kit';
-
-import { assertRendering } from '@test/assets';
 
 describe('Accordion component', () => {
   test('It renders', () => {

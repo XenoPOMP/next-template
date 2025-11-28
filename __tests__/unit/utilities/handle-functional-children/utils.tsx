@@ -1,6 +1,6 @@
-import { handleFunctionalChildren } from '@/utils/react';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
-import { assertRendering } from '@test/assets';
+import { handleFunctionalChildren } from '@/utils/react';
 
 /**
  * Helper function for testing handleFunctionalChildren.
