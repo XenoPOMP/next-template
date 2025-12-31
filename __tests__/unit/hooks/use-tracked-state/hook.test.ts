@@ -1,14 +1,10 @@
 import { cleanup, renderHook } from '@testing-library/react';
 import { afterEach, describe, expect, test } from 'vitest';
-import {
-  assertHookRendering,
-  injectMatchMediaMock,
-  spyFactory,
-} from 'xenopomp-essentials/vitest';
+import { assertHookRendering, spyFactory } from 'xenopomp-essentials/vitest';
 
 import { useTrackedState } from '@/hooks';
 
-import { createUseTrackedStateTest } from '@test/assets';
+import { createUseTrackedStateTest, injectMatchMediaMock } from '@test/assets';
 
 describe('useTrackedState', () => {
   injectMatchMediaMock();

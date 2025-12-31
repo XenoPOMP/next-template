@@ -1,14 +1,14 @@
 import { cleanup } from '@testing-library/react';
 import { afterEach, describe, test } from 'vitest';
-import {
-  assertNotThrowing,
-  assertRendering,
-  injectMatchMediaMock,
-} from 'xenopomp-essentials/vitest';
+import { assertNotThrowing, assertRendering } from 'xenopomp-essentials/vitest';
 
 import { Tab, TabView } from '@/components/ui/kit';
 
-import { TAB_VIEW_TEST_NAMES, createTabViewTest } from '@test/assets';
+import {
+  TAB_VIEW_TEST_NAMES,
+  createTabViewTest,
+  injectMatchMediaMock,
+} from '@test/assets';
 
 describe('TabView component', () => {
   injectMatchMediaMock();
