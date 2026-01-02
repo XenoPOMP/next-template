@@ -1,9 +1,8 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { For } from '@/components/layout';
-
-import { assertRendering } from '@test/assets';
 
 describe('"For" component tests', () => {
   afterEach(() => cleanup());

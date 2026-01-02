@@ -1,8 +1,7 @@
 import { describe, expect, test } from 'vitest';
+import { assertNotThrowing } from 'xenopomp-essentials/vitest';
 
 import { createEnum } from '@/utils/misc';
-
-import { assertNotThrowing } from '@test/assets';
 
 describe('createEnum util', () => {
   test('It renders', () => {

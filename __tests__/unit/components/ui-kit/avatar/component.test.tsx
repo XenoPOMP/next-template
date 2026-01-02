@@ -1,8 +1,8 @@
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { Avatar } from '@/components/ui/kit';
 
-import { assertRendering } from '@test/assets';
 import catImg from '@test/assets/images/cat.jpeg';
 
 describe('Avatar component', () => {

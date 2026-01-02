@@ -1,6 +1,6 @@
 {
   "name": "next-template",
-  "version": "7.1.0",
+  "version": "8.0.0",
   "private": true,
   "author": "XenoPOMP",
   "repository": "https://github.com/%ACTOR%/%NAME%",
@@ -16,6 +16,7 @@
     "deploy": "yarn build && yarn start",
     "unit:test": "vitest -c .config/vitest.config.ts",
     "coverage": "vitest -c .config/vitest.config.ts run --coverage",
+    "coverage:watch": "vitest -c .config/vitest.config.ts --coverage",
     "postcoverage": "cp ./node_modules/nyc-dark/*.css coverage/",
     "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --config-file .config/cypress.config.ts --e2e\"",
     "e2e:ci": "start-server-and-test dev http://localhost:3000 \"cypress run --config-file .config/cypress.config.ts --e2e\"",
@@ -55,7 +56,7 @@
     "classnames": "^2.5.1",
     "lucide-react": "^0.555.0",
     "motion": "^12.23.24",
-    "next": "^15.5.6",
+    "next": "15.5.9",
     "next-themes": "^0.4.6",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -116,7 +117,7 @@
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^4.0.14",
     "vitest-matchmedia-mock": "^2.0.1",
-    "xenopomp-essentials": "^0.4.1"
+    "xenopomp-essentials": "^0.5.0"
   },
   "resolutions": {
     "@types/react": "19.2.0",

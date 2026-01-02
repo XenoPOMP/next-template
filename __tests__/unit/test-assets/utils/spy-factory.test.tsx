@@ -1,6 +1,5 @@
 import { describe, test } from 'vitest';
-
-import { spyFactory } from '@test/assets';
+import { spyFactory } from 'xenopomp-essentials/vitest';
 
 describe('spyFactory utility', () => {
   test('Calling spy works', () => {

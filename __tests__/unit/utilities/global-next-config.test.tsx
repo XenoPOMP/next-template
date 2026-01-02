@@ -1,9 +1,8 @@
 import type { NextConfig } from 'next';
 import { describe, expect, test } from 'vitest';
+import { assertNotThrowing } from 'xenopomp-essentials/vitest';
 
 import nextConfig from '@/utils/next';
-
-import { assertNotThrowing } from '@test/assets';
 
 describe('Global NextConfig util', () => {
   // eslint-disable-next-line jsdoc/require-jsdoc

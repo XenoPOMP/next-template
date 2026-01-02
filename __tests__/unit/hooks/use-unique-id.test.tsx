@@ -2,10 +2,9 @@
 
 import { renderHook } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
+import { assertHookRendering } from 'xenopomp-essentials/vitest';
 
 import { useUniqueId } from '@/hooks';
-
-import { assertHookRendering } from '@test/assets';
 
 describe('useUniqueId hook', () => {
   test('Not throwing errors', () => {

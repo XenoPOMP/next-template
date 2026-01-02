@@ -1,10 +1,12 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import type { ComponentRef } from 'react';
 import { describe, test } from 'vitest';
+import {
+  assertHookRendering,
+  assertNotThrowing,
+} from 'xenopomp-essentials/vitest';
 
 import { useOutSide } from '@/hooks';
-
-import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
 /**
  * Just a testing component that renders ref.

@@ -1,8 +1,7 @@
 import { afterEach, describe, test, vi } from 'vitest';
+import { assertNotThrowing } from 'xenopomp-essentials/vitest';
 
 import { generateOpenGraph } from '@/utils/seo';
-
-import { assertNotThrowing } from '@test/assets';
 
 describe('SEO utilities', () => {
   afterEach(() => {

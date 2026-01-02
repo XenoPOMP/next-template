@@ -1,15 +1,14 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { expect, test } from 'vitest';
-
-import { RQProvider } from '@/components/providers';
-
 import {
   assertNotThrowing,
   assertRendering,
   injectMocks,
   mockRouter,
-} from '@test/assets';
+} from 'xenopomp-essentials/vitest';
+
+import { RQProvider } from '@/components/providers';
 
 interface ITestNextPageOptions {
   generateMetadata?: () => Promise<Metadata>;

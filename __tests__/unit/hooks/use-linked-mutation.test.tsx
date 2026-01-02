@@ -1,10 +1,12 @@
 import { renderHook } from '@testing-library/react';
 import { describe, test } from 'vitest';
+import {
+  assertHookRendering,
+  assertNotThrowing,
+} from 'xenopomp-essentials/vitest';
 
 import { RQProvider } from '@/components/providers';
 import { useLinkedMutation } from '@/hooks';
-
-import { assertHookRendering, assertNotThrowing } from '@test/assets';
 
 describe('useLinkedMutation hook', () => {
   const sharedProps = [

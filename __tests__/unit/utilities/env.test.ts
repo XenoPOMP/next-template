@@ -1,11 +1,10 @@
 import { describe, expect, test } from 'vitest';
+import { clearMocks, injectMocks, mockEnv } from 'xenopomp-essentials/vitest';
 
 import { env } from '@/utils/env';
 import { isDevelopment, isProduction, isTesting } from '@/utils/misc';
 
 import { TESTING } from '@app/constants/node-env';
-
-import { clearMocks, injectMocks, mockEnv } from '@test/assets';
 
 describe('env with zod schema tests', () => {
   injectMocks(() => {});

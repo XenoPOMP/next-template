@@ -1,8 +1,7 @@
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { TypesafeLink } from '@/components/ui';
-
-import { assertRendering } from '@test/assets';
 
 describe('TypesafeLink component', () => {
   test('It renders', () => {

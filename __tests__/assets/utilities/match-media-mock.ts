@@ -1,6 +1,5 @@
 import MatchMediaMock from 'vitest-matchmedia-mock';
-
-import { injectMocks } from '@test/assets';
+import { injectMocks } from 'xenopomp-essentials/vitest';
 
 /**
  * Mocks stuff related to window.matchMedia.

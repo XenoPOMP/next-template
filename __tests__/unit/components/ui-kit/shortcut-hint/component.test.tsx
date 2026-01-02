@@ -1,8 +1,7 @@
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { ShortcutHint } from '@/components/ui/kit';
-
-import { assertRendering } from '@test/assets';
 
 describe('ShortcutHint component', () => {
   test('It renders', () => {

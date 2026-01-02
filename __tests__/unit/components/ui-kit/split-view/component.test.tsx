@@ -1,9 +1,8 @@
 import { Cog } from 'lucide-react';
 import { describe, test } from 'vitest';
+import { assertRendering } from 'xenopomp-essentials/vitest';
 
 import { SplitView } from '@/components/ui/kit';
-
-import { assertRendering } from '@test/assets';
 
 describe('SplitView component', () => {
   test('It renders', () => {
