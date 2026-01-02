@@ -2113,14 +2113,14 @@
     "@tanstack/react-virtual" "^3.13.9"
     use-sync-external-store "^1.5.0"
 
-"@heroui/kbd@^2.2.22":
-  version "2.2.22"
-  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.22.tgz#051edd067824b4195b6aae83c6adcc0891d68f62"
-  integrity sha512-PKhgwGB7i53kBuqB1YdFZsg7H9fJ8YESMRRPwRRyPSz5feMdwGidyXs+/ix7lrlYp4mlC3wtPp7L79SEyPCpBA==
+"@heroui/kbd@^2.2.23":
+  version "2.2.23"
+  resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.23.tgz#844f8960e871036f90f15978f7d2ec2a9e480353"
+  integrity sha512-nKL1Kl044l1Xsk4U8Nib3wFD2NlZCZo6kdqiqUv+DchOo4s3BJcxWSWqHn6fDVmHNyj3DFMYDvA2f/geMasaHQ==
   dependencies:
     "@heroui/react-utils" "2.1.14"
     "@heroui/shared-utils" "2.1.12"
-    "@heroui/system-rsc" "2.3.20"
+    "@heroui/system-rsc" "2.3.21"
 
 "@heroui/react-rsc-utils@2.1.9":
   version "2.1.9"
@@ -2140,27 +2140,25 @@
   resolved "https://registry.yarnpkg.com/@heroui/shared-utils/-/shared-utils-2.1.12.tgz#2b0c654797985e8f66bfb7c00f5227ee05bf9ffb"
   integrity sha512-0iCnxVAkIPtrHQo26Qa5g0UTqMTpugTbClNOrEPsrQuyRAq7Syux998cPwGlneTfB5E5xcU3LiEdA9GUyeK2cQ==
 
-"@heroui/system-rsc@2.3.20":
-  version "2.3.20"
-  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.20.tgz#d493242d6adc2a186d5f7802bb0722590b9bb555"
-  integrity sha512-uZwQErEud/lAX7KRXEdsDcGLyygBffHcgnbCDrLvmTf3cyBE84YziG7AjM7Ts8ZcrF+wBXX4+a1IqnKGlsGEdQ==
+"@heroui/system-rsc@2.3.21":
+  version "2.3.21"
+  resolved "https://registry.yarnpkg.com/@heroui/system-rsc/-/system-rsc-2.3.21.tgz#c8ab43d36e733cfda43ca751f825918af82ae13c"
+  integrity sha512-icB7njbNgkI3dcfZhY5LP7VFspaVgWL1lcg9Q7uJMAaj6gGFqqSSnHkSMwpR9AGLxVRKTHey0TUx8CeZDe8XDw==
   dependencies:
     "@react-types/shared" "3.32.1"
-    clsx "^1.2.1"
 
-"@heroui/theme@^2.4.23":
-  version "2.4.23"
-  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.23.tgz#d4f342dea57c6e0d822654bb3c522b9b23194409"
-  integrity sha512-5hoaRWG+/d/t06p7Pfhz70DUP0Uggjids7/z2Ytgup4A8KAOvDIXxvHUDlk6rRHKiN1wDMNA5H+EWsSXB/m03Q==
+"@heroui/theme@^2.4.25":
+  version "2.4.25"
+  resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.25.tgz#5ef08b400fbab209cc1fe52aedbde231b1ca9d24"
+  integrity sha512-nTptYhO1V9rMoh9SJDnMfaSmFuoXvbem1UuwgHcraRtqy/TIVBPqv26JEGzSoUCL194TDGOJpqrpMuab/PdXcw==
   dependencies:
     "@heroui/shared-utils" "2.1.12"
-    clsx "^1.2.1"
     color "^4.2.3"
     color2k "^2.0.3"
     deepmerge "4.3.1"
     flat "^5.0.2"
-    tailwind-merge "3.3.1"
-    tailwind-variants "3.1.1"
+    tailwind-merge "3.4.0"
+    tailwind-variants "3.2.2"
 
 "@humanfs/core@^0.19.1":
   version "0.19.1"
@@ -5017,11 +5015,6 @@ clone@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
-
-clsx@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
-  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
 clsx@^2.0.0, clsx@^2.1.1:
   version "2.1.1"
@@ -12106,15 +12099,15 @@ tagged-tag@^1.0.0:
   resolved "https://registry.yarnpkg.com/tagged-tag/-/tagged-tag-1.0.0.tgz#a0b5917c2864cba54841495abfa3f6b13edcf4d6"
   integrity sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==
 
-tailwind-merge@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/tailwind-merge/-/tailwind-merge-3.3.1.tgz#a7e7db7c714f6020319e626ecfb7e7dac8393a4b"
-  integrity sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==
+tailwind-merge@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/tailwind-merge/-/tailwind-merge-3.4.0.tgz#5a264e131a096879965f1175d11f8c36e6b64eca"
+  integrity sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==
 
-tailwind-variants@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/tailwind-variants/-/tailwind-variants-3.1.1.tgz#40a87a7f24a3c372faecedd23a9c40e40bb2033d"
-  integrity sha512-ftLXe3krnqkMHsuBTEmaVUXYovXtPyTK7ckEfDRXS8PBZx0bAUas+A0jYxuKA5b8qg++wvQ3d2MQ7l/xeZxbZQ==
+tailwind-variants@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/tailwind-variants/-/tailwind-variants-3.2.2.tgz#3ac8ccc735cae8b6f416330070f5f7437a77a0f3"
+  integrity sha512-Mi4kHeMTLvKlM98XPnK+7HoBPmf4gygdFmqQPaDivc3DpYS6aIY6KiG/PgThrGvii5YZJqRsPz0aPyhoFzmZgg==
 
 tailwindcss-full-bleed@^2.0.2:
   version "2.0.2"
