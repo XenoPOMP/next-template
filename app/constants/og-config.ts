@@ -18,5 +18,5 @@ export const SHARED_OG_CONFIG = {
     },
   ],
   siteName: 'Next Template',
-  url: env.CANONICAL_URL,
+  url: env.NEXT_PUBLIC_CANONICAL_URL,
 } satisfies Partial<ModifiedOGConfig>;

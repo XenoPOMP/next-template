@@ -23,7 +23,7 @@ const mainFont = Inter({
  * Generic application`s metadata generation.
  */
 export async function generateMetadata(): Promise<Metadata> {
-  const CANONICAL_URL = env.CANONICAL_URL;
+  const CANONICAL_URL = env.NEXT_PUBLIC_CANONICAL_URL;
 
   return {
     applicationName: APP_NAME,

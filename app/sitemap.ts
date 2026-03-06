@@ -6,7 +6,7 @@ import type { Sitemap } from '@/utils/seo/sitemap-utils';
  * Please, edit it manually for each app`s page.
  */
 export default function sitemap(): Sitemap {
-  const CANONICAL = env.CANONICAL_URL;
+  const CANONICAL = env.NEXT_PUBLIC_CANONICAL_URL;
 
   return [
     {
