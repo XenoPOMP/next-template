@@ -10,7 +10,7 @@ describe('env with zod schema tests', () => {
   injectMocks(() => {});
 
   test('Default canonical url is set', () => {
-    expect(env.CANONICAL_URL).toBe('http://localhost:3000');
+    expect(env.NEXT_PUBLIC_CANONICAL_URL).toBe('http://localhost:3000');
   });
 
   test('Default production mode is set', () => {
