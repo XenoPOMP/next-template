@@ -9,7 +9,7 @@ import { slotable } from '@/components/hoc';
 describe('slotable hoc', () => {
   const TARGET_CLASSNAME = '<target_classname>';
 
-  const SlotComp = slotable<'div', ComponentProps<'div'>>(
+  const SlotComp = slotable<ComponentProps<'div'>>(
     'div',
     ({ Comp, className, children, ...props }) => (
       <Comp

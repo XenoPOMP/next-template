@@ -12,7 +12,7 @@ import { stackVariants } from './Stack.variants.ts';
 /**
  * @deprecated Renamed to Container.
  */
-const Stack = slotable<'section', StackProps & StackVariantsType>(
+const Stack = slotable<StackProps & StackVariantsType>(
   'section',
   ({
     Comp,

@@ -9,7 +9,6 @@ import { hStackVariants } from '@/components/ui/VStack/VStack.variants.ts';
 type HStackProps = FCProps<VariableFC<'div'>>;
 
 export const HStack = slotable<
-  'div',
   HStackProps & StackRelativeProps & HStackVariantsType
 >(
   'div',

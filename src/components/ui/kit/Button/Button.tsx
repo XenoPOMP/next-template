@@ -5,12 +5,12 @@ import { slotable } from '@/components/hoc';
 
 import type { ButtonProps } from './Button.props';
 
-export const Button = slotable<
+export const Button = slotable<ButtonProps & FCProps<VariableFC<'button'>>>(
   'button',
-  ButtonProps & FCProps<VariableFC<'button'>>
->('button', ({ Comp, className, ...props }) => (
-  <Comp
-    className={cn(className)}
-    {...props}
-  />
-));
+  ({ Comp, className, ...props }) => (
+    <Comp
+      className={cn(className)}
+      {...props}
+    />
+  ),
+);
