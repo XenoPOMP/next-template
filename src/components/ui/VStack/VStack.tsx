@@ -10,7 +10,6 @@ import { vStackVariants } from './VStack.variants.ts';
 type VStackProps = FCProps<VariableFC<'div'>>;
 
 export const VStack = slotable<
-  'div',
   VStackProps & StackRelativeProps & VStackVariantsType
 >(
   'div',
