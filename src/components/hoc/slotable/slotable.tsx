@@ -18,10 +18,10 @@ import type { AsChild, SlotProps } from './slotable.types';
  *   ),
  * );
  */
-export function slotable<TComp extends ElementType, TProps = unknown>(
-  baseComp: TComp,
-  slot: (props: SlotProps<TComp, TProps>) => ReactNode,
-) {
+export function slotable<
+  TProps = unknown,
+  TComp extends ElementType = ElementType,
+>(baseComp: TComp, slot: (props: SlotProps<TComp, TProps>) => ReactNode) {
   return ({ asChild, ...props }: TProps & AsChild) => {
     const Comp = asChild ? Slot : baseComp;
 
