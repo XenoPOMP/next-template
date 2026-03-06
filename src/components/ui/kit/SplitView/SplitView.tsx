@@ -7,10 +7,7 @@ import { Spacer } from '@/components/ui';
 
 import type { SplitViewProps } from './SplitView.props';
 
-export const SplitView = slotable<
-  'div',
-  ComponentProps<'div'> & SplitViewProps
->(
+export const SplitView = slotable<ComponentProps<'div'> & SplitViewProps>(
   'div',
   ({
     Comp,

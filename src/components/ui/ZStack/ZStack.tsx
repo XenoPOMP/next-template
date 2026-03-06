@@ -5,10 +5,9 @@ import { slotable } from '@/components/hoc';
 
 import styles from './ZStack.module.scss';
 
-type BaseComp = 'div';
-type Props = FCProps<VariableFC<BaseComp>>;
+type Props = FCProps<VariableFC<'div'>>;
 
-export const ZStack = slotable<BaseComp, Props>(
+export const ZStack = slotable<Props>(
   'div',
   ({ Comp, className, ...props }) => (
     <Comp
