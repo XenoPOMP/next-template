@@ -11663,10 +11663,10 @@ std-env@^3.10.0, std-env@^3.9.0:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.10.0.tgz#d810b27e3a073047b2b5e40034881f5ea6f9c83b"
   integrity sha512-5GS12FdOZNliM5mAOxFRg7Ir0pWz8MdpYm6AY6VPkGpbA7ZzmbzNcBJQ0GPvvyWgcY7QAhCgf9Uy89I03faLkg==
 
-storybook@10.2.15:
-  version "10.2.15"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.2.15.tgz#e4bbc4f41e5e174ffbcf71f32b88285b40a49506"
-  integrity sha512-PbBlrMHdkeV2SV2er5v3jvMp1eOosR6v+Dc4h/sJHKHbnnGmwhf01AHwISQp9edEGipyS8lopJPpnEnWeua0mw==
+storybook@10.2.16:
+  version "10.2.16"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.2.16.tgz#18b926c3befeee65c73fba2c0ad39d328246b37b"
+  integrity sha512-Az1Qro0XjCBttsuO55H2aIGPYqGx00T8O3o29rLQswOyZhgAVY9H2EnJiVsfmSG1Kwt8qYTVv7VxzLlqDxropA==
   dependencies:
     "@storybook/global" "^5.0.0"
     "@storybook/icons" "^2.0.1"
