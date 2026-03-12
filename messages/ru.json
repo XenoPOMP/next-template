@@ -1,4 +1,5 @@
 {
   "$schema" : "https://inlang.com/schema/inlang-message-format",
-  "example_message" : "Привет, мир ({username})"
+  "example_message" : "Привет, мир ({username})",
+  "otherExampleLocale" : "Другая локаль"
 }
