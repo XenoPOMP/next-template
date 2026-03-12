@@ -1,3 +1,4 @@
+import { paraglideWebpackPlugin } from '@inlang/paraglide-js';
 import mdxWrapper from '@next/mdx';
 import withSerwistInit from '@serwist/next';
 import type { NextConfig } from 'next';
@@ -53,6 +54,21 @@ export const globalNextConfig = (
     const withSerwist = withSerwistInit(serwist);
     defaultConfig = applyWrapper(defaultConfig, withSerwist);
   }
+
+  // Extend Webpack here
+  defaultConfig = Object.assign(defaultConfig, {
+    // eslint-disable-next-line jsdoc/require-jsdoc
+    webpack: (config: any) => {
+      config.plugins.push(
+        paraglideWebpackPlugin({
+          outdir: './src/paraglide',
+          project: './project.inlang',
+          // Maybe, return 'url' strategy here
+          strategy: ['cookie', 'baseLocale'],
+        }),
+      );
+    },
+  });
 
   return defaultConfig;
 };
