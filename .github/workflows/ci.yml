@@ -32,7 +32,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '${{ matrix.NODE_VERSION }}'
-          cache: 'yarn'
+
+      - name: '🐱 Install Yarn (if needed)'
+        run: |
+          if ! command -v yarn &> /dev/null; then
+            npm i -g yarn
+            echo "📦 Installed Yarn to runner" 
+          fi
 
       - name: '📦 Install dependencies'
         run: yarn install --frozen-lockfile --prefer-offline
