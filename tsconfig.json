@@ -3,7 +3,9 @@
     /* Next default options. */
     "target": "es5",
     "lib": [
-      "dom", "dom.iterable", "esnext",
+      "dom",
+      "dom.iterable",
+      "esnext",
       // Add this! Doing so adds WebWorker and ServiceWorker types to the global.
       "webworker"
     ],
@@ -18,7 +20,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -26,13 +28,22 @@
       }
     ],
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./src/*"],
-      "@app/*": ["./app/*"],
-      "@test/*": ["./__tests__/*"],
-      "@public/*": ["./public/*"]
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@app/*": [
+        "./app/*"
+      ],
+      "@test/*": [
+        "./__tests__/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ]
     },
-
     /* Make compiler more strict. */
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
@@ -47,13 +58,11 @@
     // Declarations
     "next-env.d.ts",
     ".config/declarations",
-
     // TypeScript + JSX
-    "**/*.ts", "**/*.tsx",
-
+    "**/*.ts",
+    "**/*.tsx",
     // Next.js types
     ".next/types/**/*.ts",
-
     // Config
     ".config/.dev/scripts/utils/**/*.ts",
     ".config/.dev/scripts/**/*.ts",
@@ -61,6 +70,10 @@
     ".config/**/*.ts",
     ".storybook/**/*.ts",
     ".storybook/**/*.tsx",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "public/sw.js"],
+  "exclude": [
+    "node_modules",
+    "public/sw.js"
+  ]
 }
