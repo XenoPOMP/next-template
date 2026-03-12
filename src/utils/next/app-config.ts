@@ -67,6 +67,7 @@ export const globalNextConfig = (
           strategy: ['cookie', 'baseLocale'],
         }),
       );
+      return config;
     },
   });
 
