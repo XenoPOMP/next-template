@@ -38,3 +38,5 @@ This projects uses Paraglide.js for managing locales. All locale files can be lo
 You can explore tools for managing locales [here](https://inlang.com/c/tools).
 
 I personally use [i18n-editor](https://github.com/PlusA2M/i18n-editor), the native macOS app.
+
+For using with SSG, you need to do [some extra additions](https://inlang.com/m/gerre34r/library-inlang-paraglideJs/next-js#next-js-ssg-example).
