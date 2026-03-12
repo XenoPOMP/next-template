@@ -31,3 +31,8 @@ yarn create next-app -e https://github.com/XenoPOMP/next-template .
 - 🐶 Husky hooks
 - 🌿 `.github` folder with ready-to-use **actions** and **dependabot**
 
+## 🌐 Internationalization
+
+This projects uses Paraglide.js for managing locales. All locale files can be located in ``./messages``.
+
+You can explore tools for managing locales [here](https://inlang.com/c/tools).
