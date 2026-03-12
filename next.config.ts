@@ -1,8 +1,11 @@
-import type { NextConfig } from 'next';
-
+import type { StrippedNextConfig } from '@/utils/next';
 import config from '@/utils/next';
 
-const baseConfig: NextConfig = {
+/**
+ * Do not extend webpack config here! Modify the
+ * config creation utility at {@link config}.
+ */
+const baseConfig: StrippedNextConfig = {
   // Configure `pageExtensions` to include MDX files
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   // Support docker standalone build
