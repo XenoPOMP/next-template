@@ -36,3 +36,5 @@ yarn create next-app -e https://github.com/XenoPOMP/next-template .
 This projects uses Paraglide.js for managing locales. All locale files can be located in ``./messages``.
 
 You can explore tools for managing locales [here](https://inlang.com/c/tools).
+
+I personally use [i18n-editor](https://github.com/PlusA2M/i18n-editor), the native macOS app.
