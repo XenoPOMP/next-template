@@ -5,6 +5,11 @@ import type { NextConfig } from 'next';
 type NextConfigWrapper = (init: NextConfig) => NextConfig;
 type SerwistOptions = Parameters<typeof withSerwistInit>[0];
 
+/**
+ * This type definition excludes some fields, that are defined in app-config.ts file.
+ */
+export type StrippedNextConfig = Omit<NextConfig, 'webpack'>;
+
 interface ConfigOptions {
   /**
    * Enables MDX pre-processor.
@@ -33,7 +38,7 @@ function applyWrapper(cfg: NextConfig, wrapper: NextConfigWrapper) {
  * @param options
  */
 export const globalNextConfig = (
-  defaultConfig: NextConfig,
+  defaultConfig: StrippedNextConfig,
   options?: ConfigOptions,
 ): NextConfig => {
   // Default options
