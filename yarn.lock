@@ -2477,13 +2477,13 @@
   resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.34.5.tgz#a81ffb00e69267cd0a1d626eaedb8a8430b2b2f8"
   integrity sha512-+29YMsqY2/9eFEiW93eqWnuLcWcufowXewwSNIT6UwZdUUCrM3oFjMWH/Z6/TMmb4hlFenmfAVbpWeup2jryCw==
 
-"@inlang/paraglide-js@^2.14.0":
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/@inlang/paraglide-js/-/paraglide-js-2.14.0.tgz#2635d5def075b461994c8df79126236802b75f99"
-  integrity sha512-6Tno8RvEhnALdgueWNQACiEm3YM6hAfbxnYB+JWML9p5s1O4t0DOqgU9YD8fwpixOnZbU6cJRkvt4v9acXDioA==
+"@inlang/paraglide-js@^2.15.0":
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/@inlang/paraglide-js/-/paraglide-js-2.15.0.tgz#07690fa4f8fd268d027c8e9ff8f9a93f9a68c78f"
+  integrity sha512-2ZOa9nssVn4tjkKskqb88KP5A7cTIjo8AiM9xnPvH+vBhRIRenO+ftAbVOHhHcHjcFxy2QFcOfBAH/Cw1LIsUg==
   dependencies:
     "@inlang/recommend-sherlock" "^0.2.1"
-    "@inlang/sdk" "^2.7.0"
+    "@inlang/sdk" "^2.8.0"
     commander "11.1.0"
     consola "3.4.0"
     json5 "2.2.3"
@@ -2497,10 +2497,10 @@
   dependencies:
     comment-json "^4.2.3"
 
-"@inlang/sdk@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@inlang/sdk/-/sdk-2.7.0.tgz#8d94ed03fc4603dc94507f3d8c22d04820e91eca"
-  integrity sha512-yJNBD0o8i29TTJqWX5uDRHxnalDGcsUDctxepzFXsUfkzqGWfiFBxODdxvReqvM2CuKAAOo/kib/F1UcgdYFNQ==
+"@inlang/sdk@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@inlang/sdk/-/sdk-2.8.0.tgz#41502b9e5f2ef0ce6adbd4b67751567c78a8970a"
+  integrity sha512-w1jysvUDTMgCaONklIgOJAp9dUDl0UhLbsdqfWEwY/GIqoc9IwpuHsrP3pzC+h3DfOpkMMDnDkTpPv8kIZ98iA==
   dependencies:
     "@lix-js/sdk" "0.4.7"
     "@sinclair/typebox" "^0.31.17"
@@ -13117,20 +13117,10 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.1.tgz#168efc2180964e6386d061e094df61afe239b18d"
   integrity sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==
 
-unplugin@^2.1.2:
+unplugin@^2.1.2, unplugin@^2.3.5:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-2.3.11.tgz#411e020dd2ba90e2fbe1e7bd63a5a399e6ee3b54"
   integrity sha512-5uKD0nqiYVzlmCRs01Fhs2BdkEgBS3SAVP6ndrBsuK42iC2+JHyxM05Rm9G8+5mkmRtzMZGY8Ct5+mliZxU/Ww==
-  dependencies:
-    "@jridgewell/remapping" "^2.3.5"
-    acorn "^8.15.0"
-    picomatch "^4.0.3"
-    webpack-virtual-modules "^0.6.2"
-
-unplugin@^2.3.5:
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-2.3.10.tgz#15e75fec9384743335be7e54e5c88b5c187a3e94"
-  integrity sha512-6NCPkv1ClwH+/BGE9QeoTIl09nuiAt0gS28nn1PvYXsGKRwM2TCbFA2QiilmehPDTXIe684k4rZI1yl3A1PCUw==
   dependencies:
     "@jridgewell/remapping" "^2.3.5"
     acorn "^8.15.0"
